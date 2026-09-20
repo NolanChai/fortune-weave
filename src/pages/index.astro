@@ -1,0 +1,81 @@
+---
+import characterIndex from '../../assets/characters/index.json';
+import birdTime from '../../data/bird-time.json';
+import '../styles/global.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const characters = birdTime.characters.map((character) => {
+  const portrait = characterIndex.characters.find(({ id }) => id === character.id);
+  if (!portrait) throw new Error(`Missing portrait for ${character.id}`);
+  return { ...character, icon: `${base}/assets/characters/${portrait.icon}` };
+});
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bird Time dialogue topics and answers for Fire Emblem Fortune's Weave. Search every character on one page." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href={new URL(`${base}/`, Astro.site)} />
+    <title>Bird Time | Fire Emblem Fortune's Weave Wiki</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to Bird Time</a>
+    <header class="site-header">
+      <div class="site-title">Fire Emblem Fortune's Weave Wiki</div>
+    </header>
+    <main id="main" class="main" tabindex="-1">
+      <div class="page-heading">
+        <h1>Bird Time</h1>
+        <label class="search" id="search-control" hidden>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 4.5 4.5" />
+          </svg>
+          <input id="query" type="search" placeholder="Search…" aria-label="Search characters, topics, or answers" autocomplete="off" />
+        </label>
+      </div>
+      <p class="sr-only" id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <table id="bird-time" aria-label="Bird Time topics and answers by character">
+        <colgroup>
+          <col class="character-column" />
+          <col class="topic-column" />
+          <col class="answer-column" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th id="character-label" scope="col">Character</th>
+            <th id="topic-label" scope="col">Topic</th>
+            <th id="answer-label" scope="col">Answer</th>
+          </tr>
+        </thead>
+        {characters.map((character, characterIndex) => (
+          <tbody data-character={character.name.toLowerCase()}>
+            {character.entries.map((entry, entryIndex) => (
+              <tr id={entry.id}>
+                {entryIndex === 0 && (
+                  <th id={`character-${character.id}`} scope="rowgroup" rowspan={character.entries.length}>
+                    <div class="person">
+                      <img class="portrait" src={character.icon} alt="" width="70" height="70" loading={characterIndex < 2 ? 'eager' : 'lazy'} decoding="async" />
+                      <span class="character-name">{character.name}</span>
+                    </div>
+                  </th>
+                )}
+                <td headers={`character-${character.id} topic-label`} data-topic>{entry.topic}</td>
+                <td headers={`character-${character.id} answer-label`} class={entry.answer === null ? 'answer missing' : 'answer'} data-answer>
+                  {entry.answer ?? 'Not listed in source'}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        ))}
+      </table>
+      <p id="empty-results" class="empty" hidden>No matching characters or answers.</p>
+    </main>
+    <script>
+      import '../scripts/search';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3616 @@
+{
+  "schemaVersion": 1,
+  "game": "Fire Emblem: Fortune's Weave",
+  "source": {
+    "publisher": "Polygon",
+    "url": "https://www.polygon.com/fire-emblem-fortunes-weave-bird-time-correct-answers/",
+    "retrievedAt": "2026-09-20T05:22:39Z"
+  },
+  "topicFormat": "Concise summaries of the dialogue prompts, not verbatim game dialogue.",
+  "answerFormat": "Response choices from the source; capitalization and terminal periods are normalized. Source variants are retained in sourceAnswer.",
+  "missingCharacters": [
+    {
+      "id": "gaitz",
+      "name": "Gaitz",
+      "reason": "The source article explicitly omits this character and provides no icon."
+    }
+  ],
+  "characters": [
+    {
+      "id": "alexandra",
+      "name": "Alexandra",
+      "sourceSection": "alexandra-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "alexandra-01",
+          "topic": "Grieving her parents",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "e672af948db131639158d6639f6e8f5b47d2070fd33c9517d50f1f520d7de325"
+        },
+        {
+          "id": "alexandra-02",
+          "topic": "Life in her native Tellus",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "fca3ae9b599676d120440bc12150872efd740999414bd174d3ec23cdf44a0f28"
+        },
+        {
+          "id": "alexandra-03",
+          "topic": "Invitation to accompany a ride",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "515c02c0bfcb1456d28dbc6a0d127750625ed3854f4511d8222f1a6435c579f7"
+        },
+        {
+          "id": "alexandra-04",
+          "topic": "Maintaining the bird's plumage",
+          "answer": "Preen",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "a5a7c6c822ede634707dc629e79fc7bd1051c4579418a5440693b2cb178f63f9"
+        },
+        {
+          "id": "alexandra-05",
+          "topic": "Earning her title with Bucephalus",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "3b892f9319a8037dd69edbd19716534cd5622a520f123f1f3369ffca2654387a"
+        },
+        {
+          "id": "alexandra-06",
+          "topic": "Offering protection on dangerous trips",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "efcbe8660c10b7e436f6e5039292d4d85946c5d9ee29927f12fa600809312c84"
+        },
+        {
+          "id": "alexandra-07",
+          "topic": "Demonstrating her fighting skills",
+          "answer": "Gaze intently",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "4130ee3cef208d87a354256cb5b6758d8a00a2a7fb9c0c40224cdabcb4cc46d2"
+        },
+        {
+          "id": "alexandra-08",
+          "topic": "Responding to gossip about her",
+          "answer": "Be intimidating",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "36fc3208816db34b9cd6b439b6aca7156a06c031c80498bacff543b1374f7281"
+        },
+        {
+          "id": "alexandra-09",
+          "topic": "The bird's maximum flying altitude",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "a8ca0e2e6ad5f4df7f8ff634a020b1006a6ab80e0c5c4fb46bf8a0c1df587ecb"
+        },
+        {
+          "id": "alexandra-10",
+          "topic": "Introducing the bird to Bucephalus",
+          "answer": "Nod",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "ef198ca354a2d478243e7fa12d2b2b00a8e38ff36187abfc6c1868c50601b366"
+        }
+      ]
+    },
+    {
+      "id": "benditz",
+      "name": "Benditz",
+      "sourceSection": "benditz-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "benditz-01",
+          "topic": "His unfamiliarity with remorse",
+          "answer": "Be intimidating",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "7d2e45838f52ec42c205260b0801e7ed2666ca18cdbdc6e6e55368f92313fe6a"
+        },
+        {
+          "id": "benditz-02",
+          "topic": "Recommending Hasdrubal's military history",
+          "answer": "Do a somersault",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "dd59bf5773b5a8941562eace6d3046539018b99173eed738f70db1329b5b3969"
+        },
+        {
+          "id": "benditz-03",
+          "topic": "His youthful popularity",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "110e58c0ab16428523ed7ec36fe84944fb5f2e4e2715c52ddb1848576f500559"
+        },
+        {
+          "id": "benditz-04",
+          "topic": "Persevering after repeated setbacks",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "9db839c272fc4ece3edceba670c43f3532c643089e1683d4e49e12d81be73ccc"
+        },
+        {
+          "id": "benditz-05",
+          "topic": "Seeking praise for his generalship",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "a371433e7291bb9d06e6d21a2bda64a9edf38bf5ff51c5a2ecf65b970ccac83a"
+        },
+        {
+          "id": "benditz-06",
+          "topic": "The mystery beneath his eyepatch",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "595b5d4e847e5085c60a0bece77d5462b2bfc06bdb71042152c90b6a28c3f6cc"
+        },
+        {
+          "id": "benditz-07",
+          "topic": "His claim to historical greatness",
+          "answer": "Gaze intently",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "4b3260860ebb02725a28b517f1ebae25c918254879a37435bc58c4903da0acb1"
+        },
+        {
+          "id": "benditz-08",
+          "topic": "Enjoying fine dining and luxury",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "d434eeb42c0b4e96cf6e6633b74e06ea5771d009e109c51cd0b4d71d074f0a56"
+        },
+        {
+          "id": "benditz-09",
+          "topic": "Profiting from scarce valuables",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "082478b7db8f88457d910e94591515e3eb2a9220e919b575776c57ca0a86adc9"
+        }
+      ]
+    },
+    {
+      "id": "bonaventure",
+      "name": "Bonaventure",
+      "sourceSection": "bonaventure-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "bonaventure-01",
+          "topic": "His carefully groomed facial hair",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "cb8e3f6f86feb5f868979c24edaddb758bad3c4ef6eafbe21d205e4416b26c6f"
+        },
+        {
+          "id": "bonaventure-02",
+          "topic": "Confidence in younger generations",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "3e82d918e38c5c9dcde9b033f777b3909ac2173813d21429f7b4b0d5f7bb504e"
+        },
+        {
+          "id": "bonaventure-03",
+          "topic": "Caging the bird for the queen",
+          "answer": "Be intimidating",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "be10c267d2d3ce2401d61abd5f0babdd6b46229221feebde8382c96be1dd24cb"
+        },
+        {
+          "id": "bonaventure-04",
+          "topic": "Whether he delivers too many lectures",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "2cbd8a7eef64581ff9d9188ad19aedfcf968585dc9a98386bd6c71992387e9a8"
+        },
+        {
+          "id": "bonaventure-05",
+          "topic": "Hope for the future of Saramis",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "740c7107ae1d3c402060a8704d57439cba1c730b65841f32b891fddd248b8b15"
+        },
+        {
+          "id": "bonaventure-06",
+          "topic": "An inexplicable feeling of familiarity",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "635eae4453a707e001fa62552ce312a1e617a152cf929a90fc91c408ce3a3ef9"
+        },
+        {
+          "id": "bonaventure-07",
+          "topic": "Putting duty before his marriage",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "17754ab1fbb2d8ab19723acb62a79ee6f0a81ecb73990b2deafea93afb6f51df"
+        },
+        {
+          "id": "bonaventure-08",
+          "topic": "A bard captivating female listeners",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "4bd4cdd46dc196f5a6319d1741d44fbc6e5049575c95562141d6003ba903bcdb"
+        },
+        {
+          "id": "bonaventure-09",
+          "topic": "His continued mental acuity",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "f88c4f29f26b3d56f54a4541fa6716d5a2011f80803f3cd53b76f917100ec877"
+        },
+        {
+          "id": "bonaventure-10",
+          "topic": "Lately feeling unusually gloomy",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "c2a9226fcf0581fdaec551a12975ac25379d3b1da9501fa44a563dddadd5c3f1"
+        }
+      ]
+    },
+    {
+      "id": "buccar",
+      "name": "Buccar",
+      "sourceSection": "buccar-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "buccar-01",
+          "topic": "Defending someone from an attacker",
+          "answer": "Be intimidating",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "f5299f62030713f9c1350e75b2dd23f7ee5ec66877d260d9b84f3eb524e7a1d5"
+        },
+        {
+          "id": "buccar-02",
+          "topic": "Offering the bird knightly training",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "527f4e582220978b821d87518987cacc4e9b58473cf9020aa33f3d866d09bec5"
+        },
+        {
+          "id": "buccar-03",
+          "topic": "Accompanying a vihuela with birdsong",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "cc3e83576218235d07d6aee86767bc79132a29d821ae9b0d01e2137e89cf233d"
+        },
+        {
+          "id": "buccar-04",
+          "topic": "Devotion to his lord instead of romance",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "c9d79ee8c109beebaf0098541da77b7d777a69b72b7c8d0c87664c1d9b446884"
+        },
+        {
+          "id": "buccar-05",
+          "topic": "Offering a home-cooked meal",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "0fa06d7974731edc50fd35fb2c55dbd2e4b0c1815937e455b0c5484d519d4de0"
+        },
+        {
+          "id": "buccar-06",
+          "topic": "Pride in a wound received while serving",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "e620c2f431ef5e110711333665894f04dc49577e76b6e8b97b39938106886424"
+        },
+        {
+          "id": "buccar-07",
+          "topic": "Offering combat lessons from Cydonia",
+          "answer": "Do a somersault",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "2c6d51774b045ed8bc0a3ce9ca8cc7acfcfc163390a6e06fd8eec1bb8b1fdf49"
+        },
+        {
+          "id": "buccar-08",
+          "topic": "Becoming more irritable with age",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "aa614d67739b4216a8ebfffdc3dabcade3a8e509b52072223fe88744de30c860"
+        },
+        {
+          "id": "buccar-09",
+          "topic": "His lady's obsession with vengeance",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "221c3d77af80be593dd42daf041276f9ffc31b298de58602df6f4b053332bd62"
+        },
+        {
+          "id": "buccar-10",
+          "topic": "The bird's resolute expression",
+          "answer": "Gaze intently",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "c9024ae48ae18d53a380312e745e792a64744dea862341724036bcae050bf01e"
+        }
+      ]
+    },
+    {
+      "id": "cai",
+      "name": "Cai",
+      "sourceSection": "cai-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "cai-01",
+          "topic": "Admiring the bird's evasive speed",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "07843c0a24cf8400e10aeb66442361fa2520494978a60b99dc9ec451b15ed361"
+        },
+        {
+          "id": "cai-02",
+          "topic": "Invitation to go fishing",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "3b9b6948824f18f1338de9df98fe7618315a4b3b399d9cc34c7460047e029ece"
+        },
+        {
+          "id": "cai-03",
+          "topic": "His aversion to cowardly behavior",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "5020fc40dc3cf8975116a1bf5107855e5faaf131fa1675ed84fe7c9f464a17e3"
+        },
+        {
+          "id": "cai-04",
+          "topic": "Surpassing his father's spear skills",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "11e162568600bc1ac0aa5b06bbe650808624dc98492098da6a8e782fb0b55fbe"
+        },
+        {
+          "id": "cai-05",
+          "topic": "Identifying the singer he hears",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "1c458f05e4303b8e5c852911443048ecc4a6725ce1b62f24c6458d5afdf04a2a"
+        },
+        {
+          "id": "cai-06",
+          "topic": "Seeing the world as a bird",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "1f34b5d9675c06424e5a77c2a25fc285e1090330067b8983d953370cc2a9643f"
+        },
+        {
+          "id": "cai-07",
+          "topic": "The challenge of growing up",
+          "answer": "Gaze intently",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "095a2edb375fb598084d505499585ff389b207c58956f839065cccdfce781709"
+        },
+        {
+          "id": "cai-08",
+          "topic": "Others easily reading his thoughts",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "281580e27d8d4ea4007bac01cd0b6f6d8b97ce9dcc1bf2820f0cd777ab8bc3cd"
+        },
+        {
+          "id": "cai-09",
+          "topic": "Taking a break to relax",
+          "answer": "Flap your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "5ca4f62f5bbc3beaf4d334c4019fc72340c428c7809535edb7c9a564140e17a9"
+        },
+        {
+          "id": "cai-10",
+          "topic": "Playing a hiding game together",
+          "answer": "Flap your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "653df0c073786ed8cf2c14a4f5625117f1e85e58fbf100984dbd4b45485fdc41"
+        }
+      ]
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "sourceSection": "catania-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "catania-01",
+          "topic": "Difficulty finding a suitable spouse",
+          "answer": "Sing softly",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "3012f743c70754c9dceb3a2d5156e43c325c198f779bb1db30d1d1c34790b9e6"
+        },
+        {
+          "id": "catania-02",
+          "topic": "A concealed injury proving her courage",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "81f64710b105a0a3f40cc2d8ead29a849b4e40a8233503d76b55ec9b28db5407"
+        },
+        {
+          "id": "catania-03",
+          "topic": "Judging the quality of birdsong",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "bb1440bf582772f9e3a0d2b67ef7fe50f2a8114f3d718fd1e1ee7fa2762da0cf"
+        },
+        {
+          "id": "catania-04",
+          "topic": "Attending to personal grooming",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "ccd535a7db2adccea4f12a60062afe4c382271092b70cbb8515e0a6c9cb7ba0d"
+        },
+        {
+          "id": "catania-05",
+          "topic": "Considering eating the bird's feed",
+          "answer": "Be intimidating",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "b96d5bf476c23267b89312c43cedbd6fec1c1ef61301dd7ba1e900e93de0980e"
+        },
+        {
+          "id": "catania-06",
+          "topic": "Recognizing excellence as a knight",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "a2847574e4a636421fc186224d28d771ee26c669d59a736ef75a38f8d6c93d6a"
+        },
+        {
+          "id": "catania-07",
+          "topic": "Sharing ways to pass idle hours",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "c9fcfbaa3250cb1dbfd22b4cd58ae1e8a6ba7f4e35fa4af0dc421cde733dcff8"
+        },
+        {
+          "id": "catania-08",
+          "topic": "Proper conduct while representing a lord",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "76ee369abd60db91f8664a1a2d49191c716dbb08b3d030b3f109a144fb01ba24"
+        },
+        {
+          "id": "catania-09",
+          "topic": "Her mount rejecting inferior feed",
+          "answer": "Sing softly",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "5d9594e0ba30c42c95546ef1dbe2187d6548f78b5183cf9ed68dabd46afe4a5d"
+        },
+        {
+          "id": "catania-10",
+          "topic": "A former patron's disgrace",
+          "answer": "Sing softly",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "0f2ad869f8c93e4eb50a2e61350dd51cfbc95304081cbcda70f67a33e3ffab7d"
+        }
+      ]
+    },
+    {
+      "id": "dadao",
+      "name": "Dadao",
+      "sourceSection": "dadao-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "dadao-01",
+          "topic": "Offering food when the bird is hungry",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "49900452cc46b9e5e9a685965f017556948f67b7884b93670727134bb74ba154"
+        },
+        {
+          "id": "dadao-02",
+          "topic": "Interpreting Anatolia's harsh treatment",
+          "answer": "Tilt your head",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "fe486e079e3222b85215bac3199c1876801de0e8f32bfe4c1c7c668f145d3372"
+        },
+        {
+          "id": "dadao-03",
+          "topic": "Sharing hunted sandworm meat",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "fdbdc34121c61450c3a0684d2f773592385a55652fd4d72667d2a6ab9026dd83"
+        },
+        {
+          "id": "dadao-04",
+          "topic": "Boasting about his attractiveness",
+          "answer": "Gaze intently",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "6edc9eeaf81bb15807645d610394049a6b737cd2c41eb7c833f9670194a5e023"
+        },
+        {
+          "id": "dadao-05",
+          "topic": "Remaining strong after losing his parents",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "bde18d77e8958b709ebf244a2c55af9dfae84e4e309e4535a1136fcce82235ef"
+        },
+        {
+          "id": "dadao-06",
+          "topic": "Considering the bird as a last-resort meal",
+          "answer": "Be intimidating",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "c0021dbcfb07d0418d1e0bdae3abf26d5ae9bf06359c9fe43589640a351b5273"
+        },
+        {
+          "id": "dadao-07",
+          "topic": "Understanding structures at a glance",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "21d985cea9f1e47e5fba4a0b0fc3fadf4490e74fc33d1139417b745bf27374ef"
+        },
+        {
+          "id": "dadao-08",
+          "topic": "Ending hunger in his village",
+          "answer": "Gaze intently",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "c21781efd739416a6b0840e8be415bb7653b4e27fed6366abfe74ca57b406388"
+        },
+        {
+          "id": "dadao-09",
+          "topic": "Inviting the bird into his gang",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "428c784dbe3fcf2bb6bd0a6586537d98a38db4e52c1b4924dd615694faf1e874"
+        }
+      ]
+    },
+    {
+      "id": "dante",
+      "name": "Dante",
+      "sourceSection": "dante-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "dante-01",
+          "topic": "Reading a work by his father Aeneus",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "f84b612a0fccbf0153775a37e990b239f637fb1af2dc89c8104e92e0c374975b"
+        },
+        {
+          "id": "dante-02",
+          "topic": "An inner voice doubting his talent",
+          "answer": "Tilt your head",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "0f1194a5739f4f700c4d071b9452208129eec1d79b5defc3f399bc06e46cafad"
+        },
+        {
+          "id": "dante-03",
+          "topic": "Enjoying the city's chaotic energy",
+          "answer": "Gaze intently",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "02b65ee5f89c05dd41c2cb61b6e9a5e231ba5ea0a94323412b7bd27841e2f7d2"
+        },
+        {
+          "id": "dante-04",
+          "topic": "Birdsong around his childhood home",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "8af54074213243f4e5ced257e3ad93fdf5c9068dffac7fc28ab8f86f4ddf0db2"
+        },
+        {
+          "id": "dante-05",
+          "topic": "Preferring avian faces to fish",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "f6664dd66a57f5502bb2f3741bbd4e2be44a70924ac9d574a20e5504211118ed"
+        },
+        {
+          "id": "dante-06",
+          "topic": "Alcohol making conversation more interesting",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "de49f01c178de639229209d668bbc949d1c4d09254fe8697de2d7d4f35f703fb"
+        },
+        {
+          "id": "dante-07",
+          "topic": "Flying to investigate writing subjects",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "04e1e458b60b57b1012bd05f6e09839820f36d28aba8019a0dbd8f48491664e6"
+        },
+        {
+          "id": "dante-08",
+          "topic": "Wishing the bird could tell stories",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "234c5ea686e683b63ce3c4b1df4740841aecc969ba95bb90fa57855776432b31"
+        },
+        {
+          "id": "dante-09",
+          "topic": "Temples supplying literary inspiration",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "0a3354b6e58784b6d38af54af09413e7894778eb838084134cfb27c7ca2c5666"
+        },
+        {
+          "id": "dante-10",
+          "topic": "Confidence in his next book",
+          "answer": "Spread your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "ca3e67811c42dfaf1dcf887d45940463e85c8aa86f6a6efb4fd43ef581d7b05c"
+        }
+      ]
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "sourceSection": "diego-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "diego-01",
+          "topic": "Sleeping comfortably without a bed",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "c76c91861b1548e71904f91030535ff53beed454b5b05774fbcd8ff8fb3140cd"
+        },
+        {
+          "id": "diego-02",
+          "topic": "Herb-seasoned smoked meat",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "f87daea5a7117a5bf01698a159620a3a7372195684c1158da2b64ef160c49695"
+        },
+        {
+          "id": "diego-03",
+          "topic": "The bird's perceptive eyes in combat",
+          "answer": "Gaze intently",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "cb000c1bf8802714e1be5ee60b25f5b8a94959cd1b963031b704c2517243aba2"
+        },
+        {
+          "id": "diego-04",
+          "topic": "An unfamiliar species on his travels",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "046f3277b68134713bb8695db957e1c76b7005b01a3216a330fb24014cd93513"
+        },
+        {
+          "id": "diego-05",
+          "topic": "Making remedies from toxic vegetation",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "5e0b96f5eb076a21ed4ce75cd43fd0a0b39f91573d2d1ec59d2f5c2e8081ab96"
+        },
+        {
+          "id": "diego-06",
+          "topic": "Tattoos connecting him to Har Hali",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "005a3dec41fc92958a2bbc04a0efbb8e61f8b426859bd9de8e150602f0adfc10"
+        },
+        {
+          "id": "diego-07",
+          "topic": "Repaying Orchel for rescuing him",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "5d248dff339d6cda43707d1b0c6cb8699028137772d15c52b00182de6838ef74"
+        },
+        {
+          "id": "diego-08",
+          "topic": "Contentment with his current circumstances",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "fe882e398ea1963251c868561661f280dd844224a56b85478c436a6ef967f28e"
+        },
+        {
+          "id": "diego-09",
+          "topic": "His abandoned devotion to Balor",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "47c23717ec2c4cc8565247c5f35e70cbf85ca8d80e001c6a516d0bb5f8b829e9"
+        },
+        {
+          "id": "diego-10",
+          "topic": "Agility among forest branches",
+          "answer": "Do a somersault",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "8c2489b232239e228650d49576b5ee47ba70b4bf8b46eaeae780e02a345e0a5a"
+        }
+      ]
+    },
+    {
+      "id": "dietrich",
+      "name": "Dietrich",
+      "sourceSection": "dietrich-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "dietrich-01",
+          "topic": "Disliking restrictions on his freedom",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "1103d960aeb22e3c67f3baf3f5ffc9c9b8f6af8af52a0a5f1d19e8ffc5a7b197"
+        },
+        {
+          "id": "dietrich-02",
+          "topic": "The bird's unexpected fearlessness",
+          "answer": "Gaze intently",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "e6c13b91a63b06c80a8fa2c0e1ff1eb77c0f4c961b4a1488cfe1eec7b0f51ec0"
+        },
+        {
+          "id": "dietrich-03",
+          "topic": "Longing for a worthy dueling partner",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "5998c215a12dadf18ee00e98ed3a27762cc0ed8336060defc4a54a0bc4112feb"
+        },
+        {
+          "id": "dietrich-04",
+          "topic": "A monster at sea altering his journey",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "7a4b097fc7520c953e005b1074a96e567be2fd8550fcb2bea35e5cf5989c161f"
+        },
+        {
+          "id": "dietrich-05",
+          "topic": "Quieting the mind through meditation",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "6cab57525650c4d1195d170c8b0f2e059589f35113905803267980ba1a46bf08"
+        },
+        {
+          "id": "dietrich-06",
+          "topic": "Admiring the brightness of the bird's eyes",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "d44c116afe6bac9b3b320a404fddfae65bd781cf2ac7f03695af37e07967c057"
+        },
+        {
+          "id": "dietrich-07",
+          "topic": "Resenting people who constrain him",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "45e99fda6e5f2c5ba1120370e059af25c02c73c85ad160f52d4e03f06e996949"
+        },
+        {
+          "id": "dietrich-08",
+          "topic": "Permission to touch the bird",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "3fc6bb187e1ba5daeb77e1b74198be7bd1255ad07776f0f8517dd45ab2403f3e"
+        },
+        {
+          "id": "dietrich-09",
+          "topic": "Using Answerer to uncover hidden power",
+          "answer": "Be intimidating",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "95bb5cf92543ecc9d2597d743f54f04ee3313a1f74ae6bd6ad07baf244cb1348"
+        }
+      ]
+    },
+    {
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "sourceSection": "esmeralda-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "esmeralda-01",
+          "topic": "Whether a lady may hit an adversary",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "92c3e7b637ea43fea74454301ed6b8f188321d9af534fef7594922a1f8fc1be2"
+        },
+        {
+          "id": "esmeralda-02",
+          "topic": "Remaining faithful despite attractive men",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "798594e3467371209bd8ffc4519309ed691f02bdadde0cde86853c45bd649566"
+        },
+        {
+          "id": "esmeralda-03",
+          "topic": "Wishing she could fly to her mother",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "f93a2ca29084c4cae5e21b944b8ea96c2621e8a058f853ea42f1362e18c169df"
+        },
+        {
+          "id": "esmeralda-04",
+          "topic": "Offering fish to a hungry bird",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "4a545d1670219b03973f005946204a1c5b79ef7f311ae75a69db0ec1dc2744f6"
+        },
+        {
+          "id": "esmeralda-05",
+          "topic": "Seeking agreement about her lovely eyes",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "1e2bceb223b811b49e3e7c6dcbdaa0a6d7707ad1e9ac3a6cab2f471168601c79"
+        },
+        {
+          "id": "esmeralda-06",
+          "topic": "Condemning dishonest people",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "6eff4b9b31cf49d50af7703b0f12876b0a5dbf7e03d0bf5d61661a94cdea0298"
+        },
+        {
+          "id": "esmeralda-07",
+          "topic": "Investigating the bird's unusual scent",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "5b545c83828f71b24c651eb9772c0225684d87740224424ce4d66645abec9bf5"
+        },
+        {
+          "id": "esmeralda-08",
+          "topic": "Singing during solitary fishing trips",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "952ba3c884ec6948dc676680c80d26fbcf060bcd61a617a70c5f9d4cd3317e45"
+        },
+        {
+          "id": "esmeralda-09",
+          "topic": "Following her father's maritime example",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "b4e050319baec27fa28d6644106d9838141a433a824e564036835a040a273dd6"
+        },
+        {
+          "id": "esmeralda-10",
+          "topic": "Understanding aristocratic celebrations",
+          "answer": "Dance",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "9935dc640339f9f3331d579d1eb2bb382145e96c2552fd046ec768c04865838d"
+        }
+      ]
+    },
+    {
+      "id": "fabio",
+      "name": "Fabio",
+      "sourceSection": "fabio-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "fabio-01",
+          "topic": "Seeking shelter from harsh sunlight",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "ce96630a6142071f44c8da9fc479db449f61fb41e19ef461bcc71cfd00f9fa0f"
+        },
+        {
+          "id": "fabio-02",
+          "topic": "Considering a beautiful bird for dissection",
+          "answer": "Be intimidating",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "712e884e37a7cf8c1068040d5fa238d4ee5750f18b99a4c50fc9300c63d52beb"
+        },
+        {
+          "id": "fabio-03",
+          "topic": "Drawing and studying Dagda's flora",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "86101267dc519027ee5fcf7dfc33209adab8908bf6ea5a281c6a203e997cdc30"
+        },
+        {
+          "id": "fabio-04",
+          "topic": "Praising the bird's economical behavior",
+          "answer": "Gaze intently",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "be3b617a13bccfe900683b83262a1b7f40cc168a1f8a6a42219f0abe05c498f4"
+        },
+        {
+          "id": "fabio-05",
+          "topic": "Growing accustomed to his assumed identity",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "6b762dae959aece25fbdb6ee74ee80e3df56948151d6de9cb7413cf1d6d318e4"
+        },
+        {
+          "id": "fabio-06",
+          "topic": "Questioning himself and this unfamiliar land",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "9df41564cab83ea36321bcbf7a39cd9f8d66336605e6cb41497bfae6ea486d82"
+        },
+        {
+          "id": "fabio-07",
+          "topic": "Puzzlement about birthday celebrations",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "915d37fe587e8f62f6559c0267bcccd191557a9b78c781839b995d2cdcd5bc36"
+        },
+        {
+          "id": "fabio-08",
+          "topic": "Beauty improving his mood",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "b0a54802f955ef2d9c6a5edecc971025c7ced9995ac99e0fc3987a1cdc9936ef"
+        },
+        {
+          "id": "fabio-09",
+          "topic": "Leaving strenuous tasks to suitable workers",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "4f11142b7c496101d9a09abb993ece17e017fc008205a55ed3a633a6cdbf3f83"
+        },
+        {
+          "id": "fabio-10",
+          "topic": "His unquestioned missionary disguise",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "d520d35880ae7e75a3ef3978bb7ec63d04df1829e8bb6fb6b1a650291390821b"
+        }
+      ]
+    },
+    {
+      "id": "fianna",
+      "name": "Fianna",
+      "sourceSection": "fianna-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "fianna-01",
+          "topic": "Poems evoking the experience of music",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "467be12b4195b979d57571d5432aaef515f13e1bc016605e64d52f8d69c81734"
+        },
+        {
+          "id": "fianna-02",
+          "topic": "Offering to treat the bird's injuries",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "edc5ce2afb18f4d148a79225028fb6560b0bdb6d8fc8c530f2cb741ebb791e1f"
+        },
+        {
+          "id": "fianna-03",
+          "topic": "Finding comfort in the bird's gentle gaze",
+          "answer": "Gaze intently",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "9c20b2bf604ca665fb71ef422a95d6cbc98ea314fd8404f26b311ecdc344b468"
+        },
+        {
+          "id": "fianna-04",
+          "topic": "Attraction to someone elusive",
+          "answer": "Cling to your perch",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "43e0cf78beb7f678bfa15ebf87ce867c94a33e5c4a0a191f2f01dc2572592275"
+        },
+        {
+          "id": "fianna-05",
+          "topic": "Preferring companionship to confusing romance",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "c6279bc356cddc4bd525c117d433c23cef35835f4d5170182d6740dfae60ca42"
+        },
+        {
+          "id": "fianna-06",
+          "topic": "Wanting to avoid conflict and suffering",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "879d7648e215ad44ae6221fdfaa26797b0710092d40045a40e2e813ce0b527ae"
+        },
+        {
+          "id": "fianna-07",
+          "topic": "Suddenly feeling tearful",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "3405260ea619391b39f24b40a73884a9252fe2192a69c7e4747ae0ec697da6bf"
+        },
+        {
+          "id": "fianna-08",
+          "topic": "Constant thoughts of her beloved",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "8e8296a1bcaef88542ba69b258884e5793b73a3ef017ec8036aa7ca326e5ad60"
+        },
+        {
+          "id": "fianna-09",
+          "topic": "Worrying that her company is dull",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "56af364546b82be3358ab095e50e39ef544c6f5be63a522b20c6300e60564cfc"
+        },
+        {
+          "id": "fianna-10",
+          "topic": "Whether the bird has experienced love",
+          "answer": "Nod",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "10a35c71af2a96096ca8cf5b66e6788166ab06b09997b5b29be5d784df1b4c45"
+        }
+      ]
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath",
+      "sourceSection": "goliath-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "goliath-01",
+          "topic": "Cheering him up after tedious chores",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "bba873486ac066509d2815d0409141a6f72f4403c899dfa984312798bb9a8da1"
+        },
+        {
+          "id": "goliath-02",
+          "topic": "Offering to confront the bird's bullies",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "4ccdc60dc0e87a2f69c13414132da6f47b6c8b8dcb324c89fb81d1bf90825bb0"
+        },
+        {
+          "id": "goliath-03",
+          "topic": "Complex discussions making him dizzy",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "3def03933c4f0a0dbb74290ff18e0121644ceceb58293c434d4f7d14ebe5adcc"
+        },
+        {
+          "id": "goliath-04",
+          "topic": "Amusement at claims of giant ancestry",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "4cf02e05b810c13c03cb4fd85e9194c8cc564b9d1e330d644a292bcbcde9926f"
+        },
+        {
+          "id": "goliath-05",
+          "topic": "Admiring his brother's persistence",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "f94f08150a74a27daab76a147281eaf59f84da4709b24abb84815b76fcfc9006"
+        },
+        {
+          "id": "goliath-06",
+          "topic": "Faith in consistent physical training",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "7d48536f795bbc83e3f9ca1347e9698ab526b1834265cd3691bcdaf9be1453e5"
+        },
+        {
+          "id": "goliath-07",
+          "topic": "Feeling valued only during combat",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "ebc4350485934429dbadbf5172e17f06f00394d9b2ed272eda76fe6fb7e8f17b"
+        },
+        {
+          "id": "goliath-08",
+          "topic": "Fear of accidentally crushing the bird",
+          "answer": "Tremble",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "167adfd41992100c0a1e19f58615f3d4de6a66fdad5b9b1881d2cab35a04d836"
+        },
+        {
+          "id": "goliath-09",
+          "topic": "Wanting revenge on his former chief",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "3d16638053b11a14c7f816d33ec150bc06a679599cc3845c51d422505f4f835c"
+        }
+      ]
+    },
+    {
+      "id": "guzran",
+      "name": "Guzran",
+      "sourceSection": "guzran-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "guzran-01",
+          "topic": "Offering reliable help to the bird",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "f22a63f2a7e62322180c7e5f781cf1dfa66f95b603cdcf85aeb3930b2dd6ce82"
+        },
+        {
+          "id": "guzran-02",
+          "topic": "Making the most of being alive",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "ae1bb69f6c176ea46b8a2019e103e36539ef7a973f5315b3b8bad4d633b95b69"
+        },
+        {
+          "id": "guzran-03",
+          "topic": "Scars behind his survival reputation",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "5f2a2784a1a2371514fcbdba7deefc281eb3169337d96d9d2b394de0bd6c76b2"
+        },
+        {
+          "id": "guzran-04",
+          "topic": "Choosing enjoyable meals while alive",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "fdad1b1a7c4f1939e97c3e459643761afd8b7c5f654c409985bc02aa0c1b1662"
+        },
+        {
+          "id": "guzran-05",
+          "topic": "Looking like an experienced sellsword",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "e1c927e50f46d25e1c7aef44ce4fd3322eb369b6e3e9d92eb1b696f88596ad42"
+        },
+        {
+          "id": "guzran-06",
+          "topic": "Claiming he is secretly a bird",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "ce4c01138aa54ba07d3e2b5f2df2d7d287f652664f666e29a0ffc60e7a65f469"
+        },
+        {
+          "id": "guzran-07",
+          "topic": "Requesting an entertaining wake-up",
+          "answer": "Do a somersault",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "387c6e04ad9c42ae9ae94311b8b94cb104d304111ce99bb32db2961a05a4659c"
+        },
+        {
+          "id": "guzran-08",
+          "topic": "Boasting about people whose careers he helped",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "d42b43ade95112b808f9ed9262b40ab1481c0c555d55d0a46126530fdfb03120"
+        },
+        {
+          "id": "guzran-09",
+          "topic": "Mistaking a woman's punch for shyness",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "113440f7ed2b804d3386907cf8a918b0e464331283304d4eabda18e2bc045384"
+        },
+        {
+          "id": "guzran-10",
+          "topic": "Retaining control of battlefield decisions",
+          "answer": "Nod",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "4553589cb6fd3ffb7287fb3862ac82fa72b35a4297f90883e0070c2fc826d5f9"
+        }
+      ]
+    },
+    {
+      "id": "halvin",
+      "name": "Halvin",
+      "sourceSection": "halvin-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "halvin-01",
+          "topic": "A cheap jewelry box breaking immediately",
+          "answer": "Sing softly",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "c2b998676d462c79f1573c84c9ef6cdd7188a7794015a0f4d2e35578e9b17ec1"
+        },
+        {
+          "id": "halvin-02",
+          "topic": "Contributing despite limited combat ability",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "d177e9bbbbdef488393ff2a249db7b3f9fe260205ce799ddd228d6dc29befa1c"
+        },
+        {
+          "id": "halvin-03",
+          "topic": "Offering homemade desserts",
+          "answer": "Gaze intently",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "931ae4938c0b1a026712ce71edd1c98a5e60b70194ad2fb65445bac891633704"
+        },
+        {
+          "id": "halvin-04",
+          "topic": "Crafting with feathers",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "778f89adf72b216630fd78f484f6f8956b20da524ea86fa89f66415039137011"
+        },
+        {
+          "id": "halvin-05",
+          "topic": "Remembering his kind caretaker Nasshim",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "a2224cc3e8695ebd38a691d666482a8665e6e44bb5422a553e813badf48b1015"
+        },
+        {
+          "id": "halvin-06",
+          "topic": "Attempting a magician's disappearing-bird trick",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "79565938525e2d916c295f7c6c8e8bf138926ec96e06b4f6cd7fe4fb83634c4f"
+        },
+        {
+          "id": "halvin-07",
+          "topic": "Planning a joint stage performance",
+          "answer": "Do a somersault",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "70683477704a1a824bb800399fc01424cdcde573261a4b16627b5849076c66d1"
+        },
+        {
+          "id": "halvin-08",
+          "topic": "Anxiety about an uncontrollable future",
+          "answer": "Flap your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "0d3cc016dad718848a364087347482df350e9eb552c99a918fdfea442c5f2eea"
+        },
+        {
+          "id": "halvin-09",
+          "topic": "Vegetable flavor versus appearance",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "13150384d9eddbee4cf5d7eccabecc2d67fceda61654758c87e2c70c09a8652a"
+        },
+        {
+          "id": "halvin-10",
+          "topic": "Homesickness for his family",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "4ec325afa5bf6828bc6820a05595d6dcceecdc6226568b6acfecd6efb422180b"
+        }
+      ]
+    },
+    {
+      "id": "inyoni",
+      "name": "Inyoni",
+      "sourceSection": "inyoni-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "inyoni-01",
+          "topic": "Losing track of evening archery practice",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "a00b3f639cd55088f607d4b00b0fd743b18c7d4f14c070543050588f01c0020d"
+        },
+        {
+          "id": "inyoni-02",
+          "topic": "Disturbing speech during combat and possession",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "ac76103837e3299f9e846dd911ad5d7d2952f89523f22b82ecee6a4b6007c7f9"
+        },
+        {
+          "id": "inyoni-03",
+          "topic": "Appreciating help from loved ones",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "f15612675fee00c95b9d5bd4146608dacc7d3c60a94219fec32ba774e24d1a83"
+        },
+        {
+          "id": "inyoni-04",
+          "topic": "Challenging the bird to evade an arrow",
+          "answer": "Be intimidating",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "22f0ccf257a68b4bcb332997389e37781916036560b51587837d25d4732df0c8"
+        },
+        {
+          "id": "inyoni-05",
+          "topic": "Feeling forgettable beside a beautiful bird",
+          "answer": "Tilt your head",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "741156b83074ca36290ec8a8c696321861c4f9066947b26c07c71690d3acc0c0"
+        },
+        {
+          "id": "inyoni-06",
+          "topic": "Her dependence on Ugo's weapon",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "205ca195021d8b0ec8b4456f22282b28872668deba1baa7a335c98cbe55e1399"
+        },
+        {
+          "id": "inyoni-07",
+          "topic": "Seeking protection from unwanted male attention",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "41955ffac03aa90d43bcf9f300af56f680eba0204bbc0d5739a79b96e08e5de1"
+        },
+        {
+          "id": "inyoni-08",
+          "topic": "Whether birds have regional speech",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "21a658118b9aaee7dd637d3d1309cb31c6dca1beb955a3917d647d867efdf43a"
+        },
+        {
+          "id": "inyoni-09",
+          "topic": "Avoiding the Mithras organization",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "899666380ee3af2bc2c3cc8d84006a482f1d1c4b09df433ab42504d153e1be4f"
+        }
+      ]
+    },
+    {
+      "id": "io",
+      "name": "Io",
+      "sourceSection": "io-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "io-01",
+          "topic": "Feeling ready for a nap",
+          "answer": "Sing softly",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "30b3110b6676d408c8ee87923e6f959bcd6b587543584e4aa2f7b812397ca88b"
+        },
+        {
+          "id": "io-02",
+          "topic": "Rehearsing a response to a dangerous spider",
+          "answer": "Be intimidating",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "86f348f946423f163557f7899e9af93d12f1c35a74c205ab9d9d6f0db6d4e4ec"
+        },
+        {
+          "id": "io-03",
+          "topic": "Staying near the bird's calming presence",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "2de1d612180b590f9e83f863fbca88184095b0f803599acc143adda1ea9aeacc"
+        },
+        {
+          "id": "io-04",
+          "topic": "Accepting wages for freely chosen service",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "806229c8adbd0da57f0e537d6224c6a6ebb01f7f265a05467c10236c647cd888"
+        },
+        {
+          "id": "io-05",
+          "topic": "Being more approachable and sociable",
+          "answer": "Tilt your head",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "94d198caae6bd81fa274d59960917838c4f0c3b6b3807cae01abb84c52fa8311"
+        },
+        {
+          "id": "io-06",
+          "topic": "The importance of having a leader",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "7a1da5c8ac784c53202b677d4f6a702902331440f432a67926349aea69c30228"
+        },
+        {
+          "id": "io-07",
+          "topic": "Amusement at the bird's appearance",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "35941287f6cebfd5b5e114e0e29d2ed9d3116d61f209202b49ab182e5d84a464"
+        },
+        {
+          "id": "io-08",
+          "topic": "Rocinan's graceful aging",
+          "answer": "Gaze intently",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "b2032f7a23d9912fc40fd6ea5f17e206bb6e79084551d36229361d97bfd1aa43"
+        },
+        {
+          "id": "io-09",
+          "topic": "Whether he discusses rulers too much",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "66eec337980c9d4c2ddc75c1518d4694d73e819003bb831cac80ee44b0c01a9b"
+        },
+        {
+          "id": "io-10",
+          "topic": "Courage in defending friends and vulnerable people",
+          "answer": "Sing boldly",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "fe2bfa3a372836cfe4c396c36f071f2a5e40158d062e711c404125902ee4aa0e"
+        }
+      ]
+    },
+    {
+      "id": "jasmine",
+      "name": "Jasmine",
+      "sourceSection": "jasmine-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "jasmine-01",
+          "topic": "Comparing travel experience",
+          "answer": "Flap your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "99e32c29231d7f6866ce7a6648f040b37ad5f68f7a92ab48b0cef3e3928f45ac"
+        },
+        {
+          "id": "jasmine-02",
+          "topic": "Exhaustion from continual fighting",
+          "answer": "Sing softly",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "18ce56eac7365548d896c5bd1dcd2d157dfdfea01ccceacc9eab7ccd4acd029a"
+        },
+        {
+          "id": "jasmine-03",
+          "topic": "Having something worth defending",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "cf32d897ebb66366a804f84c00cc079f4c8320ff69315bb2f887da912e206adf"
+        },
+        {
+          "id": "jasmine-04",
+          "topic": "Using deception when survival requires it",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "d26c68c242b3c313b0044092d18cd551c0bb4a41c50902180cb06cffc0463671"
+        },
+        {
+          "id": "jasmine-05",
+          "topic": "Flying through a downpour",
+          "answer": "Do a somersault",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "a886e7a2578272db08a8f5bafab362d05b3166e4c027c57c5fbbedc62d3c2be7"
+        },
+        {
+          "id": "jasmine-06",
+          "topic": "The pain of losing family unity",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "5dc6f9c31d5c243895e9a0b0c4bceb48b0d1943421fa278d0bfd7b6102ffd2c9"
+        },
+        {
+          "id": "jasmine-07",
+          "topic": "Choosing a house for many relatives",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "1671de327f603fe2e19def37dcc119266ab76a2384bed1dc1f5e24ed2cae0af6"
+        },
+        {
+          "id": "jasmine-08",
+          "topic": "Her deceased husband watching over her",
+          "answer": "Look at the sky",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "04bce21ea36205dc10ed726d764bd1783d77dc69bce58fc2734f627f41cae416"
+        },
+        {
+          "id": "jasmine-09",
+          "topic": "Financial means to safeguard what matters",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "8bc17e8416692fbc35bdc1e249b8d74d6848369774630ed809e9720ba7eb2988"
+        },
+        {
+          "id": "jasmine-10",
+          "topic": "Whether solitary travel feels lonely",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "4fc4b008b7c288886ec7a054a088b462ef9676950f4bc1c40ee264b4eaa9015f"
+        }
+      ]
+    },
+    {
+      "id": "jester",
+      "name": "Jester",
+      "sourceSection": "jester-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "jester-01",
+          "topic": "Using the bird to strengthen his clown disguise",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "e24fa0e02c3712161ab2187582c8f8c5fc22b75e3c9e4529eb6a90f71442e08f"
+        },
+        {
+          "id": "jester-02",
+          "topic": "Feeling better after unleashing himself",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "edc44fcb8fedc262291363cf880e196075f798f22a48ddba6045884f69087b68"
+        },
+        {
+          "id": "jester-03",
+          "topic": "His handmade performing outfit",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "ae3bd795ceb5cdca71bf99362fa6e25d92e7d954ca3d9829311cf2f647c66e99"
+        },
+        {
+          "id": "jester-04",
+          "topic": "Using cosmetics to conceal evidence",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "194d8c000b6775370c79cc00ef3da44d7a439eeee4c96659d68c24e1a6842c53"
+        },
+        {
+          "id": "jester-05",
+          "topic": "Asking the bird to guard his sleep",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "e3a8f39f2782aaa63794beee7d47d23c0c51ac34fb2a635d8040a9b95dfac42e"
+        },
+        {
+          "id": "jester-06",
+          "topic": "Violent anger toward arrogant people",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "8267a2fdaa70671948ebb5000e2024e2c062355c77c46a858070dd41d42108dd"
+        },
+        {
+          "id": "jester-07",
+          "topic": "Dyeing feathers with the bird's blood",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "4fcdb4f4da7b31a2ba34c9510f36d396449db4c33957208cc098cfce9dfcdf0a"
+        },
+        {
+          "id": "jester-08",
+          "topic": "Frustration with Bertrand's lack of humor",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "6b7f2bd04f9793d5186b21e04837c535a0e6d38645b54b26d88f2d56b2ea1698"
+        },
+        {
+          "id": "jester-09",
+          "topic": "Flying quickly to homicide locations",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "4e2b4957277de7ccc2b58bab9b7c3c33f4c427523db33ac790877916ec5d0d37"
+        },
+        {
+          "id": "jester-10",
+          "topic": "Profound fatigue and low spirits",
+          "answer": "Sing softly",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "9cedc3abeb38f90af23410fc9e3ad17fddd80fac6aeb681c275210be4c10a5e6"
+        }
+      ]
+    },
+    {
+      "id": "kiroc",
+      "name": "Kiroc",
+      "sourceSection": "kiroc-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "kiroc-01",
+          "topic": "Praying after visions of his victims",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "764e647ea5311e795f1639119eac0779365ded978d197e968c412b0c5117462a"
+        },
+        {
+          "id": "kiroc-02",
+          "topic": "Hoping to reunite his former sailors",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "09c025b3ec7cdb286ec76546bb6964bda1bc51cf969640002affe90edc0e0f0a"
+        },
+        {
+          "id": "kiroc-03",
+          "topic": "Recruiting the bird into his pirate crew",
+          "answer": "Nod timidly",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "f1d3ccdc4d74180eed48898c0af6279c6fc493e26a04084abb872e5a9fc5d164"
+        },
+        {
+          "id": "kiroc-04",
+          "topic": "Condemning the Mithras organization",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "cf47f8ff896b54b82bf0001f2b2378dcef407906be70baaf4d2391ca98a04f11"
+        },
+        {
+          "id": "kiroc-05",
+          "topic": "Dreaming of his lost vessel",
+          "answer": "Sing softly",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "0ef947b45942d73487ac985ec5ca517ec2f9d7548435d21d8604cae24a969b2f"
+        },
+        {
+          "id": "kiroc-06",
+          "topic": "Asking a fellow bird for escape assistance",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "cdc7a656c1bfa1d242c54ffbbe03a7fac4e12b4d925e47fb2e63f4ce4122e0ea"
+        },
+        {
+          "id": "kiroc-07",
+          "topic": "Fainting at the sight of apparitions",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "fb6789a4e2b72f69bebd85ff5fd6675f744fa0455ba7286102c8e0607452c52c"
+        },
+        {
+          "id": "kiroc-08",
+          "topic": "Promising harmless treasure expeditions",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "7eb3a60291c87be50de3f18d96aa1e9a5947a6f4f1b2293e5c660756ebe85638"
+        },
+        {
+          "id": "kiroc-09",
+          "topic": "Attacking Talimun on sight",
+          "answer": "Be intimidating",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "1fe9f69eb244a6e5c50b635f2257be250c2b7bfb754413a75fd37abcf84c92a4"
+        },
+        {
+          "id": "kiroc-10",
+          "topic": "Inheriting Drake's pirate legacy",
+          "answer": "Spread your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "fb559ef644c6519bc630ac7a1fc0d3047c52fbcabf02a04c6b4f5b1d219ccc29",
+          "sourceAnswer": "Spread your Wings"
+        }
+      ]
+    },
+    {
+      "id": "leda",
+      "name": "Leda",
+      "sourceSection": "leda-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "leda-01",
+          "topic": "Maintaining proper stance while dancing",
+          "answer": "Dance",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "92e536216b3c8d17b936a6f3fb86828db77d236584895d41c7ef11f26fe9c851"
+        },
+        {
+          "id": "leda-02",
+          "topic": "Doubting the usefulness of prayer",
+          "answer": "Gaze intently",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "8e9e9782e16689d93a6f278e3f5a043322b6772b76e4d5a251a7583a545fc4c2"
+        },
+        {
+          "id": "leda-03",
+          "topic": "Sacrificing anything for her objective",
+          "answer": "Tilt your head",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "1f506d353683d55cc4aeec6ad12d291fb64e6701baabef204da8ea19e6c14167"
+        },
+        {
+          "id": "leda-04",
+          "topic": "Playing music from her homeland",
+          "answer": "Gaze intently",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "7a5ea322c307533589e2836ba5cd2b207390226c3c16dd48882e7439be244f41"
+        },
+        {
+          "id": "leda-05",
+          "topic": "Singing with her vihuela accompaniment",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "3a7170823dafe366acf80ce5f278c8d195f7d35e4858f4c77713b5e202defd60"
+        },
+        {
+          "id": "leda-06",
+          "topic": "Defending her against serpents",
+          "answer": "Be intimidating",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "99a47532c92b864e47e2526066cc3e8cb8f93b0d338f1d8569e09025e6594ca2"
+        },
+        {
+          "id": "leda-07",
+          "topic": "Requesting music to ease insomnia",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "214f87b874cbb6e17bd2688d7a54ee164fc09a3a637093cbb244c03f9cc29502"
+        },
+        {
+          "id": "leda-08",
+          "topic": "Sharing the audience's applause",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "a661f9e236d5958b1ebba773895198b6a36349b87c628a5b75ff126c03394d0c"
+        },
+        {
+          "id": "leda-09",
+          "topic": "Offering food people dislike",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "f96edeff52053e599d797349651007f09b77159256c97e74e7642cfede8cf4ce"
+        },
+        {
+          "id": "leda-10",
+          "topic": "Greeting her during an equestrian outing",
+          "answer": "Spread your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "8f79c3517f8d0a8b3a3ca75ff00af2d25c4f4c5961554231f0b15bd58a5f5729"
+        }
+      ]
+    },
+    {
+      "id": "lilian",
+      "name": "Lilian",
+      "sourceSection": "lilian-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "lilian-01",
+          "topic": "Sharing the spoils of a hunt",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "8a37334fce26f7241cd1360714daa1989ea72d4d2c148c7c589b81a3c448055a",
+          "sourceAnswer": "Spread your wings."
+        },
+        {
+          "id": "lilian-02",
+          "topic": "Hoping her family can reunite",
+          "answer": "Gaze intently",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "214df9921869ccf41d1a21e76668f77330a75772df7d6922219357abc51c5b7d"
+        },
+        {
+          "id": "lilian-03",
+          "topic": "Relief from relentless work",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "8c65ec15ba406eeabce6402e4484d5489a0cc0e1fe4829cce3a1b19a4cf4f9b9"
+        },
+        {
+          "id": "lilian-04",
+          "topic": "Good wages despite an employer's distrust",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "bf57c71cb4a3b685d9e60346a2cabbda5af7f31d6a33e431b36554f2e1e581ba"
+        },
+        {
+          "id": "lilian-05",
+          "topic": "Risk of mistaking the bird for prey",
+          "answer": "Be intimidating",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "575a54aaecee2d962b49352943ae0108616d3dfb8aac5fcb4cf8071c04708b69"
+        },
+        {
+          "id": "lilian-06",
+          "topic": "Showing her sparkling jewelry",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "34b4df06ecb762bc9b97849680b9a5302cca165984056cbb757f9b3dfc76307b"
+        },
+        {
+          "id": "lilian-07",
+          "topic": "Prioritizing wealth over others' confidence",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "7dee1b4c8a5876d7148505dd5e82ce63d5406941e32d4c3ad8faf2fb87c6cae6"
+        },
+        {
+          "id": "lilian-08",
+          "topic": "Anticipating a future purchase with savings",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "f87be1f9cc0fccb871b4ea3b625562e6a79c880521d64fb1677c803ca819769e"
+        },
+        {
+          "id": "lilian-09",
+          "topic": "Repeatedly tallying her accumulated funds",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "4ec0c1128055e30116a81c79bd3a84358406f0a14bba455eab7370f2e2d7fbae"
+        }
+      ]
+    },
+    {
+      "id": "loretta",
+      "name": "Loretta",
+      "sourceSection": "loretta-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "loretta-01",
+          "topic": "Catching a large fish for the bird",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "29c74c05d8412aa47287d03858907b3a1f8acbfd9164af0129cd26c98e79405f"
+        },
+        {
+          "id": "loretta-02",
+          "topic": "Content despite not knowing her parents",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "979216374cc76001e1433e1d11ebbdb25a2d651928336f0d88aa3d4ad92a2772"
+        },
+        {
+          "id": "loretta-03",
+          "topic": "Wanting to hit a cruel temple acquaintance",
+          "answer": "Tilt your head",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "fa567e022b7a3aac657ff360e10a38d6f1a075138c3d244260bd72ff03b32abc"
+        },
+        {
+          "id": "loretta-04",
+          "topic": "Offering to reveal a theft-punishment scar",
+          "answer": "Avert your eyes",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "626ef1e64191fcb222a043bcb1d3f58617536f3aa349ae4d8ad1ad3e5c97d147"
+        },
+        {
+          "id": "loretta-05",
+          "topic": "Appreciating basic shelter and meals",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "1f3f69e9765cbc522b1a2295582d606a46935a057e5ff6af691182483f97fff0"
+        },
+        {
+          "id": "loretta-06",
+          "topic": "Asking about supernatural forest inhabitants",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "df36f5bd661e05c1589d5e4354df53061a6b8b9403bdaa23145631d1ca697edd"
+        },
+        {
+          "id": "loretta-07",
+          "topic": "Weapons practice versus academic lessons",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "616b666eb93980c8755705d43c9cf1b9d519789977fd293e6530834410e4ca96"
+        },
+        {
+          "id": "loretta-08",
+          "topic": "Sharing her preferred desserts",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "576663e0e3f87073a9bdb2a1fa959c9cc1a910a38245c968ba92380057517eb4"
+        },
+        {
+          "id": "loretta-09",
+          "topic": "Growing strong enough to reassure Ozin",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "c707384d99f74c7da73681df5f83ca1976610f15301ab25bdc6f5d44e171dfb4"
+        },
+        {
+          "id": "loretta-10",
+          "topic": "Concern for friends still living on the street",
+          "answer": "Sing softly",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "aa68f7505c80e29158030defd6552f89f980c5f8fcb5bd85738025e362f17201"
+        }
+      ]
+    },
+    {
+      "id": "ludia",
+      "name": "Ludia",
+      "sourceSection": "ludia-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "ludia-01",
+          "topic": "Reading aloud from Dante's writing",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "d9876791907bb81bb652b2a79fb19d9017f8900c75ea4c6e61fcb30e1152fa22"
+        },
+        {
+          "id": "ludia-02",
+          "topic": "Her father's sword praise but axe disappointment",
+          "answer": "Tilt your head",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "8af86ca04bf737c904304dd67723651ba00c0d3f6e3cbbb35640a48300b0c323"
+        },
+        {
+          "id": "ludia-03",
+          "topic": "Needing rest from company work",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "accfe8c5b2b6b443490cf375c58d09ed3f2f4649fcc34c6f5dc410cdf182d282"
+        },
+        {
+          "id": "ludia-04",
+          "topic": "Writing a story starring the bird",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "efb2e3f2f37cd031f89f0e2b457a8280ec3b4f1bf9076f80a28e1b5733efa28f"
+        },
+        {
+          "id": "ludia-05",
+          "topic": "Envying a couple's passionate relationship",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "1ee4b28de1077177180a1337d55d3428f34ad25b5d9e1fa436c12da338fb49a1"
+        },
+        {
+          "id": "ludia-06",
+          "topic": "Wishing to travel everywhere by flight",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "9c65e557d2752a55f55807a655d041543c2973157b99a95203abe5feb7806365"
+        },
+        {
+          "id": "ludia-07",
+          "topic": "Disgust at sticky or greasy messes",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "cc6fbcc922ca523dfffa241acb193b8a65d414432c3eb0fa6e38e02ce287f52c"
+        },
+        {
+          "id": "ludia-08",
+          "topic": "Inviting the bird on a heroic adventure",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "ea0fd49658ef6a8e628c83cc613ca760bbb8911164e752f238fa125804fe415b"
+        },
+        {
+          "id": "ludia-09",
+          "topic": "Discovering her crush is already attached",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "4a478af6c351aeef17ae8fb4b326fcb4ebc5375a6008dbc329d58572f53a07a4"
+        },
+        {
+          "id": "ludia-10",
+          "topic": "Suspecting a spirit beneath the bird's form",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "f1464edb370d4565843c36d7ba0b8119b622711a34441ef870a60ed228bbec13"
+        }
+      ]
+    },
+    {
+      "id": "lysander",
+      "name": "Lysander",
+      "sourceSection": "lysander-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "lysander-01",
+          "topic": "Worrying that earnestness sounds like nagging",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "92293781b1d7b80640b7c307a810efb36bba3c10c1d7bf0bf736cb12c1f0b84f"
+        },
+        {
+          "id": "lysander-02",
+          "topic": "Frustration with his lack of experience",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "65a17a47de5f0e5af5ac488a1aad3b9b4f601f61722832a20e6dc0213e53e505"
+        },
+        {
+          "id": "lysander-03",
+          "topic": "Exhaustion from rejecting romantic advances",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "170baf30ff96bc2e3bd6f708a3f672ab0837adae6b9d0e01730298bd550de43d"
+        },
+        {
+          "id": "lysander-04",
+          "topic": "Striving to equal veterans and surpass his father",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "0be804e97dba75e6c898d58f2a28d82d7bcac4a596a71598073d3ad00ad03ce8"
+        },
+        {
+          "id": "lysander-05",
+          "topic": "Seeking reassurance about watching the heavens",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "2b1218ce10223dec6f07accb8b83fd4f65ef8c859cecb2f23f308a37b3188b74"
+        },
+        {
+          "id": "lysander-06",
+          "topic": "A difficult visit involving his stepfather",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "6d35a9734e15ed48fff967edacbf22f9f6314bba23ae9859fa8794f8dce9a359"
+        },
+        {
+          "id": "lysander-07",
+          "topic": "Wanting to cage his comforting companion",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "36865b53d5c5ea0f8321599d7a09fca304e12bfa61d7f15773b02f488dd42e50"
+        },
+        {
+          "id": "lysander-08",
+          "topic": "The bird evoking the feeling of open skies",
+          "answer": "Flap your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "8d8aa0ab1a4898de01e645b913e78f3e33d1678a9640f3e9b06eed51a0fef43c"
+        },
+        {
+          "id": "lysander-09",
+          "topic": "Wishing to soar together among clouds",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "79dc829587ea401dedbfd8d7ff3fa55bc81bb51b49cb419a62942fdbfe0cbc86"
+        },
+        {
+          "id": "lysander-10",
+          "topic": "Refusing drinks because of poor alcohol tolerance",
+          "answer": "Nod",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "4a5cd6296dcad9e30b0284186e220277f1eee917c1684a247d6722b6a305ac40"
+        }
+      ]
+    },
+    {
+      "id": "majide",
+      "name": "Majide",
+      "sourceSection": "majide-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "majide-01",
+          "topic": "Dismissing weaker challengers",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "d2391d76343895d1116fd137c5780312c4cf8883150e7a2d5afc014db2ec6c5c"
+        },
+        {
+          "id": "majide-02",
+          "topic": "Boasting that no opponent can defeat him",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "45bbb4c37080de1e83d96b1680b769656b884dceb07274a3510bd2326beae3bc"
+        },
+        {
+          "id": "majide-03",
+          "topic": "Demonstrating his power by breaking stone",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "1469a3918071b36d637e6794f3a7b0f9d9b3538dcfbb9a42d2866b2f679958a0"
+        },
+        {
+          "id": "majide-04",
+          "topic": "Sleeping after assaulting a noisy drunk",
+          "answer": "Sing softly",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "98bf5521907da7bf571b860d0382c347ab5acdde1ef547a03b151f4779a7d17f"
+        },
+        {
+          "id": "majide-05",
+          "topic": "Releasing irritation through violence",
+          "answer": "Sing with vigor",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "00b959ee92e0d04561945f19195ae9e0f934ebcf48bdd49735ff41eb82cad481"
+        },
+        {
+          "id": "majide-06",
+          "topic": "His former brigade winning the competition",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "16861437c7b6f0b237262f5b90e3da4cf2347f80bf87522625dc62989ca1e9f0"
+        },
+        {
+          "id": "majide-07",
+          "topic": "Threatening to prove his power to the bird",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "8d7e0fe82ef3f5f3bfe36ed3964fa7745074df2cc6e37d6584c393b376ca5a10"
+        },
+        {
+          "id": "majide-08",
+          "topic": "Anger at abandonment by Mithras",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "6e9a231f20fcd99e115e651d03051c785371c758455cbaadada2dbd0fffc3670"
+        },
+        {
+          "id": "majide-09",
+          "topic": "Requesting an entertaining stunt",
+          "answer": "Do a somersault",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "fe7dc06ad68302154a2c758c2201631a7bd067b2258a93ed920bdae9bf3124a6"
+        },
+        {
+          "id": "majide-10",
+          "topic": "Inviting visits during future imprisonment",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "d3e9d0f5d5289a6e675caf885d6e9d8cb06c21fc9acd6f8017e65e399e4b2e21"
+        }
+      ]
+    },
+    {
+      "id": "mikaela",
+      "name": "Mikaela",
+      "sourceSection": "mikaela-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "mikaela-01",
+          "topic": "A daughter avoiding her mother's marital mistakes",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "3cd9a110ccc9c4b233bc4336f5b3cbc0c89889728a72ace48d16e70b0ebc708b"
+        },
+        {
+          "id": "mikaela-02",
+          "topic": "Enjoying music despite poor vocal ability",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "70e15dafbe90f6d1a8e00bdc17bef5caf39efdaec32fa1f10245e83d84a6168d"
+        },
+        {
+          "id": "mikaela-03",
+          "topic": "Where to strike a troublesome tavern patron",
+          "answer": "Tilt your head",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "8fdafc4f458a53b109d5d190ad6de9668b9662585aa8b7a9224bea70326f7560"
+        },
+        {
+          "id": "mikaela-04",
+          "topic": "Her sister's exceptional cooking lessons",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "c63498c1be7234e3e12f4311619b47775b0fd1dda2ce6d3e56738e481c8def83"
+        },
+        {
+          "id": "mikaela-05",
+          "topic": "Squeezing the bird to test its strength",
+          "answer": "Be intimidating",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "4ab9b8dcab55598ca86da893354d553ea3206ac582d417d7fd32dca08b6646ab"
+        },
+        {
+          "id": "mikaela-06",
+          "topic": "Debt making clear thought difficult",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "3910e72e8eed1e18192dd6792cdae236f6419981f71b7596b188ac90649f1a18"
+        },
+        {
+          "id": "mikaela-07",
+          "topic": "Financial worries causing hardship",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "04740db905e9251ce92383c7780ad486f3bf08bdfcf9783f7b567265a32b0ea0"
+        },
+        {
+          "id": "mikaela-08",
+          "topic": "Escaping immediately from suspicious people",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "9ff8ad046ce9e8c5007532b38b62f5aac0c5096bcd33af7cbfcdf06d57cef027"
+        },
+        {
+          "id": "mikaela-09",
+          "topic": "Strength to expel an irresponsible spouse",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "cbd3180cee04f508618d5ec3ada8fe1fd55a5198f71fb1ccb2176a9593511b04"
+        },
+        {
+          "id": "mikaela-10",
+          "topic": "Protecting someone precious",
+          "answer": "Spread your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "ee114e92796fa46b6bc86ccacf49647761a81160f8d34368288b7d94c3fdc1ab"
+        }
+      ]
+    },
+    {
+      "id": "mu",
+      "name": "Mu",
+      "sourceSection": "mu-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "mu-01",
+          "topic": "Admiration for Sirocco despite his flirting",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "2f5feba75bba7acbc266f7a436e8dffe1497fc6cc193a829e7b5b5985031721a"
+        },
+        {
+          "id": "mu-02",
+          "topic": "Concern for his missing father",
+          "answer": "Tilt your head",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "e3203e45d52004d6dcdd9a0dd5256cb73cc14d0b25707377a2d13b1a0426e929"
+        },
+        {
+          "id": "mu-03",
+          "topic": "Repeating his mother's combat drills",
+          "answer": "Be intimidating",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "cbedfb9d909e15bf621b44081ec0bb63f2cbfe021fdf63dcd124f9ad3433fd86"
+        },
+        {
+          "id": "mu-04",
+          "topic": "Wanting to be treated as grown up",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "85e9881a3d03dceb8923bc604aa73beaccd6c9480ada2707922e25adfd1629e1"
+        },
+        {
+          "id": "mu-05",
+          "topic": "Comfort from the bird's gentle expression",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "cebfaa6e3eb62e5a5388eae31a1037eb2d5c43ed9df1cb5a330c02b44a4f9c54"
+        },
+        {
+          "id": "mu-06",
+          "topic": "Comparing birdsong with his mother's poor singing",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "a6a02605242ca2adc3054c25f4a1140a50e547b14583e3e9a280d3fbdd684170"
+        },
+        {
+          "id": "mu-07",
+          "topic": "Offering treatment using medicinal plants",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "4a6e431c34672cfffb65ecf03e2d6fea61fde52d78c15846278516b3902706db"
+        },
+        {
+          "id": "mu-08",
+          "topic": "Offering his unpopular cooking",
+          "answer": "Nod timidly",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "2deb476c492b51ca607d84ca754ed6eb5df4e724ccc3b05a95662377bb583837"
+        },
+        {
+          "id": "mu-09",
+          "topic": "Getting stronger to help those in need",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "3808598d85196f1d59d90f356787ee418206c0627a32b794912c3311d3446ead"
+        },
+        {
+          "id": "mu-10",
+          "topic": "Inheriting his mother's forceful personality",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "e8cb2a1b46d68857f643147076b7eac5660b0147709d62639c9f1df0aae11f97"
+        }
+      ]
+    },
+    {
+      "id": "nezha",
+      "name": "Nezha",
+      "sourceSection": "nezha-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "nezha-01",
+          "topic": "The bird's eyes resembling Anatolia's",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "5b4078f1ab70433a9f1cd020cc59b9a156eba06afa970858bef40ed02dd15a0a"
+        },
+        {
+          "id": "nezha-02",
+          "topic": "Eating insects and considering bird meat",
+          "answer": "Be intimidating",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "da96f9e1b18934a47dc41bab993605d055310e5e6aba47ef4271ca63e83835b2"
+        },
+        {
+          "id": "nezha-03",
+          "topic": "Helping anyone who needs assistance",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "c664c962bbb46e83367ecc036951408f17c2e127d087f40f8d6af27790a612cb"
+        },
+        {
+          "id": "nezha-04",
+          "topic": "Repaying the village's kindness",
+          "answer": "Gaze intently",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "862bb1957e005f200892ecb3facac5dfa9388a15557560e0311c1acb83718555"
+        },
+        {
+          "id": "nezha-05",
+          "topic": "Benefits of martial training",
+          "answer": "Do a somersault",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "984dbec8e5847f3a94f0a4978417df1f938f43b822dfa56d3b06169fbe2ab0a0"
+        },
+        {
+          "id": "nezha-06",
+          "topic": "Whether he speaks too loudly",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "3cc84536a7641bc85525a709854ff4049b99bab4f28ed32dfce3a24b72e233e1"
+        },
+        {
+          "id": "nezha-07",
+          "topic": "Drowsiness after overtraining",
+          "answer": "Sing softly",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "61bbd2a679e3cb89c3b189d509bf0bd82658d8d958ab43965b9b68707a309315"
+        },
+        {
+          "id": "nezha-08",
+          "topic": "Resenting childish treatment because of his height",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "d20400a4e2763251deac80cf1c7d8ba75485d423bc3b0a82204468a918080a52"
+        }
+      ]
+    },
+    {
+      "id": "ninae",
+      "name": "Ninae",
+      "sourceSection": "ninae-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "ninae-01",
+          "topic": "Watching clouds to soothe emotional pain",
+          "answer": "Look at the sky",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "b30cda429654f0702d8893e37fe8c284a29438a02a4cbaa34bb8e5a807d493f5"
+        },
+        {
+          "id": "ninae-02",
+          "topic": "Others avoiding her gaze",
+          "answer": "Gaze intently",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "4fe36aeddb2f9da6ec605ecaedd13477bb430c6eb4c84b6b77e71bb49990c6f5"
+        },
+        {
+          "id": "ninae-03",
+          "topic": "Enjoying quiet isolation",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "8ea452c96f9074454edd51e73d2e3324c14af32a9ca9fdb90ff6f1d713efa459"
+        },
+        {
+          "id": "ninae-04",
+          "topic": "Spirits wanting to meet the bird",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "f61ce7cb90c50d7c69f9f63ba7ecbeafb73c9de82af7e1c2c3814dbaec37b159"
+        },
+        {
+          "id": "ninae-05",
+          "topic": "Speaking with an unseen companion",
+          "answer": "Tilt your head",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "15ff377acdb69ea0f714521cc72933994539afa1ced4bf48dfc6a6ed56956846"
+        },
+        {
+          "id": "ninae-06",
+          "topic": "Requesting help against unwanted bugs",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "028d10912f75dbb6d7d5e5470f822dddc95ecca6e55b1e06b0db02344a2b10c7"
+        },
+        {
+          "id": "ninae-07",
+          "topic": "Her unusual speech causing misunderstanding",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "2c5984b2d3751ac31355046846be636812c269acd75876313fcd149edda8b920"
+        },
+        {
+          "id": "ninae-08",
+          "topic": "Feeling pursued by mortality",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "d8c5e9ee0eecf7855a1d487759d7c4797919bf23396624983a2fbd8fbe30df14"
+        },
+        {
+          "id": "ninae-09",
+          "topic": "Praying for unsettled souls",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "73843cbcb9715053f63e15b0fd43d4cf9ad8da230ecf7dfe0615e1c1fb491495"
+        }
+      ]
+    },
+    {
+      "id": "nuzzuo",
+      "name": "Nuzzuo",
+      "sourceSection": "nuzzuo-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "nuzzuo-01",
+          "topic": "Seeking directions in unfamiliar Dagsion",
+          "answer": "Flap your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "f7652b9c6cda617c4b866d6cea9903fa40b9c7de4c19dbd0a2586254291ccd3a"
+        },
+        {
+          "id": "nuzzuo-02",
+          "topic": "Encouraging the bird to eat heartily",
+          "answer": "Flap your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "977840e42744099239d912680d7e5e5f02300f6ad26a53dd46ed0919e244006a"
+        },
+        {
+          "id": "nuzzuo-03",
+          "topic": "Har Hali kinship with the natural world",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "003dfe7ee687c37a26e8fc5a0799a59d8a9cf317e35e1e303cb4b8dda1e31304"
+        },
+        {
+          "id": "nuzzuo-04",
+          "topic": "Offering to smooth untidy plumage",
+          "answer": "Sit still",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "ff4170088f583cfefe6f1b76e170754e979739b3ef72aa113c7c9fafeb046197"
+        },
+        {
+          "id": "nuzzuo-05",
+          "topic": "Preserving freedom from captivity",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "fad555755ed7f9d5994bc57e534bf559c367b8e0f4932cf9a1cfb3ae10eda7ce"
+        },
+        {
+          "id": "nuzzuo-06",
+          "topic": "Doubting his worth as a tribal leader",
+          "answer": "Sing softly",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "41dfbddd6112dbf43b7c0e4b2efe3a740ddcf985d75880bd4b11ba63eb25466a"
+        },
+        {
+          "id": "nuzzuo-07",
+          "topic": "Warning about poisoned hunting arrows",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "7d3ee91b58c5b01698bdf3314ea3b2667a81c2c9c5a5308fa4a3db747c79e22f"
+        },
+        {
+          "id": "nuzzuo-08",
+          "topic": "Animal behavior predicting a battle's outcome",
+          "answer": "Be intimidating",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "af70fd4856c3046407f890decc4da190a0e40c674326c05f508a5863d29d1682"
+        },
+        {
+          "id": "nuzzuo-09",
+          "topic": "Oppression by rulers relying on force",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "11f44fce8465c70eac5504a45040e42c5b5c2f32dcba0925da20dfdcfe4f3677"
+        },
+        {
+          "id": "nuzzuo-10",
+          "topic": "Rejecting proud isolation from others",
+          "answer": "Nod",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "1629fee9717e870528c4bbd79b54529e13d313f4bcc93fac3fdbfbd7974be186"
+        }
+      ]
+    },
+    {
+      "id": "nydine",
+      "name": "Nydine",
+      "sourceSection": "nydine-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "nydine-01",
+          "topic": "Sellswords being discerning about contracts",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "de16d50fd6c07db3da79e59e1a8e860dd69d7277f309fc758a716646cb9ec5c6"
+        },
+        {
+          "id": "nydine-02",
+          "topic": "Learning something from the bird's movements",
+          "answer": "Do a somersault",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "dd3bff480ce233e1d18cb9b9d6e200a6da1504cc6cae7cf6d046a694a9f1b48c"
+        },
+        {
+          "id": "nydine-03",
+          "topic": "Her effort to become literate",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "c77f98d996c427cb6c1564b05721ecd993ea0a75b327f73e17e8a4e6c75f1e37"
+        },
+        {
+          "id": "nydine-04",
+          "topic": "Breaking her homeland's ban on literacy",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "137dc1d193907ffab930475c9214d5f8763eb0e99d7c7d274eed52708af924b1"
+        },
+        {
+          "id": "nydine-05",
+          "topic": "Reassuring the bird she avoids eating meat",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "80d26067663ac4b4f4b12b7051491268f85eda810c9321b8bff0354c446bdfba"
+        },
+        {
+          "id": "nydine-06",
+          "topic": "Wanting others she can depend upon",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "628f6387da1a1ee0771b47f09a615a42a8454144b09828b13b9fbe47e3a53ffa"
+        },
+        {
+          "id": "nydine-07",
+          "topic": "Her unexpected fondness for desserts",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "982afb01ca407d0e8cbabbf31e829609a18acaa281d6ab9b901470f806af2f3c"
+        },
+        {
+          "id": "nydine-08",
+          "topic": "Gratitude for her admirers in Saramis",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "bdbcfe27cb45b9ac00e45e243fc992615cac2e98bf8f9aeefbeae083528e3066"
+        }
+      ]
+    },
+    {
+      "id": "olympia",
+      "name": "Olympia",
+      "sourceSection": "olympia-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "olympia-01",
+          "topic": "Fear at the prospect of parenthood",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "4dc018fa4256b45628d93bd77c918f114339bc1d195deb071a35d0dc2a623760"
+        },
+        {
+          "id": "olympia-02",
+          "topic": "Seeking encouragement to surpass Leilidahna",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "ef4365ca0b6a1c03b5b17cd337d47466836618750203a9bfda107423463807f4"
+        },
+        {
+          "id": "olympia-03",
+          "topic": "Praising Kalla's beauty",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "280bac9b30516dc2acd78560dd97b6ade66f3fd05ecc0e51a66141cd27630a93"
+        },
+        {
+          "id": "olympia-04",
+          "topic": "Offering a poem dedicated to the bird",
+          "answer": "Do a somersault",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "f0d80c6d5c605bccb79b93b133f334ad54fcd27fc57caa683a1a65a0e7ce35b5"
+        },
+        {
+          "id": "olympia-05",
+          "topic": "Sensing feelings through another person's music",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "21c80e88377b1cf955303f60d1a22d55eb9fe93469656e1a894371ae2d1eaa21"
+        },
+        {
+          "id": "olympia-06",
+          "topic": "Keeping up daily artistic practice",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "e8cd88ade36091ec9c92d73422dbe3e2d57d8460e28c9281ae776c4565d05709"
+        },
+        {
+          "id": "olympia-07",
+          "topic": "Offering a performance under her Caelus title",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "0aaddc32e6d4793f597a1b3e92045c89d43f3d43a417f8b589ada0479d885bd7"
+        },
+        {
+          "id": "olympia-08",
+          "topic": "Continuing ambitions despite advancing age",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "1d3d88b4cfad0cc91c7a74049e1a4da87174e85072bb39ea7853654bc7518166"
+        },
+        {
+          "id": "olympia-09",
+          "topic": "Comparing their confidence as vocalists",
+          "answer": "Sing softly",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "46d0b61636e8f2adc9f20c0d1e353e01090c5980fcdedd98cf1eebb9274cc3d3"
+        },
+        {
+          "id": "olympia-10",
+          "topic": "Disappointment with another failed craft project",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "aed65390d4b03df20e2839dd2adf9308ceb69169360461ccceccebc760dc1b14"
+        }
+      ]
+    },
+    {
+      "id": "peppe",
+      "name": "Peppe",
+      "sourceSection": "peppe-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "peppe-01",
+          "topic": "Their growing popularity as royalty",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "9272cdbfa8989cfab592f44a85550f3187dc79cc26111cc68f6cb68e1b81c332"
+        },
+        {
+          "id": "peppe-02",
+          "topic": "Requesting a trick to relieve boredom",
+          "answer": "Do a somersault",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "e521e4181053f7ee1c623a0e30fcc6499a1b1d321953681929107457c14de18f"
+        },
+        {
+          "id": "peppe-03",
+          "topic": "Sharing regional fish and shellfish dishes",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "909f2154a083d288a04245b1543d023d594fcba055d17a9e8578c06d41f4e600"
+        },
+        {
+          "id": "peppe-04",
+          "topic": "Brigid's appreciation for nature",
+          "answer": "Spread your wings",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "664e48c19bd81a4cf34b1f229db84247449dbdce36dc38c332aaa5d506356a33"
+        },
+        {
+          "id": "peppe-05",
+          "topic": "Offering royal protection from trouble",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "e9e115b91585b1926508d124293ee07eca40eb4c680bafcd7acc27c06ee5f453"
+        },
+        {
+          "id": "peppe-06",
+          "topic": "Inviting the bird to their homeland",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "df1751df92bd7a6b4e2330fa7972f6c88fdb06ea9a8bc8d76019d48807e065ea"
+        },
+        {
+          "id": "peppe-07",
+          "topic": "Looking for fellow citizens of Brigid",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "8f4d50245831184ae9bfce2ab4bb6f4927ce5fbee638865216f7c4df51c37cf9"
+        },
+        {
+          "id": "peppe-08",
+          "topic": "Recognizing something of their native spirits",
+          "answer": "Gaze intently",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "b1acd4fa860566e309b045dd8dab739174013d320c0bcce8393bf6f1b906590e"
+        },
+        {
+          "id": "peppe-09",
+          "topic": "Learning a culture through its inhabitants",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "2e569db5706dff59f0f5c233f404d34519d29d07e54b6057aa98c91b2289decc"
+        }
+      ]
+    },
+    {
+      "id": "peter",
+      "name": "Peter",
+      "sourceSection": "peter-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "peter-01",
+          "topic": "Enjoying woodland animal calls",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "8eb9247df8eb59f5b05e49d7d47368648b0530f2aefa68eb0394a92677d59f69"
+        },
+        {
+          "id": "peter-02",
+          "topic": "Overcoming fear that prevents movement",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "7497fe3a79773e4dd4ab588f25b6e75936827fab339cf39061fc2b9afbe86263"
+        },
+        {
+          "id": "peter-03",
+          "topic": "A striking bird in his dream",
+          "answer": "Tilt your head",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "a1cf662833f65b0d270c470abd87e37f779d78907e1b20263994e9ea332ce5fc"
+        },
+        {
+          "id": "peter-04",
+          "topic": "Gaining courage from the bird's presence",
+          "answer": "Gaze intently",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "7c0743da84553f2ff986d613be6c57758df61f046232593d3b8fee3998aef131"
+        },
+        {
+          "id": "peter-05",
+          "topic": "Trying his best despite frightening battles",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "df9f25f59cfcf44c45f95d1133a6ce0e25d09ce63eb862152415601ca4e1fc62"
+        },
+        {
+          "id": "peter-06",
+          "topic": "Collecting ginji fruit together",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "6efdfc6ee08cf6ec138287c08c548ee7b58fab6fd1517e42cea00c7abb169fe7"
+        },
+        {
+          "id": "peter-07",
+          "topic": "Admiring changing cloud formations",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "32b8b3e82a08eefdb792ca72e6610a0614406d3460f01e0df278180854722688"
+        },
+        {
+          "id": "peter-08",
+          "topic": "Requesting a wake-up if he dozes off",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "c13dc477fa3cfbf5595d7034046a940fe1d920858636e4197a4531bbed20e189"
+        },
+        {
+          "id": "peter-09",
+          "topic": "Appreciating the bird's quiet behavior",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "99a7c2e25649d6d6aecbef30a7b928c45aa2f7a238b7c85ec97ecba77a177d37"
+        },
+        {
+          "id": "peter-10",
+          "topic": "Uncertainty about his affection for Tialla",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "f48be241d32b4ae8248ee0552f05f9adb0b14c02e7b05a73cbf8ee086f9e7b24"
+        }
+      ]
+    },
+    {
+      "id": "seteth",
+      "name": "Seteth",
+      "sourceSection": "seteth-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "seteth-01",
+          "topic": "Asking about avian stories for his fables",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "0df9fc24f6cc5fc5c0518b7c012ae898a69266f58cf4294a7ffead068cd6a82d"
+        },
+        {
+          "id": "seteth-02",
+          "topic": "Inviting the bird on a fishing outing",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "28d54a3bbd71ea775012499d5370a198c55475a91132295e59686ab0c0756da3"
+        },
+        {
+          "id": "seteth-03",
+          "topic": "Whether helping others is intrusive",
+          "answer": "Flap your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "54d2e4854c50d57a6c267a6c4a4ec78a21d83c9096a9393a1cfbbccc60d106fe"
+        },
+        {
+          "id": "seteth-04",
+          "topic": "Trying to avoid an unusual appearance",
+          "answer": "Gaze intently",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "140fa2c6a63219d4604c172b1fa44bb45f243b32c9fcb20d988c9b0afc2cdf3e"
+        },
+        {
+          "id": "seteth-05",
+          "topic": "Whether his expression seems severe",
+          "answer": null,
+          "sourceRow": 5,
+          "sourceQuestionSha256": "e74ca6aac06b1e454782f95c8e48d41f877a1296f511661d510185f5d8d53eb9",
+          "note": "The source article leaves this answer blank."
+        },
+        {
+          "id": "seteth-06",
+          "topic": "Waiting beside his sleeping daughter",
+          "answer": "Sing softly",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "49a1ce198a3c966f30c4ff78f93321ed72beaeefeb9662548ef11cd9aac602c7"
+        },
+        {
+          "id": "seteth-07",
+          "topic": "Resting together despite his many worries",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "863686d6f80fd94ac73787b17793a19656f75ce8afcef62e5fc1c754be51e300"
+        },
+        {
+          "id": "seteth-08",
+          "topic": "Exploring the wonders of Dagda together",
+          "answer": "Flap your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "1780f84cec408e1d50561db012bb6b28117a8cd4f02dea31685e2336b8ed07af"
+        },
+        {
+          "id": "seteth-09",
+          "topic": "White plumage recalling someone dear",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "7c7864538b3819ee3cdb0cd4b1c75f050b52147a75b6e258d47eecc5e5626841"
+        }
+      ]
+    },
+    {
+      "id": "sha-lan",
+      "name": "Sha Lan",
+      "sourceSection": "sha-lan-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "sha-lan-01",
+          "topic": "The bird's confidence around larger humans",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "b4cec67c0dbc3dbae46bc37f6f1dbf91baadd94ed7f6d99f191a8a473d0b045f"
+        },
+        {
+          "id": "sha-lan-02",
+          "topic": "Balancing a mission with family safety",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "bd2904dfcc94d7d32b3b24dea3f70c158df3513c3cc65cfa55a588a94f1fec94"
+        },
+        {
+          "id": "sha-lan-03",
+          "topic": "Trying some of the bird's food",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "59c82ae7614f3af11fd3cf1d96abf35ac5f7fc9e9e13bcce0ce3613a0fa48d63"
+        },
+        {
+          "id": "sha-lan-04",
+          "topic": "Lingering affection for an older first love",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "5733fcf2eec79398b13434a1bc9ced2053ab5ac7c89b6fd967a96bf55243ae32"
+        },
+        {
+          "id": "sha-lan-05",
+          "topic": "Fear mixed with excitement while traveling",
+          "answer": "Sing softly",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "6c214b532da7fd37c379d1d94720365b170b3265828ea712f18d913292898d0d"
+        },
+        {
+          "id": "sha-lan-06",
+          "topic": "Comparing the charm of their eyes",
+          "answer": "Gaze intently",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "b3a625efc71026504776f5571bc7677d2568575157812f3ecfccd95f7914c719"
+        },
+        {
+          "id": "sha-lan-07",
+          "topic": "Offering help with feather grooming",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "1a7033aa0f165d268adcebdca45d963fc1ab122f31f54ae35d681215351099ed"
+        },
+        {
+          "id": "sha-lan-08",
+          "topic": "Imagining parenthood if she had stayed home",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "94df0c1aab261ba9afde320de7ebe73c3574054140ef0b50faea428fc3ff80d8"
+        },
+        {
+          "id": "sha-lan-09",
+          "topic": "Wanting to understand stories from a flying traveler",
+          "answer": "Flap your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "14e38ade01a8e82ff0ed89c6c2a2454c71d51d17490d9b1f0f54517ce31ccf5d"
+        },
+        {
+          "id": "sha-lan-10",
+          "topic": "Caution around temple representatives",
+          "answer": "Nod",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "3af4670f3205decd9845fdc43b7df00455c1827499ff058271e70fd0de6f362c"
+        }
+      ]
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "sourceSection": "simon-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "simon-01",
+          "topic": "Observing hired fighters from above",
+          "answer": "Flap your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "2e5486a22abc90f86c6967e0d65aba6aca745cf6c3ed80d70a6b499397ee53b5"
+        },
+        {
+          "id": "simon-02",
+          "topic": "Disliking intrusive questions",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "c7802f9e60b64088fb3b47ad11da80c9f01046f79f7cab7ea47f86c389ca39de"
+        },
+        {
+          "id": "simon-03",
+          "topic": "Ancestry not determining devotion to Yu Phas",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "f553b045c0d59cb5071ae3f7d18ef265dfdc771718165041d4fd27536d6b9b01"
+        },
+        {
+          "id": "simon-04",
+          "topic": "Wishing to fly between battles",
+          "answer": "Sing with vigor",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "8a457435436b944897465726e26637153c83dbfbdddd186f83a9ccf1d139e4e8"
+        },
+        {
+          "id": "simon-05",
+          "topic": "Questioning the bird's reckless confidence",
+          "answer": "Be intimidating",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "6aac72038ab97bdd7cbe608251e8508ee6aa52dfd3eb2bcbae96612bbd2a4c48"
+        },
+        {
+          "id": "simon-06",
+          "topic": "Using flight to ambush opponents",
+          "answer": "Do a somersault",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "be7a8244fe9125b7294ae406aa8419452a3571de8aa3124fa3cd0b8018cc765a"
+        },
+        {
+          "id": "simon-07",
+          "topic": "Lingering tension away from combat",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "9f5b7207a4601ff008241698863bcd71f26b2420a106eef1d13e0f9015bca75a"
+        },
+        {
+          "id": "simon-08",
+          "topic": "Carving a likeness of the bird in wood",
+          "answer": "Sit still",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "a4c418250719479477c954b32309424a2f56ea4ae9cdef5cdaeead875cbdc0f8"
+        },
+        {
+          "id": "simon-09",
+          "topic": "Admiring the bird's robust condition",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "6c798d0180e025ed459594fc55d6bf4fb97a21441f2c5834b69364ac3d73f7b2"
+        },
+        {
+          "id": "simon-10",
+          "topic": "Mourning friendly soldiers lost suddenly",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "05d98a6f356f07d861f99567f43de3debb37eb4b55cc67557b4628f8793ac8c9"
+        }
+      ]
+    },
+    {
+      "id": "sirocco",
+      "name": "Sirocco",
+      "sourceSection": "sirocco-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "sirocco-01",
+          "topic": "Finding a new way to court temple women",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "2cc8ab85ec871c83a0f737f77638ce63ad3597a1ab71c06bda6ea88ddd4928c7",
+          "sourceAnswer": "Sing a beautiful tune."
+        },
+        {
+          "id": "sirocco-02",
+          "topic": "Believing other men envy his appearance",
+          "answer": "Gaze intently",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "cd9b59891fcbe2c25bce4539e2ecd0ea83658492cf284c5217261112cbf784e1"
+        },
+        {
+          "id": "sirocco-03",
+          "topic": "Recognizing the bird among many others",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "138ccd5461942f4e012322bb0ba7cff8cb022541208f4764e8e2d8943a42117b"
+        },
+        {
+          "id": "sirocco-04",
+          "topic": "Performing music together",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "8f5992e62778d9b6960498ec90dcb38b4a6124380ad385e4f0090c51af71ee00",
+          "sourceAnswer": "Sing a beautiful tune."
+        },
+        {
+          "id": "sirocco-05",
+          "topic": "Understanding the world to win affection",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "ca10a308d9cf16c03a838b781259e1f5f76d9d07de45229ef5d1f0ab75f53e75"
+        },
+        {
+          "id": "sirocco-06",
+          "topic": "Disliking poorly presented men",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "9fefab79a2ce387fdfc2f7502209ddb03d7a23a93f0e2e82e622a1eea0d25155"
+        },
+        {
+          "id": "sirocco-07",
+          "topic": "Appreciating the name Kalla chose",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "d225ddcd1b0d1abc36af5bb43bde89fc59818d368481519c1c8c8336c7c3ad82"
+        },
+        {
+          "id": "sirocco-08",
+          "topic": "Offering an instrumental performance",
+          "answer": "Nod",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "113bfc15cca2e3f4a5e67521869c8761c7c9fc966d6b307935b8ea41ac8c329b"
+        },
+        {
+          "id": "sirocco-09",
+          "topic": "His abandonment during icy weather",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "9b7c4294a765fca88e201598380a343839244ea6e7bb834c549470a6f2f152da"
+        },
+        {
+          "id": "sirocco-10",
+          "topic": "Encouraging admiration of Kalla",
+          "answer": "Gaze intently",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "5ff2ea6eb9b4f9cfba434129a99a1ae145927e124fa4cf4b908b5f27ce02d77a"
+        }
+      ]
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "sourceSection": "sofia-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "sofia-01",
+          "topic": "Admiring Lord Solel",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "44ebf2931204f16d94696a2f3007e0d8633d51296aa1c6881be1a8d7b125f4b1"
+        },
+        {
+          "id": "sofia-02",
+          "topic": "Worrying that affectionate nicknames are odd",
+          "answer": "Tilt your head",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "bd985f29bc96cfb65a809aeaa92f1dc5bea7281e693d50621e0e2ae87dedadfc"
+        },
+        {
+          "id": "sofia-03",
+          "topic": "Warning that hunger makes the bird tempting",
+          "answer": "Gaze intently",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "e4ee92a7909acc6743ea1fe26f64f8d2cf1659c057cac5ec03c5bfaf9ee12a49"
+        },
+        {
+          "id": "sofia-04",
+          "topic": "Warning about troublemakers at Lyoshan",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "0550da2e0e83b5ae6b900d31fc553d6b8258cc37dc4d48f3655f788c71be2298"
+        },
+        {
+          "id": "sofia-05",
+          "topic": "Imagining how to cook the bird",
+          "answer": "Be intimidating",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "87329d8cabf07a4c632e63a042700ccd5867085ecc75de3f15403ef5b96382d0"
+        },
+        {
+          "id": "sofia-06",
+          "topic": "Giving the bird a playful nickname",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "04de1f110918f6f4f313e6a0aeca098456c5a60c2c0a59e5880d9f0175a32491"
+        },
+        {
+          "id": "sofia-07",
+          "topic": "Inviting the bird to a large feast",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "06883b6f570c3cca6d5a23a566251c76889df95608b1cad94274926c7a13539d"
+        },
+        {
+          "id": "sofia-08",
+          "topic": "Her unusually high tolerance for ale",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "929e83b8dfc3b96f0e29cffaa9c91115e138424c48d067b66e05d1418a206ed4"
+        },
+        {
+          "id": "sofia-09",
+          "topic": "Her earnings failing to cover her appetite",
+          "answer": "Sing softly",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "6793a32c9a23b4b89175cf7946778c88da30fd1e7cdced3701bcb13ceb7253d6"
+        },
+        {
+          "id": "sofia-10",
+          "topic": "Wondering why spicy dishes disappear quickly",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "6b8ce6ca6ad9949dd47e67de506986e2c4bdb0fc51f9d944cbf9f4d49012278c"
+        }
+      ]
+    },
+    {
+      "id": "theodora",
+      "name": "Theodora",
+      "sourceSection": "theodora-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "theodora-01",
+          "topic": "Blaming her new arm for poor drawings",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "a2e4275f3503c064c78a53857f5bc36be87adaef767fbf0e951097f8c27bd33b"
+        },
+        {
+          "id": "theodora-02",
+          "topic": "Her Damascar roots and distrust of temples",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "1b7ab56e991cf133f0530f3f9fbf08f2021c12c4981e7baa149780081bd4bd29"
+        },
+        {
+          "id": "theodora-03",
+          "topic": "Disliking bugs and asking if birds eat them",
+          "answer": "Tilt your head",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "38bbbab75a5e2739891c29af0d4bb76be9555367aa736b21d4d1f8239791cedb"
+        },
+        {
+          "id": "theodora-04",
+          "topic": "Recollections of childhood bedtime music",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "809b595372248a7523e0241c424bcc027b987a7f602be68463cd5ebb2fd553c2"
+        },
+        {
+          "id": "theodora-05",
+          "topic": "The bird's unusual determination",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "846e3bcd189831d7d0eaa266564da6e59c20f9d8e64785a4f6f751ba7371b2fb"
+        },
+        {
+          "id": "theodora-06",
+          "topic": "Honoring a debt to Yu Phas",
+          "answer": "Nod",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "81cfe6bbdf8868a472e6109d86f6462841cf84ed4af98b1a740e5745f262dc6a"
+        },
+        {
+          "id": "theodora-07",
+          "topic": "Practicing spear strikes against the bird",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "3ddaca11cab4a13e06c6ddaef263f080a8db2e043d37cc94a61b81031c5e9f18"
+        },
+        {
+          "id": "theodora-08",
+          "topic": "Aspiring to make her people and deity proud",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "a4b365fae0cefba1035dcd91ac79441a6dc95d3738a8d88d420cfbb2ad4e099f"
+        },
+        {
+          "id": "theodora-09",
+          "topic": "Feeling unusually worn out",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "72fc88db60aacbee7b186bf23cb4cab3cdc22e57ef180f4740dc5a7cf28493cb"
+        },
+        {
+          "id": "theodora-10",
+          "topic": "Building a prosperous future for her subjects",
+          "answer": "Spread your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "da98cb7760ad6cd31836d0266ebd03958c153685b7844b1f347bb9b068428aff"
+        }
+      ]
+    },
+    {
+      "id": "tialla",
+      "name": "Tialla",
+      "sourceSection": "tialla-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "tialla-01",
+          "topic": "Examining the bird's attractive feathers",
+          "answer": "Spread your wings",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "b6fad3159e346a4d44db355b2052e753a8aea21ad73671994902454738daff47"
+        },
+        {
+          "id": "tialla-02",
+          "topic": "Her grandfather's inherited spectacles",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "c23da3e70334a4361506784907ae2717792d454b167d3690ce4ec9175510d99c"
+        },
+        {
+          "id": "tialla-03",
+          "topic": "Recognizing intelligence in the bird's gaze",
+          "answer": "Gaze intently",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "9f618936a1a579487894d73454e1f5c18de527424ab5b8247f363c948d9c3096"
+        },
+        {
+          "id": "tialla-04",
+          "topic": "Understanding the principles behind a technique",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "81f7b21673382912bbb6c72bf6ea5b851df1dba2d38e5a36e5a9c0c9b3943dc1"
+        },
+        {
+          "id": "tialla-05",
+          "topic": "Resisting an apparently inevitable misfortune",
+          "answer": "Tilt your head",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "9493bec260fc8024715f1adc8bd983424cef0199a4ace7c6f49d4a48ae23c00a"
+        },
+        {
+          "id": "tialla-06",
+          "topic": "Relaxing in sunshine",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "3e0a16615fff41c10b910547ea2401b80d5fcd9c3c5748ed862efd6904430312"
+        },
+        {
+          "id": "tialla-07",
+          "topic": "Pride in learning despite limited experience",
+          "answer": "Spread your wings",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "6a46b7ec07a355fc9a872278bb7f4a61066d84fb34528b8d203b82cd95eec4c2"
+        },
+        {
+          "id": "tialla-08",
+          "topic": "A memorable bard heard with her grandfather",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "2703fd3480fef6497f9bbf527a3540b63b4bd6cab2d35c1fe9412a3edaa20c5c"
+        },
+        {
+          "id": "tialla-09",
+          "topic": "Flying into a library to read",
+          "answer": "Flap your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "84be634c83360433dcde12ef56551d3fc8908f2fda6aa765eb9675f4776db12c"
+        },
+        {
+          "id": "tialla-10",
+          "topic": "Mental fatigue from excessive analysis",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "abaf5c7ae64b9e45a42b2e9ad6df72211d87d79d2bf19fa500cdb7fe33edbfb8"
+        }
+      ]
+    },
+    {
+      "id": "tobias",
+      "name": "Tobias",
+      "sourceSection": "tobias-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "tobias-01",
+          "topic": "Wanting frequent celebrations",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "ac0e5bd395423cf8ee6aaa248c61cfaab94ff97aae05d4930b35f1b28abe0d69"
+        },
+        {
+          "id": "tobias-02",
+          "topic": "Remaining formidable despite advancing years",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "a07418439ef75cee245e6f4edc86e8532521a5f7ab4a8bfcc022db0820d5e95b"
+        },
+        {
+          "id": "tobias-03",
+          "topic": "An abundant dinner with alcoholic drinks",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "7f1fb9ba67829fc3f173291911602eb1a8b07afce53b22a81dadbfebf14e142f"
+        },
+        {
+          "id": "tobias-04",
+          "topic": "Drinking until he passes out",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "cd05b0bfea75628156230ed260692e6245b43985ef7a569f5ec47bcb8a618cbd"
+        },
+        {
+          "id": "tobias-05",
+          "topic": "Competing with much younger fighters",
+          "answer": "Spread your wings",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "b251f670ad6a690385e01ad50b656385b4718f2edb4ce8d719ac4c21fcd58634"
+        },
+        {
+          "id": "tobias-06",
+          "topic": "Feeling ready to sleep",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "1468b29ce5192a7af0652a8bab34dd55170d8d727240522694c882a10d2bedf6"
+        },
+        {
+          "id": "tobias-07",
+          "topic": "Others avoiding his intimidating appearance",
+          "answer": "Gaze intently",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "fde1d5b2ed47b30ae6d002217e04b52f2dfa2404083b794521479b077692fdd3"
+        },
+        {
+          "id": "tobias-08",
+          "topic": "Doubting the bird would taste good",
+          "answer": "Be intimidating",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "cf54bbacc443ae0bd6ee88abc38af38fd0975b5321dbb2dd55b4e27413b2d9e2"
+        },
+        {
+          "id": "tobias-09",
+          "topic": "Singing to enjoy a day's work",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "a901568ca36a3179fc8ac619f0b7d6e6ccd2706051e4046aa9df3439ec3c99f5"
+        },
+        {
+          "id": "tobias-10",
+          "topic": "Exceeding his drinking tolerance",
+          "answer": "Tilt your head",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "ebbb486c20ae2c175ba69a90b50459f32b0879b6b4d90f5ce45b5576343874db"
+        }
+      ]
+    },
+    {
+      "id": "ultand",
+      "name": "Ultand",
+      "sourceSection": "ultand-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "ultand-01",
+          "topic": "Whether savings can grow unaided",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "7d6963bc222ca5f5ff9e6cc62a4e16ccac2623157fce04d1dee1772346dbf5d8"
+        },
+        {
+          "id": "ultand-02",
+          "topic": "Wanting to take the bird home",
+          "answer": "Be intimidating",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "6c6676eec5206c2871d5cae10ed185899c11485f552e5af3389a728069e58146"
+        },
+        {
+          "id": "ultand-03",
+          "topic": "Losing patience with commanding officers",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "6c78b132097e520a923f6e15ddab417d0a00953e0f24e9420c026d05a37512ce"
+        },
+        {
+          "id": "ultand-04",
+          "topic": "Hoping for a future happy household",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "e5bdcae786aa03a7f2f9ffd8f4c589ef055be423814ffec36b676bcbd2171fd5"
+        },
+        {
+          "id": "ultand-05",
+          "topic": "Finding the bird's presence calming",
+          "answer": "Gaze intently",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "c0b5145898c013129b76dd2be8c4e390dda830d0d16d39b33b4f265d9b13cc15"
+        },
+        {
+          "id": "ultand-06",
+          "topic": "Exhaustion and a desire for comfort",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "5146122f63248e349ea849af10312981ae413d3dd2cef180443c286444e89469"
+        },
+        {
+          "id": "ultand-07",
+          "topic": "Seeking approval of her hairdo",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "d28aa225d82c10dbbbfdc616e3eb6a6867c2ada1a3fb4400653ea699fcfc0dad"
+        },
+        {
+          "id": "ultand-08",
+          "topic": "Attracting a romantic interest's attention",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "0901eb7719ae8999d5fa1c3614b9a9b6eca7acc69f97075269b3d79db6c75b03"
+        },
+        {
+          "id": "ultand-09",
+          "topic": "Wanting variety beyond fish meals",
+          "answer": "Tilt your head",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "cd655d782f02d1f62ad7c262f3c097746a248e92e11548d672efdcb2039a51e3"
+        }
+      ]
+    },
+    {
+      "id": "ursula",
+      "name": "Ursula",
+      "sourceSection": "ursula-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "ursula-01",
+          "topic": "Yearning for a home she cannot revisit",
+          "answer": "Gaze intently",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "a8f1b1703ebbf8a51d0482ab07b07909fe9f68218eca1673010bc3e481f37212"
+        },
+        {
+          "id": "ursula-02",
+          "topic": "Freedom in Dagda after a concealed life",
+          "answer": "Nod",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "6657072e60b271e8c4f5583dce4e0513d12a6a2f5ce9e7f920b899f04cd65727"
+        },
+        {
+          "id": "ursula-03",
+          "topic": "A compulsion to tidy her workspace",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "24c526a4c542a4020a4176a4ddb79dab557592d5156458f492846f5bea8f627f"
+        },
+        {
+          "id": "ursula-04",
+          "topic": "Making the bird a company pet",
+          "answer": "Be intimidating",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "8e564db29d771b1f4ecf7cd3c5951d9af29d4b835eabe5ceda229612b285e831"
+        },
+        {
+          "id": "ursula-05",
+          "topic": "Frustration with her own envy",
+          "answer": "Sing a beautiful tune",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "97d045ca31fa5d30696a7c7ab5ac53d27833e877a6993e5874e48f438710c82b"
+        },
+        {
+          "id": "ursula-06",
+          "topic": "Offering to paint the bird",
+          "answer": "Spread your wings",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "0c7e481b1a05ce160e8ad54ad9810638397a848726010a4bc3ff1f37cd25a587"
+        },
+        {
+          "id": "ursula-07",
+          "topic": "Warning about her transformed animal form",
+          "answer": "Tilt your head",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "bc677893112237036cc4ad67fab6446ba586e37ed01a5735a208e13ad1e5d84d"
+        },
+        {
+          "id": "ursula-08",
+          "topic": "Being unable to sense the bird's thoughts",
+          "answer": "Tilt your head",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "f5ef3dc272a2be598bd4d53832afb1c25c88c21762dd1e65b995d0ce8b7c8842"
+        },
+        {
+          "id": "ursula-09",
+          "topic": "Wishing she could fly from crest hunters",
+          "answer": "Spread your wings",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "317443debe1ec37f67fa1ee118944518304d77781c89f5be7f2f20cb8037ee5e"
+        },
+        {
+          "id": "ursula-10",
+          "topic": "Repaying Talimun's many acts of help",
+          "answer": "Gaze intently",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "dfaac147295422dc69c94247b80e9f5ab2ab99fcd474c094900c099ae3212bc4"
+        }
+      ]
+    },
+    {
+      "id": "yang-jie",
+      "name": "Yang Jie",
+      "sourceSection": "yang-jie-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "yang-jie-01",
+          "topic": "A proverb about birds and their birthplace",
+          "answer": "Nod",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "5b4e8bbfbccacf4964c3b15c8568378f1202ee00f7a9ec1fa8901316712f73e0"
+        },
+        {
+          "id": "yang-jie-02",
+          "topic": "Wondering about the bird's inner nature",
+          "answer": "Spread your wings",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "c709af3da5f69351d1ed6097167d4417a35c2aabaa7e6ffc0252880f6860cc14"
+        },
+        {
+          "id": "yang-jie-03",
+          "topic": "Flying together after his physical death",
+          "answer": "Spread your wings",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "6800ef3dafd2c4919b00f58a466981903defdbe9d9be796f3be15f0fc623788c"
+        },
+        {
+          "id": "yang-jie-04",
+          "topic": "Comparing mortality and states of drunkenness",
+          "answer": "Tilt your head",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "82a3d9ce5c97710cb03d00e45756cd8bb6a6613e737d6843e51cf5215c74b16e"
+        },
+        {
+          "id": "yang-jie-05",
+          "topic": "A legendary bird spoiling wine with poison",
+          "answer": "Tilt your head",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "554f5a5d9612a1ea4e5eeb99d8895b478d9e117d2c73109c4ade3974cf46d05b"
+        },
+        {
+          "id": "yang-jie-06",
+          "topic": "Whether the bird minds his alcoholic scent",
+          "answer": "Tilt your head",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "1487ef3adac720872e2df59c78fd352147ddebc170499feddd01b5903fd7a050"
+        },
+        {
+          "id": "yang-jie-07",
+          "topic": "Fate placing him among unusual companions",
+          "answer": "Nod",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "22c42bf5832726abc934ec79b3fe3bf02aeacb57873f645e20e1e1d769803e48"
+        },
+        {
+          "id": "yang-jie-08",
+          "topic": "Attempting a discipline of silence",
+          "answer": "Gaze intently",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "6834369def13ece1737bc6b6403515a12bcecf75bda99fbeb0107f994f10a6c9"
+        },
+        {
+          "id": "yang-jie-09",
+          "topic": "Distinguishing faith from unthinking behavior",
+          "answer": "Nod",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "19244b3ab9708581811507c8028c158634412b297ec282ad94d9db01d06e6edd"
+        }
+      ]
+    },
+    {
+      "id": "zarcone",
+      "name": "Zarcone",
+      "sourceSection": "zarcone-best-bird-time-answers",
+      "entries": [
+        {
+          "id": "zarcone-01",
+          "topic": "Refusing to abandon a long raiding career",
+          "answer": "Tilt your head",
+          "sourceRow": 1,
+          "sourceQuestionSha256": "049574784c839719535eee0d387b51775426370a269be1fb0b7ee78a0c2f58de"
+        },
+        {
+          "id": "zarcone-02",
+          "topic": "Inviting an orphan into his outlaw group",
+          "answer": "Tilt your head",
+          "sourceRow": 2,
+          "sourceQuestionSha256": "9e2f1d3daef99cffae6cb208cf401104a0c3be7aadb6e495d602da609fc283cd"
+        },
+        {
+          "id": "zarcone-03",
+          "topic": "His preference for vegetables over meat",
+          "answer": "Nod",
+          "sourceRow": 3,
+          "sourceQuestionSha256": "c201ef44017a1d9343acb7513dc1cb7e17165064bc8ea7d3d40a36fda93d636a"
+        },
+        {
+          "id": "zarcone-04",
+          "topic": "Abandonment by Gaia after defeat",
+          "answer": "Nod",
+          "sourceRow": 4,
+          "sourceQuestionSha256": "f12b76b535f369ea53e58fae71d244b20c4f87693c530f2600cc5c783f9bfd71"
+        },
+        {
+          "id": "zarcone-05",
+          "topic": "Avoiding dangerous foes to stay alive",
+          "answer": "Nod",
+          "sourceRow": 5,
+          "sourceQuestionSha256": "b175c58e107f91becb174baf4f3cb4d6aeb45df31825b479a859df2194d159e4"
+        },
+        {
+          "id": "zarcone-06",
+          "topic": "Unable to obtain family through plunder",
+          "answer": "Sing softly",
+          "sourceRow": 6,
+          "sourceQuestionSha256": "a74890fa24cf3dd561f25f236ad008df0c8e301febfaa547ae0bb184b4193acd"
+        },
+        {
+          "id": "zarcone-07",
+          "topic": "Threatening to attack the easiest target",
+          "answer": "Be intimidating",
+          "sourceRow": 7,
+          "sourceQuestionSha256": "60d246c49d034c4d480e03f9227c32ca36e22a689217b66f83a7b3ef344c365d"
+        },
+        {
+          "id": "zarcone-08",
+          "topic": "Building a mountaintop stronghold",
+          "answer": "Spread your wings",
+          "sourceRow": 8,
+          "sourceQuestionSha256": "eb38e5b1eb2a058694ab47d69c1df536aee4716249549481cc3d5975b2d05f6a"
+        },
+        {
+          "id": "zarcone-09",
+          "topic": "Blaming victims for being vulnerable",
+          "answer": "Be intimidating",
+          "sourceRow": 9,
+          "sourceQuestionSha256": "bbbe6471c0fc53bb38d6a2525ff2e14bcc7c9918dc54cfcb87da489a3d4a9356"
+        },
+        {
+          "id": "zarcone-10",
+          "topic": "Flying beyond archers' reach to survive",
+          "answer": "Flap your wings",
+          "sourceRow": 10,
+          "sourceQuestionSha256": "6c232bbacff5d057ad22ef6ab7ba94b2c0d474e9e5a8036c1a46dfe46a26a612"
+        }
+      ]
+    }
+  ]
+}

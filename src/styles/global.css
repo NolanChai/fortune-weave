@@ -1,0 +1,98 @@
+:root {
+  color-scheme: light dark;
+  --background: light-dark(#f2f5fb, #0d1529);
+  --panel: light-dark(#ffffff, #17223b);
+  --text: light-dark(#203457, #eef2fc);
+  --secondary: light-dark(#596a86, #b3bfd8);
+  --border: light-dark(#d7dfed, #334261);
+  --accent: light-dark(#315cac, #a2bbf3);
+  font: 15px/1.5 system-ui, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+.site-header {
+  padding: 25px 32px;
+  background: light-dark(#223b66, #101b32);
+  border-bottom: 2px solid #c9b987;
+}
+
+.site-title {
+  max-width: 1376px;
+  margin-inline: auto;
+  color: #f3f3f8;
+  font: 27px/1.25 Georgia, serif;
+  letter-spacing: -.45px;
+}
+
+.main { max-width: 1440px; margin-inline: auto; padding: 26px 32px 32px; }
+.page-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 26px; }
+h1 { margin: 0; font: 36px/1.15 Georgia, serif; letter-spacing: -.8px; }
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 285px;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0 13px;
+  color: var(--secondary);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.search:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.search svg { flex: none; }
+.search input { min-width: 0; width: 100%; padding: 10px 0; border: 0; outline: 0; color: var(--text); background: transparent; font: 16px/1.5 system-ui, sans-serif; }
+.search input::placeholder { color: var(--secondary); opacity: 1; }
+
+table { width: 100%; border-collapse: collapse; table-layout: fixed; text-align: left; }
+.character-column { width: 25%; }
+.topic-column { width: 45%; }
+.answer-column { width: 30%; }
+thead th { padding: 0 20px 12px 0; color: var(--secondary); font-size: 12px; font-weight: 500; }
+tbody { border-top: 1px solid var(--border); }
+tbody th, tbody td { padding: 17px 20px 17px 0; vertical-align: top; overflow-wrap: anywhere; }
+tbody td:last-child { padding-right: 0; }
+tbody tr + tr td { border-top: 1px solid var(--border); }
+.person { display: flex; align-items: center; gap: 13px; }
+.portrait { display: block; flex: none; width: 70px; height: 70px; padding: 3px; background: var(--panel); border: 1px solid var(--border); border-radius: 5px; }
+.character-name { font: 19px/1.25 Georgia, serif; overflow-wrap: anywhere; }
+.answer { color: var(--accent); font-weight: 500; }
+.missing { color: var(--secondary); font-size: 14px; font-weight: 400; }
+.empty { padding: 24px 0; color: var(--secondary); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip-link { position: absolute; top: 8px; left: 8px; z-index: 1; padding: 10px 16px; color: var(--text); background: var(--panel); transform: translateY(-180%); }
+.skip-link:focus { transform: translateY(0); }
+
+@media (max-width: 820px) {
+  .person { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .character-column { width: 22%; }
+  .topic-column { width: 44%; }
+  .answer-column { width: 34%; }
+}
+
+@media (max-width: 560px) {
+  .site-header { padding: 22px 20px; }
+  .site-title { font-size: 25px; }
+  .main { padding: 23px 20px; }
+  .search { width: 100%; }
+  table, tbody, tr, tbody th, td { display: block; width: 100%; }
+  colgroup { display: none; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  tbody { padding: 18px 0; }
+  tbody th { padding: 0 0 14px; }
+  .person { flex-direction: row; align-items: center; gap: 13px; }
+  .portrait { width: 58px; height: 58px; }
+  tbody td { padding: 4px 0; }
+  tbody tr + tr { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+  tbody tr + tr td { border-top: 0; }
+  .answer::before { content: 'Answer: '; color: var(--secondary); font-weight: 400; }
+}
