@@ -2,7 +2,7 @@
 
 A static Astro site with all Bird Time characters, dialogue-topic summaries, and answers on one searchable page.
 
-- Site: [nolanchai.github.io/fortune-weave](https://nolanchai.github.io/fortune-weave/)
+- Site: [www.nolanchai.dev/fortune-weave](https://www.nolanchai.dev/fortune-weave/)
 - Repository: [NolanChai/fortune-weave](https://github.com/NolanChai/fortune-weave)
 
 ## Development
@@ -30,6 +30,8 @@ Edit `src/pages/index.astro` for markup, `src/styles/global.css` for styling, an
 Push to `main` to run [Deploy to GitHub Pages](https://github.com/NolanChai/fortune-weave/actions/workflows/deploy.yml). The workflow builds with the committed npm lockfile and publishes `dist/` through GitHub Actions. It can also be run manually from the Actions tab.
 
 Pages uses **GitHub Actions** as its build source. No separate hosting service or deployment secret is required. If the repository name or domain changes, update `site` and `base` in `astro.config.mjs`.
+
+The account's existing GitHub Pages domain is `www.nolanchai.dev`. GitHub automatically redirects `nolanchai.github.io/fortune-weave/` to `www.nolanchai.dev/fortune-weave/`.
 
 Deployment follows Astro's [GitHub Pages instructions](https://docs.astro.build/en/guides/deploy/github/).
 
