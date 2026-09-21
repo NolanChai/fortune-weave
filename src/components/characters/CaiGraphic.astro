@@ -1,0 +1,49 @@
+---
+// Viewports into unchanged user-provided captures, measured on the 2048 × 1152 reference.
+// Keeping the original pixels avoids regenerating Cai's artwork for this prototype.
+const graphics = {
+  portrait: ['history', 188, 192, 517, 506],
+  identityPortrait: ['stats', 525, 202, 180, 237],
+  foot: ['stats', 388, 225, 24, 25],
+  combatChart: ['stats', 537, 501, 176, 194],
+  basicChart: ['stats', 537, 811, 176, 194],
+  crest: ['history', 518, 862, 176, 140],
+  jewel: ['unique', 1356, 452, 493, 550],
+  commoner: ['stats', 212, 215, 52, 51],
+  spear: ['stats', 787, 250, 37, 36],
+  vulnerary: ['stats', 787, 401, 37, 38],
+  bow: ['stats', 787, 454, 37, 36],
+  brio: ['stats', 1366, 248, 37, 37],
+  combatBasics: ['stats', 1366, 554, 38, 39],
+  apostle: ['stats', 787, 862, 38, 37],
+  duality: ['stats', 787, 915, 38, 35],
+  skillRanks: ['stats', 786, 702, 493, 100],
+  tempest: ['arts', 208, 503, 41, 41],
+  underworld: ['unique', 208, 503, 39, 40],
+  burst: ['unique', 787, 249, 38, 35],
+  redJewel: ['unique', 1366, 248, 37, 37],
+  baseClass: ['class', 379, 525, 68, 71],
+  gladiator: ['class', 380, 608, 60, 60],
+  hunter: ['class', 678, 608, 60, 60],
+  soldier: ['class', 973, 608, 60, 60],
+  flier: ['class', 1341, 605, 61, 64],
+  mage: ['class', 1568, 608, 60, 60],
+  gladiators: ['class', 380, 689, 208, 62],
+  hunters: ['class', 678, 689, 133, 62],
+  soldiers: ['class', 973, 688, 209, 65],
+  fliers: ['class', 1341, 686, 65, 67],
+  mages: ['class', 1568, 690, 132, 62],
+} as const;
+
+interface Props {
+  name: keyof typeof graphics;
+  label?: string;
+  class?: string;
+}
+const { name, label, class: className } = Astro.props;
+const [capture, x, y, width, height] = graphics[name];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const url = `${base}/assets/characters/cai/reference-${capture}.png`;
+const style = `--graphic-ratio:${width / height};aspect-ratio:${width}/${height};background-image:url('${url}');background-size:${2048 / width * 100}% ${1152 / height * 100}%;background-position:${x / (2048 - width) * 100}% ${y / (1152 - height) * 100}%;`;
+---
+<span class:list={['game-graphic', className]} style={style} role={label ? 'img' : undefined} aria-label={label} aria-hidden={label ? undefined : 'true'}></span>

@@ -1,0 +1,15 @@
+---
+const rays = Array.from({ length: 104 }, (_, index) => index * 360 / 104);
+---
+<svg class="panel-decoration" viewBox="0 0 1840 980" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+  <g stroke="currentColor">
+    <g transform="translate(920 400)">
+      <circle r="632" /><circle r="616" /><circle r="296" /><circle r="290" />
+      {rays.map((angle) => <path d="M 0 -610 V -480" transform={`rotate(${angle})`} />)}
+      <path d="m0-535 535 535L0 535-535 0Z M0-516 516 0 0 516-516 0Z M0-267 267 0 0 267-267 0Z M0-253 253 0 0 253-253 0Z" />
+      <circle cy="-125" r="81" /><circle cy="-125" r="74" />
+    </g>
+    <path d="M-200 800 850-250M-180 840 890-230M-160 880 930-210M880 1180 1900 160M850 1140 1870 120M0 1100 1200-100M660-200 1990 1130M620-160 1950 1170M700-240 2030 1090" />
+    <circle cx="920" cy="-320" r="430" /><circle cx="920" cy="-320" r="410" />
+  </g>
+</svg>

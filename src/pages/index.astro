@@ -1,10 +1,10 @@
 ---
 import characterIndex from '../../assets/characters/index.json';
 import birdTime from '../../data/bird-time.json';
-import '../styles/global.css';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import '../styles/bird-time.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const entryCount = birdTime.characters.reduce((total, character) => total + character.entries.length, 0);
 const characters = birdTime.characters.map((character) => {
   const portrait = characterIndex.characters.find(({ id }) => id === character.id);
   if (!portrait) throw new Error(`Missing portrait for ${character.id}`);
@@ -12,26 +12,10 @@ const characters = birdTime.characters.map((character) => {
 });
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Bird Time dialogue quotes and answers for Fire Emblem Fortune's Weave. Search every character on one page." />
-    <meta name="color-scheme" content="light dark" />
-    <link rel="canonical" href={new URL(`${base}/`, Astro.site)} />
-    <title>Bird Time | Fire Emblem Fortune's Weave Wiki</title>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to Bird Time</a>
-    <header class="site-header">
-      <div class="site-title">Fire Emblem Fortune's Weave Wiki</div>
-    </header>
-    <main id="main" class="main" tabindex="-1">
+<SiteLayout title="Bird Time" page="bird-time" description="Bird Time dialogue quotes and answers for Fire Emblem Fortune's Weave. Search every character on one page.">
       <div class="page-heading">
         <div class="page-intro">
           <h1>Bird Time</h1>
-          <p class="page-subtitle">{birdTime.characters.length} characters · {entryCount} quotes</p>
         </div>
         <div class="toolbar">
           <label class="search" id="search-control" hidden>
@@ -41,22 +25,21 @@ const characters = birdTime.characters.map((character) => {
           </svg>
           <input id="query" type="search" placeholder="Search…" aria-label="Search characters, quotes, or answers" autocomplete="off" />
           </label>
-          <p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true">{birdTime.characters.length} characters · {entryCount} quotes</p>
+          <p class="sr-only" id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
         </div>
       </div>
       <div class="panels" id="bird-time">
         {characters.map((character, characterIndex) => (
           <section class="panel" data-character={character.name.toLowerCase()} aria-labelledby={`character-${character.id}-title`}>
             <header class="panel-header">
-              <img class="portrait" src={character.icon} alt="" width={64} height={64} loading={characterIndex < 2 ? 'eager' : 'lazy'} decoding="async" />
+              <img class="portrait" src={character.icon} alt="" width={48} height={48} loading={characterIndex < 2 ? 'eager' : 'lazy'} decoding="async" />
               <div>
-                <h2 class="character-name" id={`character-${character.id}-title`}>{character.name}</h2>
-                <p class="panel-meta">{character.entries.length} quotes</p>
+                <h2 class="character-name" id={`character-${character.id}-title`}>{character.id === 'cai' ? <a href={`${base}/characters/cai/`}>{character.name}</a> : character.name}</h2>
               </div>
             </header>
             <ul class="entries">
               {character.entries.map((entry) => (
-                <li class="entry">
+                <li class="entry" id={entry.id}>
                   <p class="quote">{entry.topic}</p>
                   <span class={entry.answer === null ? 'answer missing' : 'answer'}>
                     {entry.answer ?? 'Not listed in source'}
@@ -68,9 +51,7 @@ const characters = birdTime.characters.map((character) => {
         ))}
       </div>
       <p id="empty-results" class="empty" hidden>No matching characters or answers.</p>
-    </main>
     <script>
       import '../scripts/search';
     </script>
-  </body>
-</html>
+</SiteLayout>

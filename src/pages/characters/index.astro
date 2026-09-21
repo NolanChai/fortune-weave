@@ -1,0 +1,16 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import CaiGraphic from '../../components/characters/CaiGraphic.astro';
+import cai from '../../../data/characters/cai.json';
+import '../../styles/characters.css';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<SiteLayout title="Characters" page="characters" character description="Characters in Fire Emblem Fortune's Weave.">
+  <div class="character-index">
+    <h1>Characters</h1>
+    <a class="character-link" href={`${base}/characters/cai/`}>
+      <CaiGraphic name="portrait" class="directory-portrait" />
+      <span class="directory-caption"><span><strong>{cai.name}</strong><span>{cai.title}</span></span><span class="directory-arrow" aria-hidden="true">›</span></span>
+    </a>
+  </div>
+</SiteLayout>

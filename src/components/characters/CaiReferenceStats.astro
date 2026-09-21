@@ -1,0 +1,19 @@
+---
+import cai from '../../../data/characters/cai.json';
+const stats = cai.referenceStats;
+---
+<section class="reference-stats" id="starting-stats" aria-labelledby="reference-stats-title" tabindex="-1">
+  <h2 id="reference-stats-title">Starting stats &amp; growth rates</h2>
+  <p class="reference-context">Lv. {stats.level} {stats.class}<span aria-hidden="true"> · </span>Mov {stats.movement} +{stats.movementBonus} ({stats.movementBonusAbility})<span aria-hidden="true"> · </span>Bld {stats.build}</p>
+  <div class="reference-table-scroll" role="region" aria-label="Starting stats and growth rates table" tabindex="0">
+    <table class="reference-table">
+      <thead><tr><th scope="col">Stat</th>{stats.values.map((stat) => <th scope="col">{stat.name}</th>)}</tr></thead>
+      <tbody>
+        <tr><th scope="row">Starting</th>{stats.values.map((stat) => <td>{stat.base}</td>)}</tr>
+        <tr><th scope="row">Growth</th>{stats.values.map((stat) => <td>{stat.growth}%</td>)}</tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="reference-note">Growth rates exclude class modifiers. The panels above show the supplied Lv. 5 save.</p>
+  <p class="reference-sources">Starting stats: <a href={stats.baseSource.url}>{stats.baseSource.name}</a><span aria-hidden="true"> · </span>Growth rates: <a href={stats.growthSource.url}>{stats.growthSource.name}</a></p>
+</section>

@@ -1,0 +1,6 @@
+---
+import CaiGraphic from './CaiGraphic.astro';
+interface Props { type: 'combat' | 'basic'; }
+const { type } = Astro.props;
+---
+<CaiGraphic name={type === 'combat' ? 'combatChart' : 'basicChart'} class="stat-chart" />

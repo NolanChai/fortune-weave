@@ -1,0 +1,103 @@
+{
+  "id": "cai",
+  "name": "Cai",
+  "title": "Child of Ribeira",
+  "source": {
+    "type": "user-provided game captures",
+    "note": "A level 5 save-state transcribed from the five supplied references. These values are not recruitment stats or growth rates. Class icons reflect the supplied Class screen; no additional availability is inferred."
+  },
+  "class": "Commoner",
+  "classDescription": "A member of Dagda's common folk, who hail from diverse backgrounds and positions.",
+  "hp": 29,
+  "maxHp": 29,
+  "level": 5,
+  "nextLevel": 90,
+  "movement": 5,
+  "build": 2,
+  "rating": 72,
+  "referenceStats": {
+    "checkedAt": "2026-09-21",
+    "level": 1,
+    "class": "Commoner",
+    "movement": 4,
+    "movementBonus": 1,
+    "movementBonusAbility": "Brio",
+    "build": 2,
+    "values": [
+      { "name": "HP", "base": 27, "growth": 45 },
+      { "name": "Str", "base": 10, "growth": 45 },
+      { "name": "Mag", "base": 7, "growth": 40 },
+      { "name": "Spd", "base": 8, "growth": 45 },
+      { "name": "Dex", "base": 8, "growth": 45 },
+      { "name": "Def", "base": 6, "growth": 35 },
+      { "name": "Res", "base": 5, "growth": 35 },
+      { "name": "Lck", "base": 6, "growth": 40 },
+      { "name": "Cha", "base": 5, "growth": 40 }
+    ],
+    "baseSource": {
+      "name": "Fire Emblem Wiki",
+      "url": "https://fireemblemwiki.org/wiki/Cai#Starting_stats_and_growth_rates",
+      "scope": "Playable level 1 Commoner, starting values, movement, and build. Community-reported; not independently verified in-game. The separate level 45 NPC entry is excluded."
+    },
+    "growthSource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/growth-rates/",
+      "scope": "Personal growth rates, excluding class modifiers. The source is a work in progress. All nine rates agree with Fire Emblem Wiki."
+    },
+    "abilitySource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+      "scope": "Brio adds 1 movement."
+    }
+  },
+  "combatStats": [
+    { "name": "Phys", "value": 16, "icon": "sword" },
+    { "name": "Prt", "value": 6, "icon": "shield" },
+    { "name": "AS", "value": 7, "icon": "speed" },
+    { "name": "Rsl", "value": 7, "icon": "resistance" },
+    { "name": "Hit", "value": 102, "icon": "dexterity", "boosted": true },
+    { "name": "Avo", "value": 10, "icon": "luck", "boosted": true },
+    { "name": "Crit", "value": 8, "icon": "sword" },
+    { "name": "Ddg", "value": 8, "icon": "charm" },
+    { "name": "Rng", "value": 1, "icon": "spear" }
+  ],
+  "basicStats": [
+    { "name": "Str", "value": 13, "icon": "sword" },
+    { "name": "Def", "value": 6, "icon": "shield" },
+    { "name": "Mag", "value": 13, "icon": "book", "boosted": true },
+    { "name": "Res", "value": 7, "icon": "resistance" },
+    { "name": "Spd", "value": 10, "icon": "speed" },
+    { "name": "Lck", "value": 8, "icon": "luck" },
+    { "name": "Dex", "value": 9, "icon": "dexterity" },
+    { "name": "Cha", "value": 6, "icon": "charm" }
+  ],
+  "items": [
+    { "name": "Wooden Spear", "durability": "10/10", "graphic": "spear", "equipped": true },
+    { "name": "Vulnerary", "durability": "3/3", "graphic": "vulnerary" },
+    { "name": "Hunter's Bow", "durability": "20/20", "graphic": "bow", "inactive": true }
+  ],
+  "bloodmarks": ["Diadem of the Apostle", "Diadem of Duality"],
+  "personalAbility": "Brio",
+  "equippedAbility": "Combat Basics",
+  "combatArt": { "name": "Tempest Spear", "cost": 2 },
+  "blaze": {
+    "type": "Underworld",
+    "description": "Blaze Gauge increases when in combat with cursed treasures. Burst reduces max HP.",
+    "art": "Underworld Burst",
+    "hpCost": 6,
+    "source": "Red Jewel",
+    "sourceDescription": "The gem embedded in Cai's left hand, surging with the power of black flames. Grants Mag+3."
+  },
+  "history": [
+    { "year": 1434, "text": "Born as the son of Castor." },
+    { "year": 1442, "text": "Meets Tialla, who had moved to Ribeira village." },
+    { "year": 1443, "text": "Under Castor's guidance, learns the art of combat." }
+  ],
+  "birthday": "1/25",
+  "age": 15,
+  "height": "152 cm",
+  "affiliation": "Children of Ribeira",
+  "likes": "Physical training, catching animals.",
+  "dislikes": "Cowards, liars, thinking too hard.",
+  "interests": "Fishing, spear training."
+}

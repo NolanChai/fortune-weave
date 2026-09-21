@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-09-21",
+  "assets": [
+    {
+      "file": "mounts.jpg",
+      "sourceUrl": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/v1789515816/ghxwnit3rc1x0x1nro4u",
+      "sourceId": "nintendo",
+      "description": "Original ornius, chariot and elephant concept artwork.",
+      "credit": "Nintendo / Intelligent Systems",
+      "width": 6000,
+      "height": 1710,
+      "mimeType": "image/jpeg",
+      "bytes": 430104,
+      "sha256": "75a90519313d4c459fbb9212c7d229ab93b9eff756eaadf5c8c0aa4e5915edd4"
+    },
+    {
+      "file": "growth-rates.png",
+      "sourceUrl": "https://assets.nintendo.com.au/image/private/f_auto/q_auto/v1789515814/qjoisayaavqs2qh0mtw0",
+      "sourceId": "nintendo",
+      "description": "Original growth-rate explanation screenshot.",
+      "credit": "Nintendo / Intelligent Systems",
+      "width": 750,
+      "height": 434,
+      "mimeType": "image/png",
+      "bytes": 105812,
+      "sha256": "ccf0124c4a116fca74e632270a47f743ef9c5475252299f3fcd9e11790b51117"
+    },
+    {
+      "file": "bardinger-exam.jpg",
+      "sourceUrl": "https://serenesforest.net/wp-content/uploads/2026/08/august-analysis-194-1024x576.jpg",
+      "sourceId": "serenes",
+      "description": "Bardinger certification screen from pre-release Nintendo Direct footage.",
+      "credit": "Nintendo / Intelligent Systems",
+      "width": 1024,
+      "height": 576,
+      "mimeType": "image/jpeg",
+      "bytes": 130837,
+      "sha256": "4abb508bfb40590cd9aee47f3ee6c95e93a44c7be8b8ed06ec0f370ec3e2a8a8"
+    }
+  ]
+}

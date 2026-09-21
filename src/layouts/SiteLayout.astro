@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  page: 'bird-time' | 'classes' | 'characters';
+  character?: boolean;
+  canonicalPath?: string;
+}
+
+const { title, description, page, character = false, canonicalPath } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const path = `${base}${canonicalPath ?? (page === 'bird-time' ? '/' : `/${page}/`)}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <title>{title} | Fire Emblem Fortune's Weave Wiki</title>
+  </head>
+  <body class:list={{ 'character-theme': character }}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="site-title" href={`${base}/`} aria-label="Fire Emblem Fortune's Weave Wiki home">
+        <svg class="site-mark" viewBox="0 0 32 40" width="24" height="30" fill="none" aria-hidden="true">
+          <path d="m16 1 14 19-14 19L2 20 16 1Z" stroke="currentColor" />
+          <path d="M16 7v26M7 20h18M7 13l18 14M25 13 7 27" stroke="currentColor" />
+        </svg>
+        <span><span class="series-name">Fire Emblem</span><span class="game-name">Fortune's Weave <span class="wiki-label">Wiki</span></span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href={`${base}/characters/`} aria-current={page === 'characters' ? 'page' : undefined}>Characters</a>
+        <a href={`${base}/`} aria-current={page === 'bird-time' ? 'page' : undefined}>Bird Time</a>
+      </nav>
+    </header>
+    <main id="main" class="main" tabindex="-1"><slot /></main>
+  </body>
+</html>

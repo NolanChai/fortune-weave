@@ -1,0 +1,1187 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-21",
+  "game": "Fire Emblem: Fortune's Weave",
+  "coverage": "35 documented Beginner, Specialty, and Advanced classes. Master and Divine rosters, class base stats, and full growth modifiers are not yet verified.",
+  "requirementMeaning": "Listed skill targets contribute to exam pass chance. Ideal levels are recommendations, not absolute minimum levels. This dataset does not calculate pass percentages or treat skill ranks as usable-weapon lists.",
+  "skills": {
+    "sword": "Sword",
+    "axe": "Axe",
+    "gauntlets": "Gauntlets",
+    "bow": "Bow",
+    "spear": "Spear",
+    "riding": "Riding",
+    "flying": "Flying",
+    "armor": "Armor",
+    "black-magic": "Black magic",
+    "white-magic": "White magic"
+  },
+  "tiers": [
+    {
+      "id": "beginner",
+      "name": "Beginner",
+      "idealLevel": 5,
+      "renown": 1,
+      "license": "Beginner License",
+      "sources": [
+        "pocket-tactics",
+        "all-things-how"
+      ]
+    },
+    {
+      "id": "specialty",
+      "name": "Specialty",
+      "idealLevel": 20,
+      "renown": 4,
+      "license": "Specialty License",
+      "sources": [
+        "polygon",
+        "pocket-tactics"
+      ]
+    },
+    {
+      "id": "advanced",
+      "name": "Advanced",
+      "idealLevel": 35,
+      "renown": 8,
+      "license": "Advanced License",
+      "sources": [
+        "polygon",
+        "pocket-tactics"
+      ]
+    }
+  ],
+  "laterTiers": [
+    {
+      "id": "master",
+      "name": "Master",
+      "idealLevel": 45,
+      "license": "Master License",
+      "text": "Part III. Additional quests or temple restoration may be needed; individual class requirements are not yet verified.",
+      "sources": [
+        "pocket-tactics",
+        "fdaytalk"
+      ]
+    },
+    {
+      "id": "divine",
+      "name": "Divine",
+      "idealLevel": null,
+      "license": null,
+      "text": "Late-game keys unlock access. Each class needs its own certification item and 100% pass chance. Only one unit can hold each Divine class at a time.",
+      "sources": [
+        "pocket-tactics",
+        "fdaytalk"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nintendo",
+      "name": "Nintendo — Ask the Developer, Chapter 2",
+      "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-23-fire-emblem-fortunes-weave-chapter-2/",
+      "kind": "official",
+      "scope": "Open certification, visible growth rates, original artwork and growth-rate screenshot."
+    },
+    {
+      "id": "polygon",
+      "name": "Polygon — Class unlock guide",
+      "url": "https://www.polygon.com/fire-emblem-fortunes-weave-classes-unlock-secret/",
+      "kind": "guide",
+      "scope": "Skill ranks, mastery names, and route unlocks for the first three certification tiers. Work in progress."
+    },
+    {
+      "id": "pocket-tactics",
+      "name": "Pocket Tactics — Classes explained",
+      "url": "https://www.pockettactics.com/fire-emblem-fortunes-weave/classes",
+      "kind": "guide",
+      "scope": "Tier levels, Renown gates, class roster, Master and Divine overview. Some abilities and types conflict with other sources."
+    },
+    {
+      "id": "all-things-how",
+      "name": "All Things How — Class guide",
+      "url": "https://allthings.how/fire-emblem-fortune-s-weave-class-guide-all-tiers-and-masteries/",
+      "kind": "guide",
+      "scope": "Beginner Renown, Elephant License, Elephant Rider requirements, and cross-checks. Several unlock and rank details differ from Polygon."
+    },
+    {
+      "id": "serenes",
+      "name": "Serenes Forest — Direct class analysis",
+      "url": "https://serenesforest.net/2026/08/11/fortunes-weave-august-direct-analysis-classes/",
+      "kind": "pre-release",
+      "scope": "Original Direct screenshots. Bardinger screenshot displays Riding C, Spear B, Sword B. Not a complete release database."
+    },
+    {
+      "id": "fdaytalk",
+      "name": "Fdaytalk — Changing classes",
+      "url": "https://www.fdaytalk.com/fire-emblem-fortunes-weave-change-class/",
+      "kind": "guide",
+      "scope": "Reclassing, later-tier restrictions, and single-holder classes."
+    }
+  ],
+  "classes": [
+    {
+      "id": "gladiator",
+      "name": "Gladiator",
+      "tier": "beginner",
+      "requirements": [
+        {
+          "skill": "sword",
+          "rank": "D"
+        },
+        {
+          "skill": "axe",
+          "rank": "D"
+        },
+        {
+          "skill": "gauntlets",
+          "rank": "D"
+        }
+      ],
+      "mastery": {
+        "name": "Attack Basics",
+        "effect": "Strength +1."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "tier": "beginner",
+      "requirements": [
+        {
+          "skill": "sword",
+          "rank": "D"
+        },
+        {
+          "skill": "bow",
+          "rank": "D"
+        }
+      ],
+      "mastery": {
+        "name": "Hunting Basics",
+        "effect": "Dexterity and Speed +1."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "soldier",
+      "name": "Soldier",
+      "tier": "beginner",
+      "requirements": [
+        {
+          "skill": "axe",
+          "rank": "D"
+        },
+        {
+          "skill": "spear",
+          "rank": "D"
+        }
+      ],
+      "mastery": {
+        "name": "Defense Basics",
+        "effect": "Defense +1."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [
+        "Polygon labels this mastery “Soldier”; the other guides call it Defense Basics."
+      ],
+      "sources": [
+        "polygon",
+        "all-things-how",
+        "pocket-tactics"
+      ]
+    },
+    {
+      "id": "ornius-rider",
+      "name": "Ornius Rider",
+      "tier": "beginner",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "E+"
+        },
+        {
+          "skill": "axe",
+          "rank": "D"
+        },
+        {
+          "skill": "spear",
+          "rank": "D"
+        }
+      ],
+      "mastery": {
+        "name": "Offense Basics",
+        "effect": "Strength and Magic +1."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "diviner",
+      "name": "Diviner",
+      "tier": "beginner",
+      "requirements": [
+        {
+          "skill": "white-magic",
+          "rank": "D"
+        },
+        {
+          "skill": "black-magic",
+          "rank": "D"
+        }
+      ],
+      "mastery": {
+        "name": "Magic Basics",
+        "effect": "Magic and Resistance +1."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "myrmidon",
+      "name": "Myrmidon",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "sword",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Ravaging Arts",
+        "effect": "Critical-hit damage +6."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "brigand",
+      "name": "Brigand",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "axe",
+          "rank": "C"
+        },
+        {
+          "skill": "sword",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Regroup",
+        "effect": "Avoid +20 after an enemy dodges your attack."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "pugilist",
+      "name": "Pugilist",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "gauntlets",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Attack, Get Back",
+        "effect": "Avoid +10 while using a combat art."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "archer",
+      "name": "Archer",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Crescendo",
+        "effect": "Hit +3 per defeated enemy for the battle; maximum +30."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "C"
+        },
+        {
+          "skill": "sword",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "In Shadow",
+        "effect": "Avoid +10 after defeating an enemy, until the next combat."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "armored-knight",
+      "name": "Armored Knight",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "armor",
+          "rank": "E+"
+        },
+        {
+          "skill": "axe",
+          "rank": "C"
+        },
+        {
+          "skill": "spear",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Great Counter",
+        "effect": "Attack +3 in combat initiated by an enemy."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "light-cavalry",
+      "name": "Light Cavalry",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "spear",
+          "rank": "C"
+        },
+        {
+          "skill": "sword",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Bolster Health",
+        "effect": "Maximum HP +3."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "charioteer",
+      "name": "Charioteer",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "bow",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Charger",
+        "effect": "Protection +10 after Charge, until the next phase."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "armored-ornius-rider",
+      "name": "Armored Ornius Rider",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "axe",
+          "rank": "C"
+        },
+        {
+          "skill": "spear",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Sense Threat",
+        "effect": "Avoid +20 against an enemy with effective damage."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "wing-soldier",
+      "name": "Wing Soldier",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "flying",
+          "rank": "D"
+        },
+        {
+          "skill": "spear",
+          "rank": "C"
+        },
+        {
+          "skill": "sword",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Protecting Wings",
+        "effect": "Resistance +3."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": "Female units only.",
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "shaman",
+      "name": "Shaman",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "black-magic",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Bind Dexterity",
+        "effect": "Dexterity −3 to the target."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "priest",
+      "name": "Priest",
+      "tier": "specialty",
+      "requirements": [
+        {
+          "skill": "white-magic",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Piety",
+        "effect": "Luck +3."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "shido",
+      "name": "Shido",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "sword",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Ever Vigilant",
+        "effect": "Recover HP after defeating an enemy with a critical hit."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "dancer",
+      "name": "Dancer",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "B"
+        },
+        {
+          "skill": "sword",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Special Dance",
+        "effect": "Dance also gives its target Speed and Dexterity +3."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Leda",
+          "chapter": 9,
+          "text": "Complete Great Dancer's Successor."
+        }
+      ],
+      "unlock": null,
+      "restriction": "One holder at a time.",
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon",
+        "fdaytalk"
+      ]
+    },
+    {
+      "id": "warrior",
+      "name": "Warrior",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "gauntlets",
+          "rank": "B"
+        },
+        {
+          "skill": "axe",
+          "rank": "B"
+        },
+        {
+          "skill": "sword",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Practiced Art",
+        "effect": "Hit +10 for combat-art attacks."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "black-magic",
+          "rank": "D"
+        },
+        {
+          "skill": "axe",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Makeshift",
+        "effect": "10% chance of no durability cost for a combat art."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Dietrich",
+          "chapter": null,
+          "text": "Smyrnos support Lv. 1 and Renown 8."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [
+        "Unlock reports differ: All Things How instead lists enhancing 10 combat arts. Verify with Smyrnos."
+      ],
+      "sources": [
+        "polygon",
+        "all-things-how"
+      ]
+    },
+    {
+      "id": "sniper",
+      "name": "Sniper",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Marksmanship",
+        "effect": "Hit +15 with a bow equipped."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "forest-knight",
+      "name": "Forest Knight",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "bow",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Hunter's Eye",
+        "effect": "Attack +3 on bow follow-up attacks."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "ranger",
+      "name": "Ranger",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "B"
+        },
+        {
+          "skill": "sword",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Countershot",
+        "effect": "50% chance to counter an adjacent enemy with a bow."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Leda",
+          "chapter": null,
+          "text": "Complete Elegant Drink Recipes."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "spear",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Brace",
+        "effect": "Protection +3 after defeating an enemy, until the unit's next phase."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Dietrich",
+          "chapter": null,
+          "text": "Complete the Il-Lara headhunting contract."
+        },
+        {
+          "route": "Theodora",
+          "chapter": 9,
+          "text": "Send Supplies: Roca and Kotha Gar."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "cataphract",
+      "name": "Cataphract",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "armor",
+          "rank": "E+"
+        },
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "axe",
+          "rank": "B"
+        },
+        {
+          "skill": "spear",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Pavise",
+        "effect": "20% chance to halve incoming physical damage."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Theodora",
+          "chapter": 9,
+          "text": "Send Supplies: Landon Loach and Steel Fish."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "dreadnought",
+      "name": "Dreadnought",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "armor",
+          "rank": "D"
+        },
+        {
+          "skill": "axe",
+          "rank": "B"
+        },
+        {
+          "skill": "spear",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Focused Counter",
+        "effect": "Hit +10 in combat initiated by an enemy."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "bardinger",
+      "name": "Bardinger",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "C"
+        },
+        {
+          "skill": "spear",
+          "rank": "B"
+        },
+        {
+          "skill": "sword",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Aegis",
+        "effect": "20% chance to halve incoming magic damage."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [
+        "Spear B matches Polygon and the Direct screenshot; All Things How lists C."
+      ],
+      "sources": [
+        "polygon",
+        "serenes"
+      ]
+    },
+    {
+      "id": "caladrius",
+      "name": "Caladrius",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "black-magic",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Overtake",
+        "effect": "Movement +1 after defeating an enemy through the next turn; maximum +3."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Cai",
+          "chapter": null,
+          "text": "Finish Castor's mentoring."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [
+        "Caldarius"
+      ],
+      "notes": [
+        "Listed as “Caldarius” in Polygon; Caladrius follows the other two guides."
+      ],
+      "sources": [
+        "polygon",
+        "pocket-tactics",
+        "all-things-how"
+      ]
+    },
+    {
+      "id": "dragoon",
+      "name": "Dragoon",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "flying",
+          "rank": "C"
+        },
+        {
+          "skill": "axe",
+          "rank": "B"
+        },
+        {
+          "skill": "spear",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Besieger",
+        "effect": "Hit +20 against an enemy on favorable terrain."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Cai",
+          "chapter": null,
+          "text": "Finish Aurora's mentoring."
+        },
+        {
+          "route": "Theodora",
+          "chapter": 11,
+          "text": "Send Supplies: Lir Fish and Sea-Star Stone."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "ovate",
+      "name": "Ovate",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "black-magic",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Bind Speed",
+        "effect": "Speed −3 to the target."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "bishop",
+      "name": "Bishop",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "white-magic",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Barrier",
+        "effect": "Resistance +3 for adjacent allies."
+      },
+      "unlockRoutes": [],
+      "unlock": "Available with this tier.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "troubadour",
+      "name": "Troubadour",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "black-magic",
+          "rank": "B"
+        },
+        {
+          "skill": "white-magic",
+          "rank": "B"
+        }
+      ],
+      "mastery": {
+        "name": "Song of Courage",
+        "effect": "Speed and Dexterity +3 for allies in range until the next phase."
+      },
+      "unlockRoutes": [
+        {
+          "route": "Cai",
+          "chapter": null,
+          "text": "Finish Bertrand's mentoring."
+        },
+        {
+          "route": "Leda",
+          "chapter": null,
+          "text": "Complete Elegant Drink Recipes."
+        }
+      ],
+      "unlock": null,
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "polygon"
+      ]
+    },
+    {
+      "id": "elephant-rider",
+      "name": "Elephant Rider",
+      "tier": "advanced",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "C"
+        }
+      ],
+      "mastery": {
+        "name": "Elephant Vanguard",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Part III; Elephant License required.",
+      "restriction": null,
+      "licenseOverride": "Elephant License",
+      "aliases": [],
+      "notes": [
+        "Riding C and Elephant Vanguard are reported by All Things How; not independently confirmed.",
+        "The Renown gate is not independently confirmed; this class uses a separate license in Part III."
+      ],
+      "sources": [
+        "all-things-how",
+        "pocket-tactics"
+      ]
+    },
+    {
+      "id": "war-monk",
+      "name": "War Monk",
+      "tier": "advanced",
+      "requirements": null,
+      "mastery": null,
+      "unlockRoutes": [],
+      "unlock": "Unlock conditions not yet verified.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [
+        "Sources agree the class exists, but disagree on its movement type. Ranks and mastery remain unverified."
+      ],
+      "sources": [
+        "pocket-tactics",
+        "serenes"
+      ]
+    }
+  ]
+}
