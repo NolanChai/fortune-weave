@@ -16,7 +16,7 @@ const characters = birdTime.characters.map((character) => {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Bird Time dialogue topics and answers for Fire Emblem Fortune's Weave. Search every character on one page." />
+    <meta name="description" content="Bird Time dialogue quotes and answers for Fire Emblem Fortune's Weave. Search every character on one page." />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href={new URL(`${base}/`, Astro.site)} />
     <title>Bird Time | Fire Emblem Fortune's Weave Wiki</title>
@@ -34,11 +34,11 @@ const characters = birdTime.characters.map((character) => {
             <circle cx="10.5" cy="10.5" r="6.5" />
             <path d="m16 16 4.5 4.5" />
           </svg>
-          <input id="query" type="search" placeholder="Search…" aria-label="Search characters, topics, or answers" autocomplete="off" />
+          <input id="query" type="search" placeholder="Search…" aria-label="Search characters, quotes, or answers" autocomplete="off" />
         </label>
       </div>
       <p class="sr-only" id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
-      <table id="bird-time" aria-label="Bird Time topics and answers by character">
+      <table id="bird-time" aria-label="Bird Time quotes and answers by character">
         <colgroup>
           <col class="character-column" />
           <col class="topic-column" />
@@ -47,7 +47,7 @@ const characters = birdTime.characters.map((character) => {
         <thead>
           <tr>
             <th id="character-label" scope="col">Character</th>
-            <th id="topic-label" scope="col">Topic</th>
+            <th id="topic-label" scope="col">Quote</th>
             <th id="answer-label" scope="col">Answer</th>
           </tr>
         </thead>
