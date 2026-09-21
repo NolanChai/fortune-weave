@@ -4,6 +4,7 @@ import birdTime from '../../data/bird-time.json';
 import '../styles/global.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const entryCount = birdTime.characters.reduce((total, character) => total + character.entries.length, 0);
 const characters = birdTime.characters.map((character) => {
   const portrait = characterIndex.characters.find(({ id }) => id === character.id);
   if (!portrait) throw new Error(`Missing portrait for ${character.id}`);
@@ -28,50 +29,44 @@ const characters = birdTime.characters.map((character) => {
     </header>
     <main id="main" class="main" tabindex="-1">
       <div class="page-heading">
-        <h1>Bird Time</h1>
-        <label class="search" id="search-control" hidden>
+        <div class="page-intro">
+          <h1>Bird Time</h1>
+          <p class="page-subtitle">{birdTime.characters.length} characters · {entryCount} quotes</p>
+        </div>
+        <div class="toolbar">
+          <label class="search" id="search-control" hidden>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
             <circle cx="10.5" cy="10.5" r="6.5" />
             <path d="m16 16 4.5 4.5" />
           </svg>
           <input id="query" type="search" placeholder="Search…" aria-label="Search characters, quotes, or answers" autocomplete="off" />
-        </label>
+          </label>
+          <p class="search-status" id="search-status" role="status" aria-live="polite" aria-atomic="true">{birdTime.characters.length} characters · {entryCount} quotes</p>
+        </div>
       </div>
-      <p class="sr-only" id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
-      <table id="bird-time" aria-label="Bird Time quotes and answers by character">
-        <colgroup>
-          <col class="character-column" />
-          <col class="topic-column" />
-          <col class="answer-column" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th id="character-label" scope="col">Character</th>
-            <th id="topic-label" scope="col">Quote</th>
-            <th id="answer-label" scope="col">Answer</th>
-          </tr>
-        </thead>
+      <div class="panels" id="bird-time">
         {characters.map((character, characterIndex) => (
-          <tbody data-character={character.name.toLowerCase()}>
-            {character.entries.map((entry, entryIndex) => (
-              <tr id={entry.id}>
-                {entryIndex === 0 && (
-                  <th id={`character-${character.id}`} scope="rowgroup" rowspan={character.entries.length}>
-                    <div class="person">
-                      <img class="portrait" src={character.icon} alt="" width="70" height="70" loading={characterIndex < 2 ? 'eager' : 'lazy'} decoding="async" />
-                      <span class="character-name">{character.name}</span>
-                    </div>
-                  </th>
-                )}
-                <td headers={`character-${character.id} topic-label`} data-topic>{entry.topic}</td>
-                <td headers={`character-${character.id} answer-label`} class={entry.answer === null ? 'answer missing' : 'answer'} data-answer>
-                  {entry.answer ?? 'Not listed in source'}
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          <section class="panel" data-character={character.name.toLowerCase()} aria-labelledby={`character-${character.id}-title`}>
+            <header class="panel-header">
+              <img class="portrait" src={character.icon} alt="" width={64} height={64} loading={characterIndex < 2 ? 'eager' : 'lazy'} decoding="async" />
+              <div>
+                <h2 class="character-name" id={`character-${character.id}-title`}>{character.name}</h2>
+                <p class="panel-meta">{character.entries.length} quotes</p>
+              </div>
+            </header>
+            <ul class="entries">
+              {character.entries.map((entry) => (
+                <li class="entry">
+                  <p class="quote">{entry.topic}</p>
+                  <span class={entry.answer === null ? 'answer missing' : 'answer'}>
+                    {entry.answer ?? 'Not listed in source'}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
         ))}
-      </table>
+      </div>
       <p id="empty-results" class="empty" hidden>No matching characters or answers.</p>
     </main>
     <script>
