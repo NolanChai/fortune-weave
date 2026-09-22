@@ -4,7 +4,7 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
-  page: 'bird-time' | 'classes' | 'characters';
+  page: 'bird-time' | 'classes' | 'characters' | 'gifts';
   character?: boolean;
   canonicalPath?: string;
 }
@@ -37,6 +37,7 @@ const path = `${base}${canonicalPath ?? (page === 'bird-time' ? '/' : `/${page}/
       <nav class="site-nav" aria-label="Main navigation">
         <a href={`${base}/characters/`} aria-current={page === 'characters' ? 'page' : undefined}>Characters</a>
         <a href={`${base}/`} aria-current={page === 'bird-time' ? 'page' : undefined}>Bird Time</a>
+        <a href={`${base}/gifts/`} aria-current={page === 'gifts' ? 'page' : undefined}>Gifts</a>
       </nav>
     </header>
     <main id="main" class="main" tabindex="-1"><slot /></main>

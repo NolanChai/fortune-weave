@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { prepareGifts } from './prepare-gifts.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const publicDirectory = resolve(root, 'public');
@@ -55,6 +56,20 @@ for (const file of profileFiles) {
     assert(Number.isInteger(profile[field]) && profile[field] >= 0, `Invalid ${field}: ${profile.id}`);
   }
   assert(profile.hp <= profile.maxHp, `HP exceeds maximum: ${profile.id}`);
+  assert(profile.equippedAbility === null || (typeof profile.equippedAbility === 'string' && profile.equippedAbility.trim()),
+    `Invalid equipped ability: ${profile.id}`);
+  if (profile.capturedClassIcons) {
+    const { beginner, specialty } = profile.capturedClassIcons;
+    assert(Array.isArray(beginner) && new Set(beginner).size === beginner.length, `Invalid captured beginner classes: ${profile.id}`);
+    for (const graphic of beginner) {
+      assert(['gladiator', 'hunter', 'soldier', 'flier', 'mage'].includes(graphic), `Unknown beginner graphic: ${profile.id}/${graphic}`);
+    }
+    assert(specialty && typeof specialty === 'object' && !Array.isArray(specialty), `Invalid captured specialty classes: ${profile.id}`);
+    for (const [graphic, count] of Object.entries(specialty)) {
+      assert(['gladiators', 'hunters', 'soldiers', 'fliers', 'mages'].includes(graphic), `Unknown specialty graphic: ${profile.id}/${graphic}`);
+      assert(Number.isInteger(count) && count >= 0, `Invalid specialty icon count: ${profile.id}/${graphic}`);
+    }
+  }
   if (profile.classMasteryPoints !== undefined) {
     assert(Number.isInteger(profile.classMasteryPoints) && profile.classMasteryPoints >= 0,
       `Invalid class mastery points: ${profile.id}`);
@@ -206,9 +221,11 @@ for (const asset of classAssets.assets) {
 }
 
 // public/ is generated exclusively from the canonical assets and data directories.
+await prepareGifts(root);
 assert.equal(relative(root, publicDirectory), 'public', 'Refusing to clear a directory outside public/');
 await rm(publicDirectory, { recursive: true, force: true });
 await mkdir(publicDirectory, { recursive: true });
 await cp(resolve(root, 'assets'), resolve(publicDirectory, 'assets'), { recursive: true });
 await cp(resolve(root, 'data'), resolve(publicDirectory, 'data'), { recursive: true });
+await prepareGifts(root, publicDirectory);
 console.log(`Prepared ${characterIds.size} portraits, ${profileFiles.length} character profiles, ${buildCount} character builds, ${entryIds.size} Bird Time entries, and ${classIds.size} classes.`);

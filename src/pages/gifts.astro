@@ -1,0 +1,146 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import data from '../../data/gifts.json';
+import portraits from '../../assets/characters/index.json';
+import '../styles/gifts.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const portraitIds = new Set(portraits.characters.map(({ id }) => id));
+const portrait = (id: string) => portraitIds.has(id) ? `${base}/assets/characters/${id}/icon.jpg` : `${base}/assets/gifts/characters/${id}.png`;
+const giftById = new Map(data.gifts.map((gift) => [gift.id, gift]));
+const preferencesFor = (id: string) => data.preferences.filter((preference) => preference.characterId === id);
+const tiers = [{ id: 'loved', label: 'Loved' }, { id: 'really-liked', label: 'Really liked' }];
+---
+
+<SiteLayout title="Gifts" description="Find each character’s preferred gifts and match your inventory to recipients." page="gifts">
+  <div class="gift-page" style={`--gift-capture: url('${base}/assets/gifts/reference-menu.png')`}>
+    <div class="page-heading gift-heading">
+      <h1><span class="gift-symbol" aria-hidden="true"></span>Gifts</h1>
+      <div class="gift-view-switch" aria-label="Gift view" hidden data-gift-controls>
+        <button type="button" data-view="characters" aria-pressed="true" aria-controls="gift-characters">By character</button>
+        <button type="button" data-view="inventory" aria-pressed="false" aria-controls="gift-inventory">My inventory</button>
+      </div>
+    </div>
+
+    <section id="gift-characters" aria-label="Gifts by character">
+      <div class="gift-toolbar" hidden data-gift-controls>
+        <button class="character-picker-trigger" type="button" aria-haspopup="dialog" aria-controls="gift-character-dialog">
+          <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" aria-hidden="true"><path d="M1 1h7v7H1zM12 1h7v7h-7zM1 12h7v7H1zM12 12h7v7h-7z" /></svg>
+          Choose characters <span id="selected-character-count"></span>
+        </button>
+        <label class="search"><span class="sr-only">Search selected characters’ gifts</span><input id="character-gift-search" type="search" placeholder="Search gifts…" autocomplete="off" /></label>
+      </div>
+      <nav class="selected-characters" aria-label="Selected characters" hidden>
+        {data.characters.map((character) => <a href={`#gifts-for-${character.id}`} data-selected-character={character.id} hidden>
+          <img src={portrait(character.id)} alt="" width="46" height="46" loading="lazy" /><span>{character.name}</span>
+        </a>)}
+      </nav>
+      <p class="sr-only" id="character-selection-status" role="status"></p>
+      <div class="gift-character-grid">
+      {data.characters.map((character) => {
+        const preferences = preferencesFor(character.id);
+        return <article class="gift-character-panel gift-frame" id={`gifts-for-${character.id}`} data-character={character.id}>
+          <header class="gift-character-heading">
+            <img src={portrait(character.id)} alt="" width="72" height="72" loading="lazy" />
+            <h2>{character.name}</h2>
+          </header>
+          {preferences.length > 0 ? <div class="gift-preference-columns">
+            {tiers.filter((tier) => preferences.some((preference) => preference.preference === tier.id)).map((tier) => {
+              const entries = preferences.filter((preference) => preference.preference === tier.id);
+              return <section class="gift-tier" data-character-tier>
+                <h3 class:list={['gift-rule', tier.id]}>{tier.label}</h3>
+                <ul class="preferred-gifts">{entries.map((preference) => {
+                  const gift = giftById.get(preference.giftId)!;
+                  return <li data-preferred-gift data-search={[gift.name, ...(gift.aliases ?? [])].join(' ').toLowerCase()}>
+                    <span class="gift-symbol" aria-hidden="true"></span><span>{gift.name}</span>
+                  </li>;
+                })}</ul>
+              </section>;
+            })}
+            {!preferences.some((preference) => preference.preference === 'loved') && <p class="gift-empty-tier">Loved gifts are not yet documented.</p>}
+          </div> : <p class="gift-unknown">Specific gift preferences haven’t been documented for {character.name} yet.</p>}
+          <p class="gift-search-empty" hidden>No matching gifts in this character’s documented preferences.</p>
+        </article>;
+      })}
+      </div>
+    </section>
+
+    <dialog class="character-dialog" id="gift-character-dialog" aria-labelledby="character-dialog-title" aria-describedby="character-dialog-description">
+      <div class="character-dialog-content">
+        <header class="character-dialog-heading">
+          <div><h2 id="character-dialog-title">Choose characters</h2><p id="character-dialog-description">Select characters to compare their gifts.</p></div>
+          <button type="button" class="dialog-close" data-close-picker aria-label="Close character picker">×</button>
+        </header>
+        <label class="search character-dialog-search"><span class="sr-only">Search characters</span><input type="search" id="character-picker-search" placeholder="Search characters…" autocomplete="off" autofocus /></label>
+        <div class="character-portrait-grid" role="group" aria-label="Character selection">
+          {data.characters.map((character) => <label class="character-portrait-option" data-character-option={character.id} data-name={character.name.toLowerCase()}>
+            <input type="checkbox" value={character.id} aria-label={character.name} />
+            <span class="character-portrait-frame"><img src={portrait(character.id)} alt="" width="96" height="96" loading="lazy" /><span class="character-check" aria-hidden="true">✓</span></span>
+            <span class="character-portrait-name">{character.name}</span>
+          </label>)}
+        </div>
+        <p class="character-picker-empty" role="status" hidden>No characters match this search.</p>
+        <footer class="character-dialog-footer">
+          <div class="character-selection-tools"><button type="button" id="select-all-characters">All characters</button><button type="button" id="clear-character-selection">Clear</button></div>
+          <span id="character-draft-count" role="status" aria-live="polite"></span>
+          <button type="button" class="apply-characters" id="apply-character-selection">Show characters</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <section id="gift-inventory" aria-label="Gifts in your inventory" hidden>
+      <div class="inventory-layout">
+        <section class="inventory-catalog gift-frame" aria-labelledby="inventory-title">
+          <header class="inventory-heading"><h2 id="inventory-title">My gifts</h2><span class="inventory-save-note">Saved in this browser</span></header>
+          <div class="inventory-tools">
+            <label class="search"><span class="sr-only">Search inventory gifts</span><input id="inventory-gift-search" type="search" placeholder="Search gifts…" autocomplete="off" /></label>
+            <label class="owned-filter"><input type="checkbox" id="owned-gifts-only" /> Owned only</label>
+          </div>
+          <div class="inventory-column-labels gift-rule"><span>Gift</span><span>No.</span></div>
+          <ul class="inventory-gifts" aria-label="Gift quantities">
+            {data.gifts.map((gift) => <li data-inventory-gift={gift.id} data-search={[gift.name, ...(gift.aliases ?? [])].join(' ').toLowerCase()}>
+              <span class="gift-symbol" aria-hidden="true"></span><label for={`quantity-${gift.id}`}>{gift.name}</label>
+              <div class="gift-quantity">
+                <button type="button" data-adjust="-1" aria-label={`Remove one ${gift.name}`} disabled>−</button>
+                <input id={`quantity-${gift.id}`} type="number" min="0" max="99" step="1" value="0" inputmode="numeric" aria-label={`${gift.name} quantity`} />
+                <button type="button" data-adjust="1" aria-label={`Add one ${gift.name}`}>+</button>
+              </div>
+            </li>)}
+          </ul>
+          <p id="inventory-search-empty" class="gift-empty-tier" hidden>No gifts match this search.</p>
+          <p id="inventory-storage-warning" role="status" hidden>Inventory changes won’t be saved in this browser.</p>
+        </section>
+        <section class="gift-recipients" aria-labelledby="recipients-title">
+          <div class="recipients-heading"><h2 id="recipients-title">Who to give them to</h2><p id="gift-match-status" role="status" aria-live="polite" aria-atomic="true"></p></div>
+          <p id="inventory-empty" class="gift-match-empty">Add the gifts you have. Characters who love or really like them will appear here.</p>
+          <p id="inventory-no-matches" class="gift-match-empty" hidden>No documented preferences match your inventory yet.</p>
+          <div id="gift-recipient-list">
+            {data.characters.filter((character) => character.preferenceCoverage === 'partial').map((character) => <article class="gift-recipient" data-recipient={character.id} hidden>
+              <header>
+                <img src={portrait(character.id)} alt="" width="42" height="42" loading="lazy" />
+                <h3>{character.name}</h3>
+              </header>
+              <ul>{preferencesFor(character.id).map((preference) => <li data-match-gift={preference.giftId} data-preference={preference.preference} hidden>
+                <span class:list={['gift-reaction', preference.preference]}>{preference.preference === 'loved' ? 'Loved' : 'Really liked'}</span>
+                <span>{giftById.get(preference.giftId)!.name}</span><span class="owned-quantity"></span>
+              </li>)}</ul>
+            </article>)}
+          </div>
+          <p id="gifts-without-matches" class="gift-unmatched" hidden></p>
+        </section>
+      </div>
+    </section>
+
+    <footer class="gift-footer">
+      <p>Preferences are still being documented. A missing match doesn’t mean a character dislikes the gift.</p>
+      <details>
+        <summary>Sources & data</summary>
+        <p>Gift names and explicit preferences from {data.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked September 21, 2026.</p>
+        <p>{data.gifts.length} gift names; {data.preferences.length} preferences for {data.characters.filter((c) => c.preferenceCoverage === 'partial').length} of the {data.characters.length} characters listed in the guide. “Loved” and “Really liked” preserve the source’s labels. No preferences are inferred from general likes or interests.</p>
+        <p>“Candly Crystals” is listed as a probable spelling variant of “Candy Crystals.” Both names are searchable; the spelling still needs an in-game check.</p>
+        <div class="gift-downloads"><a href={`${base}/data/gifts.json`} download>JSON</a><a href={`${base}/data/gifts.csv`} download>Gifts CSV</a><a href={`${base}/data/gift-preferences.csv`} download>Preferences CSV</a></div>
+      </details>
+    </footer>
+  </div>
+  <script src="../scripts/gifts.ts"></script>
+</SiteLayout>

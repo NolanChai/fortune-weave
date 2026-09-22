@@ -19,7 +19,7 @@
       "id": "personal-abilities",
       "name": "Serenes Forest · abilities",
       "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
-      "scope": "Work-in-progress personal abilities. Brio, Steady Aim, Tactician's Wit, and Hot-Headed are used; upgraded or later abilities are not assumed."
+      "scope": "Work-in-progress personal abilities. Brio, Steady Aim, Tactician's Wit, Hot-Headed, and Patch Up are used; upgraded or later abilities are not assumed."
     },
     {
       "id": "class-abilities",
@@ -334,6 +334,82 @@
           ],
           "rationale": "We'd try Troubadour if Tialla is struggling to keep up with the party. Mounted movement helps her reach allies for healing and for combat arts such as Lend Strength, which gets extra range from Tactician's Wit. The Song of Courage mastery also gives allies in range +3 Speed and Dexterity to support their attacks.",
           "tradeoff": "Training toward B in both magic skills, plus Riding D, takes more work than Bishop. Wit's range bonus is limited to ally combat arts.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        }
+      ]
+    },
+    {
+      "characterId": "ultand",
+      "builds": [
+        {
+          "id": "adjacent-healer",
+          "kind": "recommended",
+          "role": "Healing support",
+          "classPath": [
+            "diviner",
+            "priest",
+            "bishop"
+          ],
+          "keyStats": [
+            "Mag",
+            "Res",
+            "HP"
+          ],
+          "rationale": "Bishop is our main recommendation if Ultand is handling healing. Her 40% Magic growth supports that role, and Magic Heal +10 improves her healing spells. Patch Up also restores some HP to an adjacent ally after that ally's combat, so keeping her beside a protected teammate gives her something useful to do between her own turns.",
+          "tradeoff": "Patch Up requires adjacency, which can put her within enemy reach. Her 35% Defense and Speed growths make positioning important; keep a stronger unit between her and physical attackers.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        },
+        {
+          "id": "offensive-support",
+          "kind": "alternative",
+          "role": "Offensive mage",
+          "classPath": [
+            "diviner",
+            "shaman",
+            "ovate"
+          ],
+          "keyStats": [
+            "Mag",
+            "Spd",
+            "Def"
+          ],
+          "rationale": "Ovate is worth considering if someone else already handles healing. Its reported class modifier raises Ultand's Magic growth from 40% to 60%, while Magic Hit +5 helps her spells connect. She already has Fire in this save, and she can still position beside an ally to use Patch Up while focusing her own turns on damage.",
+          "tradeoff": "Ovate lowers her reported Defense growth to 25%, and its 40% combined Speed growth doesn't guarantee follow-ups. We'd use this for safer spell attacks rather than leaving her exposed to several enemies.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities",
+            "ovate-growths"
+          ],
+          "classGrowthStats": [
+            "Mag",
+            "Spd",
+            "Def"
+          ]
+        },
+        {
+          "id": "melee-support",
+          "kind": "theorycraft",
+          "role": "Melee support",
+          "classPath": [
+            "gladiator",
+            "brigand",
+            "warrior"
+          ],
+          "keyStats": [
+            "Str",
+            "Dex",
+            "Spd"
+          ],
+          "rationale": "Warrior is an off-meta experiment for a party that already has enough mages. Ultand's 40% Strength growth matches her Magic growth, so a physical role is worth trying if her actual Strength develops well. Warrior adds Axe Hit +5 and Brawl Hit +5, while Patch Up gives an adjacent teammate some recovery after their combat. The idea is to fight alongside another melee unit and help finish weakened enemies.",
+          "tradeoff": "This takes substantial retraining: Sword, Axe, and Brawling are all E in the capture, with B targets for Warrior. Her 35% Speed and Defense growths also limit her as a front-line fighter. This build is untested, and we'd keep Bishop if the goal is dependable healing.",
           "sourceIds": [
             "personal-abilities",
             "class-abilities"

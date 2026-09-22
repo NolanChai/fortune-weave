@@ -40,6 +40,11 @@ const shared: Record<string, Region> = {
   assistMagic: ['arts', 788, 351, 38, 38],
 };
 const overrides: Record<string, Record<string, Region>> = {
+  ultand: {
+    foot: ['stats', 350, 225, 24, 25],
+    identityPortrait: ['stats', 537, 202, 168, 237],
+    baseClass: ['class', 379, 525, 68, 60],
+  },
   guzran: {
     foot: ['stats', 368, 225, 24, 25],
     baseClass: ['class', 379, 525, 68, 60],
@@ -62,7 +67,8 @@ const { characterId, name, label, class: className } = Astro.props;
 const region = overrides[characterId]?.[name] ?? shared[name];
 if (!region) throw new Error(`Unknown graphic: ${characterId}/${name}`);
 const [capture, x, y, width, height] = region;
-const canvasHeight = characterId === 'tialla' && capture === 'history' ? 1150 : 1152;
+const canvasHeight = characterId === 'tialla' && capture === 'history' ? 1150
+  : characterId === 'ultand' && capture === 'arts' ? 2048 * 1439 / 2554 : 1152;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const url = `${base}/assets/characters/${characterId}/reference-${capture}.png`;
 const style = `--graphic-ratio:${width / height};aspect-ratio:${width}/${height};background-image:url('${url}');background-size:${2048 / width * 100}% ${canvasHeight / height * 100}%;background-position:${x / (2048 - width) * 100}% ${y / (canvasHeight - height) * 100}%;`;

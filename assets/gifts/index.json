@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "Game8: Gift Giving Guide",
+    "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623690",
+    "checkedAt": "2026-09-21"
+  },
+  "assets": [
+    {
+      "id": "eshmel",
+      "file": "characters/eshmel.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 53332,
+      "sha256": "666e10a0bc561b221d2fe85b5e757be76d0674c6b2bf36bc6c0514adb61073e3",
+      "sourceUrl": "https://img.game8.co/4611473/d88234e50513633f0f2ba5272362bf24.png/show"
+    },
+    {
+      "id": "hong-hua",
+      "file": "characters/hong-hua.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 40596,
+      "sha256": "8099066a91adaccab5a64a4d9941fe7c04ec36c0eaa23c429e9cffa88c68566f",
+      "sourceUrl": "https://img.game8.co/4611464/ef3d69401d59b28730e15b220b2cdb5a.png/show"
+    },
+    {
+      "id": "troy",
+      "file": "characters/troy.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 38799,
+      "sha256": "5f01f36d5d9ea3cd8c6c59f0c2ed0bddd7794aea1776795744ab71e745bd4cf3",
+      "sourceUrl": "https://img.game8.co/4611482/4836277775ad7d4f6878da06826b782b.png/show"
+    },
+    {
+      "id": "gaitz",
+      "file": "characters/gaitz.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 41657,
+      "sha256": "880d85eb170dfeb1f01c93b9627f8a7abd17ea84b399d84e3d33c3f03159e05d",
+      "sourceUrl": "https://img.game8.co/4611453/7b1cc1fbead255eb0b68d40c9df01406.png/show"
+    },
+    {
+      "id": "noctula",
+      "file": "characters/noctula.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 38303,
+      "sha256": "fd46fb102c981091b14db50a710c83b36201e2777c2c809b2e1bb70c2b3cd2cb",
+      "sourceUrl": "https://img.game8.co/4611457/d600826563c5c48bba10bb9caed19461.png/show"
+    }
+  ]
+}

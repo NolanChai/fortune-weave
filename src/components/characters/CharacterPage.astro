@@ -75,6 +75,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
             {character.items.map((item) => <li class:list={['item-row', { 'inactive-item': item.inactive }]}><CharacterGraphic characterId={character.id} name={item.graphic} /><span>{item.name}</span><strong>{item.durability}</strong></li>)}
             {Array.from({ length: Math.max(0, 6 - character.items.length) }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}
           </ul>
+          {character.items.length === 0 && <p class="all-empty">None</p>}
           <h2 class="panel-heading">Skill Lv</h2>
           <CharacterGraphic characterId={character.id} name="skillRanks" class="skill-ranks-graphic" label={character.skillRanksDescription} />
           {character.bloodmarks.length > 0 && <>
@@ -89,7 +90,11 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
           <ul class="slot-list" aria-label="No class abilities equipped">{Array.from({ length: 3 }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}</ul>
           <p class="all-empty">None</p>
           <h2 class="panel-heading">Equipped Abilities</h2>
-          <ul class="slot-list"><li class="item-row"><CharacterGraphic characterId={character.id} name="equippedAbility" /><span>{character.equippedAbility}</span></li>{Array.from({ length: 4 }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}</ul>
+          <ul class="slot-list" aria-label={character.equippedAbility ? undefined : 'No abilities equipped'}>
+            {character.equippedAbility && <li class="item-row"><CharacterGraphic characterId={character.id} name="equippedAbility" /><span>{character.equippedAbility}</span></li>}
+            {Array.from({ length: character.equippedAbility ? 4 : 5 }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}
+          </ul>
+          {!character.equippedAbility && <p class="all-empty">None</p>}
           <h2 class="panel-heading">Mounted Ability</h2>
           <div class="item-row empty-slot" aria-label="No mounted ability equipped"><i aria-hidden="true"></i><span class="all-empty">None</span></div>
         </div>
@@ -102,6 +107,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
           <h2 class="panel-heading">Combat Arts <span>Cost</span></h2>
           {character.combatArts.map((art) => <div class="item-row"><CharacterGraphic characterId={character.id} name={art.graphic} /><span>{art.name}</span><strong>{art.cost}</strong></div>)}
           {Array.from({ length: Math.max(0, 3 - character.combatArts.length) }, () => <div class="item-row empty-slot round-slot" aria-hidden="true"><i></i></div>)}
+          {character.combatArts.length === 0 && <p class="all-empty">None</p>}
         </div>
         <div class="panel-column">
           <h2 class="panel-heading">Attack Magic <span>Left:</span></h2>
@@ -126,8 +132,11 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
             <thead class="sr-only"><tr><th scope="col">Tier</th>{classLines.map((line) => <th scope="col">{line.name}</th>)}</tr></thead>
             <tbody>
               <tr class="base-class-row"><th scope="row">Base</th><td><CharacterGraphic characterId={character.id} name="baseClass" class="base-class-graphic" label={`Commoner${character.class === 'Commoner' ? ', equipped' : ''}`} /><span class="class-family">Gladiators</span></td>{classLines.slice(1).map((line) => <td><span class="class-family">{line.name}</span></td>)}</tr>
-              <tr><th scope="row">Beginner</th>{classLines.map((line) => <td><CharacterGraphic characterId={character.id} name={line.beginner} class="class-sprite" label={`${line.className}${character.class === line.className ? ', equipped' : ''}`} /></td>)}</tr>
-              <tr><th scope="row">Specialty</th>{classLines.map((line) => <td><CharacterGraphic characterId={character.id} name={line.specialty} class="class-sprite-group" label={`${line.count} ${line.name.toLowerCase()} specialty class icons`} /></td>)}</tr>
+              <tr><th scope="row">Beginner</th>{classLines.map((line) => <td>{(!character.capturedClassIcons || character.capturedClassIcons.beginner.includes(line.beginner)) && <CharacterGraphic characterId={character.id} name={line.beginner} class="class-sprite" label={`${line.className}${character.class === line.className ? ', equipped' : ''}`} />}</td>)}</tr>
+              <tr><th scope="row">Specialty</th>{classLines.map((line) => {
+                const count = character.capturedClassIcons ? character.capturedClassIcons.specialty[line.specialty] ?? 0 : line.count;
+                return <td>{count > 0 && <CharacterGraphic characterId={character.id} name={line.specialty} class="class-sprite-group" label={`${count} ${line.name.toLowerCase()} specialty class icons`} />}</td>;
+              })}</tr>
               {Array.from({ length: 3 }, () => <tr class="empty-class-row" aria-hidden="true"><th></th>{classLines.map(() => <td></td>)}</tr>)}
             </tbody>
           </table>
@@ -160,7 +169,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
           <CharacterGraphic characterId={character.id} name="portrait" class="history-portrait" label={character.portraitDescription} />
           <h2 class="panel-heading">Basic Information</h2>
           <dl class="personal-details"><div><dt>Birthday</dt><dd>{character.birthday}</dd></div><div><dt>Age</dt><dd>{character.age}</dd></div><div><dt>Height</dt><dd>{character.height}</dd></div></dl>
-          <div class="affiliation"><div><h2 class="panel-heading">Affiliation</h2><p>{character.affiliation}</p></div><CharacterGraphic characterId={character.id} name="crest" label="Children of Ribeira banner" /></div>
+          <div class="affiliation"><div><h2 class="panel-heading">Affiliation</h2><p>{character.affiliation}</p></div><CharacterGraphic characterId={character.id} name="crest" label={`${character.affiliation} banner`} /></div>
         </div>
         <div class="history-content">
           <table class="history-table" aria-label={`${character.name}’s personal history`}><tbody>{character.history.map((event) => <tr><th scope="row">{event.year}</th><td>{event.text}</td></tr>)}{Array.from({ length: Math.max(0, 10 - character.history.length) }, () => <tr class="empty-history-row" aria-hidden="true"><th></th><td></td></tr>)}</tbody></table>

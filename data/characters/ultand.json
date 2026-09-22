@@ -1,0 +1,88 @@
+{
+  "id": "ultand",
+  "name": "Ultand",
+  "title": "Priest of Aurora's Temple",
+  "source": {
+    "type": "user-provided game captures",
+    "note": "A level 7 Diviner save-state transcribed from the four supplied references. Stats, equipment, class icons, age, and affiliation reflect this save, not independently verified recruitment data. Personal growth rates are sourced separately. Fire Emblem Wiki's Ultand page (revision 771632, checked 2026-09-21) has no starting-stat table; its age differs from the capture, whose age of 22 is retained."
+  },
+  "class": "Diviner",
+  "classDescription": "Uses magic to both heal allies and harm foes.",
+  "level": 7,
+  "hp": 26,
+  "maxHp": 26,
+  "movement": 4,
+  "build": 1,
+  "rating": 75,
+  "combatStats": [
+    { "name": "Mys", "value": 15, "icon": "book" },
+    { "name": "Prt", "value": 8, "icon": "shield" },
+    { "name": "AS", "value": 4, "icon": "speed" },
+    { "name": "Rsl", "value": 8, "icon": "resistance" },
+    { "name": "Hit", "value": 99, "icon": "dexterity" },
+    { "name": "Avo", "value": 4, "icon": "luck" },
+    { "name": "Crit", "value": 9, "icon": "sword" },
+    { "name": "Ddg", "value": 11, "icon": "charm" },
+    { "name": "Rng", "value": "1-2", "icon": "spear" }
+  ],
+  "basicStats": [
+    { "name": "Str", "value": 9, "icon": "sword" },
+    { "name": "Def", "value": 8, "icon": "shield" },
+    { "name": "Mag", "value": 12, "icon": "book" },
+    { "name": "Res", "value": 8, "icon": "resistance" },
+    { "name": "Spd", "value": 8, "icon": "speed" },
+    { "name": "Lck", "value": 11, "icon": "luck" },
+    { "name": "Dex", "value": 7, "icon": "dexterity" },
+    { "name": "Cha", "value": 12, "icon": "charm" }
+  ],
+  "equipped": { "name": "Fire", "durability": "10/10", "graphic": "equipped" },
+  "items": [],
+  "bloodmarks": [],
+  "personalAbility": "Patch Up",
+  "equippedAbility": null,
+  "combatArts": [],
+  "attackMagic": [{ "name": "Fire", "durability": "10/10", "graphic": "attackMagic" }],
+  "assistMagic": [{ "name": "Heal", "durability": "10/10", "graphic": "assistMagic" }],
+  "flierSpecialties": 0,
+  "capturedClassIcons": { "beginner": ["mage"], "specialty": {} },
+  "portraitDescription": "Ultand, with red hair tied in a high ponytail, gold earrings, and purple and cream robes.",
+  "skillRanksDescription": "Skill ranks shown in the supplied level 7 capture: Sword E, Spear D, Axe E, Bow E, Brawling E, Reason D, Faith D, Authority E, Infantry E, Riding E, Armor E, Flying E.",
+  "referenceStats": {
+    "checkedAt": "2026-09-21",
+    "values": [
+      { "name": "HP", "growth": 45 },
+      { "name": "Str", "growth": 40 },
+      { "name": "Mag", "growth": 40 },
+      { "name": "Spd", "growth": 35 },
+      { "name": "Dex", "growth": 40 },
+      { "name": "Def", "growth": 35 },
+      { "name": "Res", "growth": 45 },
+      { "name": "Lck", "growth": 55 },
+      { "name": "Cha", "growth": 50 }
+    ],
+    "growthSource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/growth-rates/",
+      "scope": "Community-reported personal growth rates, excluding class modifiers. The source is a work in progress. No recruitment stats are inferred from the supplied level 7 capture."
+    },
+    "abilitySource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+      "scope": "Patch Up restores a little HP to an adjacent ally after that ally's combat. The source does not specify an amount. Pray for Safety is not assumed for this level 7 profile."
+    }
+  },
+  "history": [
+    { "year": 1426, "text": "Born the eldest daughter of Serowain in Callisto county." },
+    { "year": 1435, "text": "When her family needs ways to make money, moves to Dagsion." },
+    { "year": 1440, "text": "Begins apprenticing at Aurora's temple." },
+    { "year": 1446, "text": "Is selected by Centurio to become Aurora's attendant." },
+    { "year": 1449, "text": "Takes on reception duties to support the Heroic Games." }
+  ],
+  "birthday": "4/28",
+  "age": 22,
+  "height": "170 cm",
+  "affiliation": "Temple Army",
+  "likes": "Looking after others, her family, housekeeping, love stories.",
+  "dislikes": "Men who are fickle or snobby, the rich.",
+  "interests": "Saving money, wandering around marketplaces."
+}

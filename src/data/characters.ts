@@ -2,6 +2,7 @@ import cai from '../../data/characters/cai.json';
 import peter from '../../data/characters/peter.json';
 import tialla from '../../data/characters/tialla.json';
 import guzran from '../../data/characters/guzran.json';
+import ultand from '../../data/characters/ultand.json';
 
 export const HIGH_GROWTH_RATE = 45;
 
@@ -61,11 +62,12 @@ export interface Character {
   items: Item[];
   bloodmarks: { name: string; graphic: string }[];
   personalAbility: string;
-  equippedAbility: string;
+  equippedAbility: string | null;
   combatArts: { name: string; cost: number; graphic: string }[];
   attackMagic: Item[];
   assistMagic: Item[];
   flierSpecialties: number;
+  capturedClassIcons?: { beginner: string[]; specialty: Record<string, number> };
   portraitDescription: string;
   skillRanksDescription: string;
   blaze?: typeof cai.blaze;
@@ -80,4 +82,4 @@ export interface Character {
   interests: string;
 }
 
-export const characters: Character[] = [cai, peter, tialla, guzran];
+export const characters: Character[] = [cai, peter, tialla, guzran, ultand];

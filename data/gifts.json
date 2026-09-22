@@ -1,0 +1,2535 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-21",
+  "sources": [
+    {
+      "id": "game8-items",
+      "name": "Game8: List of All Items",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621281#hm_3",
+      "scope": "Gift names from the All Gifts table. Item descriptions are not imported."
+    },
+    {
+      "id": "game8-gifts",
+      "name": "Game8: Gift Giving Guide",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623690#hl_1",
+      "scope": "Explicit Loved Gifts and Really Liked Gifts lists. General likes and interests are not used to infer item preferences."
+    }
+  ],
+  "coverageNotes": [
+    "This is an incomplete guide snapshot, not an exhaustive list of every gift or reaction in the game. Missing relationships are unknown, not neutral or disliked.",
+    "Seven additional gift names appear in the preference guide but not the item catalog; their sourceIds point to that guide.",
+    "The item catalog lists both Candly Crystals and Candy Crystals. Candly Crystals is treated as a probable spelling variant of Candy Crystals and retained as an alias; the spelling has not been verified in-game."
+  ],
+  "gifts": [
+    {
+      "id": "alecto-garum",
+      "name": "Alecto Garum",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "aromatic-shosh",
+      "name": "Aromatic Shosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "blue-shosh",
+      "name": "Blue Shosh",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "blue-rose-bouquet",
+      "name": "Blue-Rose Bouquet",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "brined-fish-guts",
+      "name": "Brined Fish Guts",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "candy-crystals",
+      "name": "Candy Crystals",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ],
+      "aliases": [
+        "Candly Crystals"
+      ]
+    },
+    {
+      "id": "coffee-pastries",
+      "name": "Coffee Pastries",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "common-coffee",
+      "name": "Common Coffee",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "crafting-knives",
+      "name": "Crafting Knives",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "dagda-beard-grass",
+      "name": "Dagda Beard Grass",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "decorative-arrows",
+      "name": "Decorative Arrows",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "dual-fish-knives",
+      "name": "Dual Fish Knives",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "eastern-black-silk",
+      "name": "Eastern Black Silk",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "eastern-board-games",
+      "name": "Eastern Board Games",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "eastern-earrings",
+      "name": "Eastern Earrings",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "eastern-love-story",
+      "name": "Eastern Love Story",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "eastern-tea-leaves",
+      "name": "Eastern Tea Leaves",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "energizing-ghosh",
+      "name": "Energizing Ghosh",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "everyday-scenes",
+      "name": "Everyday Scenes",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "exquisite-ring",
+      "name": "Exquisite Ring",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "flexible-fishing-rod",
+      "name": "Flexible Fishing Rod",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "fodlan-tea",
+      "name": "Fodlan Tea",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "fragrant-pastries",
+      "name": "Fragrant Pastries",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "full-sewing-kit",
+      "name": "Full Sewing Kit",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "garum",
+      "name": "Garum",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "gaudy-bangle",
+      "name": "Gaudy Bangle",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "ginji-cervi",
+      "name": "Ginji Cervi",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "herbal-recipe-guide",
+      "name": "Herbal Recipe Guide",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "home-recipe-book",
+      "name": "Home-Recipe Book",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "honey-milk",
+      "name": "Honey Milk",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "honey-pastries",
+      "name": "Honey Pastries",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "horse-grooming-kit",
+      "name": "Horse-Grooming Kit",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "huge-fish-eyeball",
+      "name": "Huge Fish Eyeball",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "jade-ghosh",
+      "name": "Jade Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "jamel-milk",
+      "name": "Jamel Milk",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "joint-relief-gloves",
+      "name": "Joint-Relief Gloves",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "kitten-figurine",
+      "name": "Kitten Figurine",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "light-shosh",
+      "name": "Light Shosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "mane-ornament",
+      "name": "Mane Ornament",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "mature-dried-cervi",
+      "name": "Mature Dried Cervi",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "mature-ghosh",
+      "name": "Mature Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "mature-shosh",
+      "name": "Mature Shosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "mellow-pastries",
+      "name": "Mellow Pastries",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "morfis-tea",
+      "name": "Morfis Tea",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "orgus-coffee",
+      "name": "Orgus Coffee",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "outdoor-cooking-set",
+      "name": "Outdoor Cooking Set",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "pack-of-pastels",
+      "name": "Pack of Pastels",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "pastry-cookbook",
+      "name": "Pastry Cookbook",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "pickled-bulbs",
+      "name": "Pickled Bulbs",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "pickled-vegetables",
+      "name": "Pickled Vegetables",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "poems-of-the-greats",
+      "name": "Poems of the Greats",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "portrait-of-yu-phas",
+      "name": "Portrait of Yu Phas",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "potted-vegetables",
+      "name": "Potted Vegetables",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "protection-figurine",
+      "name": "Protection Figurine",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "rancid-garum",
+      "name": "Rancid Garum",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "rare-southern-seeds",
+      "name": "Rare Southern Seeds",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "rare-spices",
+      "name": "Rare Spices",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "red-rose-bouquet",
+      "name": "Red-Rose Bouquet",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "rustic-ghosh",
+      "name": "Rustic Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "saraminian-sweets",
+      "name": "Saraminian Sweets",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "secret-ghosh",
+      "name": "Secret Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "select-coffee",
+      "name": "Select Coffee",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "sharp-fishhook",
+      "name": "Sharp Fishhook",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "shield-portrait",
+      "name": "Shield Portrait",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "simple-pastries",
+      "name": "Simple Pastries",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "skin-balm",
+      "name": "Skin Balm",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "smooth-garum",
+      "name": "Smooth Garum",
+      "sourceIds": [
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "solomon-coffee",
+      "name": "Solomon Coffee",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "southern-coffee",
+      "name": "Southern Coffee",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "southern-ghosh",
+      "name": "Southern Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "strategy-manuscript",
+      "name": "Strategy Manuscript",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "strong-cervi",
+      "name": "Strong Cervi",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "strong-seasonings",
+      "name": "Strong Seasonings",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "sturdy-rucksack",
+      "name": "Sturdy Rucksack",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "sun-ghosh",
+      "name": "Sun Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "tales-of-adventure",
+      "name": "Tales of Adventure",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "the-works-of-dante",
+      "name": "The Works of Dante",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "traders-handbook",
+      "name": "Trader's Handbook",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "training-bracelet",
+      "name": "Training Bracelet",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "training-weights",
+      "name": "Training Weights",
+      "sourceIds": [
+        "game8-items"
+      ]
+    },
+    {
+      "id": "village-recipes",
+      "name": "Village Recipes",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "volcano-ghosh",
+      "name": "Volcano Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "weak-cervi",
+      "name": "Weak Cervi",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "wing-fletching",
+      "name": "Wing Fletching",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "yarc-milk",
+      "name": "Yarc Milk",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "young-ghosh",
+      "name": "Young Ghosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    },
+    {
+      "id": "young-shosh",
+      "name": "Young Shosh",
+      "sourceIds": [
+        "game8-items",
+        "game8-gifts"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "alexandra",
+      "name": "Alexandra",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "benditz",
+      "name": "Benditz",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "bonaventure",
+      "name": "Bonaventure",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "buccar",
+      "name": "Buccar",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "cai",
+      "name": "Cai",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "dadao",
+      "name": "Dadao",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "dante",
+      "name": "Dante",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "dietrich",
+      "name": "Dietrich",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "eshmel",
+      "name": "Eshmel",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "fabio",
+      "name": "Fabio",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "fianna",
+      "name": "Fianna",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "gaitz",
+      "name": "Gaitz",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "guzran",
+      "name": "Guzran",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "halvin",
+      "name": "Halvin",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "hong-hua",
+      "name": "Hong Hua",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "inyoni",
+      "name": "Inyoni",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "io",
+      "name": "Io",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "jasmine",
+      "name": "Jasmine",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "jester",
+      "name": "Jester",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "kiroc",
+      "name": "Kiroc",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "leda",
+      "name": "Leda",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "lilian",
+      "name": "Lilian",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "loretta",
+      "name": "Loretta",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "ludia",
+      "name": "Ludia",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "lysander",
+      "name": "Lysander",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "majide",
+      "name": "Majide",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "mikaela",
+      "name": "Mikaela",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "mu",
+      "name": "Mu",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "nezha",
+      "name": "Nezha",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "ninae",
+      "name": "Ninae",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "noctula",
+      "name": "Noctula",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "nuzzuo",
+      "name": "Nuzzuo",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "nydine",
+      "name": "Nydine",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "olympia",
+      "name": "Olympia",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "peppe",
+      "name": "Peppe",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "peter",
+      "name": "Peter",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "seteth",
+      "name": "Seteth",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "sha-lan",
+      "name": "Sha Lan",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "sirocco",
+      "name": "Sirocco",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "theodora",
+      "name": "Theodora",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "tialla",
+      "name": "Tialla",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "tobias",
+      "name": "Tobias",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "preferenceCoverage": "not-documented",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "ultand",
+      "name": "Ultand",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "ursula",
+      "name": "Ursula",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "yang-jie",
+      "name": "Yang Jie",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "id": "zarcone",
+      "name": "Zarcone",
+      "preferenceCoverage": "partial",
+      "sourceId": "game8-gifts"
+    }
+  ],
+  "preferences": [
+    {
+      "characterId": "alexandra",
+      "giftId": "alecto-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "alexandra",
+      "giftId": "garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "alexandra",
+      "giftId": "horse-grooming-kit",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "alexandra",
+      "giftId": "mane-ornament",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "alexandra",
+      "giftId": "smooth-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "benditz",
+      "giftId": "eastern-love-story",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "bonaventure",
+      "giftId": "rare-spices",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "bonaventure",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "buccar",
+      "giftId": "mature-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "buccar",
+      "giftId": "rare-spices",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "buccar",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "buccar",
+      "giftId": "volcano-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "catania",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "catania",
+      "giftId": "gaudy-bangle",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "catania",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "poems-of-the-greats",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "coffee-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "fragrant-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "ginji-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "honey-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "honey-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "huge-fish-eyeball",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "jamel-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "mature-dried-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "mellow-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "potted-vegetables",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "saraminian-sweets",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "simple-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "strong-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "weak-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dadao",
+      "giftId": "yarc-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dietrich",
+      "giftId": "ginji-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dietrich",
+      "giftId": "honey-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dietrich",
+      "giftId": "honey-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dietrich",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "dietrich",
+      "giftId": "protection-figurine",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "eastern-earrings",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "alecto-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "coffee-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "dagda-beard-grass",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "flexible-fishing-rod",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "fragrant-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "gaudy-bangle",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "herbal-recipe-guide",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "home-recipe-book",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "horse-grooming-kit",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "huge-fish-eyeball",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "kitten-figurine",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "mellow-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "saraminian-sweets",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "sharp-fishhook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "simple-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "smooth-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "strong-seasonings",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "training-bracelet",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "esmeralda",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "fabio",
+      "giftId": "jade-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "fianna",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "fianna",
+      "giftId": "southern-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "gaitz",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "gaitz",
+      "giftId": "horse-grooming-kit",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "gaitz",
+      "giftId": "orgus-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "volcano-ghosh",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "aromatic-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "huge-fish-eyeball",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "jade-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "light-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "mature-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "mature-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "orgus-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "rustic-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "secret-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "southern-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "southern-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "strong-seasonings",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "sun-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "guzran",
+      "giftId": "young-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "halvin",
+      "giftId": "garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "halvin",
+      "giftId": "gaudy-bangle",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "halvin",
+      "giftId": "potted-vegetables",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "halvin",
+      "giftId": "simple-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "io",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "io",
+      "giftId": "horse-grooming-kit",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "io",
+      "giftId": "mane-ornament",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "jasmine",
+      "giftId": "rare-spices",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "kiroc",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "eastern-earrings",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "eastern-tea-leaves",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "poems-of-the-greats",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "gaudy-bangle",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "herbal-recipe-guide",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "home-recipe-book",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "strong-seasonings",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "traders-handbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "training-bracelet",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lilian",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ludia",
+      "giftId": "eastern-love-story",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ludia",
+      "giftId": "aromatic-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ludia",
+      "giftId": "everyday-scenes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lysander",
+      "giftId": "dagda-beard-grass",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lysander",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lysander",
+      "giftId": "horse-grooming-kit",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "lysander",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "majide",
+      "giftId": "mature-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "volcano-ghosh",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "alecto-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "aromatic-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "herbal-recipe-guide",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "home-recipe-book",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "huge-fish-eyeball",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "jade-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "light-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "mature-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "mature-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "orgus-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "rare-spices",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "rustic-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "secret-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "southern-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "southern-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "strong-seasonings",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "sun-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mikaela",
+      "giftId": "young-ghosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mu",
+      "giftId": "candy-crystals",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mu",
+      "giftId": "jamel-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mu",
+      "giftId": "weak-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "mu",
+      "giftId": "yarc-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "pickled-bulbs",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "sturdy-rucksack",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "training-bracelet",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nezha",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ninae",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ninae",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ninae",
+      "giftId": "eastern-black-silk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ninae",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "noctula",
+      "giftId": "training-bracelet",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nuzzuo",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nuzzuo",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nuzzuo",
+      "giftId": "training-bracelet",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "eastern-love-story",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "kitten-figurine",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "sturdy-rucksack",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "training-bracelet",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "nydine",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "eastern-earrings",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "eastern-tea-leaves",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "orgus-coffee",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "coffee-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "gaudy-bangle",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "skin-balm",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "olympia",
+      "giftId": "southern-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "coffee-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "dagda-beard-grass",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "fragrant-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "ginji-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "kitten-figurine",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "mature-dried-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "mellow-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "saraminian-sweets",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "simple-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "strong-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "weak-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "wing-fletching",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "peter",
+      "giftId": "yarc-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "poems-of-the-greats",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "strategy-manuscript",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "tales-of-adventure",
+      "preference": "loved",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "flexible-fishing-rod",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "herbal-recipe-guide",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "home-recipe-book",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "huge-fish-eyeball",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "orgus-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "select-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "sharp-fishhook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "southern-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "sturdy-rucksack",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "traders-handbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "seteth",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sha-lan",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sirocco",
+      "giftId": "eastern-love-story",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sirocco",
+      "giftId": "pack-of-pastels",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sirocco",
+      "giftId": "young-shosh",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sofia",
+      "giftId": "ginji-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sofia",
+      "giftId": "honey-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sofia",
+      "giftId": "honey-pastries",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "sofia",
+      "giftId": "yarc-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "alecto-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "eastern-love-story",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "eastern-tea-leaves",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "ginji-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "herbal-recipe-guide",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "home-recipe-book",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "jamel-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "mature-dried-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "pastry-cookbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "pickled-bulbs",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "smooth-garum",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "strategy-manuscript",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "strong-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "strong-seasonings",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "tales-of-adventure",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "traders-handbook",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "village-recipes",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "weak-cervi",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "tialla",
+      "giftId": "yarc-milk",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ultand",
+      "giftId": "eastern-love-story",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ursula",
+      "giftId": "eastern-love-story",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ursula",
+      "giftId": "kitten-figurine",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ursula",
+      "giftId": "mane-ornament",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "ursula",
+      "giftId": "pack-of-pastels",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "yang-jie",
+      "giftId": "common-coffee",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "yang-jie",
+      "giftId": "the-works-of-dante",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    },
+    {
+      "characterId": "zarcone",
+      "giftId": "potted-vegetables",
+      "preference": "really-liked",
+      "sourceId": "game8-gifts"
+    }
+  ]
+}
