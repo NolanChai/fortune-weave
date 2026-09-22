@@ -1,0 +1,37 @@
+---
+import recruitment from '../../data/recruitment.json';
+
+interface Props {
+  characterId: string;
+  compact?: boolean;
+}
+const { characterId, compact = false } = Astro.props;
+const character = recruitment.characters.find(({ id }) => id === characterId);
+const groups: { conditions: string; routeIds: string[] }[] = [];
+for (const row of character?.requirements ?? []) {
+  if (row.status !== 'recruit' || !row.conditions.trim()) continue;
+  const group = groups.find(({ conditions }) => conditions === row.conditions);
+  if (group) group.routeIds.push(row.routeId);
+  else groups.push({ conditions: row.conditions, routeIds: [row.routeId] });
+}
+const routeNames = new Map(recruitment.routes.map(({ id, name }) => [id, name]));
+const Heading = compact ? 'h4' : 'h3';
+---
+{groups.length > 0 && <section class:list={['recruitment-negotiation', { compact }]} data-recruitment-negotiation>
+  <Heading>Recruitment negotiation</Heading>
+  {groups.map((group) => <p data-negotiation-routes={group.routeIds.join(' ')}>
+    <span class="negotiation-routes" data-negotiation-route-label>{group.routeIds.length === recruitment.routes.length ? 'All routes' : group.routeIds.map((id) => routeNames.get(id)).join(', ')}</span>
+    <span>{group.conditions}</span>
+  </p>)}
+</section>}
+
+<style>
+  .recruitment-negotiation { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--gift-line); }
+  h3, h4 { margin: 0 0 10px; color: var(--secondary); font: 18px/1.4 Georgia, serif; }
+  p { margin: 0; font-size: 14px; }
+  p + p { margin-top: 12px; }
+  .negotiation-routes { display: block; margin-bottom: 3px; color: var(--secondary); font-size: 11px; }
+  .compact { margin-top: 14px; padding-top: 10px; }
+  .compact h4 { margin-bottom: 5px; font: 12px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .compact p { font-size: 12px; }
+</style>

@@ -4,6 +4,7 @@ import data from '../../data/gifts.json';
 import recruitment from '../../data/recruitment.json';
 import portraits from '../../assets/characters/index.json';
 import RecruitmentBadges from '../components/RecruitmentBadges.astro';
+import RecruitmentNegotiation from '../components/RecruitmentNegotiation.astro';
 import '../styles/gifts.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -77,6 +78,7 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
             {!preferences.some((preference) => preference.preference === 'loved') && <p class="gift-empty-tier">Loved gifts are not yet documented.</p>}
           </div> : <p class="gift-unknown">Specific gift preferences haven’t been documented for {character.name} yet.</p>}
           <p class="gift-search-empty" hidden>No matching gifts in this character’s documented preferences.</p>
+          <RecruitmentNegotiation characterId={character.id} />
         </article>;
       })}
       </div>
@@ -163,6 +165,7 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
                 <span class:list={['gift-reaction', preference.preference]}>{preference.preference === 'loved' ? 'Loved' : 'Really liked'}</span>
                 <span>{giftById.get(preference.giftId)!.name}</span><span class="owned-quantity"></span>
               </li>)}</ul>
+              <RecruitmentNegotiation characterId={character.id} compact />
             </article>)}
           </div>
           <p id="gifts-without-matches" class="gift-unmatched" hidden></p>

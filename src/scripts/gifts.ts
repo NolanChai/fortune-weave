@@ -10,6 +10,7 @@ if (page) {
   const recipientPicker = get<HTMLButtonElement>('#inventory-recipient-picker');
   const routeInputs = Array.from(page.querySelectorAll<HTMLInputElement>('input[name="gift-route"]'));
   const requirementBadges = Array.from(page.querySelectorAll<HTMLElement>('[data-recruitment-route]'));
+  const negotiations = Array.from(page.querySelectorAll<HTMLElement>('[data-recruitment-negotiation]'));
   const sortButtons = Array.from(page.querySelectorAll<HTMLButtonElement>('[data-recipient-sort]'));
   const pickerSearch = get<HTMLInputElement>('#character-picker-search');
   const applyCharacters = get<HTMLButtonElement>('#apply-character-selection');
@@ -277,6 +278,13 @@ if (page) {
     inventoryRecipients = selectedRecipients(eligible, excludedRecipients);
     for (const input of routeInputs) input.checked = input.value === route;
     for (const badge of requirementBadges) badge.hidden = Boolean(route) && badge.dataset.recruitmentRoute !== route;
+    for (const section of negotiations) {
+      for (const condition of section.querySelectorAll<HTMLElement>('[data-negotiation-routes]')) {
+        condition.hidden = Boolean(route) && !condition.dataset.negotiationRoutes!.split(' ').includes(route);
+        condition.querySelector<HTMLElement>('[data-negotiation-route-label]')!.hidden = Boolean(route);
+      }
+      section.hidden = !section.querySelector('[data-negotiation-routes]:not([hidden])');
+    }
     get('#recipient-selection-count').textContent = `(${inventoryRecipients.size}/${eligible.size})`;
     get('#reset-recipient-filters').hidden = !route && !excludedRecipients.size;
     get('#inventory-route-note').hidden = !route;
