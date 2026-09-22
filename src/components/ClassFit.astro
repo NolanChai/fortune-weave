@@ -16,7 +16,7 @@ const basis = { review: 'Review + our take', player: 'Players + our take', theor
 const rankLabel = pick.rank ? `${pick.rank}-tier` : 'Unranked';
 ---
 
-<li class="class-fit" data-character={character.id} data-search={character.name.toLowerCase()}>
+<li class="class-fit" data-character={character.id} data-part={character.part} data-search={character.name.toLowerCase()} hidden={character.part > 1}>
   <button type="button" class:list={['fit-trigger', { 'is-experimental': pick.experimental }]}
     aria-label={`${character.name}: ${className}, ${rankLabel}${pick.experimental ? ', experimental build' : ''}`}
     aria-expanded="false" aria-controls={noteId} aria-haspopup="dialog" data-fit-trigger>

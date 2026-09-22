@@ -2,6 +2,7 @@ export {};
 
 const controls = document.querySelector<HTMLElement>('#suitability-controls');
 const query = document.querySelector<HTMLInputElement>('#suitability-query');
+const spoilerToggle = document.querySelector<HTMLInputElement>('#suitability-spoilers');
 const columns = [...document.querySelectorAll<HTMLElement>('[data-class-column]')];
 const filters = [...document.querySelectorAll<HTMLButtonElement>('.class-family-filters button')];
 const tierFilters = [...document.querySelectorAll<HTMLButtonElement>('[data-suitability-tier]')];
@@ -129,10 +130,13 @@ function filterClasses() {
   let count = 0;
   columns.forEach((column) => {
     const classMatches = column.dataset.className?.includes(term);
+    let visiblePicks = 0;
     column.querySelectorAll<HTMLElement>('[data-character]').forEach((pick) => {
-      pick.hidden = !classMatches && !pick.dataset.search?.includes(term);
+      const eligible = pick.dataset.part === '1' || spoilerToggle?.checked;
+      pick.hidden = !eligible || (!classMatches && !pick.dataset.search?.includes(term));
+      if (!pick.hidden) visiblePicks++;
     });
-    column.hidden = column.dataset.tier !== tier || (family !== 'all' && !column.dataset.family?.split(' ').includes(family)) || !column.dataset.search?.includes(term);
+    column.hidden = column.dataset.tier !== tier || (family !== 'all' && !column.dataset.family?.split(' ').includes(family)) || visiblePicks === 0;
     if (!column.hidden) count++;
   });
   if (resultStatus) resultStatus.textContent = `${count} ${count === 1 ? 'class' : 'classes'}`;
@@ -145,6 +149,7 @@ filters.forEach((button) => button.addEventListener('click', () => {
   filterClasses();
 }));
 query?.addEventListener('input', filterClasses);
+spoilerToggle?.addEventListener('change', filterClasses);
 tierFilters.forEach((button) => button.addEventListener('click', () => {
   tier = button.dataset.suitabilityTier!;
   tierFilters.forEach((filter) => filter.setAttribute('aria-pressed', String(filter === button)));
@@ -156,4 +161,5 @@ document.addEventListener('scroll', (event) => {
   if (!(event.target instanceof Node) || !active?.note.contains(event.target)) closeNote();
 }, true);
 if (controls) controls.hidden = false;
+if (spoilerToggle) spoilerToggle.checked = false;
 filterClasses();

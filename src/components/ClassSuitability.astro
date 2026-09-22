@@ -3,7 +3,6 @@ import ClassFit from './ClassFit.astro';
 import ClassIcon from './ClassIcon.astro';
 import database from '../../data/classes.json';
 import suitability from '../../data/class-suitability.json';
-import roster from '../../data/class-roster.json';
 import '../styles/class-suitability.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -11,9 +10,8 @@ const families = [{ id: 'all', label: 'All' }, { id: 'melee', label: 'Melee' }, 
 const rankOrder: Record<string, number> = { S: 0, A: 1, B: 2, C: 3 };
 const entries = suitability.classes.map((entry) => {
   const details = database.classes.find(({ id }) => id === entry.classId)!;
-  const names = entry.picks.map((pick) => roster.characters.find(({ id }) => id === pick.characterId)!.name);
   const mounted = details.requirements?.some(({ skill }) => skill === 'riding' || skill === 'flying');
-  return { ...entry, details, picks: [...entry.picks].sort((a, b) => (rankOrder[a.rank ?? ''] ?? 4) - (rankOrder[b.rank ?? ''] ?? 4)), roles: [...new Set([entry.family, ...(mounted ? ['mounted'] : [])])].join(' '), search: [details.name, ...names].join(' ').toLowerCase() };
+  return { ...entry, details, picks: [...entry.picks].sort((a, b) => (rankOrder[a.rank ?? ''] ?? 4) - (rankOrder[b.rank ?? ''] ?? 4)), roles: [...new Set([entry.family, ...(mounted ? ['mounted'] : [])])].join(' ') };
 });
 ---
 
@@ -27,6 +25,7 @@ const entries = suitability.classes.map((entry) => {
   </div>
   <label class="search"><span class="sr-only">Search classes or characters</span><input id="suitability-query" type="search" placeholder="Class or character…" autocomplete="off" /></label>
   </div>
+  <label class="suitability-spoiler-toggle"><input id="suitability-spoilers" type="checkbox" autocomplete="off" /> Show Part II/III characters</label>
 </div>
 <div class="suitability-key">
   <p>Strongest fits first. Hover or tap for notes.</p>
@@ -36,7 +35,7 @@ const entries = suitability.classes.map((entry) => {
 
 <div class="class-board">
   {entries.map((entry) => (
-    <section class="class-column" data-class-column data-tier={entry.details.tier} data-family={entry.roles} data-class-name={entry.details.name.toLowerCase()} data-search={entry.search} aria-labelledby={`column-${entry.classId}`} hidden={entry.details.tier !== 'advanced'}>
+    <section class="class-column" data-class-column data-tier={entry.details.tier} data-family={entry.roles} data-class-name={entry.details.name.toLowerCase()} aria-labelledby={`column-${entry.classId}`} hidden={entry.details.tier !== 'advanced'}>
       <header class="class-column-heading">
         <ClassIcon classId={entry.classId} name={entry.details.name} />
         <h2 id={`column-${entry.classId}`}><a href={`${base}/classes/?view=requirements#${entry.classId}`} data-classes-view="requirements" data-class-target={entry.classId}>{entry.details.name}</a></h2>

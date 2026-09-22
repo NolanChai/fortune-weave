@@ -1,4 +1,6 @@
 .suitability-controls { display: grid; gap: 16px; margin-bottom: 18px; }
+.suitability-spoiler-toggle { display: flex; align-items: center; gap: 8px; width: fit-content; color: var(--secondary); font-size: 12px; cursor: pointer; }
+.suitability-spoiler-toggle input { accent-color: var(--gold); }
 .suitability-role-controls { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .suitability-tier-filters { display: flex; flex-wrap: wrap; gap: 24px; border-bottom: 1px solid #a19a713d; }
 .suitability-tier-filters button { min-height: 42px; padding: 8px 0 12px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--secondary); }
