@@ -280,7 +280,8 @@ sup { vertical-align: super; font-size: .55em; line-height: 0; }
 .reference-table th, .reference-table td { padding: 10px 12px; border-bottom: 1px solid #92926b50; }
 .reference-table thead th { color: var(--secondary); font-weight: 400; }
 .reference-table tr > :first-child { text-align: left; width: 13%; font-weight: 400; }
-.reference-table tbody tr:last-child td { color: #e5ce89; }
+.reference-table tbody tr:last-child td { color: var(--secondary); }
+.high-growth { color: #f3d989; font-weight: 700; }
 .reference-note { margin: 16px 0 8px; color: var(--secondary); font-size: 13px; }
 .reference-sources { margin: 0; color: var(--secondary); font-size: 12px; }
 .reference-sources a { color: var(--secondary); }

@@ -2,6 +2,8 @@ import cai from '../../data/characters/cai.json';
 import peter from '../../data/characters/peter.json';
 import tialla from '../../data/characters/tialla.json';
 
+export const HIGH_GROWTH_RATE = 45;
+
 interface Stat {
   name: string;
   value: number | string;
@@ -14,6 +16,26 @@ interface Item {
   durability: string;
   graphic: string;
   inactive?: boolean;
+}
+
+interface ReferenceSource {
+  name: string;
+  url: string;
+  scope: string;
+}
+
+interface ReferenceStats {
+  checkedAt: string;
+  level: number;
+  class: string;
+  movement: number;
+  movementBonus?: number;
+  movementBonusAbility?: string;
+  build: number;
+  values: { name: string; base: number; growth: number }[];
+  baseSource: ReferenceSource;
+  growthSource: ReferenceSource;
+  abilitySource: ReferenceSource;
 }
 
 export interface Character {
@@ -45,7 +67,7 @@ export interface Character {
   portraitDescription: string;
   skillRanksDescription: string;
   blaze?: typeof cai.blaze;
-  referenceStats?: typeof cai.referenceStats;
+  referenceStats?: ReferenceStats;
   history: { year: number; text: string }[];
   birthday: string;
   age: number;

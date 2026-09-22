@@ -45,8 +45,10 @@ assert.deepEqual(birdTimeIds, characterIds, 'Character and Bird Time records mus
 
 const profilesDirectory = resolve(root, 'data/characters');
 const profileFiles = (await readdir(profilesDirectory)).filter((file) => file.endsWith('.json'));
+const profileById = new Map();
 for (const file of profileFiles) {
   const profile = JSON.parse(await readFile(resolve(profilesDirectory, file), 'utf8'));
+  profileById.set(profile.id, profile);
   assert(characterIds.has(profile.id), `Unknown character profile: ${file}`);
   assert.equal(file, `${profile.id}.json`, `Profile filename mismatch: ${file}`);
   for (const field of ['hp', 'maxHp', 'level', 'movement', 'build', 'rating']) {
@@ -72,6 +74,19 @@ for (const file of profileFiles) {
     assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', `Invalid capture: ${profile.id}/${capture}`);
   }
   if (profile.referenceStats) {
+    for (const field of ['level', 'movement', 'build']) {
+      assert(Number.isInteger(profile.referenceStats[field]) && profile.referenceStats[field] >= 0,
+        `Invalid reference ${field}: ${profile.id}`);
+    }
+    if (profile.referenceStats.movementBonus !== undefined) {
+      assert(Number.isInteger(profile.referenceStats.movementBonus) && profile.referenceStats.movementBonus > 0
+        && profile.referenceStats.movementBonusAbility, `Invalid movement bonus: ${profile.id}`);
+    }
+    for (const field of ['baseSource', 'growthSource', 'abilitySource']) {
+      assert(profile.referenceStats[field]?.name && profile.referenceStats[field]?.scope,
+        `Missing reference source: ${profile.id} ${field}`);
+      assert.equal(new URL(profile.referenceStats[field].url).protocol, 'https:', `Invalid source URL: ${profile.id}`);
+    }
     const referenceStats = profile.referenceStats.values;
     assert.equal(referenceStats.length, 9, `Expected nine reference stats: ${profile.id}`);
     assert.deepEqual(new Set(referenceStats.map(({ name }) => name)),
@@ -106,6 +121,61 @@ for (const entry of classData.classes) {
   }
 }
 
+const buildData = JSON.parse(await readFile(resolve(root, 'data/character-builds.json'), 'utf8'));
+assert.equal(buildData.schemaVersion, 1, 'Unsupported character build schema');
+const buildSourceIds = new Set(sourceIds);
+for (const source of buildData.sources) {
+  assert(!buildSourceIds.has(source.id), `Duplicate build source: ${source.id}`);
+  buildSourceIds.add(source.id);
+  assert(source.name && source.scope, `Missing build source details: ${source.id}`);
+  assert.equal(new URL(source.url).protocol, 'https:', `Invalid build source URL: ${source.id}`);
+}
+const modifiersByClass = new Map();
+for (const modifiers of buildData.classGrowthModifiers) {
+  assert(classIds.has(modifiers.classId), `Unknown growth modifier class: ${modifiers.classId}`);
+  assert(!modifiersByClass.has(modifiers.classId), `Duplicate class modifiers: ${modifiers.classId}`);
+  assert(buildSourceIds.has(modifiers.sourceId), `Unknown growth modifier source: ${modifiers.classId}`);
+  const stats = new Map();
+  for (const { name, modifier } of modifiers.values) {
+    assert(['HP', 'Str', 'Mag', 'Spd', 'Dex', 'Def', 'Res', 'Lck', 'Cha'].includes(name), `Unknown modifier stat: ${name}`);
+    assert(!stats.has(name), `Duplicate modifier stat: ${name}`);
+    assert(Number.isInteger(modifier) && modifier >= -100 && modifier <= 100, `Invalid class modifier: ${name}`);
+    stats.set(name, modifier);
+  }
+  modifiersByClass.set(modifiers.classId, { stats, sourceId: modifiers.sourceId });
+}
+const buildCharacterIds = new Set();
+let buildCount = 0;
+for (const record of buildData.characters) {
+  const profile = profileById.get(record.characterId);
+  assert(profile?.referenceStats, `Builds require a profile with reference growths: ${record.characterId}`);
+  assert(!buildCharacterIds.has(record.characterId), `Duplicate character builds: ${record.characterId}`);
+  buildCharacterIds.add(record.characterId);
+  assert(record.builds.length > 0, `No builds: ${record.characterId}`);
+  const ids = new Set();
+  const personal = new Map(profile.referenceStats.values.map(({ name, growth }) => [name, growth]));
+  for (const build of record.builds) {
+    assert.match(build.id, /^[a-z]+(?:-[a-z]+)*$/, 'Invalid build ID');
+    assert(!ids.has(build.id), `Duplicate build: ${record.characterId}/${build.id}`);
+    ids.add(build.id);
+    assert(['recommended', 'alternative', 'theorycraft'].includes(build.kind), `Invalid build kind: ${build.id}`);
+    assert(build.role && build.rationale && build.tradeoff, `Incomplete build: ${build.id}`);
+    assert(build.classPath.length > 0, `Missing class path: ${build.id}`);
+    for (const id of build.classPath) assert(classIds.has(id), `Unknown class in build: ${build.id}/${id}`);
+    assert(build.sourceIds.length > 0, `Missing build sources: ${build.id}`);
+    for (const id of build.sourceIds) assert(buildSourceIds.has(id), `Unknown build source: ${build.id}/${id}`);
+    assert(build.keyStats.length > 0, `Missing growth rationale: ${build.id}`);
+    for (const name of build.keyStats) assert(personal.has(name), `Unknown growth stat: ${build.id}/${name}`);
+    for (const name of build.classGrowthStats) {
+      const modifiers = modifiersByClass.get(build.classPath.at(-1));
+      assert(personal.has(name) && modifiers?.stats.has(name), `Missing class growth data: ${build.id}/${name}`);
+      assert(build.sourceIds.includes(modifiers.sourceId), `Missing class growth citation: ${build.id}`);
+      assert(personal.get(name) + modifiers.stats.get(name) >= 0, `Negative combined growth: ${build.id}/${name}`);
+    }
+    buildCount++;
+  }
+}
+
 const classAssets = JSON.parse(await readFile(resolve(root, 'assets/classes/index.json'), 'utf8'));
 assert.equal(classAssets.schemaVersion, 1, 'Unsupported class asset schema');
 for (const asset of classAssets.assets) {
@@ -122,4 +192,4 @@ await rm(publicDirectory, { recursive: true, force: true });
 await mkdir(publicDirectory, { recursive: true });
 await cp(resolve(root, 'assets'), resolve(publicDirectory, 'assets'), { recursive: true });
 await cp(resolve(root, 'data'), resolve(publicDirectory, 'data'), { recursive: true });
-console.log(`Prepared ${characterIds.size} portraits, ${profileFiles.length} character profiles, ${entryIds.size} Bird Time entries, and ${classIds.size} classes.`);
+console.log(`Prepared ${characterIds.size} portraits, ${profileFiles.length} character profiles, ${buildCount} character builds, ${entryIds.size} Bird Time entries, and ${classIds.size} classes.`);

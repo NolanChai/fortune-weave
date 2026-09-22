@@ -1,0 +1,93 @@
+---
+import buildData from '../../../data/character-builds.json';
+import classData from '../../../data/classes.json';
+import { HIGH_GROWTH_RATE, type Character } from '../../data/characters';
+
+interface Props { character: Character; }
+const { character } = Astro.props;
+const builds = buildData.characters.find(({ characterId }) => characterId === character.id)?.builds ?? [];
+const classById = new Map(classData.classes.map((entry) => [entry.id, entry]));
+const sourceById = new Map([...buildData.sources, ...classData.sources].map((source) => [source.id, source]));
+const personalGrowth = new Map(character.referenceStats?.values.map((stat) => [stat.name, stat.growth]));
+const labels: Record<string, string> = { recommended: 'Recommended', alternative: 'Alternative', theorycraft: 'Theorycraft' };
+const skills = classData.skills as Record<string, string>;
+---
+{builds.length > 0 && <section class="class-recommendations" id="class-recommendations" aria-labelledby="recommendations-title" tabindex="-1">
+  <h2 id="recommendations-title">Class recommendations</h2>
+  <p class="recommendations-intro">Suggested builds based on guides and growths. Theorycraft builds are untested.</p>
+  <div class="build-list">
+    {builds.map((build) => {
+      const path = build.classPath.map((id) => classById.get(id)!);
+      const target = path[path.length - 1];
+      const tier = classData.tiers.find(({ id }) => id === target.tier)!;
+      const modifiers = buildData.classGrowthModifiers.find(({ classId }) => classId === target.id);
+      const sources = [...new Set([...build.sourceIds, ...target.sources])].map((id) => sourceById.get(id)!);
+      const unlocks = target.unlockRoutes.filter(({ route }) => route === 'Cai');
+      return <article class="build-row" aria-labelledby={`build-${build.id}`}>
+        <header class="build-heading">
+          <span class:list={['build-kind', { 'build-experiment': build.kind === 'theorycraft' }]}>{labels[build.kind]}</span>
+          <h3 id={`build-${build.id}`}>{target.name}</h3>
+          <p class="build-role">{build.role}</p>
+          <p class="build-growth"><span>Personal growth</span>{build.keyStats.map((name) => <span>{name} <span class:list={{ 'high-growth': personalGrowth.get(name)! >= HIGH_GROWTH_RATE }}>{personalGrowth.get(name)}%</span></span>)}</p>
+        </header>
+        <div class="build-content">
+          <ol class="build-path" aria-label="Suggested training route">{path.map((entry, i) => <li>{i > 0 && <span aria-hidden="true">→</span>}{entry.name}</li>)}</ol>
+          <p class="build-rationale">{build.rationale}</p>
+          <p class="build-tradeoff"><strong>Tradeoff</strong> {build.tradeoff}</p>
+          {modifiers && build.classGrowthStats.length > 0 && <p class="build-class-growth">
+            <span>Reported growth in {target.name}</span>
+            {build.classGrowthStats.map((name) => {
+              const growth = personalGrowth.get(name)! + modifiers.values.find((stat) => stat.name === name)!.modifier;
+              return <span>{name} <span class:list={{ 'high-growth': growth >= HIGH_GROWTH_RATE }}>{growth}%</span></span>;
+            })}
+            <small>Personal + class modifier</small>
+          </p>}
+          <p class="build-exam"><strong>Exam targets</strong> {target.requirements?.map(({ skill, rank }) => `${skills[skill]} ${rank}`).join(' · ')}</p>
+          <p class="build-exam-meta">{target.licenseOverride ?? tier.license} · Renown {tier.renown} · Ideal Lv. {tier.idealLevel}</p>
+          {unlocks.length > 0 && <p class="build-unlock"><strong>Unlock conditions</strong> {unlocks.map((unlock) => `Cai: ${unlock.text}`).join(' ')}</p>}
+          <p class="build-sources">{sources.map((source) => <a href={source.url}>{source.name}</a>)}</p>
+        </div>
+      </article>;
+    })}
+  </div>
+  <p class="recommendations-note">Suggested paths require separate certifications. Exam ranks and ideal levels affect pass chance. Community data checked {buildData.checkedAt}.</p>
+</section>}
+
+<style>
+  .class-recommendations { max-width: 1840px; margin: 24px auto 16px; padding: 26px 28px; border: 1px solid #7d805a; background: #0b2e2a; scroll-margin-top: 24px; }
+  h2 { margin: 0 0 8px; font: 25px/1.3 Georgia, serif; letter-spacing: .02em; }
+  .recommendations-intro, .recommendations-note { color: var(--secondary); font-size: 13px; line-height: 1.7; }
+  .recommendations-intro { margin: 0 0 24px; }
+  .build-row { display: grid; grid-template-columns: minmax(170px, .8fr) minmax(0, 3fr); gap: 24px 40px; padding: 28px 0; border-top: 1px solid #92926b50; }
+  .build-kind { display: block; margin-bottom: 8px; color: #b8cfbb; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  .build-experiment { color: #e5ce89; }
+  h3 { margin: 0; font: 27px/1.3 Georgia, serif; }
+  .build-role { margin: 5px 0 20px; color: var(--secondary); font: 15px/1.5 Georgia, serif; }
+  .build-growth { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0; color: var(--secondary); font-size: 12px; }
+  .build-growth > span:first-child { flex-basis: 100%; margin-bottom: 2px; }
+  .build-path { display: flex; flex-wrap: wrap; gap: 6px 12px; margin: 0 0 14px; padding: 0; list-style: none; font: 17px/1.5 Georgia, serif; }
+  .build-path li { display: flex; align-items: baseline; gap: 12px; }
+  .build-path li > span { color: #aaa678; }
+  .build-rationale, .build-tradeoff { max-width: 90ch; font-size: 14px; line-height: 1.8; }
+  .build-rationale { margin: 0 0 10px; }
+  .build-tradeoff { margin: 0 0 18px; color: var(--secondary); }
+  .build-tradeoff strong, .build-exam strong, .build-unlock strong { margin-right: 8px; color: #d9d3af; font-weight: 500; }
+  .build-class-growth { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 16px; margin: 0 0 18px; padding-left: 12px; border-left: 1px solid #a79b60; color: var(--secondary); font-size: 12px; line-height: 1.7; }
+  .build-class-growth small { font-size: 11px; }
+  .build-exam, .build-exam-meta, .build-unlock { margin: 4px 0; color: var(--secondary); font-size: 12px; line-height: 1.8; }
+  .build-unlock { margin-top: 10px; }
+  .build-sources { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 16px 0 0; font-size: 11px; line-height: 1.7; }
+  .build-sources a { color: var(--secondary); text-underline-offset: 3px; text-decoration-color: #92926b70; }
+  .build-sources a:hover { color: var(--text); }
+  .recommendations-note { margin: 0; padding-top: 18px; border-top: 1px solid #92926b50; font-size: 12px; }
+  @media (max-width: 700px) {
+    .class-recommendations { padding: 22px 20px; }
+    h2 { font-size: 23px; }
+    .build-row { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .build-heading { min-width: 0; }
+    .build-role { margin-bottom: 12px; }
+    .build-growth > span:first-child { flex-basis: auto; margin: 0; }
+    .build-exam strong { display: block; }
+    .build-path { font-size: 16px; }
+  }
+</style>

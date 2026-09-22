@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-21",
+  "methodology": "Training routes are this wiki's synthesis of published role guidance, personal growths, and class mechanics. They are not fixed promotion trees or tested optimal builds. Theorycraft entries are untested experiments. Class growth comparisons use only explicitly sourced modifiers; unreported modifiers are not treated as zero.",
+  "sources": [
+    {
+      "id": "siliconera-routes",
+      "name": "Siliconera · route guide",
+      "url": "https://www.siliconera.com/which-fire-emblem-fortunes-weave-main-character-route-should-i-play-first/",
+      "scope": "Jenni Lada's September 18 guide describes Cai as a strong mounted unit, Peter as an archer, and Tialla as a support mage. It does not prescribe the class paths below."
+    },
+    {
+      "id": "siliconera-characters",
+      "name": "Siliconera · character guide",
+      "url": "https://www.siliconera.com/who-are-the-best-fire-emblem-fortunes-weave-characters/",
+      "scope": "Jenni Lada's September 17 playthrough guidance praises Tialla's support role and reports healing and offensive spells. Exact class recommendations are our inference."
+    },
+    {
+      "id": "personal-abilities",
+      "name": "Serenes Forest · abilities",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+      "scope": "Work-in-progress personal abilities. Brio, Steady Aim, and Tactician's Wit are used; upgraded or later abilities are not assumed."
+    },
+    {
+      "id": "class-abilities",
+      "name": "Pocket Tactics · classes",
+      "url": "https://www.pockettactics.com/fire-emblem-fortunes-weave/classes",
+      "scope": "September 18 class guide: class types, abilities, licenses, renown, and ideal exam levels."
+    },
+    {
+      "id": "ovate-growths",
+      "name": "Fire Emblem Wiki · Ovate",
+      "url": "https://fireemblemwiki.org/wiki/Ovate#Growth_rate_modifiers",
+      "scope": "Fortune's Weave class growth modifiers, revision 771628. Community-reported; Skill corresponds to Dexterity. No values from earlier games are used."
+    }
+  ],
+  "classGrowthModifiers": [
+    {
+      "classId": "ovate",
+      "sourceId": "ovate-growths",
+      "values": [
+        {
+          "name": "HP",
+          "modifier": 10
+        },
+        {
+          "name": "Str",
+          "modifier": -5
+        },
+        {
+          "name": "Mag",
+          "modifier": 20
+        },
+        {
+          "name": "Spd",
+          "modifier": 5
+        },
+        {
+          "name": "Dex",
+          "modifier": 15
+        },
+        {
+          "name": "Def",
+          "modifier": -10
+        },
+        {
+          "name": "Res",
+          "modifier": 15
+        },
+        {
+          "name": "Lck",
+          "modifier": 10
+        },
+        {
+          "name": "Cha",
+          "modifier": 0
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "characterId": "cai",
+      "builds": [
+        {
+          "id": "mounted-fighter",
+          "kind": "recommended",
+          "role": "Mounted fighter",
+          "classPath": [
+            "ornius-rider",
+            "light-cavalry",
+            "bardinger"
+          ],
+          "keyStats": [
+            "Str",
+            "Spd",
+            "Dex"
+          ],
+          "rationale": "Bardinger lets Cai build on his spear training while adding mounted movement. His 45% Strength and Speed growths support a physical role, and Brio adds another movement point to help him reach enemies or cover an ally. Mastering the class also gives him Aegis, which can halve incoming magic damage.",
+          "tradeoff": "Sword B, Spear B, and Riding C take more training than a class focused on one weapon. Aegis only activates 20% of the time, so we shouldn't rely on it to survive a hit.",
+          "sourceIds": [
+            "siliconera-routes",
+            "personal-abilities"
+          ],
+          "classGrowthStats": []
+        },
+        {
+          "id": "flying-fighter",
+          "kind": "alternative",
+          "role": "Flying fighter",
+          "classPath": [
+            "ornius-rider",
+            "armored-ornius-rider",
+            "dragoon"
+          ],
+          "keyStats": [
+            "Str",
+            "Spd"
+          ],
+          "rationale": "Dragoon is worth considering for maps where ground movement is awkward. Flight and Brio's extra movement should help Cai reach enemies that are difficult to approach on the ground. His 45% Strength and Speed growths give us a reason to keep the build physical, with axes and spears as its weapons.",
+          "tradeoff": "Flying needs separate training, and Dragoon requires Aurora's mentoring on Cai's path. We'd start preparing for it while using the earlier mounted classes.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        },
+        {
+          "id": "black-magic-cai",
+          "kind": "theorycraft",
+          "role": "Black-magic Cai",
+          "classPath": [
+            "diviner",
+            "shaman",
+            "ovate"
+          ],
+          "keyStats": [
+            "Mag",
+            "Spd",
+            "Def"
+          ],
+          "rationale": "Cai's Magic growth is 40%, only a little below his 45% Strength growth. Ovate brings his reported Magic growth to 60%, which gives us a reason to try him as a mage. Brio still helps him reach spell range. This could be a fun option if the party already has enough physical attackers.",
+          "tradeoff": "The route needs early magic training and gives up a mount. Ovate also lowers his Defense growth to 25%, so we'd keep him out of extended physical fights.",
+          "sourceIds": [
+            "personal-abilities",
+            "ovate-growths"
+          ],
+          "classGrowthStats": [
+            "Mag",
+            "Spd",
+            "Def"
+          ]
+        }
+      ]
+    },
+    {
+      "characterId": "peter",
+      "builds": [
+        {
+          "id": "bow-specialist",
+          "kind": "recommended",
+          "role": "Bow specialist",
+          "classPath": [
+            "hunter",
+            "archer",
+            "sniper"
+          ],
+          "keyStats": [
+            "Dex",
+            "Spd",
+            "Str"
+          ],
+          "rationale": "Sniper builds on Peter's bow-art range with another accuracy bonus. Steady Aim adds one range to bow combat arts, while Marksmanship, the class mastery, adds Hit +15 with a bow equipped. Alongside his 60% Dexterity growth, this makes Sniper a good fit if we want a dedicated ranged attacker.",
+          "tradeoff": "His 35% Strength growth can leave attacks short on damage even when they're likely to hit. Steady Aim's extra range only applies to combat arts.",
+          "sourceIds": [
+            "siliconera-routes",
+            "personal-abilities"
+          ],
+          "classGrowthStats": []
+        },
+        {
+          "id": "mounted-archer",
+          "kind": "alternative",
+          "role": "Mounted archer",
+          "classPath": [
+            "hunter",
+            "archer",
+            "forest-knight"
+          ],
+          "keyStats": [
+            "Dex",
+            "Spd"
+          ],
+          "rationale": "Forest Knight is useful if Peter needs to move with a mounted party. He keeps Steady Aim's extra bow-art range, while mounted movement should make it easier to reach a firing position. Hunter's Eye, the class mastery, adds Attack +3 to bow follow-ups, giving his 45% Speed growth another potential use.",
+          "tradeoff": "Riding adds another skill to train. Hunter's Eye only helps when Peter can make a follow-up, so its value depends on his actual Speed relative to the enemies he's facing.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        },
+        {
+          "id": "critical-swordsman",
+          "kind": "theorycraft",
+          "role": "Critical swordsman",
+          "classPath": [
+            "hunter",
+            "myrmidon",
+            "shido"
+          ],
+          "keyStats": [
+            "Dex",
+            "Spd",
+            "Str"
+          ],
+          "rationale": "Shido gives us a way to try Peter's high Dexterity and Speed in a sword role. Sword Crit +5 encourages critical hits, and the Ever Vigilant mastery restores HP after a critical kill. Ideally, he could finish off weakened enemies and recover some HP while doing it.",
+          "tradeoff": "Sword attacks give up Steady Aim's range bonus and put Peter closer to the fighting. His 35% Strength growth may also leave the build dependent on critical hits for damage.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        }
+      ]
+    },
+    {
+      "characterId": "tialla",
+      "builds": [
+        {
+          "id": "healing-specialist",
+          "kind": "recommended",
+          "role": "Healing specialist",
+          "classPath": [
+            "diviner",
+            "priest",
+            "bishop"
+          ],
+          "keyStats": [
+            "Mag",
+            "Lck",
+            "Res"
+          ],
+          "rationale": "Bishop is a straightforward fit if Tialla is handling most of the healing. She starts with Heal, has 45% Magic growth, and gets Magic Heal +10 from the class. Her role stays clear: keep nearby allies healthy while they handle the fighting. The exam also lets her focus on White magic.",
+          "tradeoff": "Her 30% HP and 20% Defense growths leave her vulnerable to physical attacks. We'd keep her behind the front line, where she can heal without taking unnecessary hits.",
+          "sourceIds": [
+            "siliconera-characters",
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        },
+        {
+          "id": "offensive-mage",
+          "kind": "alternative",
+          "role": "Offensive mage",
+          "classPath": [
+            "diviner",
+            "shaman",
+            "ovate"
+          ],
+          "keyStats": [
+            "Mag",
+            "Spd",
+            "Def"
+          ],
+          "rationale": "Ovate gives Tialla a more offensive role if another unit is already handling healing. Its class modifier raises her reported Magic growth from 45% to 65%, which should help her Magic develop as she levels. Magic Hit +5 also improves spell accuracy, making this worth trying if we want more damage from her.",
+          "tradeoff": "Her reported Defense growth is only 10% in Ovate, so she needs protection from physical attacks. Check her actual Speed before counting on follow-ups.",
+          "sourceIds": [
+            "class-abilities",
+            "ovate-growths"
+          ],
+          "classGrowthStats": [
+            "Mag",
+            "Spd",
+            "Def"
+          ]
+        },
+        {
+          "id": "mounted-tactician",
+          "kind": "theorycraft",
+          "role": "Mounted tactician",
+          "classPath": [
+            "diviner",
+            "priest",
+            "troubadour"
+          ],
+          "keyStats": [
+            "Mag",
+            "Lck"
+          ],
+          "rationale": "We'd try Troubadour if Tialla is struggling to keep up with the party. Mounted movement helps her reach allies for healing and for combat arts such as Lend Strength, which gets extra range from Tactician's Wit. The Song of Courage mastery also gives allies in range +3 Speed and Dexterity to support their attacks.",
+          "tradeoff": "Training toward B in both magic skills, plus Riding D, takes more work than Bishop. Wit's range bonus is limited to ally combat arts.",
+          "sourceIds": [
+            "personal-abilities",
+            "class-abilities"
+          ],
+          "classGrowthStats": []
+        }
+      ]
+    }
+  ]
+}

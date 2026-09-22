@@ -18,6 +18,39 @@
   "movement": 4,
   "build": 2,
   "rating": 60,
+  "referenceStats": {
+    "checkedAt": "2026-09-21",
+    "level": 1,
+    "class": "Commoner",
+    "movement": 4,
+    "build": 1,
+    "values": [
+      { "name": "HP", "base": 25, "growth": 40 },
+      { "name": "Str", "base": 9, "growth": 35 },
+      { "name": "Mag", "base": 3, "growth": 20 },
+      { "name": "Spd", "base": 6, "growth": 45 },
+      { "name": "Dex", "base": 10, "growth": 60 },
+      { "name": "Def", "base": 5, "growth": 30 },
+      { "name": "Res", "base": 4, "growth": 25 },
+      { "name": "Lck", "base": 5, "growth": 35 },
+      { "name": "Cha", "base": 4, "growth": 30 }
+    ],
+    "baseSource": {
+      "name": "Fire Emblem Wiki",
+      "url": "https://fireemblemwiki.org/wiki/Peter#Starting_stats_and_growth_rates",
+      "scope": "Playable level 1 Commoner. Community-reported starting stats, movement, and build; not independently verified in-game. Build 1 is separate from the supplied level 5 capture's Build 2."
+    },
+    "growthSource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/growth-rates/",
+      "scope": "Personal growth rates, excluding class modifiers. The source is a work in progress. All nine rates agree with Fire Emblem Wiki."
+    },
+    "abilitySource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+      "scope": "Steady Aim adds 1 range to attacks using a bow combat art. It does not extend ordinary bow attacks."
+    }
+  },
   "combatStats": [
     {
       "name": "Phys",

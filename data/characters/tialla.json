@@ -18,6 +18,39 @@
   "movement": 4,
   "build": 1,
   "rating": 65,
+  "referenceStats": {
+    "checkedAt": "2026-09-21",
+    "level": 1,
+    "class": "Commoner",
+    "movement": 4,
+    "build": 1,
+    "values": [
+      { "name": "HP", "base": 24, "growth": 30 },
+      { "name": "Str", "base": 5, "growth": 25 },
+      { "name": "Mag", "base": 8, "growth": 45 },
+      { "name": "Spd", "base": 6, "growth": 35 },
+      { "name": "Dex", "base": 6, "growth": 40 },
+      { "name": "Def", "base": 4, "growth": 20 },
+      { "name": "Res", "base": 6, "growth": 40 },
+      { "name": "Lck", "base": 7, "growth": 50 },
+      { "name": "Cha", "base": 5, "growth": 45 }
+    ],
+    "baseSource": {
+      "name": "Fire Emblem Wiki",
+      "url": "https://fireemblemwiki.org/wiki/Tialla#Starting_stats_and_growth_rates",
+      "scope": "Playable level 1 Commoner. Community-reported starting stats, movement, and build; not independently verified in-game."
+    },
+    "growthSource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/growth-rates/",
+      "scope": "Personal growth rates, excluding class modifiers. The source is a work in progress. All nine rates agree with Fire Emblem Wiki."
+    },
+    "abilitySource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+      "scope": "Tactician's Wit adds 1 range to combat arts usable on allies. This is not a bonus to healing-spell range."
+    }
+  },
   "combatStats": [
     {
       "name": "Mys",

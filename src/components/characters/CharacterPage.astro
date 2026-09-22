@@ -5,9 +5,12 @@ import CharacterIdentity from './CharacterIdentity.astro';
 import StatChart from './StatChart.astro';
 import PanelDecoration from './PanelDecoration.astro';
 import CharacterReferenceStats from './CharacterReferenceStats.astro';
+import CharacterRecommendations from './CharacterRecommendations.astro';
+import buildData from '../../../data/character-builds.json';
 import type { Character } from '../../data/characters';
 interface Props { character: Character; }
 const { character } = Astro.props;
+const hasRecommendations = buildData.characters.some(({ characterId }) => characterId === character.id);
 import '../../styles/characters.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const screens = [
@@ -41,6 +44,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
     <nav class="all-section-nav" aria-label={`${character.name} sections`} hidden>
       {screens.map((screen) => <a href={`#${screen.id}`}>{screen.id === 'arts' ? 'Arts & Magic' : screen.label}</a>)}
       {character.referenceStats && <a href="#starting-stats">Starting stats &amp; growth</a>}
+      {hasRecommendations && <a href="#class-recommendations">Class recommendations</a>}
     </nav>
 
     <div class="character-screens">
@@ -172,6 +176,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
     </nav>
   </article>
   {character.referenceStats && <CharacterReferenceStats stats={character.referenceStats} captureLevel={character.level} />}
+  {hasRecommendations && <CharacterRecommendations character={character} />}
   <noscript><style>.character-screen[hidden] { display: grid !important; } .character-screen { margin-bottom: 3rem; } .character-screens { height: auto; } .panel-tabs .tab-label { position: static; clip-path: none; width: auto; height: auto; } .panel-tabs { flex-wrap: wrap; } .panel-current { width: auto; }</style></noscript>
   <script>import '../../scripts/character-panel';</script>
 </SiteLayout>
