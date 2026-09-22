@@ -36,7 +36,7 @@ const path = `${base}${canonicalPath ?? (page === 'bird-time' ? '/' : `/${page}/
       </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href={`${base}/characters/`} aria-current={page === 'characters' ? 'page' : undefined}>Characters</a>
-        <a href={`${base}/classes/`} aria-current={page === 'classes' ? 'page' : undefined}>Classes</a>
+        <a href={`${base}/classes/`} aria-current={page === 'classes' ? 'page' : undefined}>Classes <span class="nav-wip">WIP</span></a>
         <a href={`${base}/gifts/`} aria-current={page === 'gifts' ? 'page' : undefined}>Gifts</a>
         <a href={`${base}/`} aria-current={page === 'bird-time' ? 'page' : undefined}>Bird Time</a>
       </nav>

@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "checkedAt": "2026-09-22",
   "status": "draft",
-  "scope": "Fit rankings across Beginner, Specialty, Advanced, and Master classes. Every permanent playable character has Advanced and Master placements, including later recruits. These compare builds, not recommended downgrades for late arrivals. Fit and experimental status are independent. Personal growths exclude class modifiers; availability depends on route and story progress.",
+  "scope": "Fit rankings across Beginner, Specialty, Advanced, and Master classes. Every permanent playable character has at least one placement at every tier, including later recruits. Early-tier placements are suggested training paths, not claims about starting classes or recommended downgrades for late arrivals. Fit and experimental status are independent. Personal growths exclude class modifiers; availability depends on route and story progress.",
   "sources": [
     {
       "id": "growths",
@@ -138,6 +138,11 @@
       "id": "profile-gaitz",
       "name": "Game8 · Gaitz growths and skills",
       "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624014"
+    },
+    {
+      "id": "leda-start",
+      "name": "RPG Site · Leda route walkthrough",
+      "url": "https://www.rpgsite.net/guide/21210-fire-emblem-fortunes-weave-part-i-ledas-path-walkthrough"
     }
   ],
   "classes": [
@@ -2028,6 +2033,170 @@
           ]
         },
         {
+          "characterId": "bertrand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Bertrand has 55% Str and 50% Dex personal growths. Gladiator develops sword rank for Myrmidon and Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Catania has 55% Spd and 50% Dex personal growths. Gladiator develops sword rank for Myrmidon and Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dadao",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Dadao has 55% Str and 50% HP personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dietrich",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Dietrich has 60% Dex and 50% Spd personal growths. Gladiator develops sword rank for Myrmidon and Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Kiroc has 55% Spd and 55% HP personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Loretta has 55% Spd and 40% Dex personal growths. Gladiator develops sword rank for Myrmidon and Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "majide",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Majide has 65% HP and 50% Str personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Signs of Growth can raise Mu's Str and Spd growths from 30% to 50%. Gladiator develops the sword and axe ranks she needs for Brigand and Warrior, though she needs levels before that ability pays off.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nezha",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Nezha has 50% Dex and 45% Str personal growths. Gladiator develops sword rank for Myrmidon and Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "noctula",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Noctula has 50% HP and 45% Str personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Nuzzuo has 55% Spd and 50% Str personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "simon",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Simon has 50% Str and 50% HP personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tahonia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tobias",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Tobias has 60% Str and 55% HP personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "troy",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
           "characterId": "ultand",
           "rank": "B",
           "experimental": true,
@@ -2036,6 +2205,28 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jester",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Jester has 60% Spd and 45% Dex personal growths. Gladiator develops sword rank for Myrmidon and Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "zarcone",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Zarcone has 60% Dex and 40% HP personal growths. Gladiator develops axe and sword ranks for Brigand and Warrior.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2054,6 +2245,18 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "leda",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Leda starts in Hunter. Her 65% Spd and 50% Dex growths support accurate bow attacks, and its bow and sword practice also works toward Dancer.",
+          "sourceIds": [
+            "growths",
+            "leda-start",
             "game8"
           ]
         },
@@ -2082,6 +2285,93 @@
           ]
         },
         {
+          "characterId": "aswan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Hunter develops bow rank for Archer and later bow classes.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "inyoni",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Inyoni has 50% Str and 40% Dex personal growths. Hunter develops bow rank for Archer and later bow classes.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lilian",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Lilian has 55% Dex and 40% Spd personal growths. Hunter develops bow rank for Archer and later bow classes.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "peppe",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Peppe has 60% Spd and 45% Dex personal growths. Hunter develops the bow and sword ranks used by Rogue.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jester",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 60% Spd growth makes a fast bow skirmisher plausible. Hunter gives him a safer way to chip enemies while keeping sword training for his usual Shido path; 35% Str limits damage against tougher targets.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd and 50% Dex growths suit accurate bow follow-ups. Hunter costs less retraining than a late switch to Ranger, though his 40% Str means he still wants a good bow.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tobias",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 60% Str growth and combat-art damage bonus can make a bow-art route hit hard even without many follow-ups. He needs bow training instead of the axe and gauntlet ranks for Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 55% Spd growths can make bows more than a fallback weapon. Hunter develops the bow rank for a Ranger alternative, while giving up early Warrior training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "guzran",
           "rank": "B",
           "experimental": true,
@@ -2090,6 +2380,50 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "benditz",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Benditz has 50% Dex and 35% Str personal growths. Hunter builds bow rank for Charioteer; riding still needs training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nydine",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Nydine has 45% Spd and 40% Dex personal growths. Hunter builds bow rank for Charioteer; riding still needs training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ursula",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Ursula has 50% Dex and 50% Spd personal growths. Hunter builds bow rank for Charioteer; riding still needs training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "buccar",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str growth gives ranged attacks some weight, and a bow avoids exposing his 25% Spd growth to direct counters. This costs the armor and axe work for Dreadnought.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2132,6 +2466,114 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "buccar",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Buccar has 50% Str and 50% HP personal growths. Soldier develops axes and spears for Armored Knight; armor needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "centurio",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Centurio has 50% Def and 45% Str personal growths. Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "eshmel",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Esmeralda has 55% Str and 55% HP personal growths. Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Gaitz has 50% Str and 50% HP personal growths. Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Mikaela has 50% HP and 45% Str personal growths. Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nathan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Ninae has 45% Str and 45% HP personal growths. Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "orchel",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Orchel has 60% Str and 60% Def personal growths. Soldier develops axes and spears for Armored Knight; armor needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Ultand has 45% HP and 40% Str personal growths. Spear rank carries into Light Cavalry; riding needs separate training.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         },
@@ -2188,6 +2630,71 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "alexandra",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Alexandra has 55% Spd and 35% Str personal growths. The spear rank carries into Wing Soldier; flying needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "creek",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Ornius Rider develops spear and riding ranks for Light Cavalry.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ludia",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Ludia has 55% Spd and 35% Str personal growths. The spear rank carries into Wing Soldier; flying needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Lysander has 50% Spd and 40% Str personal growths. Ornius Rider develops spear and riding ranks for Light Cavalry.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "seteth",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Seteth has 45% Str and 40% Spd personal growths. The spear rank carries into Wing Soldier; flying needs separate training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 45% Def growths can support a sturdier mobile opener. The riding investment delays his simpler spear route to Guardian, so take this when movement is worth the detour.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
         }
       ]
     },
@@ -2232,6 +2739,104 @@
           ]
         },
         {
+          "characterId": "anatolia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Anatolia has 50% Mag and 50% Cha personal growths. Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "bonaventure",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Bonaventure has 45% Mag and 40% Res personal growths. Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dante",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Dante has 45% Mag and 40% Res personal growths. Diviner develops white magic for Priest and Bishop.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fabio",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Fabio has 50% Mag and 45% Res personal growths. Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "olympia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Olympia has 50% Mag and 40% Res personal growths. Diviner develops white magic for Priest and Bishop.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sha-lan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Sha Lan has 45% Mag and 45% Res personal growths. Diviner develops white magic for Priest and Bishop.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sofia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Sofia has 45% Mag and 40% Res personal growths. Diviner develops white magic for Priest and Bishop.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "talimun",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Talimun has 50% Cha and 45% Mag personal growths. Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "cai",
           "rank": "B",
           "experimental": true,
@@ -2240,6 +2845,61 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sirocco",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Sirocco has 45% Cha and 40% Mag personal growths. Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "yang-jie",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Yang Jie has 40% Mag and 40% Res personal growths. Diviner develops black magic for Shaman and later magic builds.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 35% Mag and 55% Spd growths give early magic a credible speed angle. Diviner opens Shaman, though it delays the sword training for her stronger Shido path.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 35% Mag and 45% Res growths make a support magic route possible, especially against enemy casters. It is slower to certify than her spear-centered Guardian path.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 35% Mag and 55% Spd growths can support fast spell attacks. Diviner is a real alternative if you want to test Ovate, but it asks for magic ranks instead of her Shido sword path.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2284,6 +2944,61 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "bertrand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Bertrand has 55% Str and 50% Dex personal growths. Myrmidon develops swords toward Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Catania has 55% Spd and 50% Dex personal growths. Myrmidon develops swords toward Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Loretta has 55% Spd and 40% Dex personal growths. Myrmidon develops swords toward Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nezha",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Nezha has 50% Dex and 45% Spd personal growths. Myrmidon develops swords toward Shido.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ludia",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth gives a fast sword build a real base. Myrmidon points toward Shido, but committing to swords delays Ludia’s usual flying training.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
         }
       ]
     },
@@ -2326,6 +3041,126 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "dadao",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Dadao has 55% Str and 50% HP personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Kiroc has 55% HP and 40% Str personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "majide",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Majide has 65% HP and 50% Str personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Signs of Growth can lift Mu's Str growth to 50%, giving her a better physical outlook than the base growth table suggests. Brigand keeps her axe training on course for Warrior.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "noctula",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Noctula has 50% HP and 45% Str personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Nuzzuo has 50% Str and 50% HP personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "simon",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Simon has 50% Str and 50% HP personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tahonia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "troy",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Str and 45% Def growths make a foot axe build credible. Brigand sharpens her axe attacks, while giving up the mobility of her usual mounted paths.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "zarcone",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Zarcone has 40% HP and 30% Str personal growths. Brigand develops axes and swords toward Warrior.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
         }
       ]
     },
@@ -2354,6 +3189,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 55% Spd growths suit repeated gauntlet attacks. Pugilist offers a quick melee route to Warrior, but it spends training time away from his usual axe and sword work.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         },
@@ -2410,6 +3256,83 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "aswan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Archer develops bows toward Sniper.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "diego",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Diego has 60% Dex and 45% Spd personal growths. Archer develops bows toward Sniper.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "leda",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Archer gives Leda a stronger bow focus before Dancer. Her 65% Spd and 50% Dex growths suit quick, accurate attacks; keep training swords for the Dancer exam.",
+          "sourceIds": [
+            "growths",
+            "leda-start",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lilian",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Lilian has 55% Dex and 40% Spd personal growths. Archer develops bows toward Sniper.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd and 50% Dex growths make accurate bow follow-ups credible. Archer carries Hunter training toward Ranger; choosing it delays his standard Warrior weapon ranks.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 55% Spd growths can give Archer both damage and follow-up potential. Bow C is a new investment before a Ranger build, rather than his usual Warrior path.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "halvin",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Halvin has 60% Dex and 45% Spd personal growths. Archer develops bows toward Sniper.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
         }
       ]
     },
@@ -2442,6 +3365,17 @@
           ]
         },
         {
+          "characterId": "peppe",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Peppe has 60% Spd and 45% Dex personal growths. Rogue develops bows and swords toward Ranger.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "dietrich",
           "rank": "B",
           "experimental": true,
@@ -2450,6 +3384,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "leda",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Hunter already develops bows and swords, so Rogue is a practical detour before Dancer. Her 65% Spd helps a mobile skirmishing role, though this gives up Archer’s more direct bow focus.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2484,6 +3429,39 @@
           ]
         },
         {
+          "characterId": "buccar",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Buccar has 50% Str and 50% HP personal growths. Armored Knight develops armor, axes and spears toward Dreadnought.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "orchel",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Orchel has 60% Def and 60% Str personal growths. Armored Knight develops armor, axes and spears toward Dreadnought.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "theodora",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Theodora has 70% HP and 50% Str personal growths. Armored Knight develops armor, axes and spears toward Cataphract.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "cai",
           "rank": "B",
           "experimental": true,
@@ -2492,6 +3470,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str and 40% Def growths make an armored front line possible. This emphasizes holding ground instead of the gauntlet pressure she gets from Pugilist.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2526,6 +3515,102 @@
           ]
         },
         {
+          "characterId": "centurio",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Centurio has 50% Def and 45% Str personal growths. Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "creek",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Light Cavalry develops riding, spears and swords toward Bardinger.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "eshmel",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Gaitz has 50% Str and 45% Def personal growths. Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Lysander has 50% Spd and 40% Str personal growths. Light Cavalry develops riding, spears and swords toward Bardinger.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Mikaela has 45% Str and 40% Spd personal growths. Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nathan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Ninae has 45% Str and 35% Spd personal growths. Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Ultand has 40% Str and 35% Spd personal growths. Light Cavalry develops riding, spears and swords toward Guardian.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "guzran",
           "rank": "B",
           "experimental": true,
@@ -2534,6 +3619,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "io",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Io has 40% Str and 40% Def personal growths. Light Cavalry develops riding, spears and swords toward Bardinger.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2590,6 +3686,28 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "nydine",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Nydine has 45% Spd and 40% Dex personal growths. Charioteer develops bows and riding toward Forest Knight.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ursula",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Ursula has 50% Dex and 50% Spd personal growths. Charioteer develops bows and riding toward Forest Knight.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
         }
       ]
     },
@@ -2630,6 +3748,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 45% Def growths suit a tougher mounted front line. He must add armor-style durability and mounted ranks instead of taking the direct spear path to Guardian.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2673,6 +3802,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "seteth",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Seteth has 45% Dex and 45% Str personal growths. Wing Soldier develops flying, spears and swords toward Dragoon.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         },
@@ -2733,6 +3873,60 @@
           ]
         },
         {
+          "characterId": "anatolia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Anatolia has 50% Mag and 50% Spd personal growths. Shaman develops black magic toward Ovate.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Fianna has 55% Mag and 45% Res personal growths. Shaman develops black magic toward Ovate.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Shaman develops black magic toward Ovate.",
+          "sourceIds": [
+            "game8"
+          ]
+        },
+        {
+          "characterId": "talimun",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Talimun has 45% Mag and 40% Spd personal growths. Shaman develops black magic toward Ovate.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sirocco",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Sirocco has 40% Mag and 45% Spd personal growths. Shaman develops black magic for a mixed Blacksmith or later High Savant path; axe or sword training is still needed.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "loretta",
           "rank": "B",
           "experimental": true,
@@ -2741,6 +3935,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "yang-jie",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Yang Jie has 40% Mag and 40% Res personal growths. Shaman develops black magic toward Ovate.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }
@@ -2787,6 +3992,39 @@
           ]
         },
         {
+          "characterId": "olympia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Olympia has 50% Mag and 40% Res personal growths. Priest develops white magic toward Troubadour.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sha-lan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Sha Lan has 45% Mag and 45% Res personal growths. Priest develops white magic toward Bishop.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tialla",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Tialla has 45% Mag and 40% Res personal growths. Priest develops her healing side toward Bishop, while her existing spellcasting remains a separate Ovate option.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "dante",
           "rank": "B",
           "experimental": true,
@@ -2795,6 +4033,17 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Res and 50% Lck growths help her survive support duty. Priest opens Bishop, but white magic training competes with the spear ranks for Guardian.",
+          "sourceIds": [
+            "growths",
             "game8"
           ]
         }

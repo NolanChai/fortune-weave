@@ -30,6 +30,7 @@ button, select { cursor: pointer; }
 .site-nav { display: flex; align-self: stretch; align-items: center; gap: 30px; }
 .site-nav a { padding-block: 8px; color: #b6b697; text-decoration: none; border-bottom: 1px solid transparent; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); border-color: #b8ad7e; }
+.nav-wip { display: inline-block; margin-left: 3px; padding: 2px 4px; border: 1px solid #b8ad7e88; color: #d6caa0; font: 9px/1 sans-serif; letter-spacing: .04em; vertical-align: middle; }
 .main { max-width: 1296px; margin-inline: auto; padding: 45px 48px 72px; }
 .page-heading { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-bottom: 32px; }
 h1 { margin: 0; color: var(--accent); font: 48px/1.15 "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; letter-spacing: -1.5px; font-weight: 400; }
@@ -53,8 +54,8 @@ h2 { font: 25px/1.3 "Palatino Linotype", "Book Antiqua", Palatino, Georgia, seri
 }
 @media (max-width: 480px) {
   .site-header { flex-wrap: wrap; gap: 18px; padding: 18px 20px 12px; }
-  .site-nav { width: 100%; gap: 26px; }
-  .site-nav a { padding-block: 0 7px; }
+  .site-nav { width: 100%; justify-content: space-between; gap: 8px; }
+  .site-nav a { padding-block: 0 7px; white-space: nowrap; }
   .main { padding-inline: 20px; }
   .page-heading { align-items: flex-start; flex-direction: column; gap: 22px; }
   .search { width: 100%; }

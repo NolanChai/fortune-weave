@@ -36,18 +36,22 @@ test('recommendations have portraits, sources, and consistent visual markers', (
   }
 });
 
-test('the full playable roster has Advanced and Master recommendations', () => {
+test('the full playable roster has a placement at every class tier', () => {
   const expected = new Set([
     ...gifts.characters.map(({ id }) => id),
     'creek', 'nathan', 'bertrand', 'talimun', 'anatolia', 'orchel', 'centurio', 'aswan', 'tahonia',
   ]);
   assert.deepEqual(new Set(roster.characters.map(({ id }) => id)), expected);
   assert.equal(roster.characters.length, expected.size, 'Duplicate roster entry');
-  for (const tier of ['advanced', 'master']) {
+  for (const tier of ['beginner', 'specialty', 'advanced', 'master']) {
     const classIds = new Set(classes.classes.filter((entry) => entry.tier === tier).map(({ id }) => id));
     const covered = new Set(suitability.classes.filter(({ classId }) => classIds.has(classId))
       .flatMap(({ picks }) => picks.map(({ characterId }) => characterId)));
     assert.deepEqual(covered, expected, `Incomplete ${tier} roster`);
+  }
+  for (const classId of ['hunter', 'archer']) {
+    const leda = suitability.classes.find((entry) => entry.classId === classId).picks.find((pick) => pick.characterId === 'leda');
+    assert.ok(leda && !leda.experimental, `Leda belongs in ${classId}`);
   }
 });
 
