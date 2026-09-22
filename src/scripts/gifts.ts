@@ -1,5 +1,5 @@
 import { INVENTORY_KEY, MAX_GIFT_QUANTITY, normalizeQuantity, parseInventory, serializeInventory } from '../data/gift-inventory';
-import { applyRecipientSelection, eligibleRecipients, parseRecipientFilters, selectedRecipients } from '../data/gift-recipients';
+import { applyRecipientSelection, compareRecipients, eligibleRecipients, parseRecipientFilters, parseRecipientSort, recipientRenownOrder, selectedRecipients, type RecipientSort } from '../data/gift-recipients';
 import recruitment from '../../data/recruitment.json';
 
 const page = document.querySelector<HTMLElement>('.gift-page');
@@ -10,6 +10,7 @@ if (page) {
   const recipientPicker = get<HTMLButtonElement>('#inventory-recipient-picker');
   const routeInputs = Array.from(page.querySelectorAll<HTMLInputElement>('input[name="gift-route"]'));
   const requirementBadges = Array.from(page.querySelectorAll<HTMLElement>('[data-recruitment-route]'));
+  const sortButtons = Array.from(page.querySelectorAll<HTMLButtonElement>('[data-recipient-sort]'));
   const pickerSearch = get<HTMLInputElement>('#character-picker-search');
   const applyCharacters = get<HTMLButtonElement>('#apply-character-selection');
   const characterOptions = Array.from(page.querySelectorAll<HTMLElement>('[data-character-option]'));
@@ -24,6 +25,7 @@ if (page) {
   let pickerMode: 'characters' | 'inventory' = 'characters';
   let pickerReturnFocus = pickerTrigger;
   let route = '';
+  let recipientSort: RecipientSort = 'matches';
   let excludedRecipients = new Set<string>();
   let eligible = eligibleRecipients(route, recruitment);
   let inventoryRecipients = new Set(eligible);
@@ -163,7 +165,10 @@ if (page) {
   function saveRecipientFilters() {
     const url = new URL(location.href);
     if (route) url.searchParams.set('route', route);
-    else url.searchParams.delete('route');
+    else {
+      url.searchParams.delete('route');
+      url.searchParams.delete('sort');
+    }
     const excluded = [...characterIds].filter((id) => excludedRecipients.has(id));
     if (excluded.length) url.searchParams.set('exclude', excluded.join(','));
     else url.searchParams.delete('exclude');
@@ -210,7 +215,8 @@ if (page) {
     }
     const selectedGiftIds = new Set<string>();
     const ranked = recipients.map((recipient) => {
-      const included = inventoryRecipients.has(recipient.dataset.recipient!);
+      const id = recipient.dataset.recipient!;
+      const included = inventoryRecipients.has(id);
       let loved = 0;
       let liked = 0;
       for (const match of recipient.querySelectorAll<HTMLElement>('[data-match-gift]')) {
@@ -221,10 +227,9 @@ if (page) {
         if (quantity > 0) match.dataset.preference === 'loved' ? loved++ : liked++;
       }
       recipient.hidden = !included || loved + liked === 0;
-      return { recipient, loved, liked };
+      return { recipient, id, loved, liked, renown: recipientRenownOrder(id, route, recruitment) };
     });
-    ranked.sort((a, b) => b.loved - a.loved || b.liked - a.liked
-      || a.recipient.dataset.recipient!.localeCompare(b.recipient.dataset.recipient!));
+    ranked.sort((a, b) => compareRecipients(a, b, recipientSort));
     get('#gift-recipient-list').append(...ranked.map(({ recipient }) => recipient));
     const count = ranked.filter(({ recipient }) => !recipient.hidden).length;
     const owned = Object.keys(inventory);
@@ -262,6 +267,12 @@ if (page) {
     const params = new URLSearchParams(location.search);
     const inventoryView = params.get('view') === 'inventory';
     ({ route, excluded: excludedRecipients } = parseRecipientFilters(params, recruitment));
+    recipientSort = parseRecipientSort(params.get('sort'), route);
+    for (const button of sortButtons) {
+      button.setAttribute('aria-pressed', String(button.dataset.recipientSort === recipientSort));
+      button.disabled = button.dataset.recipientSort !== 'matches' && !route;
+    }
+    get('#renown-sort-hint').hidden = Boolean(route);
     eligible = eligibleRecipients(route, recruitment);
     inventoryRecipients = selectedRecipients(eligible, excludedRecipients);
     for (const input of routeInputs) input.checked = input.value === route;
@@ -288,6 +299,16 @@ if (page) {
       const url = new URL(location.href);
       if (button.dataset.view === 'inventory') url.searchParams.set('view', 'inventory');
       else url.searchParams.delete('view');
+      history.pushState(null, '', url);
+      applyLocation();
+    });
+  }
+  for (const button of sortButtons) {
+    button.addEventListener('click', () => {
+      const url = new URL(location.href);
+      const sort = parseRecipientSort(button.dataset.recipientSort ?? null, route);
+      if (sort === 'matches') url.searchParams.delete('sort');
+      else url.searchParams.set('sort', sort);
       history.pushState(null, '', url);
       applyLocation();
     });

@@ -1,7 +1,37 @@
 type Recruitment = {
   routes: ReadonlyArray<{ id: string; name: string }>;
-  characters: ReadonlyArray<{ id: string; partOneRoutes: readonly string[] | null }>;
+  characters: ReadonlyArray<{
+    id: string;
+    partOneRoutes: readonly string[] | null;
+    requirements: ReadonlyArray<{ routeId: string; status: string; renown: number | null }>;
+  }>;
 };
+
+export type RecipientSort = 'matches' | 'renown-asc' | 'renown-desc';
+type RecipientRank = { id: string; loved: number; liked: number; renown: number | null };
+
+export function parseRecipientSort(value: string | null, route: string): RecipientSort {
+  return route && (value === 'renown-asc' || value === 'renown-desc') ? value : 'matches';
+}
+
+export function recipientRenownOrder(id: string, route: string, recruitment: Recruitment): number | null {
+  const requirement = recruitment.characters.find((character) => character.id === id)?.requirements
+    .find((row) => row.routeId === route);
+  // Automatic joins sort below numeric gates; this is not a reported Renown value.
+  if (requirement?.status === 'automatic') return 0;
+  return requirement?.status === 'recruit' ? requirement.renown : null;
+}
+
+export function compareRecipients(a: RecipientRank, b: RecipientRank, sort: RecipientSort): number {
+  if (sort !== 'matches') {
+    if (a.renown === null && b.renown !== null) return 1;
+    if (b.renown === null && a.renown !== null) return -1;
+    if (a.renown !== null && b.renown !== null && a.renown !== b.renown) {
+      return sort === 'renown-asc' ? a.renown - b.renown : b.renown - a.renown;
+    }
+  }
+  return b.loved - a.loved || b.liked - a.liked || a.id.localeCompare(b.id);
+}
 
 export function parseRecipientFilters(params: URLSearchParams, recruitment: Recruitment) {
   const requestedRoute = params.get('route');

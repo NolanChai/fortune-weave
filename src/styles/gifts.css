@@ -110,6 +110,13 @@
 .recipients-heading { padding-top: 5px; margin-bottom: 23px; }
 .recipients-heading h2 { margin-bottom: 6px; }
 #gift-match-status { min-height: 20px; color: var(--secondary); font-size: 12px; margin: 0; }
+.recipient-sort { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 12px; }
+.recipient-sort > span { margin-right: 4px; color: var(--secondary); }
+.recipient-sort button { min-height: 34px; padding: 6px 9px; border: 1px solid transparent; background: transparent; color: var(--secondary); }
+.recipient-sort button[aria-pressed="true"] { border-color: var(--gift-line); color: #f3d58d; background: #17372f66; }
+.recipient-sort button:hover:not(:disabled) { color: var(--text); border-color: var(--gold); }
+.recipient-sort button:disabled { opacity: .45; cursor: default; }
+.renown-sort-hint { margin: 6px 0 0; color: var(--secondary); font-size: 12px; }
 .gift-match-empty { padding: 28px 0; border-top: 1px solid var(--gift-line); color: var(--secondary); max-width: 420px; }
 .gift-recipient { --recipient-action-width: 40px; padding: 0 0 24px; margin-bottom: 22px; border-bottom: 1px solid var(--gift-line); }
 .gift-recipient header { display: grid; grid-template-columns: 42px minmax(0, 1fr) var(--recipient-action-width); gap: 13px; align-items: center; margin-bottom: 13px; }

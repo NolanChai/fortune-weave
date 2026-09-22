@@ -136,7 +136,17 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
           <p id="inventory-storage-warning" role="status" hidden>Inventory changes won’t be saved in this browser.</p>
         </section>
         <section class="gift-recipients" aria-labelledby="recipients-title">
-          <div class="recipients-heading"><h2 id="recipients-title">Who to give them to</h2><p id="gift-match-status" role="status" aria-live="polite" aria-atomic="true"></p></div>
+          <div class="recipients-heading">
+            <h2 id="recipients-title">Who to give them to</h2>
+            <p id="gift-match-status" role="status" aria-live="polite" aria-atomic="true"></p>
+            <div class="recipient-sort" role="group" aria-label="Sort recipients">
+              <span aria-hidden="true">Sort</span>
+              <button type="button" data-recipient-sort="matches" aria-pressed="true">Gift matches</button>
+              <button type="button" data-recipient-sort="renown-asc" aria-label="Renown: lowest first" aria-pressed="false">Renown ↑</button>
+              <button type="button" data-recipient-sort="renown-desc" aria-label="Renown: highest first" aria-pressed="false">Renown ↓</button>
+            </div>
+            <p id="renown-sort-hint" class="renown-sort-hint">Choose a route to sort by Renown.</p>
+          </div>
           <p id="inventory-empty" class="gift-match-empty">Add the gifts you have. Characters who love or really like them will appear here.</p>
           <p id="inventory-no-matches" class="gift-match-empty" hidden>No documented preferences match your inventory yet.</p>
           <div id="gift-recipient-list">
