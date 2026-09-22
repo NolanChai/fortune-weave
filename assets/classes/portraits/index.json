@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "Game8: All Characters and Playable Units",
+    "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/619779",
+    "checkedAt": "2026-09-22"
+  },
+  "assets": [
+    {
+      "id": "creek",
+      "file": "creek.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 43579,
+      "sha256": "8673576a063e6027e92625523189b3ee4e02c33e8ee126509d946ae7c909bc12",
+      "sourceUrl": "https://img.game8.co/4611469/02c73a2077eab6eeb2f7687369ccb21c.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624389"
+    },
+    {
+      "id": "nathan",
+      "file": "nathan.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 37462,
+      "sha256": "58fd671fdc6b9f9057883ceadbf373208ae7a47415380fa5db5d9e340a02f30d",
+      "sourceUrl": "https://img.game8.co/4611475/b9b798c96919ccee5fe9e809e8560799.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624390"
+    },
+    {
+      "id": "bertrand",
+      "file": "bertrand.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 48105,
+      "sha256": "43ad8c7ff9c1d6f75cd13d1300c46c77f2fa69004ab44e2185c65005664c28f0",
+      "sourceUrl": "https://img.game8.co/4611472/82e4dfecaa7f68f9de4a32ce15732606.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624391"
+    },
+    {
+      "id": "talimun",
+      "file": "talimun.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 41482,
+      "sha256": "32a5e2eef6fd0c7c81f600e2760077189f185054efb564412c40d5e2fe3876de",
+      "sourceUrl": "https://img.game8.co/4611477/84b84af3b03f960f8040b82ea3a0f86a.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624392"
+    },
+    {
+      "id": "anatolia",
+      "file": "anatolia.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 47104,
+      "sha256": "5b3fe87593ea122ea09b212119ea9bdb57a50055717678c64f53011742307800",
+      "sourceUrl": "https://img.game8.co/4611470/38905dd74492c15a18db675b54a56e3d.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623966"
+    },
+    {
+      "id": "orchel",
+      "file": "orchel.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 44731,
+      "sha256": "f821628db276dee2fdc6cb3d18684997c3b62a5e4f248c39b89c78cc0438e605",
+      "sourceUrl": "https://img.game8.co/4611455/877c654e682ca75d338ba8c2de508dc9.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624393"
+    },
+    {
+      "id": "centurio",
+      "file": "centurio.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 39423,
+      "sha256": "f60028097a2736a9bb7ae2434e60bd3980db6204592ab598f87aac12cd0c41c6",
+      "sourceUrl": "https://img.game8.co/4611446/c0e723438a8340812a15634ca3520406.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624394"
+    },
+    {
+      "id": "aswan",
+      "file": "aswan.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 124528,
+      "sha256": "c1f29c2437e93a697c1c685fb597070c640883c4407aa659a8bea58df0db1147",
+      "sourceUrl": "https://img.game8.co/4625399/99629ad6f8512d23cfe7f300fab6b4f3.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624395"
+    },
+    {
+      "id": "tahonia",
+      "file": "tahonia.png",
+      "width": 334,
+      "height": 270,
+      "bytes": 96109,
+      "sha256": "76420843d6142132bc14ee911d0cd5f87e0494a0aa242d5ca73b7a42598eb7e0",
+      "sourceUrl": "https://img.game8.co/4625398/04af4bad1cb25e158b6b92fce81be008.png/show",
+      "sourcePage": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624396"
+    }
+  ]
+}

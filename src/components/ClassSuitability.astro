@@ -3,7 +3,7 @@ import ClassFit from './ClassFit.astro';
 import ClassIcon from './ClassIcon.astro';
 import database from '../../data/classes.json';
 import suitability from '../../data/class-suitability.json';
-import portraits from '../../assets/characters/index.json';
+import roster from '../../data/class-roster.json';
 import '../styles/class-suitability.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -11,7 +11,7 @@ const families = [{ id: 'all', label: 'All' }, { id: 'melee', label: 'Melee' }, 
 const rankOrder: Record<string, number> = { S: 0, A: 1, B: 2, C: 3 };
 const entries = suitability.classes.map((entry) => {
   const details = database.classes.find(({ id }) => id === entry.classId)!;
-  const names = entry.picks.map((pick) => portraits.characters.find(({ id }) => id === pick.characterId)!.name);
+  const names = entry.picks.map((pick) => roster.characters.find(({ id }) => id === pick.characterId)!.name);
   const mounted = details.requirements?.some(({ skill }) => skill === 'riding' || skill === 'flying');
   return { ...entry, details, picks: [...entry.picks].sort((a, b) => (rankOrder[a.rank ?? ''] ?? 4) - (rankOrder[b.rank ?? ''] ?? 4)), roles: [...new Set([entry.family, ...(mounted ? ['mounted'] : [])])].join(' '), search: [details.name, ...names].join(' ').toLowerCase() };
 });
@@ -36,7 +36,7 @@ const entries = suitability.classes.map((entry) => {
 
 <div class="class-board">
   {entries.map((entry) => (
-    <section class="class-column" data-class-column data-tier={entry.details.tier} data-family={entry.roles} data-search={entry.search} aria-labelledby={`column-${entry.classId}`} hidden={entry.details.tier !== 'advanced'}>
+    <section class="class-column" data-class-column data-tier={entry.details.tier} data-family={entry.roles} data-class-name={entry.details.name.toLowerCase()} data-search={entry.search} aria-labelledby={`column-${entry.classId}`} hidden={entry.details.tier !== 'advanced'}>
       <header class="class-column-heading">
         <ClassIcon classId={entry.classId} name={entry.details.name} />
         <h2 id={`column-${entry.classId}`}><a href={`${base}/classes/?view=requirements#${entry.classId}`} data-classes-view="requirements" data-class-target={entry.classId}>{entry.details.name}</a></h2>
@@ -54,7 +54,8 @@ const entries = suitability.classes.map((entry) => {
 <footer class="suitability-footer">
   <details><summary>Sources &amp; notes</summary>
     <p>Ranks compare characters within each class: S is exceptional, A is a strong fit, B is viable with tradeoffs, and C is situational. These are our recommendations, not a community vote. Experimental builds can rank as highly as standard picks.</p>
-    <p>Notes weigh personal growths, abilities, and training cost. They do not guarantee a character’s final stats. Elephant Rider is still unranked pending more class details.</p>
+    <p>Every playable character has Advanced and Master placements. Earlier tiers focus on training options; later recruits may already have a higher-tier class. Guest-only units are excluded.</p>
+    <p>Notes weigh personal growths, abilities, and training cost. They do not guarantee a character’s final stats. Availability depends on your route and story progress. Elephant Rider is still unranked pending more class details.</p>
     <p>Research: Serenes Forest, Game8, Pocket Tactics, Siliconera, Games with James, and player discussions.</p>
     <p>Class sprites: Nintendo / Intelligent Systems, via Game8. Dancer uses a placeholder.</p>
     <p>Reviewed {suitability.checkedAt}. <a href={`${base}/data/class-suitability.json`}>Recommendation data (JSON)</a></p>

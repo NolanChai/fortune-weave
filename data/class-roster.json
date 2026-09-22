@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "name": "Game8: All Characters and Playable Units",
+    "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/619779",
+    "checkedAt": "2026-09-22"
+  },
+  "scope": "All permanent playable characters, including later recruits. Guest-only units are excluded. Part numbers follow the source roster grouping, not availability on every route.",
+  "characters": [
+    {
+      "id": "alexandra",
+      "name": "Alexandra",
+      "portrait": "assets/characters/alexandra/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "anatolia",
+      "name": "Anatolia",
+      "portrait": "assets/classes/portraits/anatolia.png",
+      "part": 3
+    },
+    {
+      "id": "aswan",
+      "name": "Aswan",
+      "portrait": "assets/classes/portraits/aswan.png",
+      "part": 3
+    },
+    {
+      "id": "benditz",
+      "name": "Benditz",
+      "portrait": "assets/characters/benditz/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "bertrand",
+      "name": "Bertrand",
+      "portrait": "assets/classes/portraits/bertrand.png",
+      "part": 3
+    },
+    {
+      "id": "bonaventure",
+      "name": "Bonaventure",
+      "portrait": "assets/characters/bonaventure/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "buccar",
+      "name": "Buccar",
+      "portrait": "assets/characters/buccar/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "cai",
+      "name": "Cai",
+      "portrait": "assets/characters/cai/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "catania",
+      "name": "Catania",
+      "portrait": "assets/characters/catania/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "centurio",
+      "name": "Centurio",
+      "portrait": "assets/classes/portraits/centurio.png",
+      "part": 3
+    },
+    {
+      "id": "creek",
+      "name": "Creek",
+      "portrait": "assets/classes/portraits/creek.png",
+      "part": 2
+    },
+    {
+      "id": "dadao",
+      "name": "Dadao",
+      "portrait": "assets/characters/dadao/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "dante",
+      "name": "Dante",
+      "portrait": "assets/characters/dante/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "portrait": "assets/characters/diego/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "dietrich",
+      "name": "Dietrich",
+      "portrait": "assets/characters/dietrich/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "eshmel",
+      "name": "Eshmel",
+      "portrait": "assets/gifts/characters/eshmel.png",
+      "part": 1
+    },
+    {
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "portrait": "assets/characters/esmeralda/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "fabio",
+      "name": "Fabio",
+      "portrait": "assets/characters/fabio/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "fianna",
+      "name": "Fianna",
+      "portrait": "assets/characters/fianna/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "gaitz",
+      "name": "Gaitz",
+      "portrait": "assets/gifts/characters/gaitz.png",
+      "part": 1
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath",
+      "portrait": "assets/characters/goliath/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "guzran",
+      "name": "Guzran",
+      "portrait": "assets/characters/guzran/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "halvin",
+      "name": "Halvin",
+      "portrait": "assets/characters/halvin/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "hong-hua",
+      "name": "Hong Hua",
+      "portrait": "assets/gifts/characters/hong-hua.png",
+      "part": 1
+    },
+    {
+      "id": "inyoni",
+      "name": "Inyoni",
+      "portrait": "assets/characters/inyoni/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "io",
+      "name": "Io",
+      "portrait": "assets/characters/io/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "jasmine",
+      "name": "Jasmine",
+      "portrait": "assets/characters/jasmine/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "jester",
+      "name": "Jester",
+      "portrait": "assets/characters/jester/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "kiroc",
+      "name": "Kiroc",
+      "portrait": "assets/characters/kiroc/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "leda",
+      "name": "Leda",
+      "portrait": "assets/characters/leda/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "lilian",
+      "name": "Lilian",
+      "portrait": "assets/characters/lilian/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "loretta",
+      "name": "Loretta",
+      "portrait": "assets/characters/loretta/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "ludia",
+      "name": "Ludia",
+      "portrait": "assets/characters/ludia/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "lysander",
+      "name": "Lysander",
+      "portrait": "assets/characters/lysander/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "majide",
+      "name": "Majide",
+      "portrait": "assets/characters/majide/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "mikaela",
+      "name": "Mikaela",
+      "portrait": "assets/characters/mikaela/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "mu",
+      "name": "Mu",
+      "portrait": "assets/characters/mu/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "nathan",
+      "name": "Nathan",
+      "portrait": "assets/classes/portraits/nathan.png",
+      "part": 2
+    },
+    {
+      "id": "nezha",
+      "name": "Nezha",
+      "portrait": "assets/characters/nezha/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "ninae",
+      "name": "Ninae",
+      "portrait": "assets/characters/ninae/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "noctula",
+      "name": "Noctula",
+      "portrait": "assets/gifts/characters/noctula.png",
+      "part": 1
+    },
+    {
+      "id": "nuzzuo",
+      "name": "Nuzzuo",
+      "portrait": "assets/characters/nuzzuo/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "nydine",
+      "name": "Nydine",
+      "portrait": "assets/characters/nydine/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "olympia",
+      "name": "Olympia",
+      "portrait": "assets/characters/olympia/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "orchel",
+      "name": "Orchel",
+      "portrait": "assets/classes/portraits/orchel.png",
+      "part": 3
+    },
+    {
+      "id": "peppe",
+      "name": "Peppe",
+      "portrait": "assets/characters/peppe/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "peter",
+      "name": "Peter",
+      "portrait": "assets/characters/peter/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "seteth",
+      "name": "Seteth",
+      "portrait": "assets/characters/seteth/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "sha-lan",
+      "name": "Sha Lan",
+      "portrait": "assets/characters/sha-lan/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "portrait": "assets/characters/simon/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "sirocco",
+      "name": "Sirocco",
+      "portrait": "assets/characters/sirocco/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "portrait": "assets/characters/sofia/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "tahonia",
+      "name": "Tahonia",
+      "portrait": "assets/classes/portraits/tahonia.png",
+      "part": 3
+    },
+    {
+      "id": "talimun",
+      "name": "Talimun",
+      "portrait": "assets/classes/portraits/talimun.png",
+      "part": 3
+    },
+    {
+      "id": "theodora",
+      "name": "Theodora",
+      "portrait": "assets/characters/theodora/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "tialla",
+      "name": "Tialla",
+      "portrait": "assets/characters/tialla/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "tobias",
+      "name": "Tobias",
+      "portrait": "assets/characters/tobias/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "portrait": "assets/gifts/characters/troy.png",
+      "part": 1
+    },
+    {
+      "id": "ultand",
+      "name": "Ultand",
+      "portrait": "assets/characters/ultand/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "ursula",
+      "name": "Ursula",
+      "portrait": "assets/characters/ursula/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "yang-jie",
+      "name": "Yang Jie",
+      "portrait": "assets/characters/yang-jie/icon.jpg",
+      "part": 1
+    },
+    {
+      "id": "zarcone",
+      "name": "Zarcone",
+      "portrait": "assets/characters/zarcone/icon.jpg",
+      "part": 1
+    }
+  ]
+}

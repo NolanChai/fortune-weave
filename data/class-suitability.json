@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "checkedAt": "2026-09-22",
   "status": "draft",
-  "scope": "Draft fit rankings within each Advanced class. Fit and experimental status are independent. Personal growths exclude class modifiers; character and class availability depend on your route.",
+  "scope": "Fit rankings across Beginner, Specialty, Advanced, and Master classes. Every permanent playable character has Advanced and Master placements, including later recruits. These compare builds, not recommended downgrades for late arrivals. Fit and experimental status are independent. Personal growths exclude class modifiers; availability depends on route and story progress.",
   "sources": [
     {
       "id": "growths",
@@ -43,6 +43,101 @@
       "id": "game8",
       "name": "Game8 · class certification tables",
       "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620256"
+    },
+    {
+      "id": "profile-alexandra",
+      "name": "Game8 · Alexandra growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623983"
+    },
+    {
+      "id": "profile-ninae",
+      "name": "Game8 · Ninae growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623990"
+    },
+    {
+      "id": "profile-seteth",
+      "name": "Game8 · Seteth growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623993"
+    },
+    {
+      "id": "profile-creek",
+      "name": "Game8 · Creek growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624389"
+    },
+    {
+      "id": "profile-nathan",
+      "name": "Game8 · Nathan growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624390"
+    },
+    {
+      "id": "profile-eshmel",
+      "name": "Game8 · Eshmel growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623869"
+    },
+    {
+      "id": "profile-hong-hua",
+      "name": "Game8 · Hong Hua growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624012"
+    },
+    {
+      "id": "profile-troy",
+      "name": "Game8 · Troy growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624013"
+    },
+    {
+      "id": "profile-aswan",
+      "name": "Game8 · Aswan growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624395"
+    },
+    {
+      "id": "profile-tahonia",
+      "name": "Game8 · Tahonia growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624396"
+    },
+    {
+      "id": "roster",
+      "name": "Game8 · all playable characters",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/619779"
+    },
+    {
+      "id": "profile-mikaela",
+      "name": "Game8 · Mikaela growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624008"
+    },
+    {
+      "id": "profile-noctula",
+      "name": "Game8 · Noctula growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623984"
+    },
+    {
+      "id": "profile-loretta",
+      "name": "Game8 · Loretta growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623996"
+    },
+    {
+      "id": "profile-bonaventure",
+      "name": "Game8 · Bonaventure growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623614"
+    },
+    {
+      "id": "profile-nuzzuo",
+      "name": "Game8 · Nuzzuo growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623987"
+    },
+    {
+      "id": "profile-lysander",
+      "name": "Game8 · Lysander growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624002"
+    },
+    {
+      "id": "profile-sirocco",
+      "name": "Game8 · Sirocco growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624006"
+    },
+    {
+      "id": "profile-gaitz",
+      "name": "Game8 · Gaitz growths and skills",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624014"
     }
   ],
   "classes": [
@@ -72,6 +167,78 @@
           ],
           "experimental": false,
           "rank": "S"
+        },
+        {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth works toward Punishing Squall's AS threshold for Hit+20. Later, a larger AS lead also gives Atk+3. Keep weapon weight under control; the build loses its main advantage if equipment removes that speed lead.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nezha",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Str, 45% Spd, and 50% Dex growths give a sword build a balanced offensive base. Quick Draw can add damage when he initiates. Keep the plan viable without the proc, since its initial Atk+3 only has a 50% chance.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd growth supports a fast sword build, while 50% Str gives it real damage. Effective swords can also use his personal bonus. The limitation is durability, so use him to initiate rather than leaving him surrounded.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth gives swords a clearer offensive identity than her equal 35% Str and Mag suggest. Steadfast adds avoidance while healthy, and Peak Form later adds damage at full HP. A healer helps keep both conditions useful.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-loretta"
+          ]
+        },
+        {
+          "characterId": "creek",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His sword preference and 60% Spd growth support a fast grounded alternative. Steady Hands improves AS and avoidance when an enemy attacks him. It is a good combat fit, though losing mounted reach is a practical cost.",
+          "sourceIds": [
+            "profile-creek",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "bertrand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Str growth supports sword damage without needing a lucky personal proc. At 45% Spd growth, lighter equipment still matters for normal follow-ups. This is a focused alternative when a sword role fits the team.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         },
         {
           "characterId": "jester",
@@ -113,6 +280,136 @@
           "rank": "S"
         },
         {
+          "characterId": "nuzzuo",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 55% Spd growths are an unusually strong offensive combination. Effective weapons also activate his personal Atk bonus. Match the weapon to the enemy and protect him afterward: 20% Def and 15% Res leave little room for mistakes.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dadao",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Str growth gives this physical build strong damage potential. One Chance adds Atk+5 only when neither unit can follow up. At 30% Spd, slower opponents are often better matchups; being doubled does not activate the bonus.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 40% Str growth is workable, and 55% Spd gives him a chance to land repeated hits. Tyranny rewards attacking after a teammate applies a status. This is strongest with setup, rather than sending him in first.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "majide",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str growth and axe-specific Str+3 make an axe build the obvious starting point. His 65% HP growth gives him room to take physical hits. At 20% Spd, build around strong individual attacks rather than consistent follow-ups.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nezha",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His balanced 45% Str and Spd growths support direct physical attacks. Quick Draw rewards initiating, with another damage proc available later. Preserve useful AS rather than expecting those random bonuses to carry every fight.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "noctula",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str and Spd growths make physical combat a natural fit. Warrior's Clarity adds Avo after combat, helping with the position she ends in. It does not protect her before that first fight, so choose the opener carefully.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "simon",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str growth supports physical damage, with 50% HP and 40% Def offering staying power. Close Call is an emergency proc, not reliable protection. Pick fights he can survive normally and treat a lethal-hit escape as a bonus.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "With Signs of Growth applied, her personal Str, Spd, and Dex growths are all 50%. That gives a physical build a much stronger basis than her unmodified table suggests. She still needs levels for those growths to pay off.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "troy",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str and 50% Spd growths support physical gauntlets, with Yun Shou adding Hit+10 when they are equipped. This is an Advanced comparison, not a reason to downgrade her existing War Monk setup.",
+          "sourceIds": [
+            "profile-troy",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tahonia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Gauntlets are Tahonia's preferred skill, with 50% Str and 65% HP growths supporting close combat. Python Technique can grant a follow-up with a gauntlet art, but only at a 15% trigger rate. The 20% Spd growth means doubles are otherwise difficult.",
+          "sourceIds": [
+            "profile-tahonia",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "bertrand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Str, 50% Dex, and 45% Spd growths give physical damage a strong base. Requiem Style can force a follow-up, but its 5% trigger is too rare to plan around. This compares fit rather than recommending a downgrade on recruitment.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "mikaela",
           "basis": "theorycraft",
           "reason": "She benefits from fighting adjacent to the enemy, which suits a close-range physical class. Warrior lets her lean into that role without asking her to develop a second offensive stat.",
@@ -133,6 +430,31 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "zarcone",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Hatchet Man adds Hit+10 with an axe, and his 60% Dex growth reinforces that accuracy. The weak point is 30% Str growth. This is a workable axe build when stronger weapons cover the damage gap.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sirocco",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 40% Str, 45% Spd, and 50% Dex growths support a physical sword build. Goddess's Favor restores 5 HP after combat, which helps with repeated engagements. This gives up his usual spell-focused turns, and the recovery happens too late to save him from a lethal counter.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-sirocco"
+          ]
         },
         {
           "characterId": "ultand",
@@ -185,6 +507,53 @@
           ]
         },
         {
+          "characterId": "lilian",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Bows help her attack enemies that cannot counter, activating Safety First's Hit+10. Her 55% Dex growth also helps reach the 100% Hit required by her later Atk+3 bonus. Positioning and weapon choice matter more than her modest 35% Str growth.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "diego",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 60% Dex and 45% Spd growths suit accurate bow attacks with follow-up potential. No Mercy later improves Hit/Crit on those follow-ups. Avoid equipment so heavy that it removes the AS needed to benefit from the ability.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "aswan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Princess of Arrows adds Hit+20 with a bow, and bows are a preferred skill. That gives this path a clear advantage over retraining into another weapon. Her 35% Str growth means damage still depends on good equipment.",
+          "sourceIds": [
+            "profile-aswan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Brio's extra movement helps him reach a firing position, while 45% Str, Spd, and Dex growths give bows a balanced offensive base. This is a credible physical alternative if the team already has enough spear users. He gives up his broader toolkit and needs bow training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "halvin",
           "basis": "review",
           "reason": "Siliconera calls him a dependable archer, and his accuracy improves as he fights. Sniper doubles down on consistency; it is useful when landing the shot matters more than extra movement.",
@@ -194,6 +563,30 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "benditz",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Dex growth helps accurate bow attacks, though 35% Str is modest. You give up his Charioteer-specific bonuses here. Choose this for Sniper's tools, and compare it with simply keeping him in Charioteer.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "peppe",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 60% Spd growth supports follow-ups, and his later damage bonus rewards attacking injured enemies. At 30% Str growth, he benefits from a teammate softening the target first. His enemy-phase first-strike chance is too low to rely on for safety.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -224,6 +617,18 @@
           "rank": "A"
         },
         {
+          "characterId": "lilian",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Mounted movement helps her find a target that cannot counter, which activates Safety First. Her 55% Dex growth supports accurate bow attacks. Use that reach to choose matchups rather than exposing her to several enemies afterward.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "nydine",
           "basis": "theorycraft",
           "reason": "Her cavalry movement trait makes a mobile bow build worth trying. The investment is the bow training itself; this is a way to change her role, not evidence that she will outshoot the dedicated archers.",
@@ -243,6 +648,42 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "benditz",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Dex growth supports a mounted bow role, but Wheeled Warrior explicitly names Charioteer. Do not assume its Hit+20 carries into this class. Consider the upgrade for its class kit and mobility, rather than as a free improvement to his personal bonuses.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "aswan",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Bows preserve Princess of Arrows' Hit+20, while a mount offers more reach. Extra riding training is the tradeoff compared with her infantry preference. It works if mobility matters more than the simplest bow progression.",
+          "sourceIds": [
+            "profile-aswan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str growth gives bow attacks a good damage base, and riding is already a strength. Mounted reach also helps him finish beside an ally for Brave Assist's Def+3. Bow training is the extra cost, and he lacks a personal bonus to bow range or combat arts.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-gaitz"
+          ]
         }
       ]
     },
@@ -262,6 +703,66 @@
           "rank": "A"
         },
         {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd and 50% Dex growths suit a fast weapon specialist. An AS lead can activate her accuracy and later damage bonuses, while different weapons help choose safe targets. Her 35% Str means weapon quality still matters.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd and 50% Dex growths suit a fast physical attacker. Tyranny adds Atk+3 and Crit+10 against statused enemies, so pair him with someone who applies a status first. His 15% Res makes exposure to magic costly.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "peppe",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 60% Spd growth is the main draw, with sword/bow options helping him finish damaged targets. King's Majesty later adds attack and crit against those enemies. His low HP and 30% Str favor careful cleanup over taking the first fight.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "diego",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Spd and 60% Dex growths support flexible physical attacks. No Mercy rewards follow-ups, while different weapons help choose a suitable target. Caretaker's 5% protection for adjacent allies is too rare to build your defense around.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ludia",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth and initiating AS+3 support the follow-ups that activate Perception's Avo+10. A sword/bow build can choose targets from different ranges while keeping that sequence. Giving up flight is a real cost, and the additional bow training needs a reason on your team.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "ursula",
           "basis": "review",
           "reason": "This keeps her in the bow role recommended by Siliconera, with swords as a second training target. Choose it when you want that flexibility more than a mount.",
@@ -271,6 +772,19 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "noctula",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Spd growth supports a sword/bow alternative, with ranged attacks helping avoid a dangerous first counter. Warrior's Clarity adds Avo afterward. Swords are a training weakness, so this costs more than her axe/gauntlet path and still does not guarantee evasion.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-noctula"
+          ]
         },
         {
           "characterId": "dietrich",
@@ -311,6 +825,90 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str growth and preferred spear skill give her a clear physical path. Against magic users, Spirits' Voice adds Hit/Avo, backed by 45% Res growth. That helps her approach mages, though 35% Spd means follow-ups are not automatic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 45% Def growths support close-range physical combat. Brave Assist gives adjacent allies Def+3, so he contributes most while holding formation with another front-line unit. That favors steady positioning over chasing isolated targets.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Signs of Growth brings her Str, Spd, and Dex growths to 50%, with 40% Def. A spear-focused physical path uses that balanced spread. The main cost is raising her: high growths do not replace weak stats before she gains levels.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "eshmel",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Spear is a preferred skill, and 45% Str, Spd, and Dex growths give this physical path a balanced base. It keeps training focused while leaving room for support skills. The appeal is consistency rather than one unusually high offensive stat.",
+          "sourceIds": [
+            "profile-eshmel",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nathan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His preferred spear skill and 60% Str/Dex growths make a grounded build credible. It reduces the training spread if you do not need armor and riding. With 25% Spd growth, focus on reliable heavy hits rather than doubles.",
+          "sourceIds": [
+            "profile-nathan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "centurio",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Str and 50% Dex growths support reliable spear attacks. Sturdy Corundum helps him take the first enemy-phase fight. It gives him a defensive purpose without committing entirely to armor.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her personal Hit+10 against adjacent foes works with a spear just as it does with her usual weapons. With 45% Str and 40% Def growths, she has a solid front-line base. The extra cost is spear training, and throwing from range will not activate that adjacency bonus.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-mikaela"
           ]
         },
         {
@@ -364,6 +962,17 @@
           "rank": "A"
         },
         {
+          "characterId": "nathan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Armor, riding, and spears are all preferred skills, so the training fits. His 60% Str and Dex growths support hard, accurate hits. Headlong Rush helps when he initiates, but 25% Spd means its AS+3 will not guarantee follow-ups.",
+          "sourceIds": [
+            "profile-nathan",
+            "game8"
+          ]
+        },
+        {
           "characterId": "jasmine",
           "basis": "review",
           "reason": "James describes her as a strong tank in his run. An armored mount keeps that role while giving her more reach, provided you are willing to invest in the extra certification skills.",
@@ -373,6 +982,19 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "lysander",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Spd and 40% Def growths make a faster armored rider plausible. Racing Attack adds Avo+15 when he initiates, while later kills build more speed. Armor is a training weakness, so this is an investment; check actual AS rather than assuming he will still double.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-lysander"
+          ]
         },
         {
           "characterId": "io",
@@ -404,6 +1026,18 @@
           "rank": "S"
         },
         {
+          "characterId": "orchel",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Orchel's 60% Str, Def, and Res growths make armor an exceptional fit, with Solid and Sturdy adding Def+5. The 10% Spd means frequent enemy follow-ups. Build around surviving those hits; the personal ability also rules out cavalry and flying classes.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "jasmine",
           "basis": "theorycraft",
           "reason": "Her enemy-initiated accuracy bonus fits a class built around counterattacks. I would use her to hold a physical lane, rather than send her ahead to chase targets.",
@@ -416,14 +1050,74 @@
         },
         {
           "characterId": "buccar",
-          "basis": "theorycraft",
-          "reason": "His personal damage reduction supports taking repeated hits. This is a sensible physical wall, but low speed still matters when an enemy can attack twice.",
-          "sourceIds": [
-            "abilities",
-            "growths"
-          ],
+          "rank": "A",
           "experimental": false,
-          "rank": "B"
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 45% Def growths support a physical wall, while Guardian's Duty reduces incoming damage. His 25% Spd favors defense over chasing doubles. Keep him away from magic, where 20% Res is much less reassuring.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dadao",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Str and 45% Def growths suit an armored attacker. One Chance rewards fights where neither side doubles, but armor does not make that condition automatic. Avoid fast enemies that still follow up through his defenses.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "centurio",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Def growth and guaranteed half damage in the first enemy-phase combat suit holding a position. His 45% Str supports counterattacks. The reduction only covers the first fight, so the whole enemy phase is not equally safe.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "majide",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "High HP and 40% Def growth support a bulky axe user, and Hellbent Axe keeps adding strength. The issue is magic: 10% Res growth leaves a large weakness. This works as a physical wall if another unit handles casters.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "simon",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% HP and 40% Def growths support a physical wall with solid damage. Close Call sometimes saves him from lethal hits, but 25% Res remains a weakness. This is viable if you keep magic away.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tahonia",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Tahonia's 65% HP and 45% Def growths give armor a reasonable basis. It trades the gauntlet focus for defense and needs new weapon training. Choose it for bulk, not to improve Python Technique.",
+          "sourceIds": [
+            "profile-tahonia",
+            "game8"
+          ]
         },
         {
           "characterId": "cai",
@@ -454,6 +1148,17 @@
           "rank": "S"
         },
         {
+          "characterId": "creek",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 60% Spd growths make him an unusually strong fast mounted attacker. Steady Hands adds AS+3 and Avo+10 when attacked. Riding and sword are preferred skills, so the training follows his strengths too.",
+          "sourceIds": [
+            "profile-creek",
+            "game8"
+          ]
+        },
+        {
           "characterId": "cai",
           "basis": "theorycraft",
           "reason": "Brio adds to the appeal of a mounted physical build. This gives him a useful way to cover ground while keeping a spear focus, rather than splitting his training between physical weapons and magic.",
@@ -463,6 +1168,43 @@
           ],
           "experimental": false,
           "rank": "A"
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str growth supports mounted attacks, while 45% Def helps him stay near the front. Mobility also makes it easier to place Brave Assist beside an ally. Avoid overextending into magic with only 25% Res growth.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Spd growth and initiating Avo+15 reward choosing the first engagement. A mount helps him reach those targets. Accelerate later adds speed after kills, but he needs a manageable opening fight to start that sequence.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her sword and spear strengths make the weapon side practical, while 55% Spd growth supports a fast mounted attacker. Steadfast adds Avo+10 above half HP. Riding is the new investment, and her 35% Str still needs good weapons to turn speed into damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-loretta"
+          ]
         },
         {
           "characterId": "io",
@@ -528,6 +1270,45 @@
           ]
         },
         {
+          "characterId": "alexandra",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Alexandra already belongs on the flying path; this is a natural continuation. Her 55% Spd growth and terrain-based AS bonus support follow-ups. Spears keep training aligned with her strengths, while 35% Str means she still needs a good weapon.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-alexandra"
+          ]
+        },
+        {
+          "characterId": "seteth",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His axe and spear strengths suit Dragoon directly. With 45% Str and 40% Def growth, he can handle physical targets without giving up mobility. Ready for Battle helps in the first enemy-phase fight, but its 50% trigger is not guaranteed protection.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-seteth"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 55% Spd growths give a flying attacker real offensive potential. Flight helps reach the enemies that match an effective weapon, activating Har Hali Wisdom. The cost is flying and axe/spear training beyond his sword/bow strengths, with low defenses limiting where he can finish.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-nuzzuo"
+          ]
+        },
+        {
           "characterId": "guzran",
           "basis": "theorycraft",
           "reason": "His physical stats make a flying build plausible, even if swords are the easier path. Try it for movement across difficult terrain; expect a larger training investment than Shido.",
@@ -536,17 +1317,6 @@
             "classes"
           ],
           "experimental": true,
-          "rank": "B"
-        },
-        {
-          "characterId": "alexandra",
-          "basis": "theorycraft",
-          "reason": "Her speed gives her an offensive reason to try flight. Her adjacent-ally bonuses also encourage keeping her near the team, rather than using that movement to send her off alone.",
-          "sourceIds": [
-            "growths",
-            "abilities"
-          ],
-          "experimental": false,
           "rank": "B"
         }
       ]
@@ -565,6 +1335,17 @@
           ],
           "experimental": false,
           "rank": "A"
+        },
+        {
+          "characterId": "eshmel",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Equal 45% Str and Mag growths make a magic-oriented mounted alternative plausible. Movement helps reach targets with lower resistance. This takes more training than the preferred spear route, so choose it when the team needs another caster.",
+          "sourceIds": [
+            "profile-eshmel",
+            "game8"
+          ]
         },
         {
           "characterId": "olympia",
@@ -620,6 +1401,18 @@
           "rank": "S"
         },
         {
+          "characterId": "anatolia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 50% Mag and 50% Spd growths give casting both damage and follow-up potential. Celestial Flow adds avoidance, with healing on successful evasion learned later. That sustain helps when it happens, but it is not guaranteed protection.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "fianna",
           "basis": "theorycraft",
           "reason": "Her high Mag growth gives her a good basis for an offensive magic role. She also has a healing-related personal ability, so the choice depends on whether the team needs damage or a dedicated healer more.",
@@ -629,6 +1422,42 @@
           ],
           "experimental": false,
           "rank": "A"
+        },
+        {
+          "characterId": "bonaventure",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Mag and 50% Dex growths make offensive magic a comfortable fit. Sage Advice also supports adjacent allies, which suits casting from behind the front line. His 30% Def growth makes that positioning worth maintaining.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-bonaventure"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Mag and Spd growths support offensive casting, and Zhu Ming adds Hit+10 while magic is equipped. Black magic is also a preferred skill. It is a direct fit without forcing a new weapon role.",
+          "sourceIds": [
+            "profile-hong-hua",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "talimun",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Mag growth is slightly ahead of 40% Str, making offensive magic sensible. His 40% Spd gives a balanced rather than exceptional offensive spread. Choose it for another caster; the artillery-specific ability does not boost ordinary spells.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         },
         {
           "characterId": "tialla",
@@ -654,15 +1483,40 @@
           ]
         },
         {
-          "characterId": "mu",
-          "basis": "review",
-          "reason": "Siliconera had success building her as a mage. Her growth ability makes unusual training paths more plausible, but ther still takes investment and should not be treated as an immediately strong magic recruit.",
+          "characterId": "yang-jie",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 40% Mag growth gives offensive magic a reasonable basis, though it trails the strongest casters. Monkly Havoc can heal him fully after a kill. That is a bonus when it triggers, not a reason to accept a dangerous counterattack.",
           "sourceIds": [
-            "siliconera",
-            "growths"
-          ],
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
           "experimental": true,
-          "rank": "C"
+          "basis": "theorycraft",
+          "reason": "Her Mag and Str growths are both 35%, with 55% Spd giving either damage type a chance to work. A fast spell build can aim for her AS-based Hit and later Atk bonuses. Spell weight and magic training are the catches; those bonuses disappear if she loses the AS lead.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "C",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Signs of Growth only brings her Mag growth to 25%, compared with 50% Str and Spd. Offensive casting works against her stronger physical growths. It is possible as a challenge build, but much less efficient than Warrior or Guardian.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -705,6 +1559,31 @@
           ]
         },
         {
+          "characterId": "bonaventure",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A support build keeps him near the allies who benefit from Sage Advice. His preferred white magic and 45% Mag growth make the training practical. Choose this when another caster already covers offensive magic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-bonaventure"
+          ]
+        },
+        {
+          "characterId": "sha-lan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Cooler Heads lets her use assist magic after Draw Back, so healing gives that sequence a clear purpose. Her 45% Mag growth supports it. Pull an ally out of danger, then help them recover instead of spending the turn on only one task.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "tialla",
           "basis": "review",
           "reason": "Siliconera reports a useful healing spell list for her. Bishop is the simpler investment when you want that support without the riding and dual-magic requirements of Troubadour.",
@@ -724,6 +1603,42 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "White magic is a preferred skill, so a support role is practical. Her 35% Mag growth is lower than the dedicated healers', but 45% Res and Spirits' Voice help her work near enemy mages. Choose this for utility rather than maximum healing.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
+          ]
+        },
+        {
+          "characterId": "yang-jie",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 40% Mag and Res growths support spellcasting and ask less of his modest 30% Str. His personal healing proc requires a kill, so it matters less when most of his turns are spent helping allies.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "White magic is a preferred skill and 45% Mag growth supports the role. She gives up some emphasis on offense, where her magic accuracy bonus helps. Choose this when the team needs healing more than another damage dealer.",
+          "sourceIds": [
+            "profile-hong-hua",
+            "game8"
+          ]
         }
       ]
     },
@@ -741,6 +1656,30 @@
           ],
           "experimental": false,
           "rank": "S"
+        },
+        {
+          "characterId": "sha-lan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Mounted movement helps her reach the ally who needs Draw Back, followed by assist magic through Cooler Heads. Her 45% Mag growth supports casting. The extra riding investment is worthwhile if your team often spreads out.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "anatolia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 50% Mag and Spd growths support an effective caster with mounted reach. The attraction is getting that offense where it is needed. Evasion-based healing is a bonus, so keep her out of fights she cannot safely take.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         },
         {
           "characterId": "tialla",
@@ -782,6 +1721,30 @@
       "family": "melee",
       "picks": [
         {
+          "characterId": "talimun",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 40% Str and 45% Mag growths give physical/magic utility a real basis. It makes him flexible without forcing one damage type. Cannoning Flair only helps with artillery, so do not count its Hit+30 as a general weapon bonus.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "orchel",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Orchel's 60% Str and 45% Mag growths support mixed physical/magic damage, with high defenses to survive counters. Predictive Sense later helps offensive magic accuracy. This is a grounded alternative because Solid and Sturdy forbids cavalry and flight.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "sirocco",
           "basis": "theorycraft",
           "reason": "His balanced physical and magic growths make the mixed training less awkward than it is for a pure attacker. I would try Blacksmith for a flexible art-focused build, rather than expect it to beat a specialist at one job.",
@@ -816,6 +1779,17 @@
           ]
         },
         {
+          "characterId": "troy",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her equal 45% Str and Mag growths make physical/magic utility plausible. The tradeoff is leaving her gauntlet focus, where Yun Shou adds Hit+10. Consider this if Blacksmith's tools fill a specific gap in the team.",
+          "sourceIds": [
+            "profile-troy",
+            "game8"
+          ]
+        },
+        {
           "characterId": "mikaela",
           "basis": "theorycraft",
           "reason": "She already has a reason to fight up close, so the physical side fits. The black-magic training is the detour; choose it for a different combat-art build rather than assume she becomes a strong caster.",
@@ -825,6 +1799,18 @@
           ],
           "experimental": true,
           "rank": "C"
+        },
+        {
+          "characterId": "zarcone",
+          "rank": "C",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His axe accuracy makes this a plausible utility detour if you want Blacksmith's tools. His 20% Mag growth gives little reason to expect strong spell damage. Take it for class utility and axes, not as a hidden magic carry.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -842,6 +1828,19 @@
           ],
           "experimental": false,
           "rank": "S"
+        },
+        {
+          "characterId": "bonaventure",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His sword strength makes the weapon training manageable, and dancing gives him a different way to support a nearby ally. The cost is spending fewer turns on spells despite 45% Mag growth. Dancer also has only one holder, so this is a deliberate team choice over Leda.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-bonaventure"
+          ]
         },
         {
           "characterId": "jester",
@@ -902,6 +1901,17 @@
       "family": "support",
       "picks": [
         {
+          "characterId": "troy",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her preferred gauntlets and white magic fit her existing class directly. Yun Shou adds gauntlet Hit+10, while 45% Str, 45% Mag, and 50% Spd support both sides. There is little reason to force a different role just for novelty.",
+          "sourceIds": [
+            "profile-troy",
+            "game8"
+          ]
+        },
+        {
           "characterId": "sirocco",
           "rank": "A",
           "experimental": false,
@@ -935,6 +1945,44 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str growth gives a physical support build a reason to exist, and white magic is already a strength. Gauntlet training is the extra cost. It could work if you want close combat and healing together, but her spear path is easier.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
+          ]
+        },
+        {
+          "characterId": "yang-jie",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% HP growth gives close-range support some room, with 40% Mag for its magical side. The tradeoff is only 30% Str, so physical gauntlet damage needs help. Treat the heal-after-kill proc as a bonus rather than dependable sustain.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 45% Def growths support a close-range gauntlet build, while Brave Assist helps an adjacent front-line ally. The support-magic side takes more work: white magic is a weakness and Mag growth is only 20%. Treat this as a physical support experiment, not a strong healer.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-gaitz"
           ]
         }
       ]
@@ -1496,6 +2544,18 @@
       "family": "ranged",
       "picks": [
         {
+          "characterId": "benditz",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His personal abilities specifically reward Charioteer with Hit+20 and, later, an extra staggering blow use. That gives him more than a generic mounted-bow role. His 35% Str growth still needs weapon support, but this is where his own kit contributes most.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "peter",
           "rank": "A",
           "experimental": false,
@@ -1596,11 +2656,12 @@
           "rank": "A",
           "experimental": false,
           "basis": "theorycraft",
-          "reason": "Her Spd growth supports a fast flier, and flight improves access to targets. Her damage may need more help than her movement.",
+          "reason": "Her established flying role and preferred spear/sword skills already fit this path. With 55% Spd growth, she can work toward follow-ups without starting a new weapon discipline. Keep allies nearby for Silver Maiden's Hit/Avo bonus.",
           "sourceIds": [
             "growths",
             "abilities",
-            "game8"
+            "game8",
+            "profile-alexandra"
           ]
         },
         {
@@ -1613,6 +2674,19 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her spear strength makes the weapon transition straightforward, and flight can help her reach enemy casters. Spirits' Voice and 45% Res growth improve that matchup. Flying is the new investment; at 35% Spd growth, she is a mage hunter rather than a speed-focused flier.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
           ]
         }
       ]
@@ -1643,6 +2717,19 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "bonaventure",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Mag and 50% Dex growths support a reliable early caster. Keep him near another unit when possible so Sage Advice can help an adjacent ally. His 30% Def growth is a reason to stay behind that ally rather than take the first hit.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-bonaventure"
           ]
         },
         {
@@ -1752,6 +2839,78 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her speed-based personal bonuses line up with a fast sword build. At 55% Spd growth, maintaining an AS lead is realistic. Favor lighter equipment so the extra Hit and eventual Atk bonus remain active.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nezha",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A fast physical path works with his 45% Str and Spd growths and 50% Dex. His personal bonuses reward attacking first, so use him to initiate favorable fights. They improve his ceiling without guaranteeing a kill.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd and 50% Str growths support both follow-ups and damage. An effective weapon adds another boost against the right target. He has excellent offense here, but the class choice does not erase his low defensive growths.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth and preferred sword skill support a fast sword specialist, with avoidance while above half HP. Peak Form later rewards full health. Her 35% Str still needs good weapons, so keep a healer nearby to help maintain the damage bonus.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-loretta"
+          ]
+        },
+        {
+          "characterId": "creek",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 60% Spd and 50% Str growths give a sword specialist plenty of offense. Steady Hands also helps when enemies initiate. This is a viable grounded alternative if its combat role matters more than mounted reach.",
+          "sourceIds": [
+            "profile-creek",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "bertrand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "High strength and solid speed make a sword build practical. His attack-order abilities can improve a fight, but remain chance-based. Use actual AS to decide whether he doubles rather than assuming Requiem Style will cover a deficit.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -1784,6 +2943,41 @@
           ]
         },
         {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her Str and Mag growths are both 35%, with 55% Spd doing most of the work. A sword/magic build can attack the weaker defense while aiming for her AS-based bonuses. It is a credible alternative if you can afford the extra training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "eshmel",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Equal 45% Str and Mag growths give sword/magic damage a real basis, with 45% Spd supporting either side. It can cover more enemy defenses than a single-damage build. The cost is spreading training beyond the natural spear focus.",
+          "sourceIds": [
+            "profile-eshmel",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "talimun",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "With 40% Str and 45% Mag growths, mixed sword/magic damage has a reasonable basis. A mount helps reach a target that suits either side. It takes broader training than a single-damage role and favors flexibility over specialization.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "loretta",
           "rank": "B",
           "experimental": true,
@@ -1793,6 +2987,19 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "alexandra",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Equal 35% Str and Mag growths, with 55% Spd, give a sword/magic build some potential. It can target whichever defense is weaker. Black magic is a training weakness, so this takes more investment than staying a flier.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-alexandra"
           ]
         }
       ]
@@ -1807,6 +3014,30 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "His high Str and combat-art damage bonus suit three art slots. This focuses on strong individual attacks instead of trying to repair his slower speed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 55% Spd growths make him one of the strongest offensive fits. Multiple weapon options also give him more ways to find an effective matchup for Har Hali Wisdom. Focus on securing kills; his defenses are much less impressive.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "bertrand",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Str, 50% Dex, and 45% Def growths support a strong, durable physical attacker. Follow-up and attack-order procs add occasional upside. The build is good because of the underlying stats; it should not depend on those procs activating.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -1835,6 +3066,137 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "dadao",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A strong continuation of his physical weapon investment, backed by 55% Str growth. His damage is easier to build around than his 30% Spd. Look for fights where One Chance activates, rather than expecting him to race faster attackers.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd growth can turn Tyranny's extra attack into repeated damage against statused foes. Give him reliable status setup from the team. His low Res growth means this is an offensive role, not a general-purpose tank.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "majide",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Keeping an axe equipped preserves Hellbent Axe's Str+3, backed by 50% Str growth. This is a straightforward damage build. His 20% Spd means fast enemies remain awkward, so plan around combat arts and favorable targets.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nezha",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Str/Spd growths support a physical build with several weapon options. Quick Draw adds occasional damage when he initiates. The appeal is flexible offense; its proc is not a reliable answer to tougher enemies.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "noctula",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str and Spd growths support sustained physical damage. Warrior's Clarity adds avoidance after she fights, but 20% Res still makes magic dangerous. Start favorable physical engagements and leave a manageable enemy phase.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "simon",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str growth gives this physical route a strong base. His later Luck gain after kills also helps Close Call, but survival still depends on chance. Build him to win normal engagements rather than repeatedly testing that safety net.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her effective 50% Str/Spd/Dex growths make a flexible physical build promising after enough training. It is a good destination if you want several weapon options. Evaluate her actual stats along the way instead of assuming average growths are guaranteed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "troy",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Str and 50% Spd growths support a physical alternative centered on gauntlets. Keeping them equipped preserves Yun Shou's Hit+10. This shifts emphasis away from the magic that makes her War Monk build flexible.",
+          "sourceIds": [
+            "profile-troy",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tahonia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "The 50% Str growth and gauntlet preference fit a physical specialist. Python Technique occasionally grants a follow-up with gauntlet arts, helping Tahonia's low speed. Keep damage plans conservative: a 15% proc is a bonus, not a dependable double.",
+          "sourceIds": [
+            "profile-tahonia",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "zarcone",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Keeping axes preserves Hatchet Man's Hit+10, backed by 60% Dex growth. He should have fewer accuracy problems than many axe users. His 30% Str growth is the limit, so he needs good equipment to compete with stronger physical units.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sirocco",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His sword strength and 45% Spd growth give a physical build a practical starting point. Goddess's Favor restores 5 HP after each fight, so smaller hits are easier to recover from. The cost is leaving his magic investment underused, with only 40% Str growth behind the damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-sirocco"
           ]
         }
       ]
@@ -1880,11 +3242,82 @@
           ]
         },
         {
+          "characterId": "lilian",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Safety First adds Hit when the foe cannot counter, and Upper Hand adds damage at 100% Hit. A dedicated bow role supports both. Keep checking counter range instead of treating the bonuses as always active.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "diego",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 60% Dex growth gives bows a strong accuracy base. With 45% Spd, he can work toward the follow-ups that activate No Mercy. This is a clean ranged focus if you do not need mounted movement.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "aswan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her preferred bow and infantry skills suit a dedicated bow specialist. Princess of Arrows adds Hit+20, so accuracy is a strength. Her 35% Str growth keeps the grade below the strongest damage-focused archers.",
+          "sourceIds": [
+            "profile-aswan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 45% Str/Spd/Dex growths support a dedicated bow build, and Brio adds movement to a grounded class. That helps him reach safe shots without investing in a mount. The tradeoff is specializing away from his spear and magic options; Peter still has the more distinctive bow-art range bonus.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "halvin",
           "rank": "B",
           "experimental": false,
           "basis": "theorycraft",
           "reason": "His high Dex supports consistent bow attacks. Damage is the main limitation, so compare his actual Str with your other bow users.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "benditz",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This continues his bow investment with 50% Dex growth behind it. He loses the reason his personal kit favors Charioteer. Use it when the class's bow tools matter more to your team than those specific bonuses.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "peppe",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His speed supports repeated bow hits, especially against an enemy that is already hurt. That also enables his later Atk/Crit bonus. His 30% Str growth needs help from weapon quality and team damage, making him less self-sufficient than the strongest archers.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -1922,6 +3355,18 @@
           ]
         },
         {
+          "characterId": "lilian",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "The movement helps her reach enemies outside their counter range, keeping Safety First useful. Her 55% Dex growth supports the accuracy needed for Upper Hand later. Weapon upgrades are still important for her modest strength growth.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "nydine",
           "rank": "B",
           "experimental": true,
@@ -1943,6 +3388,42 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "benditz",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A reasonable mounted destination for his bow training and 50% Dex growth. His Charioteer bonuses are not confirmed to apply here, so the appeal is the class itself. Better weapons matter more than expecting 35% Str growth to solve damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "aswan",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her bow accuracy bonus gives the mounted route a useful foundation. It offers reach at the cost of riding investment beyond her preferred skills. Use it to find safer shots; movement alone will not fix modest strength growth.",
+          "sourceIds": [
+            "profile-aswan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "A mounted bow build uses his 50% Str growth while preserving the ability to reposition beside allies for Brave Assist. His riding strength helps the transition. The bow investment is substantial, so choose this for a ranged support role rather than expecting Peter's bow-specific advantages.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-gaitz"
           ]
         }
       ]
@@ -1969,6 +3450,66 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "Storage access and map utility give her several jobs beyond attacking. Her speed suits mixed sword-and-bow combat, although two A ranks take planning.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth can activate both personal AS thresholds, making this a good use of sword/bow training. It rewards favorable matchups. Heavy equipment can erase the lead, and 35% Str does not compensate well when that happens.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "kiroc",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 55% Spd and 50% Dex growths suit picking off weakened targets. A teammate's status effect also activates Tyranny for more damage and crit. That setup is the main reason to choose him over another fast sword/bow user.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "peppe",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 60% Spd growth and bonuses against damaged enemies fit a fast finisher. Let another unit soften a target, then clean up with the appropriate weapon. Hunter's Snare is an occasional backup, not a substitute for safe positioning.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "diego",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 60% Dex and 45% Spd growths fit a sword/bow specialist. His later follow-up bonus rewards preserving AS and choosing opponents he can double. The tradeoff is additional weapon training compared with committing to bows alone.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ludia",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth plus Falcon's AS+3 when initiating gives this build strong follow-up potential. Perception then rewards those matchups with Avo+10. It is a viable grounded alternative, but losing flight and investing in bows need to be worthwhile for the maps you are playing.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -2028,6 +3569,115 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "seteth",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His spear strength makes certification practical, and 40% Def growth supports holding a position. This is a solid grounded alternative if flight matters less to your team. Ready for Battle can help against the first attacker, but you still need to survive when it fails.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-seteth"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This builds on her spear strength and 45% Str growth. Her anti-magic Hit/Avo bonus and 45% Res give her a useful matchup against casters. She is a steadier specialist than a fast sweeper, since her personal Spd growth is 35%.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 45% Def growths make a grounded spear build reliable. Staying beside another physical unit also keeps Brave Assist's Def+3 relevant. It is a strong formation pick when you do not need another mounted attacker.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A grounded spear route uses his 50% Spd growth and initiating avoidance bonus well. Accelerate can make him increasingly effective over a map. It trades mounted reach for simpler weapon training, with the same need to secure early kills.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her personal ability lifts Str, Spd, and Dex growths to 50%, giving a spear build a strong long-term base. Keeping one weapon focus reduces the training spread. She needs sustained investment before that potential becomes useful.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "eshmel",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A focused spear destination fits Eshmel's preferred skill and balanced 45% Str/Spd/Dex growths. It is the straightforward physical option. That spread does not guarantee doubles or tanking, so judge matchups from the stats actually gained.",
+          "sourceIds": [
+            "profile-eshmel",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nathan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A focused spear build uses his 60% Str and Dex growths without requiring a mount. Headlong Rush improves the fights he starts. It is a practical grounded alternative, though low speed still limits repeated hits.",
+          "sourceIds": [
+            "profile-nathan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "centurio",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Str, 50% Dex, and 50% Def growths make a grounded spear build well-rounded. The first enemy-phase attack is safer through Sturdy Corundum. It is a good alternative when you want spears without emphasizing armor.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "A spear specialist can use her adjacent-enemy Hit+10 and later Atk+3 without changing the way she chooses fights. Her 45% Str and 40% Def growths support the role. It takes spear investment beyond her axe/bow strengths, and the personal bonuses do not apply from a distance.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-mikaela"
+          ]
         }
       ]
     },
@@ -2048,11 +3698,59 @@
           ]
         },
         {
+          "characterId": "orchel",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Orchel's 60% Str, Def, and Res growths plus personal Def+5 create a distinctive defensive role. Cavalry and flying are forbidden, so this keeps the build legal. Watch HP and repeated hits: 10% Spd makes enemy follow-ups common.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "centurio",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Def growth and guaranteed first-combat damage reduction make him a strong physical anchor. He can deliberately receive the most dangerous opening attack. Later enemies do not face the same reduction, so attack order still matters.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "jasmine",
           "rank": "A",
           "experimental": false,
           "basis": "theorycraft",
           "reason": "Her Def growth supports physical tanking. This gives her a focused role when the team already has enough mobile attackers.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dadao",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Def and 55% Str growths support a durable physical anchor. Slower enemies may also let One Chance add damage. His 20% Res growth remains a weakness, so keep enemy magic out of his workload.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "buccar",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This builds on his 45% Def growth and guaranteed damage reduction when attacked. His 50% Str helps punish physical enemies in return. Low speed and resistance still matter, so this is a physical anchor rather than a universal tank.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -2068,6 +3766,41 @@
           "sourceIds": [
             "growths",
             "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "majide",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 65% HP and 40% Def growths give an armored axe build a physical role. It will not solve his 20% Spd or 10% Res. Use him against slower physical threats rather than every type of attack.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "simon",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His HP, strength, and defense growths suit a durable physical role. The class cannot make Close Call dependable or fix his weaker resistance. Use him against physical pressure, with support available when a fight goes badly.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tahonia",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Tahonia's 65% HP and 45% Def growths support a bulky alternative with armor and another weapon. It is a different job from the gauntlet build. The cost is training away from the preferred skill and its combat-art synergy.",
+          "sourceIds": [
+            "profile-tahonia",
             "game8"
           ]
         }
@@ -2090,6 +3823,17 @@
           ]
         },
         {
+          "characterId": "creek",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His preferred riding and sword skills fit a mounted physical destination. With 50% Str and 60% Spd growths, he has damage and follow-up potential. Steady Hands improves enemy-phase combat, but 20% Res still limits exposure to magic.",
+          "sourceIds": [
+            "profile-creek",
+            "game8"
+          ]
+        },
+        {
           "characterId": "cai",
           "rank": "A",
           "experimental": false,
@@ -2099,6 +3843,43 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "gaitz",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A physical mounted route uses his 50% Str growth and solid defense well. Use the movement to finish beside an ally who benefits from Brave Assist. Flashing Fang is an occasional bonus, not something the damage plan should require.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 50% Spd growth fits a fast mounted attacker, and kills build more speed through Accelerate. Racing Attack helps in fights he starts. That bonus is absent when enemies initiate, so use movement to finish safely too.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "This keeps her preferred sword/spear skills and adds mounted reach to 55% Spd growth. Steadfast rewards staying healthy, with Peak Form adding damage at full HP later. A healer helps maintain those conditions; 35% Str and the riding investment are the main tradeoffs.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-loretta"
           ]
         },
         {
@@ -2144,6 +3925,30 @@
           ]
         },
         {
+          "characterId": "nathan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This follows his armor, riding, and spear strengths while using 60% Str and 45% Def growths. His initiating AS/Hit bonus helps offense. His 15% Res growth is the limit, so keep the defensive role focused on physical enemies.",
+          "sourceIds": [
+            "profile-nathan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "seteth",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His axe/spear strengths and 40% Def growth support a grounded armored alternative to flying. Ready for Battle can help him strike first in the opening enemy-phase fight. The costs are armor/riding training and losing flight; that 50% trigger still cannot be treated as guaranteed protection.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-seteth"
+          ]
+        },
+        {
           "characterId": "io",
           "rank": "B",
           "experimental": false,
@@ -2153,6 +3958,19 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 40% Def and 50% Spd growths give an armored mounted build more balance than the usual slow tank. Axe, spear, and riding strengths help, but armor is a weakness. Racing Attack only improves fights he starts, so it does not make the enemy phase equally safe.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-lysander"
           ]
         }
       ]
@@ -2178,11 +3996,12 @@
           "rank": "A",
           "experimental": false,
           "basis": "theorycraft",
-          "reason": "Her speed suits mobile flying combat. Weapon damage may need help, so prioritize favorable engagements over brute force.",
+          "reason": "This keeps her established flying role and preferred spear/sword skills. Her 55% Spd growth supports repeated hits, and Soar improves AS over inaccessible terrain. She is better at choosing favorable targets than trading hits with heavy physical enemies.",
           "sourceIds": [
             "growths",
             "abilities",
-            "game8"
+            "game8",
+            "profile-alexandra"
           ]
         },
         {
@@ -2195,6 +4014,19 @@
             "growths",
             "abilities",
             "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her preferred spear skill, 45% Str, and 45% Res growths give a flying mage-hunter a clear purpose. Spirits' Voice improves Hit/Avo against magic users. She needs flying training and has only 35% Spd growth, so choose favorable targets instead of expecting to double everything.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
           ]
         }
       ]
@@ -2250,6 +4082,45 @@
             "abilities",
             "game8"
           ]
+        },
+        {
+          "characterId": "seteth",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A straightforward flying progression that keeps his axe/spear training useful. His 45% Str and 40% Def support a durable attacker. Use flight to choose manageable enemy groups; his first-combat ability does not protect him through an entire enemy phase.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-seteth"
+          ]
+        },
+        {
+          "characterId": "nuzzuo",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Flight gives his effective-weapon bonuses more targets to choose from, backed by 50% Str and 55% Spd growths. This could be a strong offensive alternative if you commit to the new skills. It is expensive to train, and 20% Def/15% Res make careless landing positions dangerous.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-nuzzuo"
+          ]
+        },
+        {
+          "characterId": "alexandra",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A viable continuation of her flying build if you want this class's weapon options. Her 55% Spd remains useful, but 35% Str limits raw damage. Favor spears: axes are a training weakness, so an axe-focused version takes more work.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-alexandra"
+          ]
         }
       ]
     },
@@ -2263,6 +4134,18 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "His Mag growth supports offensive casting, and his enemy crit-avoid reduction adds another tool. Druid continues that plan with Black Magic A and more magic accuracy.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "anatolia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her equal 50% Mag and Spd growths are an excellent base for offensive magic. Druid keeps that role focused. Her evasion and recovery abilities add resilience, but do not justify leaving her exposed to every physical enemy.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -2294,11 +4177,71 @@
           ]
         },
         {
+          "characterId": "bonaventure",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A direct offensive-magic continuation of his 45% Mag and 50% Dex growths. He still supports nearby allies through Sage Advice, so he works well behind the front line. Avoid exposing him just to keep the adjacency bonus active.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-bonaventure"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This continues her black-magic strength, backed by 45% Mag and Spd growths. Zhu Ming's Hit+10 helps keep attacks dependable. Her 30% Def growth favors casting from protected positions rather than taking physical pressure.",
+          "sourceIds": [
+            "profile-hong-hua",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "talimun",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 45% Mag and 40% Spd growths support an offensive caster with a straightforward damage focus. The artillery accuracy bonus is separate from this spell role. Ordinary spell accuracy still needs attention.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "loretta",
           "rank": "B",
           "experimental": true,
           "basis": "theorycraft",
           "reason": "Her higher speed offers an alternative to raw-Mag specialists. It works if her actual Mag and attack speed produce useful follow-ups; growths alone do not guarantee that.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "orchel",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "The 45% Mag growth and later magic Hit+20 when initiating give Orchel a reason to try casting. High defenses help absorb a counter, but 10% Spd limits follow-ups. It is a durable spell alternative with a real speed cost.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd growth gives offensive magic an unusual angle: preserve an AS lead to activate her personal accuracy and later damage bonuses. Her 35% Mag growth trails dedicated casters, so this needs good spells and careful weight management. It is a speed-based alternative with a lower damage ceiling.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -2348,11 +4291,61 @@
           ]
         },
         {
+          "characterId": "bonaventure",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His preferred white magic and 45% Mag growth fit a support caster. Staying near allies also keeps Sage Advice relevant. Druid is the more direct choice when you mainly need him to attack.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-bonaventure"
+          ]
+        },
+        {
+          "characterId": "sha-lan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This keeps her focused on the Draw Back plus assist-magic sequence that makes her useful. Her later adjacent Spd+2 also rewards staying near allies. Choose it when support matters more than adding mounted movement.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "dante",
           "rank": "B",
           "experimental": true,
           "basis": "theorycraft",
           "reason": "Her Mag growth supports healing, and staying near the group supports her aura. Choose this when other units already cover offensive magic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ninae",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "A support alternative that follows her white-magic strength. She can eventually share Spirits' Voice with adjacent allies. The tradeoff is 35% Mag growth: take this for the positioning and support, not top-end spell damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "profile-ninae"
+          ]
+        },
+        {
+          "characterId": "yang-jie",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His 40% Mag growth supports a serviceable caster, with 50% HP adding bulk. He has less raw magic growth than dedicated specialists. Choose this if you need support rather than for his unreliable heal-after-kill ability.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -2402,6 +4395,41 @@
           ]
         },
         {
+          "characterId": "sha-lan",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A mounted caster can reach more positions for Draw Back and follow-up assist magic. Her 45% Mag growth supports the role, while Watchfulness eventually helps nearby allies' speed. Avoid physical danger with only 30% Def growth.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her preferred white and black magic skills support a flexible mounted caster. Both Mag and Spd grow at 45%, giving offense a useful basis too. Riding is the extra investment; take it when movement improves where she can cast.",
+          "sourceIds": [
+            "profile-hong-hua",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "anatolia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her strong magic and speed growths transfer well to mobile casting. Use the mount to find useful positions and avoid physical pressure. Wider training is the tradeoff compared with staying focused on offensive magic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "sirocco",
           "rank": "B",
           "experimental": true,
@@ -2414,6 +4442,17 @@
           ]
         }
       ]
+    }
+  ],
+  "researchNotes": [
+    {
+      "characterId": "bonaventure",
+      "topic": "Sage Advice",
+      "sourceIds": [
+        "abilities",
+        "profile-bonaventure"
+      ],
+      "note": "Serenes Forest lists adjacent Def+3; Game8 lists adjacent Dex+3. Recommendation notes avoid specifying the disputed stat until a game capture resolves it."
     }
   ]
 }

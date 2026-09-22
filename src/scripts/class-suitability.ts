@@ -128,6 +128,10 @@ function filterClasses() {
   const term = query?.value.trim().toLocaleLowerCase() ?? '';
   let count = 0;
   columns.forEach((column) => {
+    const classMatches = column.dataset.className?.includes(term);
+    column.querySelectorAll<HTMLElement>('[data-character]').forEach((pick) => {
+      pick.hidden = !classMatches && !pick.dataset.search?.includes(term);
+    });
     column.hidden = column.dataset.tier !== tier || (family !== 'all' && !column.dataset.family?.split(' ').includes(family)) || !column.dataset.search?.includes(term);
     if (!column.hidden) count++;
   });

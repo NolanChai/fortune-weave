@@ -1,5 +1,5 @@
 ---
-import portraits from '../../assets/characters/index.json';
+import roster from '../../data/class-roster.json';
 import suitability from '../../data/class-suitability.json';
 
 interface Props {
@@ -9,19 +9,19 @@ interface Props {
 }
 
 const { classId, className, pick } = Astro.props;
-const character = portraits.characters.find(({ id }) => id === pick.characterId)!;
+const character = roster.characters.find(({ id }) => id === pick.characterId)!;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const noteId = `fit-${classId}-${character.id}`;
 const basis = { review: 'Review + our take', player: 'Players + our take', theorycraft: 'Our take' }[pick.basis];
 const rankLabel = pick.rank ? `${pick.rank}-tier` : 'Unranked';
 ---
 
-<li class="class-fit" data-character={character.id}>
+<li class="class-fit" data-character={character.id} data-search={character.name.toLowerCase()}>
   <button type="button" class:list={['fit-trigger', { 'is-experimental': pick.experimental }]}
     aria-label={`${character.name}: ${className}, ${rankLabel}${pick.experimental ? ', experimental build' : ''}`}
     aria-expanded="false" aria-controls={noteId} aria-haspopup="dialog" data-fit-trigger>
     <span class="fit-portrait">
-      <img src={`${base}/assets/characters/${character.icon}`} alt="" width="58" height="58" loading="lazy" />
+      <img src={`${base}/${character.portrait}`} alt="" width="58" height="58" loading="lazy" />
       {pick.rank === 'S' && <span class="fit-star" aria-hidden="true">★</span>}
     </span>
     <span class="fit-name">{character.name}</span>
