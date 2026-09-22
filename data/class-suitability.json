@@ -143,6 +143,11 @@
       "id": "leda-start",
       "name": "RPG Site · Leda route walkthrough",
       "url": "https://www.rpgsite.net/guide/21210-fire-emblem-fortunes-weave-part-i-ledas-path-walkthrough"
+    },
+    {
+      "id": "serenes-class-showcase",
+      "name": "Serenes Forest · Nintendo Direct class screenshots",
+      "url": "https://serenesforest.net/2026/08/11/fortunes-weave-august-direct-analysis-classes/"
     }
   ],
   "classes": [
@@ -462,6 +467,18 @@
           ]
         },
         {
+          "characterId": "goliath",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 60% Str and 50% Def growths give a foot combat class plenty to work with. Warrior shifts him toward attacking with several weapons instead of holding a line in armor; three B weapon ranks are a substantial cost.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "ultand",
           "basis": "theorycraft",
           "reason": "Her Str growth matches her Mag growth, so a physical build is more plausible than her starting class suggests. The cost is training new weapons and moving her away from a dedicated healing role.",
@@ -559,6 +576,17 @@
           ]
         },
         {
+          "characterId": "creek",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 60% Spd growths can make bow attacks both strong and fast. Bow B takes training away from his mounted sword path, and giving up that movement is the real price of a Sniper build.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "halvin",
           "basis": "review",
           "reason": "Siliconera calls him a dependable archer, and his accuracy improves as he fights. Sniper doubles down on consistency; it is useful when landing the shot matters more than extra movement.",
@@ -587,6 +615,18 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "His 60% Spd growth supports follow-ups, and his later damage bonus rewards attacking injured enemies. At 30% Str growth, he benefits from a teammate softening the target first. His enemy-phase first-strike chance is too low to rely on for safety.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd and 50% Dex growths support accurate bow attacks, while an AS lead can activate her personal hit bonus. Sniper asks for Bow B; 35% Str means better weapons matter more than the class label.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -1199,6 +1239,18 @@
           ]
         },
         {
+          "characterId": "nydine",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Bardinger keeps Nydine in cavalry for Barge Through. Her 45% Spd and 40% Str growths support a mobile spear attacker; sword rank is the extra certification cost.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "loretta",
           "rank": "A",
           "experimental": true,
@@ -1265,9 +1317,9 @@
         {
           "characterId": "ludia",
           "rank": "A",
-          "experimental": true,
+          "experimental": false,
           "basis": "theorycraft",
-          "reason": "Her initiating AS bonus suits an aggressive flying role, and flight helps her choose targets. It takes axe and flying training, but her speed gives this a stronger basis than a novelty reclass.",
+          "reason": "Dragoon continues Ludia's Wing Soldier path. Her initiating AS bonus and 55% Spd growth suit a flying attacker who can choose the first fight; axe training is the added requirement.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -1349,6 +1401,18 @@
           "reason": "Equal 45% Str and Mag growths make a magic-oriented mounted alternative plausible. Movement helps reach targets with lower resistance. This takes more training than the preferred spear route, so choose it when the team needs another caster.",
           "sourceIds": [
             "profile-eshmel",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "hong-hua",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Mag and Spd growths support a fast mounted caster, and Zhu Ming adds Hit+10 while magic is equipped. Black magic is already a strength; riding is the extra rank that makes this a detour from Ovate.",
+          "sourceIds": [
+            "growths",
+            "abilities",
             "game8"
           ]
         },
@@ -1458,6 +1522,18 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "His 45% Mag growth is slightly ahead of 40% Str, making offensive magic sensible. His 40% Spd gives a balanced rather than exceptional offensive spread. Choose it for another caster; the artillery-specific ability does not boost ordinary spells.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dante",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Diviner to Shaman to Ovate keeps Dante's 45% Mag growth focused on offensive spells. She can cast from behind allies so Stage Direction still reaches them; her 20% Def growth makes that spacing important.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -1687,6 +1763,18 @@
           ]
         },
         {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Mag growth and chance to conserve healing uses both carry into a mounted support role. Riding lets her keep pace with the team, but its rank and two B magic ranks take more training than Bishop.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "tialla",
           "basis": "theorycraft",
           "reason": "Movement helps a support unit keep pace with the characters she needs to reach. Her spell list makes that attractive, though this requires more training than staying in a single-magic class.",
@@ -1718,6 +1806,18 @@
           ],
           "experimental": false,
           "rank": "B"
+        },
+        {
+          "characterId": "sofia",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Healing Knowledge rewards her for healing, and Distant Healing can extend its reach. Troubadour adds movement on top of that support kit, though riding and both magic ranks make certification slower than Bishop.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -2229,6 +2329,18 @@
             "growths",
             "game8"
           ]
+        },
+        {
+          "characterId": "theodora",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 70% HP and 50% Str growths give her enough bulk and damage to test a foot attacker. Royal Resolve can halve a hit, but do not count on that chance when placing her. Sword, axe, and gauntlet practice also opens an offensive route beyond armor.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -2372,6 +2484,18 @@
           ]
         },
         {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Signs of Growth can bring her Str, Spd, and Dex growths to 50% each. Hunter turns that spread into a fast bow-and-sword path, but she needs levels and bow training before the numbers become useful.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
           "characterId": "guzran",
           "rank": "B",
           "experimental": true,
@@ -2424,6 +2548,30 @@
           "reason": "His 50% Str growth gives ranged attacks some weight, and a bow avoids exposing his 25% Spd growth to direct counters. This costs the armor and axe work for Dreadnought.",
           "sourceIds": [
             "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Str growth gives bows real damage, and Brawn reduces the weight of heavier equipment. Her 35% Dex and Spd growths make hit rates and follow-ups less reliable than on a dedicated archer, so check both before committing.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd and 50% Dex growths suit accurate bow attacks, and a large AS lead can activate Punishing Squall. With only 35% Str growth, this needs a good bow to keep the damage worthwhile.",
+          "sourceIds": [
+            "growths",
+            "abilities",
             "game8"
           ]
         }
@@ -2655,9 +2803,9 @@
         {
           "characterId": "ludia",
           "rank": "A",
-          "experimental": true,
+          "experimental": false,
           "basis": "theorycraft",
-          "reason": "Ludia has 55% Spd and 35% Str personal growths. The spear rank carries into Wing Soldier; flying needs separate training.",
+          "reason": "Ornius Rider builds Ludia's spear rank before Wing Soldier. Her 55% Spd growth suits a mobile attacker; flying still needs separate training.",
           "sourceIds": [
             "growths",
             "game8"
@@ -2683,6 +2831,18 @@
           "sourceIds": [
             "growths",
             "game8"
+          ]
+        },
+        {
+          "characterId": "nydine",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Nydine is shown as an Ornius Rider, and Barge Through only works while she is mounted. Her 45% Spd growth makes a mobile spear path more convincing than moving her to an infantry class.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "serenes-class-showcase"
           ]
         },
         {
@@ -2763,12 +2923,13 @@
         {
           "characterId": "dante",
           "rank": "A",
-          "experimental": true,
+          "experimental": false,
           "basis": "theorycraft",
-          "reason": "Dante has 45% Mag and 40% Res personal growths. Diviner develops white magic for Priest and Bishop.",
+          "reason": "Dante is shown as a Diviner in Nintendo's class footage. Her 45% Mag growth supports casting, while staying behind allies lets Stage Direction help nearby teammates.",
           "sourceIds": [
             "growths",
-            "game8"
+            "abilities",
+            "serenes-class-showcase"
           ]
         },
         {
@@ -2999,6 +3160,18 @@
             "growths",
             "game8"
           ]
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Str growth can make sword hits count, and Brawn reduces the weight of heavier blades. Her 35% Spd growth is the constraint: this works best when the weapon still leaves her fast enough to follow up.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -3161,6 +3334,18 @@
             "growths",
             "game8"
           ]
+        },
+        {
+          "characterId": "theodora",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 50% Str and 70% HP growths give a foot axe build a reason to work. It trades the protection of her armor path for more offense, while Royal Resolve remains a chance to reduce a hit rather than a defense plan.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -3320,6 +3505,18 @@
           "reason": "His 50% Str and 55% Spd growths can give Archer both damage and follow-up potential. Bow C is a new investment before a Ranger build, rather than his usual Warrior path.",
           "sourceIds": [
             "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "With Signs of Growth applied, 50% Str, Spd, and Dex growths give her the core of a strong bow unit. Archer keeps that training focused; the catch is that she must gain levels for the growth bonus to show up in her actual stats.",
+          "sourceIds": [
+            "growths",
+            "abilities",
             "game8"
           ]
         },
@@ -3600,6 +3797,19 @@
           ]
         },
         {
+          "characterId": "nydine",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Light Cavalry keeps Nydine mounted for Barge Through and builds on her spear training from Ornius Rider. Her 45% Spd growth makes this a better fit for her than leaning on heavy armor.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8",
+            "serenes-class-showcase"
+          ]
+        },
+        {
           "characterId": "ultand",
           "rank": "A",
           "experimental": true,
@@ -3752,6 +3962,18 @@
           ]
         },
         {
+          "characterId": "nydine",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Nydine is shown in Armored Ornius Rider, so this is an established mounted route for her. It preserves Barge Through, but her 30% Def growth gives less reason to accept the heavier class than to stay in a faster cavalry line.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "serenes-class-showcase"
+          ]
+        },
+        {
           "characterId": "gaitz",
           "rank": "B",
           "experimental": true,
@@ -3827,6 +4049,18 @@
             "abilities",
             "game8",
             "profile-ninae"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd and 50% Dex growths suit a mobile attacker, and keeping an AS lead can improve her hit rate through Punishing Squall. She needs flying and spear training, while 35% Str still limits damage against tougher targets.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
           ]
         }
       ]
@@ -3944,6 +4178,17 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "Yang Jie has 40% Mag and 40% Res personal growths. Shaman develops black magic toward Ovate.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tialla",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Mag growth supports a focused damage route, and she already has Fire. Shaman builds toward Ovate, but moving away from Priest means someone else should cover the healing she could have provided.",
           "sourceIds": [
             "growths",
             "game8"
@@ -4447,6 +4692,18 @@
             "game8",
             "profile-sirocco"
           ]
+        },
+        {
+          "characterId": "goliath",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 60% Str and 50% Def growths make an infantry weapon specialist credible, and his mount restriction does not get in the way. Sword, axe, and gauntlets all need A rank; the investment buys offense rather than the protection of Castle Knight.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
         }
       ]
     },
@@ -4522,6 +4779,18 @@
           "reason": "Her preferred bow and infantry skills suit a dedicated bow specialist. Princess of Arrows adds Hit+20, so accuracy is a strength. Her 35% Str growth keeps the grade below the strongest damage-focused archers.",
           "sourceIds": [
             "profile-aswan",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "leda",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Hunter and Archer already develop the bow rank Bow Adept needs. Leda's 65% Spd and 50% Dex growths support quick, accurate attacks; 35% Str means she still needs a strong bow. This is a direct path if someone else takes the Dancer slot.",
+          "sourceIds": [
+            "growths",
+            "leda-start",
             "game8"
           ]
         },
@@ -4616,6 +4885,17 @@
           ]
         },
         {
+          "characterId": "creek",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 50% Str and 60% Spd growths can support a strong mobile archer, and riding is already part of his usual route. Bow A is the new investment, so this works best if you start training bows well before Master certification.",
+          "sourceIds": [
+            "growths",
+            "game8"
+          ]
+        },
+        {
           "characterId": "nydine",
           "rank": "B",
           "experimental": true,
@@ -4673,6 +4953,18 @@
             "abilities",
             "game8",
             "profile-gaitz"
+          ]
+        },
+        {
+          "characterId": "catania",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd and 50% Dex growths fit accurate mounted bow attacks. An AS lead can improve her hit rate and later damage, but Bow A plus riding takes time and her 35% Str calls for stronger weapons.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
           ]
         }
       ]
@@ -4771,6 +5063,18 @@
           "experimental": true,
           "basis": "theorycraft",
           "reason": "His Dex and Spd suit a flexible physical build. This trades Swordmaster’s crit focus for ranged attacks and map utility.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Signs of Growth can lift Str, Spd, and Dex growths to 50%, giving a mixed sword-and-bow build a good long-term base. Two A weapon ranks are expensive, so this is most appealing after her levels have actually delivered those stats.",
           "sourceIds": [
             "growths",
             "abilities",
@@ -5129,6 +5433,18 @@
             "abilities",
             "game8",
             "profile-loretta"
+          ]
+        },
+        {
+          "characterId": "nydine",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Orichaldia continues Nydine's Bardinger route and keeps Barge Through active. Her speed helps her use the extra reach, but A-rank sword and spear training is a real commitment for a unit with 40% Str growth.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
           ]
         },
         {
@@ -5672,6 +5988,18 @@
           "experimental": false,
           "basis": "theorycraft",
           "reason": "Her strong magic and speed growths transfer well to mobile casting. Use the mount to find useful positions and avoid physical pressure. Wider training is the tradeoff compared with staying focused on offensive magic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Mag growth and healing-use conservation give a mounted dual-magic class something concrete to build on. It preserves her support role while adding mobility, but riding and two A magic ranks are much more training than Wiseman.",
           "sourceIds": [
             "growths",
             "abilities",
