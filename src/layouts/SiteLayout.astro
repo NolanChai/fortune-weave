@@ -24,7 +24,7 @@ const path = `${base}${canonicalPath ?? (page === 'bird-time' ? '/' : `/${page}/
     <link rel="canonical" href={new URL(path, Astro.site)} />
     <title>{title} | Fire Emblem Fortune's Weave Wiki</title>
   </head>
-  <body class:list={{ 'character-theme': character }}>
+  <body class:list={{ 'character-theme': character, 'classes-page': page === 'classes' }}>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="site-title" href={`${base}/`} aria-label="Fire Emblem Fortune's Weave Wiki home">

@@ -136,6 +136,9 @@ function filterClasses() {
       pick.hidden = !eligible || (!classMatches && !pick.dataset.search?.includes(term));
       if (!pick.hidden) visiblePicks++;
     });
+    column.querySelectorAll<HTMLElement>('[data-rank-row]').forEach((row) => {
+      row.hidden = !row.querySelector('[data-character]:not([hidden])');
+    });
     column.hidden = column.dataset.tier !== tier || (family !== 'all' && !column.dataset.family?.split(' ').includes(family)) || visiblePicks === 0;
     if (!column.hidden) count++;
   });

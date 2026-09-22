@@ -8,10 +8,13 @@ import '../styles/class-suitability.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const families = [{ id: 'all', label: 'All' }, { id: 'melee', label: 'Melee' }, { id: 'ranged', label: 'Ranged' }, { id: 'mounted', label: 'Mounted' }, { id: 'magic', label: 'Magic' }, { id: 'support', label: 'Support' }];
 const rankOrder: Record<string, number> = { S: 0, A: 1, B: 2, C: 3 };
+const ranks = ['S', 'A', 'B', 'C', null] as const;
 const entries = suitability.classes.map((entry) => {
   const details = database.classes.find(({ id }) => id === entry.classId)!;
   const mounted = details.requirements?.some(({ skill }) => skill === 'riding' || skill === 'flying');
-  return { ...entry, details, picks: [...entry.picks].sort((a, b) => (rankOrder[a.rank ?? ''] ?? 4) - (rankOrder[b.rank ?? ''] ?? 4)), roles: [...new Set([entry.family, ...(mounted ? ['mounted'] : [])])].join(' ') };
+  const picks = [...entry.picks].sort((a, b) => (rankOrder[a.rank ?? ''] ?? 4) - (rankOrder[b.rank ?? ''] ?? 4));
+  const rankGroups = ranks.map((rank) => ({ rank, picks: picks.filter((pick) => pick.rank === rank) })).filter(({ picks }) => picks.length > 0);
+  return { ...entry, details, rankGroups, roles: [...new Set([entry.family, ...(mounted ? ['mounted'] : [])])].join(' ') };
 });
 ---
 
@@ -42,9 +45,16 @@ const entries = suitability.classes.map((entry) => {
         {entry.provisional && <span class="class-column-note">Provisional</span>}
         {entry.classId === 'dancer' && <span class="class-column-note">One holder</span>}
       </header>
-      <ol class="class-fits" aria-label={`${entry.details.name}, strongest fits first`}>
-        {entry.picks.map((pick) => <ClassFit classId={entry.classId} className={entry.details.name} pick={pick} />)}
-      </ol>
+      <div class="class-rank-groups">
+        {entry.rankGroups.map((group) => (
+          <div class="class-rank-row" data-rank-row>
+            <h3 class="class-rank-label" aria-label={group.rank ? `${group.rank}-tier` : 'Unranked'}>{group.rank ?? '?'}</h3>
+            <ol class="class-fits" aria-label={`${entry.details.name}: ${group.rank ? `${group.rank}-tier` : 'unranked'}`}>
+              {group.picks.map((pick) => <ClassFit classId={entry.classId} className={entry.details.name} pick={pick} />)}
+            </ol>
+          </div>
+        ))}
+      </div>
     </section>
   ))}
 </div>
