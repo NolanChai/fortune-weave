@@ -3,6 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import data from '../../data/gifts.json';
 import recruitment from '../../data/recruitment.json';
 import portraits from '../../assets/characters/index.json';
+import RecruitmentRequirements from '../components/RecruitmentRequirements.astro';
 import '../styles/gifts.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -23,6 +24,18 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
         <button type="button" data-view="inventory" aria-pressed="false" aria-controls="gift-inventory">My inventory</button>
       </div>
     </div>
+
+    <fieldset class="gift-route-filter gift-page-route" hidden data-gift-controls>
+      <legend>Part I route</legend>
+      <div class="gift-route-options">
+        <label><input type="radio" name="gift-route" value="" checked /><span>Any route</span></label>
+        {recruitment.routes.map((route) => <label>
+          <input type="radio" name="gift-route" value={route.id} />
+          <span><img src={portrait(route.id)} alt="" width="32" height="32" />{route.name}</span>
+        </label>)}
+      </div>
+    </fieldset>
+    <p class="gift-recruitment-context">Support and Renown are recruitment requirements. Support is with your route’s lord.</p>
 
     <section id="gift-characters" aria-label="Gifts by character">
       <div class="gift-toolbar" hidden data-gift-controls>
@@ -46,6 +59,7 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
             <img src={portrait(character.id)} alt="" width="72" height="72" loading="lazy" />
             <h2>{character.name}</h2>
           </header>
+          <RecruitmentRequirements characterId={character.id} characterName={character.name} />
           {preferences.length > 0 ? <div class="gift-preference-columns">
             {tiers.filter((tier) => preferences.some((preference) => preference.preference === tier.id)).map((tier) => {
               const entries = preferences.filter((preference) => preference.preference === tier.id);
@@ -93,16 +107,6 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
 
     <section id="gift-inventory" aria-label="Gifts in your inventory" hidden>
       <div class="inventory-filters">
-        <fieldset class="gift-route-filter">
-          <legend>Part I route</legend>
-          <div class="gift-route-options">
-            <label><input type="radio" name="gift-route" value="" checked /><span>Any route</span></label>
-            {recruitment.routes.map((route) => <label>
-              <input type="radio" name="gift-route" value={route.id} />
-              <span><img src={portrait(route.id)} alt="" width="32" height="32" />{route.name}</span>
-            </label>)}
-          </div>
-        </fieldset>
         <div class="inventory-recipient-controls">
           <button type="button" class="character-picker-trigger" id="inventory-recipient-picker" aria-haspopup="dialog" aria-controls="gift-character-dialog">Choose recipients <span id="recipient-selection-count"></span></button>
           <button type="button" class="reset-recipient-filters" id="reset-recipient-filters" hidden>Reset filters</button>
@@ -145,6 +149,7 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
                 <span class:list={['gift-reaction', preference.preference]}>{preference.preference === 'loved' ? 'Loved' : 'Really liked'}</span>
                 <span>{giftById.get(preference.giftId)!.name}</span><span class="owned-quantity"></span>
               </li>)}</ul>
+              <RecruitmentRequirements characterId={character.id} characterName={character.name} heading="h4" />
             </article>)}
           </div>
           <p id="gifts-without-matches" class="gift-unmatched" hidden></p>
@@ -159,8 +164,8 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
         <p>Gift names and explicit preferences from {data.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked September 21, 2026.</p>
         <p>{data.gifts.length} gift names; {data.preferences.length} preferences for {data.characters.filter((c) => c.preferenceCoverage === 'partial').length} of the {data.characters.length} characters listed in the guide. “Loved” and “Really liked” preserve the source’s labels. No preferences are inferred from general likes or interests.</p>
         <p>“Candly Crystals” is listed as a probable spelling variant of “Candy Crystals.” Both names are searchable; the spelling still needs an in-game check.</p>
-        <p>Part I route availability comes from {recruitment.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked September 21, 2026. Recruitment requirements still apply. “Any route” includes later-game characters. Eshmel’s route availability is not covered by these guides, so he remains selectable.</p>
-        <div class="gift-downloads"><a href={`${base}/data/gifts.json`} download>Gifts JSON</a><a href={`${base}/data/gifts.csv`} download>Gifts CSV</a><a href={`${base}/data/gift-preferences.csv`} download>Preferences CSV</a><a href={`${base}/data/recruitment.json`} download>Routes JSON</a></div>
+        <p>Part I recruitment requirements come from {recruitment.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked {recruitment.checkedAt}. Conflicting Renown values are marked unverified. “Any route” includes later-game characters. Eshmel’s availability is undocumented, so he remains selectable.</p>
+        <div class="gift-downloads"><a href={`${base}/data/gifts.json`} download>Gifts JSON</a><a href={`${base}/data/gifts.csv`} download>Gifts CSV</a><a href={`${base}/data/gift-preferences.csv`} download>Preferences CSV</a><a href={`${base}/data/recruitment.json`} download>Recruitment JSON</a></div>
       </details>
     </footer>
   </div>

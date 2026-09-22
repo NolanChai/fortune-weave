@@ -4,14 +4,15 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "predev": "node scripts/prepare-public.mjs",
     "dev": "astro dev",
     "check": "astro check",
+    "test": "node --test scripts/*.test.mjs",
     "prebuild": "node scripts/prepare-public.mjs",
-    "build": "astro check && astro build",
+    "build": "npm run check && npm test && astro build",
     "preview": "astro preview"
   },
   "dependencies": {

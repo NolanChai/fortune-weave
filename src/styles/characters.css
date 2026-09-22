@@ -23,6 +23,9 @@
 .character-screens { position: relative; margin: 0 4.6%; }
 .character-screen { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4.5%; min-height: 44.8cqw; outline-offset: 6px; }
 .panel-column { position: relative; min-width: 0; }
+.stats-recruitment { grid-column: 1 / -1; min-width: 0; margin-top: 16px; padding-top: 20px; border-top: 1px solid #92926b70; }
+.stats-recruitment > .recruitment { max-width: 780px; }
+.stats-screen { row-gap: 20px; }
 .panel-column + .panel-column::before { content: ''; position: absolute; inset: .4cqw auto 0 -8.3%; border-left: 1px solid #817c4e61; }
 .panel-heading { display: flex; align-items: baseline; justify-content: space-between; gap: .8cqw; padding: .48cqw .8cqw .3cqw; margin: 0; min-height: 2.5cqw; border-bottom: 2px solid #a8a17b; border-image: repeating-linear-gradient(90deg, #b8b08b 0 9px, #827f5d 10px 12px, #a29e76 13px 18px) 1; color: #ddd6b1; font: 1.4cqw/1.2 Georgia, serif; }
 .panel-heading > span { white-space: nowrap; }

@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { prepareGifts } from './prepare-gifts.mjs';
+import { loadGiftData, giftExports } from './prepare-gifts.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const publicDirectory = resolve(root, 'public');
@@ -221,11 +221,13 @@ for (const asset of classAssets.assets) {
 }
 
 // public/ is generated exclusively from the canonical assets and data directories.
-await prepareGifts(root);
+const gifts = await loadGiftData(root);
 assert.equal(relative(root, publicDirectory), 'public', 'Refusing to clear a directory outside public/');
 await rm(publicDirectory, { recursive: true, force: true });
 await mkdir(publicDirectory, { recursive: true });
 await cp(resolve(root, 'assets'), resolve(publicDirectory, 'assets'), { recursive: true });
 await cp(resolve(root, 'data'), resolve(publicDirectory, 'data'), { recursive: true });
-await prepareGifts(root, publicDirectory);
+for (const [file, content] of Object.entries(giftExports(gifts))) {
+  await writeFile(resolve(publicDirectory, 'data', file), content);
+}
 console.log(`Prepared ${characterIds.size} portraits, ${profileFiles.length} character profiles, ${buildCount} character builds, ${entryIds.size} Bird Time entries, and ${classIds.size} classes.`);

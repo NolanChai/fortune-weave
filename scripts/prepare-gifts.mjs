@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { validateRecruitment } from './prepare-recruitment.mjs';
 
-export async function prepareGifts(root, publicDirectory) {
+export async function loadGiftData(root) {
   const data = JSON.parse(await readFile(resolve(root, 'data/gifts.json'), 'utf8'));
   assert.equal(data.schemaVersion, 1, 'Unsupported gifts schema');
   assert.match(data.checkedAt, /^\d{4}-\d{2}-\d{2}$/, 'Missing gift research date');
@@ -23,27 +24,7 @@ export async function prepareGifts(root, publicDirectory) {
   const giftIds = ids(data.gifts, 'gift');
   const characterIds = ids(data.characters, 'gift character');
   const recruitment = JSON.parse(await readFile(resolve(root, 'data/recruitment.json'), 'utf8'));
-  assert.equal(recruitment.schemaVersion, 1, 'Unsupported recruitment schema');
-  assert.equal(recruitment.scope, 'part-one', 'Unsupported recruitment scope');
-  assert.match(recruitment.checkedAt, /^\d{4}-\d{2}-\d{2}$/, 'Missing recruitment research date');
-  assert(recruitment.sources.length > 0, 'Missing recruitment sources');
-  ids(recruitment.sources, 'recruitment source');
-  for (const source of recruitment.sources) assert.equal(new URL(source.url).protocol, 'https:');
-  const routeIds = ids(recruitment.routes, 'route');
-  assert.deepEqual([...routeIds].sort(), ['cai', 'dietrich', 'leda', 'theodora'], 'Unexpected routes');
-  const recruitmentIds = new Set();
-  for (const character of recruitment.characters) {
-    assert(characterIds.has(character.id) && !recruitmentIds.has(character.id), `Unexpected recruitment character: ${character.id}`);
-    recruitmentIds.add(character.id);
-    const routes = character.partOneRoutes;
-    assert(routes === null || Array.isArray(routes), `Invalid route availability: ${character.id}`);
-    if (routes === null || routes.length === 0) assert(character.note?.trim(), `Missing availability note: ${character.id}`);
-    if (routes !== null) {
-      assert.equal(new Set(routes).size, routes.length, `Duplicate route: ${character.id}`);
-      for (const id of routes) assert(routeIds.has(id), `Unknown route: ${id}`);
-    }
-  }
-  assert.deepEqual(recruitmentIds, characterIds, 'Missing recruitment character');
+  validateRecruitment(recruitment, characterIds);
   const portraits = JSON.parse(await readFile(resolve(root, 'assets/characters/index.json'), 'utf8'));
   const giftPortraits = JSON.parse(await readFile(resolve(root, 'assets/gifts/index.json'), 'utf8'));
   assert.equal(giftPortraits.schemaVersion, 1, 'Unsupported gift portrait schema');
@@ -78,20 +59,23 @@ export async function prepareGifts(root, publicDirectory) {
     assert.equal(character.preferenceCoverage, documented.has(character.id) ? 'partial' : 'not-documented',
       `Incorrect preference coverage: ${character.id}`);
   }
-  // Exports are derived from the canonical JSON so edits cannot leave the CSV stale.
-  if (publicDirectory) {
-    const csv = (rows) => rows.map((row) => row.map((cell) => `"${String(cell).replaceAll('"', '""')}"`).join(',')).join('\r\n') + '\r\n';
-    const sources = new Map(data.sources.map((s) => [s.id, s.url]));
-    const gifts = new Map(data.gifts.map((g) => [g.id, g.name]));
-    const characters = new Map(data.characters.map((c) => [c.id, c.name]));
-    await writeFile(resolve(publicDirectory, 'data/gifts.csv'), csv([
-      ['gift_id', 'gift', 'aliases', 'source_urls', 'checked_at'],
-      ...data.gifts.map((g) => [g.id, g.name, (g.aliases ?? []).join('; '), g.sourceIds.map((id) => sources.get(id)).join('; '), data.checkedAt]),
-    ]));
-    await writeFile(resolve(publicDirectory, 'data/gift-preferences.csv'), csv([
-      ['character_id', 'character', 'gift_id', 'gift', 'preference', 'source_url', 'checked_at'],
-      ...data.preferences.map((p) => [p.characterId, characters.get(p.characterId), p.giftId, gifts.get(p.giftId), p.preference, sources.get(p.sourceId), data.checkedAt]),
-    ]));
-  }
   return data;
+}
+
+// Use the validated snapshot for both exports, without reading the files again.
+export function giftExports(data) {
+  const csv = (rows) => rows.map((row) => row.map((cell) => `"${String(cell).replaceAll('"', '""')}"`).join(',')).join('\r\n') + '\r\n';
+  const sources = new Map(data.sources.map((source) => [source.id, source.url]));
+  const gifts = new Map(data.gifts.map((gift) => [gift.id, gift.name]));
+  const characters = new Map(data.characters.map((character) => [character.id, character.name]));
+  return {
+    'gifts.csv': csv([
+      ['gift_id', 'gift', 'aliases', 'source_urls', 'checked_at'],
+      ...data.gifts.map((gift) => [gift.id, gift.name, (gift.aliases ?? []).join('; '), gift.sourceIds.map((id) => sources.get(id)).join('; '), data.checkedAt]),
+    ]),
+    'gift-preferences.csv': csv([
+      ['character_id', 'character', 'gift_id', 'gift', 'preference', 'source_url', 'checked_at'],
+      ...data.preferences.map((preference) => [preference.characterId, characters.get(preference.characterId), preference.giftId, gifts.get(preference.giftId), preference.preference, sources.get(preference.sourceId), data.checkedAt]),
+    ]),
+  };
 }

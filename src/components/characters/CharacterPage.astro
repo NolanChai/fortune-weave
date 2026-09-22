@@ -6,6 +6,7 @@ import StatChart from './StatChart.astro';
 import PanelDecoration from './PanelDecoration.astro';
 import CharacterReferenceStats from './CharacterReferenceStats.astro';
 import CharacterRecommendations from './CharacterRecommendations.astro';
+import RecruitmentRequirements from '../RecruitmentRequirements.astro';
 import buildData from '../../../data/character-builds.json';
 import type { Character } from '../../data/characters';
 interface Props { character: Character; }
@@ -98,6 +99,9 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
           <h2 class="panel-heading">Mounted Ability</h2>
           <div class="item-row empty-slot" aria-label="No mounted ability equipped"><i aria-hidden="true"></i><span class="all-empty">None</span></div>
         </div>
+        <section class="stats-recruitment" aria-label="Recruitment requirements">
+          <RecruitmentRequirements characterId={character.id} characterName={character.name} heading="h2" showSources />
+        </section>
       </section>
 
       <section id="arts" class="character-screen arts-screen" role="tabpanel" aria-labelledby="tab-arts" tabindex="0" hidden>

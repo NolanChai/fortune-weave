@@ -1,4 +1,8 @@
 .gift-page { --gift-line: #b7ae7759; }
+.gift-route-filter.gift-page-route { margin-bottom: 14px; }
+.gift-recruitment-context { margin: 0 0 24px; color: var(--secondary); font-size: 12px; }
+.gift-character-panel > .recruitment { margin-bottom: 26px; max-width: 640px; }
+.gift-recipient > .recruitment { margin-top: 18px; }
 .gift-heading { margin-bottom: 30px; }
 .gift-heading h1 { display: flex; align-items: center; gap: 18px; }
 .gift-symbol { display: inline-block; flex: none; width: 28px; height: 28px; background-image: var(--gift-capture); background-size: 2027.5% 2285%; background-position: 10.64% 18.99%; }

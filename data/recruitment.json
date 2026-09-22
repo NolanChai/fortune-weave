@@ -1,75 +1,561 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "checkedAt": "2026-09-21",
   "scope": "part-one",
   "notes": [
-    "Route availability includes automatic and conditional recruits. Support, Renown, quests, paralogues, and story progress may still be required.",
+    "Requirements are for Part I recruitment, not for giving a gift. Support is with the chosen Flame Lord. Additional quests, items, paralogues, and story conditions still apply.",
     "An empty route list means unavailable in Part I. Null means unverified and must not be treated as unavailable.",
-    "Only characters in the gift catalog are included. These guide records have not been independently verified in-game."
+    "Only characters in the gift catalog are included. These guide records have not been independently verified in-game.",
+    "Null Support or Renown on a recruit entry means unresolved, not zero. Source disagreements are recorded on the affected route. Automatic and tutorial recruits do not have a numeric gate in these guides."
   ],
   "sources": [
-    { "id": "rpgsite-recruitment", "name": "RPG Site recruitment guide", "url": "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them" },
-    { "id": "keengamer-recruitment", "name": "KeenGamer recruitment guide", "url": "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/" }
+    {
+      "id": "rpgsite-recruitment",
+      "name": "RPG Site recruitment guide",
+      "url": "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+    },
+    {
+      "id": "keengamer-recruitment",
+      "name": "KeenGamer recruitment guide",
+      "url": "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/"
+    }
   ],
   "routes": [
-    { "id": "cai", "name": "Cai" },
-    { "id": "dietrich", "name": "Dietrich" },
-    { "id": "theodora", "name": "Theodora" },
-    { "id": "leda", "name": "Leda" }
+    {
+      "id": "cai",
+      "name": "Cai"
+    },
+    {
+      "id": "dietrich",
+      "name": "Dietrich"
+    },
+    {
+      "id": "theodora",
+      "name": "Theodora"
+    },
+    {
+      "id": "leda",
+      "name": "Leda"
+    }
   ],
   "characters": [
-    { "id": "alexandra", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "benditz", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "bonaventure", "partOneRoutes": ["theodora"] },
-    { "id": "buccar", "partOneRoutes": ["dietrich", "theodora", "leda"] },
-    { "id": "cai", "partOneRoutes": ["cai"] },
-    { "id": "catania", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "dadao", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "dante", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "diego", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "dietrich", "partOneRoutes": ["dietrich"] },
-    { "id": "eshmel", "partOneRoutes": null, "note": "Not covered by either recruitment guide. Kept selectable until Part I availability is verified." },
-    { "id": "esmeralda", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "fabio", "partOneRoutes": ["dietrich", "leda"] },
-    { "id": "fianna", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "gaitz", "partOneRoutes": ["dietrich"] },
-    { "id": "goliath", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "guzran", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "halvin", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "hong-hua", "partOneRoutes": [], "note": "Available in the Prologue and Part III." },
-    { "id": "inyoni", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "io", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "jasmine", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "jester", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "kiroc", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "leda", "partOneRoutes": ["leda"] },
-    { "id": "lilian", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "loretta", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "ludia", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "lysander", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "majide", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "mikaela", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "mu", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "nezha", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "ninae", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "noctula", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "nuzzuo", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "nydine", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "olympia", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "peppe", "partOneRoutes": ["cai", "dietrich", "theodora"] },
-    { "id": "peter", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "seteth", "partOneRoutes": ["cai", "theodora", "leda"] },
-    { "id": "sha-lan", "partOneRoutes": ["dietrich", "leda"] },
-    { "id": "simon", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "sirocco", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "sofia", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "theodora", "partOneRoutes": ["theodora"] },
-    { "id": "tialla", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "tobias", "partOneRoutes": ["theodora"] },
-    { "id": "troy", "partOneRoutes": [], "note": "Available in the Prologue and Part III." },
-    { "id": "ultand", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "ursula", "partOneRoutes": ["cai", "dietrich", "theodora"] },
-    { "id": "yang-jie", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] },
-    { "id": "zarcone", "partOneRoutes": ["cai", "dietrich", "theodora", "leda"] }
+    {
+      "id": "alexandra",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 2, "renown": 7, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 6, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "benditz",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 9, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 2, "renown": 7, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 8, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 7, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "bonaventure",
+      "partOneRoutes": ["theodora"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "buccar",
+      "partOneRoutes": ["dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "Leda's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 8, "conditions": "Leda's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "cai",
+      "partOneRoutes": ["cai"],
+      "requirements": [
+        { "routeId": "cai", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "catania",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 10, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 1, "renown": 8, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 7, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "automatic", "support": null, "renown": null, "conditions": "Recruitment tutorial", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "dadao",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 7, "conditions": "2 Kothar Gar", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 10, "conditions": "2 Kothar Gar", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 2, "renown": 5, "conditions": "2 Kothar Gar", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 2, "renown": 5, "conditions": "2 Kothar Gar", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "dante",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 10, "conditions": "8,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 2, "renown": 8, "conditions": "8,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 6, "conditions": "8,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "8,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "diego",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 10, "conditions": "Orchel's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "Orchel's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 2, "renown": 8, "conditions": "Orchel's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 8, "conditions": "Orchel's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "dietrich",
+      "partOneRoutes": ["dietrich"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "eshmel",
+      "partOneRoutes": null,
+      "note": "Not covered by either recruitment guide. Kept selectable until Part I availability is verified.",
+      "requirements": []
+    },
+    {
+      "id": "esmeralda",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 7, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 6, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "fabio",
+      "partOneRoutes": ["dietrich", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 9, "conditions": "Dietrich's paralogue; Dietrich eliminated from the tournament; suitable item", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "fianna",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 7, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 5, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "gaitz",
+      "partOneRoutes": ["dietrich"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 10, "conditions": "Bertrand's paralogue; Bertrand eliminated from the tournament", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "goliath",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 7, "conditions": "3 Giant's Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 6, "conditions": "3 Giant's Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 Giant's Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "3 Giant's Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "guzran",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "automatic", "support": null, "renown": null, "conditions": "Recruitment tutorial", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 8, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 1, "renown": 3, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "halvin",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": null, "conditions": "10 Dates", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"], "note": "Renown unverified: RPG Site lists 9; KeenGamer lists 5." },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "10 Dates", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 7, "conditions": "10 Dates", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 7, "conditions": "10 Dates", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "hong-hua",
+      "partOneRoutes": [],
+      "note": "Available in the Prologue and Part III.",
+      "requirements": []
+    },
+    {
+      "id": "inyoni",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "6,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "6,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 9, "conditions": "4,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 1, "renown": 7, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "io",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 10, "conditions": "4,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 2, "renown": 3, "conditions": "800G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 10, "conditions": "4,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 1, "renown": 6, "conditions": "1,500G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "jasmine",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 1, "renown": 8, "conditions": "2,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "5,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 8, "conditions": "5,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 2, "renown": 4, "conditions": "500G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "jester",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 10, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 6, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "kiroc",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "8 Pure Water", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 1, "renown": 4, "conditions": "3 Pure Water", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 10, "conditions": "8 Pure Water", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 1, "renown": 4, "conditions": "3 Pure Water", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "leda",
+      "partOneRoutes": ["leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "lilian",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 2, "renown": 8, "conditions": "5,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 2, "renown": 8, "conditions": "5,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 2, "renown": 7, "conditions": "5,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "loretta",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 7, "conditions": "3 Iron Swords", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 Iron Swords", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 5, "conditions": "3 Iron Swords", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 5, "conditions": "3 Iron Swords", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "ludia",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 9, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 7, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 7, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "lysander",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "5 Iron Spears", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 6, "conditions": "5 Iron Spears", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 7, "conditions": "5 Iron Spears", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "majide",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 2, "renown": 5, "conditions": "Answer his question three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "Answer his question three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 8, "conditions": "Answer his question three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 9, "conditions": "Answer his question three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "mikaela",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 5, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 8, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 6, "conditions": "3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "mu",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 Glirmosa", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 7, "conditions": "3 Glirmosa", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 Glirmosa", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "nezha",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 6, "conditions": "3 Sandworm Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 10, "conditions": "3 Sandworm Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 2, "renown": 6, "conditions": "3 Sandworm Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 Sandworm Meat", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "ninae",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 6, "conditions": "1 Paradise Fish", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "1 Paradise Fish", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 6, "conditions": "1 Paradise Fish", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": null, "conditions": "1 Paradise Fish", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"], "note": "Renown unverified: RPG Site lists 6; KeenGamer lists 8." }
+      ]
+    },
+    {
+      "id": "noctula",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 1, "renown": 4, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 1, "renown": 6, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 3, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 8, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "nuzzuo",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 2, "renown": 6, "conditions": "3 Iron Bows", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 1, "renown": 9, "conditions": "2 Iron Bows", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 6, "conditions": "3 Iron Bows", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 Iron Bows", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "nydine",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 1, "renown": 6, "conditions": "2 Bronze Axes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 2, "renown": 5, "conditions": "2 Bronze Axes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 5, "conditions": "3 Iron Axes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "3 Iron Axes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "olympia",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 6, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "3 recruitment quests", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "peppe",
+      "partOneRoutes": ["cai", "dietrich", "theodora"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 1, "renown": 9, "conditions": "Bertrand's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "Bertrand's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 2, "renown": 7, "conditions": "Bertrand's paralogue", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "peter",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 8, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 7, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "seteth",
+      "partOneRoutes": ["cai", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 6, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 6, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 10, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "sha-lan",
+      "partOneRoutes": ["dietrich", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 10, "conditions": "Anatolia's paralogue; answer Saramis, Da Mina, Grounded Ship", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 8, "conditions": "Anatolia's paralogue; answer Saramis, Da Mina, Grounded Ship", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "simon",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "Choose Tails", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 7, "conditions": "Choose Tails", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 7, "conditions": "Choose Tails", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 6, "conditions": "Choose Tails", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "sirocco",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 9, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 5, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "sofia",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 9, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "automatic", "support": null, "renown": null, "conditions": "Recruitment tutorial", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 7, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "theodora",
+      "partOneRoutes": ["theodora"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "tialla",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 9, "conditions": "Cai's paralogue; 3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 10, "conditions": "Cai's paralogue; 3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 8, "conditions": "Cai's paralogue; 3,000G", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "tobias",
+      "partOneRoutes": ["theodora"],
+      "requirements": [
+        { "routeId": "cai", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "automatic", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "troy",
+      "partOneRoutes": [],
+      "note": "Available in the Prologue and Part III.",
+      "requirements": []
+    },
+    {
+      "id": "ultand",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "automatic", "support": null, "renown": null, "conditions": "Chapter 6", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 5, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 6, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 8, "conditions": "Recruitment quest", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "ursula",
+      "partOneRoutes": ["cai", "dietrich", "theodora"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 10, "conditions": "Talimun's paralogue; answer Yes three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 7, "conditions": "Talimun's paralogue; answer Yes three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "Talimun's paralogue; answer Yes three times", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "unavailable", "support": null, "renown": null, "conditions": "", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "yang-jie",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 2, "renown": 3, "conditions": "Answer Cheese, Moon, Potatoes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "automatic", "support": null, "renown": null, "conditions": "Recruitment tutorial", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 3, "renown": 9, "conditions": "Answer Cheese, Moon, Potatoes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 3, "renown": 8, "conditions": "Answer Cheese, Moon, Potatoes", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    },
+    {
+      "id": "zarcone",
+      "partOneRoutes": ["cai", "dietrich", "theodora", "leda"],
+      "requirements": [
+        { "routeId": "cai", "status": "recruit", "support": 3, "renown": 8, "conditions": "Negotiate payment", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "dietrich", "status": "recruit", "support": 3, "renown": 7, "conditions": "Negotiate payment", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "theodora", "status": "recruit", "support": 1, "renown": 4, "conditions": "Negotiate payment", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] },
+        { "routeId": "leda", "status": "recruit", "support": 2, "renown": 5, "conditions": "Negotiate payment", "sourceIds": ["rpgsite-recruitment", "keengamer-recruitment"] }
+      ]
+    }
   ]
 }

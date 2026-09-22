@@ -9,6 +9,7 @@ if (page) {
   const pickerTrigger = get<HTMLButtonElement>('#gift-characters .character-picker-trigger');
   const recipientPicker = get<HTMLButtonElement>('#inventory-recipient-picker');
   const routeInputs = Array.from(page.querySelectorAll<HTMLInputElement>('input[name="gift-route"]'));
+  const requirementRows = Array.from(page.querySelectorAll<HTMLElement>('[data-recruitment-route]'));
   const pickerSearch = get<HTMLInputElement>('#character-picker-search');
   const applyCharacters = get<HTMLButtonElement>('#apply-character-selection');
   const characterOptions = Array.from(page.querySelectorAll<HTMLElement>('[data-character-option]'));
@@ -264,6 +265,7 @@ if (page) {
     eligible = eligibleRecipients(route, recruitment);
     inventoryRecipients = selectedRecipients(eligible, excludedRecipients);
     for (const input of routeInputs) input.checked = input.value === route;
+    for (const row of requirementRows) row.hidden = Boolean(route) && row.dataset.recruitmentRoute !== route;
     get('#recipient-selection-count').textContent = `(${inventoryRecipients.size}/${eligible.size})`;
     get('#reset-recipient-filters').hidden = !route && !excludedRecipients.size;
     get('#inventory-route-note').hidden = !route;

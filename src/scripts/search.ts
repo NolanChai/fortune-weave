@@ -1,6 +1,13 @@
 const input = document.querySelector<HTMLInputElement>('#query')!;
 const container = document.querySelector<HTMLElement>('#bird-time')!;
-const panels = Array.from(container.querySelectorAll<HTMLElement>('.panel'));
+const panels = Array.from(container.querySelectorAll<HTMLElement>('.panel'), (panel) => ({
+  element: panel,
+  name: panel.dataset.character ?? '',
+  entries: Array.from(panel.querySelectorAll<HTMLElement>('.entry'), (entry) => ({
+    element: entry,
+    text: entry.textContent?.toLowerCase() ?? '',
+  })),
+}));
 const status = document.querySelector<HTMLElement>('#search-status')!;
 const empty = document.querySelector<HTMLElement>('#empty-results')!;
 
@@ -10,21 +17,16 @@ function filterPanels() {
   let visibleEntries = 0;
 
   for (const panel of panels) {
-    const entries = Array.from(panel.querySelectorAll<HTMLElement>('.entry'));
-    const nameMatches = panel.dataset.character?.includes(query) ?? false;
-    const matches = entries.filter((entry) =>
-      entry.textContent?.toLowerCase().includes(query) ?? false
-    );
-    const visibleEntriesInPanel = nameMatches ? entries : matches;
-
-    entries.forEach((entry) => {
-      entry.hidden = !visibleEntriesInPanel.includes(entry);
-    });
-    panel.hidden = visibleEntriesInPanel.length === 0;
-
-    if (visibleEntriesInPanel.length > 0) {
+    const nameMatches = panel.name.includes(query);
+    let matchedEntries = 0;
+    for (const entry of panel.entries) {
+      entry.element.hidden = !nameMatches && !entry.text.includes(query);
+      if (!entry.element.hidden) matchedEntries++;
+    }
+    panel.element.hidden = matchedEntries === 0;
+    if (matchedEntries > 0) {
       visiblePanels++;
-      visibleEntries += visibleEntriesInPanel.length;
+      visibleEntries += matchedEntries;
     }
   }
 
