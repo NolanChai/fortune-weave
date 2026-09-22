@@ -1,10 +1,12 @@
 ---
 import characterIndex from '../../assets/characters/index.json';
 import birdTime from '../../data/bird-time.json';
+import { characters as profiles } from '../data/characters';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import '../styles/bird-time.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const profileIds = new Set(profiles.map(({ id }) => id));
 const characters = birdTime.characters.map((character) => {
   const portrait = characterIndex.characters.find(({ id }) => id === character.id);
   if (!portrait) throw new Error(`Missing portrait for ${character.id}`);
@@ -34,7 +36,7 @@ const characters = birdTime.characters.map((character) => {
             <header class="panel-header">
               <img class="portrait" src={character.icon} alt="" width={48} height={48} loading={characterIndex < 2 ? 'eager' : 'lazy'} decoding="async" />
               <div>
-                <h2 class="character-name" id={`character-${character.id}-title`}>{character.id === 'cai' ? <a href={`${base}/characters/cai/`}>{character.name}</a> : character.name}</h2>
+                <h2 class="character-name" id={`character-${character.id}-title`}>{profileIds.has(character.id) ? <a href={`${base}/characters/${character.id}/`}>{character.name}</a> : character.name}</h2>
               </div>
             </header>
             <ul class="entries">

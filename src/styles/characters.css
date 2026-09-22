@@ -1,6 +1,7 @@
 .character-theme .main { max-width: 1920px; padding: 12px 32px 24px; }
 .character-index { padding: 38px 2% 60px; }
 .character-index h1 { color: #eee7c8; margin-bottom: 32px; font-size: 42px; letter-spacing: .02em; }
+.character-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 290px)); gap: 28px; }
 .character-link { display: block; width: 290px; max-width: 100%; color: #eee7c8; text-decoration: none; border: 1px solid #848363; padding: 5px; background: #24413d; box-shadow: inset 0 0 0 3px #082d2b; transition: border-color .15s, background-color .15s; }
 .character-link:hover { border-color: #e8dc9d; background: #31534a; }
 .directory-portrait { width: 100%; }
@@ -35,16 +36,13 @@
 .identity-class .game-graphic { width: 2.6cqw; }
 .identity-class .foot-mark { width: 1.25cqw; }
 .identity-stats { display: grid; grid-template-columns: 8.7cqw 7.3cqw; column-gap: 1.55cqw; row-gap: .6cqw; width: fit-content; margin: 0; font-size: 1.36cqw; }
-.identity-stats > div:not(.experience) { display: flex; align-items: baseline; justify-content: space-between; }
+.identity-stats > div { display: flex; align-items: baseline; justify-content: space-between; }
 .identity-stats dt { color: #d8d1ac; }
 .identity-stats dd { margin: 0; font-size: 1.7cqw; font-weight: bold; white-space: nowrap; }
 .identity-stats dd span { padding-inline: .3cqw; }
 .identity-stats .hp { grid-column: 1; margin-bottom: .05cqw; border-bottom: 1px solid #7c7959; padding-bottom: .28cqw; }
 .identity-stats .level { grid-column: 1; }
-.identity-stats .next { justify-content: flex-start !important; gap: .25cqw; font-size: 1.22cqw; align-self: center; }
-.identity-stats .next dd { font-size: 1.3cqw; font-weight: 400; }
-.identity-stats .experience { height: .37cqw; grid-column: 1 / -1; width: 8.6cqw; margin-top: -.67cqw; border: 1px solid #6c7250; background: #05120f; }
-.experience span { display: block; height: 100%; width: 10%; background: #3ee4d6; box-shadow: 0 0 2px #4efdf7; }
+.identity-stats .movement { grid-column: 1; }
 .identity-stats .movement, .identity-stats .build { border-bottom: 1px solid #7c7959; padding-bottom: .2cqw; }
 .boosted { color: #f4d323; }
 sup { vertical-align: super; font-size: .55em; line-height: 0; }
@@ -138,12 +136,10 @@ sup { vertical-align: super; font-size: .55em; line-height: 0; }
   .identity-class { font-size: 19px; gap: 5px; margin-bottom: 8px; }
   .identity-class .game-graphic { width: 35px; }
   .identity-class .foot-mark { width: 18px; }
-  .identity-stats { grid-template-columns: 106px 82px; gap: 8px 18px; font-size: 17px; }
+  .identity-stats { grid-template-columns: 106px 42px; gap: 8px; font-size: 17px; }
   .identity-stats dd { font-size: 22px; }
   .identity-stats dd span { padding-inline: 3px; }
-  .identity-stats .next, .identity-stats .next dd { font-size: 17px; }
   .identity-stats .hp { padding-bottom: 3px; }
-  .identity-stats .experience { width: 106px; height: 5px; margin-top: -9px; }
   .stat-block { display: block; }
   .stat-values { column-gap: 24px; }
   .stat-values > div { min-height: 35px; padding: 5px 8px 4px; }

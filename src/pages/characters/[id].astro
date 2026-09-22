@@ -1,0 +1,15 @@
+---
+import { characters, type Character } from '../../data/characters';
+import CharacterPage from '../../components/characters/CharacterPage.astro';
+
+export function getStaticPaths() {
+  return characters.map((character) => ({
+    params: { id: character.id },
+    props: { character },
+  }));
+}
+
+interface Props { character: Character; }
+const { character } = Astro.props;
+---
+<CharacterPage character={character} />

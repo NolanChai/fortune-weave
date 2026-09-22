@@ -1,7 +1,8 @@
 ---
 // Viewports into unchanged user-provided captures, measured on the 2048 × 1152 reference.
-// Keeping the original pixels avoids regenerating Cai's artwork for this prototype.
-const graphics = {
+// Each character uses their own captures for portraits, stats, class sprites, and abilities.
+type Region = readonly [string, number, number, number, number];
+const shared: Record<string, Region> = {
   portrait: ['history', 188, 192, 517, 506],
   identityPortrait: ['stats', 525, 202, 180, 237],
   foot: ['stats', 388, 225, 24, 25],
@@ -10,15 +11,16 @@ const graphics = {
   crest: ['history', 518, 862, 176, 140],
   jewel: ['unique', 1356, 452, 493, 550],
   commoner: ['stats', 212, 215, 52, 51],
+  equipped: ['stats', 787, 250, 37, 36],
   spear: ['stats', 787, 250, 37, 36],
   vulnerary: ['stats', 787, 401, 37, 38],
   bow: ['stats', 787, 454, 37, 36],
-  brio: ['stats', 1366, 248, 37, 37],
+  personalAbility: ['stats', 1366, 248, 37, 37],
   combatBasics: ['stats', 1366, 554, 38, 39],
   apostle: ['stats', 787, 862, 38, 37],
   duality: ['stats', 787, 915, 38, 35],
   skillRanks: ['stats', 786, 702, 493, 100],
-  tempest: ['arts', 208, 503, 41, 41],
+  firstArt: ['arts', 208, 503, 41, 41],
   underworld: ['unique', 208, 503, 39, 40],
   burst: ['unique', 787, 249, 38, 35],
   redJewel: ['unique', 1366, 248, 37, 37],
@@ -33,17 +35,32 @@ const graphics = {
   soldiers: ['class', 973, 688, 209, 65],
   fliers: ['class', 1341, 686, 65, 67],
   mages: ['class', 1568, 690, 132, 62],
-} as const;
+  secondArt: ['arts', 208, 555, 41, 41],
+  attackMagic: ['arts', 788, 248, 38, 38],
+  assistMagic: ['arts', 788, 351, 38, 38],
+};
+const overrides: Record<string, Record<string, Region>> = {
+  peter: { identityPortrait: ['stats', 537, 202, 168, 237] },
+  tialla: {
+    identityPortrait: ['stats', 537, 202, 168, 237],
+    vulnerary: ['stats', 787, 351, 37, 38],
+    fliers: ['class', 1341, 686, 135, 67],
+  },
+};
 
 interface Props {
-  name: keyof typeof graphics;
+  characterId: string;
+  name: string;
   label?: string;
   class?: string;
 }
-const { name, label, class: className } = Astro.props;
-const [capture, x, y, width, height] = graphics[name];
+const { characterId, name, label, class: className } = Astro.props;
+const region = overrides[characterId]?.[name] ?? shared[name];
+if (!region) throw new Error(`Unknown graphic: ${characterId}/${name}`);
+const [capture, x, y, width, height] = region;
+const canvasHeight = characterId === 'tialla' && capture === 'history' ? 1150 : 1152;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const url = `${base}/assets/characters/cai/reference-${capture}.png`;
-const style = `--graphic-ratio:${width / height};aspect-ratio:${width}/${height};background-image:url('${url}');background-size:${2048 / width * 100}% ${1152 / height * 100}%;background-position:${x / (2048 - width) * 100}% ${y / (1152 - height) * 100}%;`;
+const url = `${base}/assets/characters/${characterId}/reference-${capture}.png`;
+const style = `--graphic-ratio:${width / height};aspect-ratio:${width}/${height};background-image:url('${url}');background-size:${2048 / width * 100}% ${canvasHeight / height * 100}%;background-position:${x / (2048 - width) * 100}% ${y / (canvasHeight - height) * 100}%;`;
 ---
 <span class:list={['game-graphic', className]} style={style} role={label ? 'img' : undefined} aria-label={label} aria-hidden={label ? undefined : 'true'}></span>

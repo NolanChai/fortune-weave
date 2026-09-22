@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { cp, mkdir, readFile, rm } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -43,16 +43,45 @@ for (const character of birdTime.characters) {
 
 assert.deepEqual(birdTimeIds, characterIds, 'Character and Bird Time records must match');
 
-const cai = JSON.parse(await readFile(resolve(root, 'data/characters/cai.json'), 'utf8'));
-assert.equal(cai.id, 'cai', 'Unexpected character profile');
-const referenceStats = cai.referenceStats.values;
-assert.equal(referenceStats.length, 9, 'Cai must have nine reference stats');
-assert.deepEqual(new Set(referenceStats.map(({ name }) => name)),
-  new Set(['HP', 'Str', 'Mag', 'Spd', 'Dex', 'Def', 'Res', 'Lck', 'Cha']), 'Invalid Cai stat names');
-for (const stat of referenceStats) {
-  assert(Number.isInteger(stat.base) && stat.base >= 0, `Invalid starting stat: Cai ${stat.name}`);
-  assert(Number.isInteger(stat.growth) && stat.growth >= 0 && stat.growth <= 100,
-    `Invalid growth rate: Cai ${stat.name}`);
+const profilesDirectory = resolve(root, 'data/characters');
+const profileFiles = (await readdir(profilesDirectory)).filter((file) => file.endsWith('.json'));
+for (const file of profileFiles) {
+  const profile = JSON.parse(await readFile(resolve(profilesDirectory, file), 'utf8'));
+  assert(characterIds.has(profile.id), `Unknown character profile: ${file}`);
+  assert.equal(file, `${profile.id}.json`, `Profile filename mismatch: ${file}`);
+  for (const field of ['hp', 'maxHp', 'level', 'movement', 'build', 'rating']) {
+    assert(Number.isInteger(profile[field]) && profile[field] >= 0, `Invalid ${field}: ${profile.id}`);
+  }
+  assert(profile.hp <= profile.maxHp, `HP exceeds maximum: ${profile.id}`);
+  assert.equal(profile.basicStats.length, 8, `Expected eight basic stats: ${profile.id}`);
+  assert.deepEqual(new Set(profile.basicStats.map(({ name }) => name)),
+    new Set(['Str', 'Mag', 'Spd', 'Dex', 'Def', 'Res', 'Lck', 'Cha']), `Invalid basic stat names: ${profile.id}`);
+  for (const stat of profile.basicStats) {
+    assert(Number.isInteger(stat.value) && stat.value >= 0, `Invalid basic stat: ${profile.id} ${stat.name}`);
+  }
+  for (const item of [profile.equipped, ...profile.items, ...profile.attackMagic, ...profile.assistMagic]) {
+    assert(item.name && item.graphic, `Missing item name or graphic: ${profile.id}`);
+    assert.match(item.durability, /^\d+\/\d+$/, `Invalid durability: ${profile.id} ${item.name}`);
+  }
+  for (const art of profile.combatArts) {
+    assert(Number.isInteger(art.cost) && art.cost >= 0, `Invalid combat art cost: ${profile.id} ${art.name}`);
+  }
+  // Captures are displayed through CSS viewports; missing files would leave blank artwork.
+  for (const capture of ['stats', 'arts', 'class', 'history', ...(profile.blaze ? ['unique'] : [])]) {
+    const bytes = await readFile(resolve(characterDirectory, profile.id, `reference-${capture}.png`));
+    assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', `Invalid capture: ${profile.id}/${capture}`);
+  }
+  if (profile.referenceStats) {
+    const referenceStats = profile.referenceStats.values;
+    assert.equal(referenceStats.length, 9, `Expected nine reference stats: ${profile.id}`);
+    assert.deepEqual(new Set(referenceStats.map(({ name }) => name)),
+      new Set(['HP', 'Str', 'Mag', 'Spd', 'Dex', 'Def', 'Res', 'Lck', 'Cha']), `Invalid reference stat names: ${profile.id}`);
+    for (const stat of referenceStats) {
+      assert(Number.isInteger(stat.base) && stat.base >= 0, `Invalid starting stat: ${profile.id} ${stat.name}`);
+      assert(Number.isInteger(stat.growth) && stat.growth >= 0 && stat.growth <= 100,
+        `Invalid growth rate: ${profile.id} ${stat.name}`);
+    }
+  }
 }
 
 const classData = JSON.parse(await readFile(resolve(root, 'data/classes.json'), 'utf8'));
@@ -93,4 +122,4 @@ await rm(publicDirectory, { recursive: true, force: true });
 await mkdir(publicDirectory, { recursive: true });
 await cp(resolve(root, 'assets'), resolve(publicDirectory, 'assets'), { recursive: true });
 await cp(resolve(root, 'data'), resolve(publicDirectory, 'data'), { recursive: true });
-console.log(`Prepared ${characterIds.size} portraits, ${entryIds.size} Bird Time entries, and ${classIds.size} classes.`);
+console.log(`Prepared ${characterIds.size} portraits, ${profileFiles.length} character profiles, ${entryIds.size} Bird Time entries, and ${classIds.size} classes.`);

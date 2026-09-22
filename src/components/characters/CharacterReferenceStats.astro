@@ -1,6 +1,7 @@
 ---
-import cai from '../../../data/characters/cai.json';
-const stats = cai.referenceStats;
+import type { Character } from '../../data/characters';
+interface Props { stats: NonNullable<Character['referenceStats']>; captureLevel: number; }
+const { stats, captureLevel } = Astro.props;
 ---
 <section class="reference-stats" id="starting-stats" aria-labelledby="reference-stats-title" tabindex="-1">
   <h2 id="reference-stats-title">Starting stats &amp; growth rates</h2>
@@ -14,6 +15,6 @@ const stats = cai.referenceStats;
       </tbody>
     </table>
   </div>
-  <p class="reference-note">Growth rates exclude class modifiers. The panels above show the supplied Lv. 5 save.</p>
+  <p class="reference-note">Growth rates exclude class modifiers. The panels above show the supplied Lv. {captureLevel} save.</p>
   <p class="reference-sources">Starting stats: <a href={stats.baseSource.url}>{stats.baseSource.name}</a><span aria-hidden="true"> · </span>Growth rates: <a href={stats.growthSource.url}>{stats.growthSource.name}</a></p>
 </section>

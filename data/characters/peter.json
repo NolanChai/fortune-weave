@@ -1,0 +1,157 @@
+{
+  "id": "peter",
+  "name": "Peter",
+  "title": "Child of Ribeira",
+  "source": {
+    "type": "user-provided game captures",
+    "note": "A level 5 save-state transcribed from the four supplied references. These values are not recruitment stats or growth rates. Class icons reflect the supplied Class screen; no additional availability is inferred."
+  },
+  "class": "Commoner",
+  "classDescription": "A member of Dagda's common folk, who hail from diverse backgrounds and positions.",
+  "level": 5,
+  "bloodmarks": [],
+  "equippedAbility": "Combat Basics",
+  "age": 15,
+  "affiliation": "Children of Ribeira",
+  "hp": 26,
+  "maxHp": 26,
+  "movement": 4,
+  "build": 2,
+  "rating": 60,
+  "combatStats": [
+    {
+      "name": "Phys",
+      "value": 13,
+      "icon": "sword"
+    },
+    {
+      "name": "Prt",
+      "value": 6,
+      "icon": "shield"
+    },
+    {
+      "name": "AS",
+      "value": 8,
+      "icon": "speed"
+    },
+    {
+      "name": "Rsl",
+      "value": 4,
+      "icon": "resistance"
+    },
+    {
+      "name": "Hit",
+      "value": 91,
+      "icon": "dexterity",
+      "boosted": true
+    },
+    {
+      "name": "Avo",
+      "value": 11,
+      "icon": "luck",
+      "boosted": true
+    },
+    {
+      "name": "Crit",
+      "value": 10,
+      "icon": "sword"
+    },
+    {
+      "name": "Ddg",
+      "value": 7,
+      "icon": "charm"
+    },
+    {
+      "name": "Rng",
+      "value": 2,
+      "icon": "spear"
+    }
+  ],
+  "basicStats": [
+    {
+      "name": "Str",
+      "value": 11,
+      "icon": "sword"
+    },
+    {
+      "name": "Def",
+      "value": 6,
+      "icon": "shield"
+    },
+    {
+      "name": "Mag",
+      "value": 4,
+      "icon": "book"
+    },
+    {
+      "name": "Res",
+      "value": 4,
+      "icon": "resistance"
+    },
+    {
+      "name": "Spd",
+      "value": 10,
+      "icon": "speed"
+    },
+    {
+      "name": "Lck",
+      "value": 7,
+      "icon": "luck"
+    },
+    {
+      "name": "Dex",
+      "value": 13,
+      "icon": "dexterity"
+    },
+    {
+      "name": "Cha",
+      "value": 5,
+      "icon": "charm"
+    }
+  ],
+  "equipped": {
+    "name": "Wooden Bow",
+    "durability": "2/10",
+    "graphic": "equipped"
+  },
+  "items": [
+    {
+      "name": "Wooden Bow",
+      "durability": "2/10",
+      "graphic": "equipped"
+    }
+  ],
+  "personalAbility": "Steady Aim",
+  "combatArts": [
+    {
+      "name": "Curved Shot",
+      "cost": 2,
+      "graphic": "firstArt"
+    },
+    {
+      "name": "Vital Shot",
+      "cost": 2,
+      "graphic": "secondArt"
+    }
+  ],
+  "attackMagic": [],
+  "assistMagic": [],
+  "flierSpecialties": 1,
+  "skillRanksDescription": "Skill ranks shown in the supplied level 5 capture: Sword E, Spear E, Axe E, Bow D, Brawling E, Reason E, Faith E, Authority E, Infantry E, Riding E, Armor E, Flying E.",
+  "portraitDescription": "Peter, with red hair and green eyes, holding a ginji fruit.",
+  "history": [
+    {
+      "year": 1433,
+      "text": "Born in Ribeira village as the son of Estie."
+    },
+    {
+      "year": 1442,
+      "text": "Grows up with Cai like brothers and meets Tialla."
+    }
+  ],
+  "birthday": "12/2",
+  "height": "150 cm",
+  "likes": "His mother's home cooking, ginji fruits.",
+  "dislikes": "Fighting, scary things, the dark, ghosts.",
+  "interests": "Eating, watching clouds."
+}

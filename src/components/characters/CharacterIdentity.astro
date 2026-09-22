@@ -1,0 +1,18 @@
+---
+import type { Character } from '../../data/characters';
+import CharacterGraphic from './CharacterGraphic.astro';
+interface Props { character: Character; }
+const { character } = Astro.props;
+---
+<div class="identity-card">
+  <CharacterGraphic characterId={character.id} name="identityPortrait" label={character.name} class="identity-portrait" />
+  <div class="identity-content">
+    <div class="identity-class"><CharacterGraphic characterId={character.id} name="commoner" /><span>{character.class}</span><CharacterGraphic characterId={character.id} name="foot" class="foot-mark" /></div>
+    <dl class="identity-stats">
+      <div class="hp"><dt>HP</dt><dd>{character.hp}<span>/</span>{character.maxHp}</dd></div>
+      <div class="level"><dt>Lv</dt><dd>{character.level}</dd></div>
+      <div class="movement"><dt>Mov</dt><dd class:list={{ boosted: character.movementBoosted }}>{character.movement}{character.movementBoosted && <sup>▴</sup>}</dd></div>
+      <div class="build"><dt>Bld</dt><dd>{character.build}</dd></div>
+    </dl>
+  </div>
+</div>

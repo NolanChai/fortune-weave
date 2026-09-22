@@ -1,0 +1,172 @@
+{
+  "id": "tialla",
+  "name": "Tialla",
+  "title": "Child of Ribeira",
+  "source": {
+    "type": "user-provided game captures",
+    "note": "A level 5 save-state transcribed from the four supplied references. These values are not recruitment stats or growth rates. Class icons reflect the supplied Class screen; no additional availability is inferred."
+  },
+  "class": "Commoner",
+  "classDescription": "A member of Dagda's common folk, who hail from diverse backgrounds and positions.",
+  "level": 5,
+  "bloodmarks": [],
+  "equippedAbility": "Combat Basics",
+  "age": 15,
+  "affiliation": "Children of Ribeira",
+  "hp": 24,
+  "maxHp": 24,
+  "movement": 4,
+  "build": 1,
+  "rating": 65,
+  "combatStats": [
+    {
+      "name": "Mys",
+      "value": 15,
+      "icon": "book"
+    },
+    {
+      "name": "Prt",
+      "value": 6,
+      "icon": "shield"
+    },
+    {
+      "name": "AS",
+      "value": 3,
+      "icon": "speed"
+    },
+    {
+      "name": "Rsl",
+      "value": 9,
+      "icon": "resistance"
+    },
+    {
+      "name": "Hit",
+      "value": 102,
+      "icon": "dexterity",
+      "boosted": true
+    },
+    {
+      "name": "Avo",
+      "value": 6,
+      "icon": "luck",
+      "boosted": true
+    },
+    {
+      "name": "Crit",
+      "value": 9,
+      "icon": "sword"
+    },
+    {
+      "name": "Ddg",
+      "value": 10,
+      "icon": "charm"
+    },
+    {
+      "name": "Rng",
+      "value": "1-2",
+      "icon": "spear"
+    }
+  ],
+  "basicStats": [
+    {
+      "name": "Str",
+      "value": 8,
+      "icon": "sword"
+    },
+    {
+      "name": "Def",
+      "value": 6,
+      "icon": "shield"
+    },
+    {
+      "name": "Mag",
+      "value": 12,
+      "icon": "book"
+    },
+    {
+      "name": "Res",
+      "value": 9,
+      "icon": "resistance"
+    },
+    {
+      "name": "Spd",
+      "value": 7,
+      "icon": "speed"
+    },
+    {
+      "name": "Lck",
+      "value": 10,
+      "icon": "luck"
+    },
+    {
+      "name": "Dex",
+      "value": 8,
+      "icon": "dexterity"
+    },
+    {
+      "name": "Cha",
+      "value": 5,
+      "icon": "charm"
+    }
+  ],
+  "equipped": {
+    "name": "Fire",
+    "durability": "10/10",
+    "graphic": "equipped"
+  },
+  "items": [
+    {
+      "name": "Vulnerary",
+      "durability": "3/3",
+      "graphic": "vulnerary"
+    }
+  ],
+  "personalAbility": "Tactician's Wit",
+  "combatArts": [
+    {
+      "name": "Lend Strength",
+      "cost": 0,
+      "graphic": "firstArt"
+    }
+  ],
+  "attackMagic": [
+    {
+      "name": "Fire",
+      "durability": "10/10",
+      "graphic": "attackMagic"
+    }
+  ],
+  "assistMagic": [
+    {
+      "name": "Heal",
+      "durability": "10/10",
+      "graphic": "assistMagic"
+    }
+  ],
+  "flierSpecialties": 2,
+  "skillRanksDescription": "Skill ranks shown in the supplied level 5 capture: Sword E, Spear E, Axe E, Bow E, Brawling E, Reason D, Faith D, Authority D, Infantry E, Riding E, Armor E, Flying E.",
+  "portraitDescription": "Tialla, wearing glasses and a cream cloak, with dark hair tied with a pink ribbon.",
+  "history": [
+    {
+      "year": 1433,
+      "text": "Born to military parents in Mahón Castle."
+    },
+    {
+      "year": 1442,
+      "text": "Loses her parents."
+    },
+    {
+      "year": 1442,
+      "text": "Moves to Ribeira village with her grandfather."
+    },
+    {
+      "year": 1446,
+      "text": "By a young age, has finished most of her grandfather's library."
+    }
+  ],
+  "birthday": "5/17",
+  "height": "155 cm",
+  "likes": "Libraries, gossiping about love, alone time, her grandfather.",
+  "dislikes": "Soldiers, large animals, swimming.",
+  "interests": "Reading, playing board games."
+}

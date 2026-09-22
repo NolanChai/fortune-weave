@@ -1,16 +1,18 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import CaiGraphic from '../../components/characters/CaiGraphic.astro';
-import cai from '../../../data/characters/cai.json';
+import CharacterGraphic from '../../components/characters/CharacterGraphic.astro';
+import { characters } from '../../data/characters';
 import '../../styles/characters.css';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <SiteLayout title="Characters" page="characters" character description="Characters in Fire Emblem Fortune's Weave.">
   <div class="character-index">
     <h1>Characters</h1>
-    <a class="character-link" href={`${base}/characters/cai/`}>
-      <CaiGraphic name="portrait" class="directory-portrait" />
-      <span class="directory-caption"><span><strong>{cai.name}</strong><span>{cai.title}</span></span><span class="directory-arrow" aria-hidden="true">›</span></span>
-    </a>
+    <div class="character-grid">
+      {characters.map((character) => <a class="character-link" href={`${base}/characters/${character.id}/`}>
+        <CharacterGraphic characterId={character.id} name="portrait" class="directory-portrait" />
+        <span class="directory-caption"><span><strong>{character.name}</strong><span>{character.title}</span></span><span class="directory-arrow" aria-hidden="true">›</span></span>
+      </a>)}
+    </div>
   </div>
 </SiteLayout>

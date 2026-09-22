@@ -11,10 +11,15 @@
   "hp": 29,
   "maxHp": 29,
   "level": 5,
-  "nextLevel": 90,
   "movement": 5,
+  "movementBoosted": true,
   "build": 2,
   "rating": 72,
+  "ratingBoosted": true,
+  "flierSpecialties": 1,
+  "portraitDescription": "Cai, wearing a blue cloak and cream scarf.",
+  "skillRanksDescription": "Skill ranks shown in the supplied level 5 capture: Sword E+, Spear D, Axe E, Bow E, Brawling E, Reason E, Faith E+, Authority E, Infantry E, Riding E+, Armor E, Flying E.",
+  "equipped": { "name": "Wooden Spear", "durability": "10/10", "graphic": "equipped" },
   "referenceStats": {
     "checkedAt": "2026-09-21",
     "level": 1,
@@ -76,10 +81,15 @@
     { "name": "Vulnerary", "durability": "3/3", "graphic": "vulnerary" },
     { "name": "Hunter's Bow", "durability": "20/20", "graphic": "bow", "inactive": true }
   ],
-  "bloodmarks": ["Diadem of the Apostle", "Diadem of Duality"],
+  "bloodmarks": [
+    { "name": "Diadem of the Apostle", "graphic": "apostle" },
+    { "name": "Diadem of Duality", "graphic": "duality" }
+  ],
   "personalAbility": "Brio",
   "equippedAbility": "Combat Basics",
-  "combatArt": { "name": "Tempest Spear", "cost": 2 },
+  "combatArts": [{ "name": "Tempest Spear", "cost": 2, "graphic": "firstArt" }],
+  "attackMagic": [],
+  "assistMagic": [],
   "blaze": {
     "type": "Underworld",
     "description": "Blaze Gauge increases when in combat with cursed treasures. Burst reduces max HP.",
