@@ -52,6 +52,7 @@ for (const link of document.querySelectorAll<HTMLAnchorElement>('.tier-overview 
 }
 document.querySelector<HTMLElement>('#class-controls')!.hidden = false;
 window.addEventListener('pageshow', filterClasses);
+document.addEventListener('class-requirements-reset', clearFilters);
 filterClasses();
 
 export {};

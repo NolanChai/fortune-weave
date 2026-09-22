@@ -1,0 +1,22 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ClassSuitability from './ClassSuitability.astro';
+import ClassRequirements from './ClassRequirements.astro';
+import '../styles/classes-page.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<SiteLayout title="Classes" page="classes" canonicalPath="/classes/" description="Class requirements and character suitability in Fire Emblem Fortune's Weave.">
+  <header class="classes-header">
+    <h1>Classes</h1>
+    <p>Class requirements and character builds.</p>
+    <nav class="classes-view-nav" aria-label="Class views">
+      <a href={`${base}/classes/`} data-classes-view="suitability" aria-current="page" aria-controls="class-suitability-panel">Suitability</a>
+      <a href={`${base}/classes/?view=requirements`} data-classes-view="requirements" aria-controls="class-requirements-panel">Requirements</a>
+    </nav>
+  </header>
+  <section id="class-suitability-panel" aria-label="Class suitability"><ClassSuitability /></section>
+  <section id="class-requirements-panel" aria-label="Class requirements" hidden><ClassRequirements /></section>
+  <script>import '../scripts/class-views';</script>
+</SiteLayout>

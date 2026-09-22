@@ -16,5 +16,5 @@ const { stats, captureLevel } = Astro.props;
     </table>
   </div>
   <p class="reference-note"><strong class="high-growth">Bold gold: {HIGH_GROWTH_RATE}%+.</strong> Reported personal growths exclude class bonuses. Panels show the Lv. {captureLevel} save.</p>
-  <p class="reference-sources">{stats.baseSource && <>Starting stats: <a href={stats.baseSource.url}>{stats.baseSource.name}</a><span aria-hidden="true"> · </span></>}Growth rates: <a href={stats.growthSource.url}>{stats.growthSource.name}</a></p>
+  <p class="reference-sources">{stats.baseSource && <>Starting stats: <span>{stats.baseSource.name}</span><span aria-hidden="true"> · </span></>}Growth rates: <span>{stats.growthSource.name}</span></p>
 </section>

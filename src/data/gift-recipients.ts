@@ -41,10 +41,12 @@ export function parseRecipientFilters(params: URLSearchParams, recruitment: Recr
   return { route, excluded };
 }
 
-export function eligibleRecipients(route: string, recruitment: Recruitment): Set<string> {
+export function eligibleRecipients(route: string, recruitment: Recruitment, includeLater = false): Set<string> {
   return new Set(recruitment.characters
     // Unverified availability stays selectable; only confirmed restrictions hide a character.
-    .filter(({ partOneRoutes }) => !route || partOneRoutes === null || partOneRoutes.includes(route))
+    .filter(({ partOneRoutes }) => partOneRoutes === null || (partOneRoutes.length === 0
+      ? includeLater
+      : !route || partOneRoutes.includes(route)))
     .map(({ id }) => id));
 }
 

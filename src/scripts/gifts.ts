@@ -9,6 +9,7 @@ if (page) {
   const pickerTrigger = get<HTMLButtonElement>('#gift-characters .character-picker-trigger');
   const recipientPicker = get<HTMLButtonElement>('#inventory-recipient-picker');
   const routeInputs = Array.from(page.querySelectorAll<HTMLInputElement>('input[name="gift-route"]'));
+  const spoilerToggle = get<HTMLInputElement>('#include-later-characters');
   const requirementBadges = Array.from(page.querySelectorAll<HTMLElement>('[data-recruitment-route]'));
   const negotiations = Array.from(page.querySelectorAll<HTMLElement>('[data-recruitment-negotiation]'));
   const sortButtons = Array.from(page.querySelectorAll<HTMLButtonElement>('[data-recipient-sort]'));
@@ -26,6 +27,8 @@ if (page) {
   let pickerMode: 'characters' | 'inventory' = 'characters';
   let pickerReturnFocus = pickerTrigger;
   let route = '';
+  let includeLater = false;
+  let availableCharacters = eligibleRecipients('', recruitment);
   let recipientSort: RecipientSort = 'matches';
   let excludedRecipients = new Set<string>();
   let eligible = eligibleRecipients(route, recruitment);
@@ -63,10 +66,8 @@ if (page) {
   function filterCharacterPicker() {
     let shown = 0;
     for (const option of characterOptions) {
-      option.hidden = (pickerMode === 'inventory' && !eligible.has(option.dataset.characterOption!))
+      option.hidden = !(pickerMode === 'inventory' ? eligible : availableCharacters).has(option.dataset.characterOption!)
         || !option.dataset.name!.includes(pickerSearch.value.trim().toLowerCase());
-      const unknown = option.querySelector<HTMLElement>('.character-route-unknown');
-      if (unknown) unknown.hidden = pickerMode !== 'inventory' || !route;
       if (!option.hidden) shown++;
     }
     get('.character-picker-empty').hidden = shown > 0;
@@ -75,7 +76,7 @@ if (page) {
 
   function updateDraftSelection() {
     for (const option of characterOptions) option.querySelector('input')!.checked = draftCharacters.has(option.dataset.characterOption!);
-    get('#character-draft-count').textContent = `${draftCharacters.size} of ${pickerMode === 'inventory' ? eligible.size : characterIds.size} selected`;
+    get('#character-draft-count').textContent = `${draftCharacters.size} of ${pickerMode === 'inventory' ? eligible.size : availableCharacters.size} selected`;
     applyCharacters.disabled = pickerMode === 'characters' && draftCharacters.size === 0;
     applyCharacters.textContent = pickerMode === 'inventory' ? 'Apply selection' : draftCharacters.size > 0
       ? `Show ${draftCharacters.size} ${draftCharacters.size === 1 ? 'character' : 'characters'}` : 'Show characters';
@@ -88,7 +89,7 @@ if (page) {
     get('#character-dialog-title').textContent = mode === 'inventory' ? 'Choose recipients' : 'Choose characters';
     const routeName = recruitment.routes.find(({ id }) => id === route)?.name;
     get('#character-dialog-description').textContent = mode === 'characters' ? 'Select characters to compare their gifts.'
-      : routeName ? `${routeName}’s route · Part I. Uncheck characters to exclude them from your matches.`
+      : routeName ? `${routeName}’s route${includeLater ? ' + later characters' : ' · Part I'}. Uncheck characters to exclude them from your matches.`
       : 'Uncheck characters to exclude them from your inventory matches.';
     get('#select-all-characters').textContent = mode === 'inventory' && route ? 'All on this route' : 'All characters';
     pickerSearch.value = '';
@@ -137,7 +138,7 @@ if (page) {
     });
   }
   get('#select-all-characters').addEventListener('click', () => {
-    draftCharacters = new Set(pickerMode === 'inventory' ? eligible : characterIds);
+    draftCharacters = new Set(pickerMode === 'inventory' ? eligible : availableCharacters);
     updateDraftSelection();
   });
   get('#clear-character-selection').addEventListener('click', () => {
@@ -264,9 +265,19 @@ if (page) {
   }
 
   const viewButtons = page.querySelectorAll<HTMLButtonElement>('[data-view]');
+  spoilerToggle.addEventListener('change', () => {
+    const url = new URL(location.href);
+    if (spoilerToggle.checked) url.searchParams.set('spoilers', '1');
+    else url.searchParams.delete('spoilers');
+    history.pushState(null, '', url);
+    applyLocation();
+  });
   function applyLocation() {
     const params = new URLSearchParams(location.search);
     const inventoryView = params.get('view') === 'inventory';
+    includeLater = params.get('spoilers') === '1';
+    spoilerToggle.checked = includeLater;
+    availableCharacters = eligibleRecipients('', recruitment, includeLater);
     ({ route, excluded: excludedRecipients } = parseRecipientFilters(params, recruitment));
     recipientSort = parseRecipientSort(params.get('sort'), route);
     for (const button of sortButtons) {
@@ -280,7 +291,7 @@ if (page) {
       }
     }
     get('#renown-sort-hint').hidden = Boolean(route);
-    eligible = eligibleRecipients(route, recruitment);
+    eligible = eligibleRecipients(route, recruitment, includeLater);
     inventoryRecipients = selectedRecipients(eligible, excludedRecipients);
     for (const input of routeInputs) input.checked = input.value === route;
     for (const badge of requirementBadges) badge.hidden = Boolean(route) && badge.dataset.recruitmentRoute !== route;
@@ -295,7 +306,7 @@ if (page) {
     get('#reset-recipient-filters').hidden = !route && !excludedRecipients.size;
     get('#inventory-route-note').hidden = !route;
     const requested = params.get('characters') ?? params.get('character') ?? '';
-    selectedCharacters = new Set(requested.split(',').filter((id) => characterIds.has(id)));
+    selectedCharacters = new Set(requested.split(',').filter((id) => availableCharacters.has(id)));
     if (!selectedCharacters.size) selectedCharacters.add(characterPanels[0].dataset.character!);
     get('.gift-character-grid').classList.toggle('is-comparing', selectedCharacters.size > 1);
     get('.selected-characters').hidden = selectedCharacters.size < 2;

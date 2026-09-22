@@ -43,9 +43,9 @@ const skills = classData.skills as Record<string, string>;
             <small>Personal + class modifier</small>
           </p>}
           <p class="build-exam"><strong>Exam targets</strong> {target.requirements?.map(({ skill, rank }) => `${skills[skill]} ${rank}`).join(' · ')}</p>
-          <p class="build-exam-meta">{target.licenseOverride ?? tier.license} · Renown {tier.renown} · Ideal Lv. {tier.idealLevel}</p>
+          <p class="build-exam-meta">{target.licenseOverride ?? tier.license} · {tier.renown === null ? 'Part III' : `Renown ${tier.renown}`} · Ideal Lv. {tier.idealLevel}</p>
           {unlocks.length > 0 && <p class="build-unlock"><strong>Unlock conditions</strong> {unlocks.map((unlock) => `Cai: ${unlock.text}`).join(' ')}</p>}
-          <p class="build-sources">{sources.map((source) => <a href={source.url}>{source.name}</a>)}</p>
+          <p class="build-sources">{sources.map((source) => <span>{source.name}</span>)}</p>
         </div>
       </article>;
     })}
@@ -77,8 +77,7 @@ const skills = classData.skills as Record<string, string>;
   .build-exam, .build-exam-meta, .build-unlock { margin: 4px 0; color: var(--secondary); font-size: 12px; line-height: 1.8; }
   .build-unlock { margin-top: 10px; }
   .build-sources { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 16px 0 0; font-size: 11px; line-height: 1.7; }
-  .build-sources a { color: var(--secondary); text-underline-offset: 3px; text-decoration-color: #92926b70; }
-  .build-sources a:hover { color: var(--text); }
+  .build-sources { color: var(--secondary); }
   .recommendations-note { margin: 0; padding-top: 18px; border-top: 1px solid #92926b50; font-size: 12px; }
   @media (max-width: 700px) {
     .class-recommendations { padding: 22px 20px; }

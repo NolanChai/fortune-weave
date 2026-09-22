@@ -1,0 +1,14 @@
+---
+import icons from '../../assets/classes/icons/index.json';
+
+interface Props { classId: string; name: string; size?: number; }
+const { classId, name, size = 52 } = Astro.props;
+const asset = icons.assets.find((asset) => asset.classId === classId);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+{asset ? <img class="class-icon" src={`${base}/assets/classes/icons/${asset.file}`} width={size} height={size} alt="" loading="lazy" data-class-icon={classId} />
+  : <span class="class-icon-placeholder" style={`width:${size}px;height:${size}px`} role="img" aria-label={`${name}: in-game icon unavailable`} title="In-game icon unavailable">{classId === 'dancer' ? '♪' : '◇'}</span>}
+<style>
+  .class-icon { display: block; flex: none; object-fit: contain; }
+  .class-icon-placeholder { display: grid; flex: none; place-items: center; border: 1px solid #9e967263; color: var(--secondary); font: 27px Georgia, serif; background: #5963421f; }
+</style>

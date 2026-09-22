@@ -26,12 +26,12 @@ const Heading = compact ? 'h4' : 'h3';
 </section>}
 
 <style>
-  .recruitment-negotiation { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--gift-line); }
-  h3, h4 { margin: 0 0 10px; color: var(--secondary); font: 18px/1.4 Georgia, serif; }
-  p { margin: 0; font-size: 14px; }
-  p + p { margin-top: 12px; }
+  .recruitment-negotiation { min-width: 0; padding-left: 18px; border-left: 1px solid var(--gift-line); }
+  h3, h4 { margin: 0 0 8px; color: var(--secondary); font: 14px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  p { margin: 0; font-size: 14px; overflow-wrap: anywhere; }
+  p:not([hidden]) ~ p:not([hidden]) { margin-top: 12px; }
   .negotiation-routes { display: block; margin-bottom: 3px; color: var(--secondary); font-size: 11px; }
-  .compact { margin-top: 14px; padding-top: 10px; }
+  .compact { padding-top: 6px; }
   .compact h4 { margin-bottom: 5px; font: 12px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   .compact p { font-size: 12px; }
 </style>

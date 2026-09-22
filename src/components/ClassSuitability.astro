@@ -1,0 +1,63 @@
+---
+import ClassFit from './ClassFit.astro';
+import ClassIcon from './ClassIcon.astro';
+import database from '../../data/classes.json';
+import suitability from '../../data/class-suitability.json';
+import portraits from '../../assets/characters/index.json';
+import '../styles/class-suitability.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const families = [{ id: 'all', label: 'All' }, { id: 'melee', label: 'Melee' }, { id: 'ranged', label: 'Ranged' }, { id: 'mounted', label: 'Mounted' }, { id: 'magic', label: 'Magic' }, { id: 'support', label: 'Support' }];
+const rankOrder: Record<string, number> = { S: 0, A: 1, B: 2, C: 3 };
+const entries = suitability.classes.map((entry) => {
+  const details = database.classes.find(({ id }) => id === entry.classId)!;
+  const names = entry.picks.map((pick) => portraits.characters.find(({ id }) => id === pick.characterId)!.name);
+  const mounted = details.requirements?.some(({ skill }) => skill === 'riding' || skill === 'flying');
+  return { ...entry, details, picks: [...entry.picks].sort((a, b) => (rankOrder[a.rank ?? ''] ?? 4) - (rankOrder[b.rank ?? ''] ?? 4)), roles: [...new Set([entry.family, ...(mounted ? ['mounted'] : [])])].join(' '), search: [details.name, ...names].join(' ').toLowerCase() };
+});
+---
+
+<div class="suitability-controls" id="suitability-controls" hidden>
+  <div class="suitability-tier-filters" role="group" aria-label="Recommendation class tier">
+    {database.tiers.map((tier) => <button type="button" data-suitability-tier={tier.id} aria-pressed={tier.id === 'advanced' ? 'true' : 'false'}>{tier.name}</button>)}
+  </div>
+  <div class="suitability-role-controls">
+  <div class="class-family-filters" role="group" aria-label="Class role">
+    {families.map((family) => <button type="button" data-family={family.id} aria-pressed={family.id === 'all' ? 'true' : 'false'}>{family.label}</button>)}
+  </div>
+  <label class="search"><span class="sr-only">Search classes or characters</span><input id="suitability-query" type="search" placeholder="Class or character…" autocomplete="off" /></label>
+  </div>
+</div>
+<div class="suitability-key">
+  <p>Strongest fits first. Hover or tap for notes.</p>
+  <div class="suitability-legend"><span><span class="legend-star" aria-hidden="true">★</span> Exceptional</span><span><span class="legend-experiment" aria-hidden="true"></span> Experimental</span></div>
+</div>
+<p class="sr-only" id="suitability-status" role="status" aria-live="polite"></p>
+
+<div class="class-board">
+  {entries.map((entry) => (
+    <section class="class-column" data-class-column data-tier={entry.details.tier} data-family={entry.roles} data-search={entry.search} aria-labelledby={`column-${entry.classId}`} hidden={entry.details.tier !== 'advanced'}>
+      <header class="class-column-heading">
+        <ClassIcon classId={entry.classId} name={entry.details.name} />
+        <h2 id={`column-${entry.classId}`}><a href={`${base}/classes/?view=requirements#${entry.classId}`} data-classes-view="requirements" data-class-target={entry.classId}>{entry.details.name}</a></h2>
+        {entry.provisional && <span class="class-column-note">Provisional</span>}
+        {entry.classId === 'dancer' && <span class="class-column-note">One holder</span>}
+      </header>
+      <ol class="class-fits" aria-label={`${entry.details.name}, strongest fits first`}>
+        {entry.picks.map((pick) => <ClassFit classId={entry.classId} className={entry.details.name} pick={pick} />)}
+      </ol>
+    </section>
+  ))}
+</div>
+<p class="empty" id="suitability-empty" hidden>No matching classes or characters.</p>
+
+<footer class="suitability-footer">
+  <details><summary>Sources &amp; notes</summary>
+    <p>Ranks compare characters within each class: S is exceptional, A is a strong fit, B is viable with tradeoffs, and C is situational. These are our recommendations, not a community vote. Experimental builds can rank as highly as standard picks.</p>
+    <p>Notes weigh personal growths, abilities, and training cost. They do not guarantee a character’s final stats. Elephant Rider is still unranked pending more class details.</p>
+    <p>Research: Serenes Forest, Game8, Pocket Tactics, Siliconera, Games with James, and player discussions.</p>
+    <p>Class sprites: Nintendo / Intelligent Systems, via Game8. Dancer uses a placeholder.</p>
+    <p>Reviewed {suitability.checkedAt}. <a href={`${base}/data/class-suitability.json`}>Recommendation data (JSON)</a></p>
+  </details>
+</footer>
+<script>import '../scripts/class-suitability';</script>

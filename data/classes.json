@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-21",
+  "checkedAt": "2026-09-22",
   "game": "Fire Emblem: Fortune's Weave",
-  "coverage": "35 documented Beginner, Specialty, and Advanced classes. Master and Divine rosters, class base stats, and full growth modifiers are not yet verified.",
+  "coverage": "Beginner, Specialty, Advanced, and Master certification classes. Divine classes are not included.",
   "requirementMeaning": "Listed skill targets contribute to exam pass chance. Ideal levels are recommendations, not absolute minimum levels. This dataset does not calculate pass percentages or treat skill ranks as usable-weapon lists.",
   "skills": {
     "sword": "Sword",
@@ -48,6 +48,16 @@
       "sources": [
         "polygon",
         "pocket-tactics"
+      ]
+    },
+    {
+      "id": "master",
+      "name": "Master",
+      "idealLevel": 45,
+      "renown": null,
+      "license": "Master License",
+      "sources": [
+        "game8"
       ]
     }
   ],
@@ -117,6 +127,11 @@
       "url": "https://www.fdaytalk.com/fire-emblem-fortunes-weave-change-class/",
       "kind": "guide",
       "scope": "Reclassing, later-tier restrictions, and single-holder classes."
+    },
+    {
+      "id": "game8",
+      "name": "Game8 · class certification tables",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620256"
     }
   ],
   "classes": [
@@ -1167,20 +1182,458 @@
     {
       "id": "war-monk",
       "name": "War Monk",
-      "tier": "advanced",
-      "requirements": null,
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "white-magic",
+          "rank": "D"
+        },
+        {
+          "skill": "gauntlets",
+          "rank": "B"
+        }
+      ],
       "mastery": null,
       "unlockRoutes": [],
-      "unlock": "Unlock conditions not yet verified.",
+      "unlock": "Part III; complete Aurora's Temple Restoration.",
       "restriction": null,
       "licenseOverride": null,
       "aliases": [],
       "notes": [
-        "Sources agree the class exists, but disagree on its movement type. Ranks and mastery remain unverified."
+        "Updated from the release class table: War Monk is Master tier."
       ],
       "sources": [
-        "pocket-tactics",
-        "serenes"
+        "game8"
+      ]
+    },
+    {
+      "id": "swordmaster",
+      "name": "Swordmaster",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "sword",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Astra",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Part III; complete Mars' Temple Restoration.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "high-savant",
+      "name": "High Savant",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "black-magic",
+          "rank": "D"
+        },
+        {
+          "skill": "sword",
+          "rank": "B"
+        }
+      ],
+      "mastery": null,
+      "unlockRoutes": [],
+      "unlock": "Part III; complete Smyrnos' Temple Restoration.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "battlemaster",
+      "name": "Battlemaster",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "gauntlets",
+          "rank": "A"
+        },
+        {
+          "skill": "axe",
+          "rank": "A"
+        },
+        {
+          "skill": "sword",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "War Master's Strike",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "bow-adept",
+      "name": "Bow Adept",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Sky Hunter",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "bow-knight",
+      "name": "Bow Knight",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "bow",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Hunter's Cross",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Part III; complete Kalla's Temple Restoration.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "shadow-seeker",
+      "name": "Shadow Seeker",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "bow",
+          "rank": "A"
+        },
+        {
+          "skill": "sword",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Dropshadow Blade",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "spear",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Resolute Stance",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "castle-knight",
+      "name": "Castle Knight",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "armor",
+          "rank": "C"
+        },
+        {
+          "skill": "axe",
+          "rank": "A"
+        },
+        {
+          "skill": "spear",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Intercept",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "orichaldia",
+      "name": "Orichaldia",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "B"
+        },
+        {
+          "skill": "spear",
+          "rank": "A"
+        },
+        {
+          "skill": "sword",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Fierce Spear",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "great-knight",
+      "name": "Great Knight",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "armor",
+          "rank": "D"
+        },
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "axe",
+          "rank": "A"
+        },
+        {
+          "skill": "spear",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Fierce Shield",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Part III; complete Credna's Temple Restoration.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "celestial-trooper",
+      "name": "Celestial Trooper",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "flying",
+          "rank": "C"
+        },
+        {
+          "skill": "spear",
+          "rank": "A"
+        },
+        {
+          "skill": "sword",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Lightning Reflexes",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "bau-lord",
+      "name": "Bau Lord",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "flying",
+          "rank": "C"
+        },
+        {
+          "skill": "axe",
+          "rank": "A"
+        },
+        {
+          "skill": "spear",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Ambush",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "black-magic",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Bind Resistance",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "wiseman",
+      "name": "Wiseman",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "white-magic",
+          "rank": "A"
+        }
+      ],
+      "mastery": {
+        "name": "Dominate Magic",
+        "effect": null
+      },
+      "unlockRoutes": [],
+      "unlock": "Available in Part III with a Master License.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
+      ]
+    },
+    {
+      "id": "valkyrium",
+      "name": "Valkyrium",
+      "tier": "master",
+      "requirements": [
+        {
+          "skill": "riding",
+          "rank": "D"
+        },
+        {
+          "skill": "white-magic",
+          "rank": "A"
+        },
+        {
+          "skill": "black-magic",
+          "rank": "A"
+        }
+      ],
+      "mastery": null,
+      "unlockRoutes": [],
+      "unlock": "Part III; complete Jura's Temple Restoration.",
+      "restriction": null,
+      "licenseOverride": null,
+      "aliases": [],
+      "notes": [],
+      "sources": [
+        "game8"
       ]
     }
   ]

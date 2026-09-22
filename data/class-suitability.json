@@ -1,0 +1,2419 @@
+{
+  "schemaVersion": 3,
+  "checkedAt": "2026-09-22",
+  "status": "draft",
+  "scope": "Draft fit rankings within each Advanced class. Fit and experimental status are independent. Personal growths exclude class modifiers; character and class availability depend on your route.",
+  "sources": [
+    {
+      "id": "growths",
+      "name": "Serenes Forest · personal growth rates",
+      "url": "https://serenesforest.net/fortunes-weave/characters/growth-rates/"
+    },
+    {
+      "id": "abilities",
+      "name": "Serenes Forest · personal abilities",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/"
+    },
+    {
+      "id": "siliconera",
+      "name": "Siliconera · Jenni Lada’s character recommendations",
+      "url": "https://www.siliconera.com/who-are-the-best-fire-emblem-fortunes-weave-characters/"
+    },
+    {
+      "id": "james",
+      "name": "Games with James · playthrough impressions",
+      "url": "https://gameswithjames.substack.com/p/fortunes-weave-character-tierlist"
+    },
+    {
+      "id": "guzran-players",
+      "name": "Player discussion · Guzran’s class",
+      "url": "https://www.reddit.com/r/FE_Fortunes_Weave/comments/1wltyex/guzran_class/"
+    },
+    {
+      "id": "esmeralda-players",
+      "name": "Player discussion · Esmeralda’s advanced class",
+      "url": "https://www.reddit.com/r/FE_Fortunes_Weave/comments/1wmrpi4/what_avanced_class_should_i_made_her/"
+    },
+    {
+      "id": "classes",
+      "name": "Pocket Tactics · class abilities",
+      "url": "https://www.pockettactics.com/fire-emblem-fortunes-weave/classes"
+    },
+    {
+      "id": "game8",
+      "name": "Game8 · class certification tables",
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620256"
+    }
+  ],
+  "classes": [
+    {
+      "classId": "shido",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "dietrich",
+          "basis": "theorycraft",
+          "reason": "Shido puts his speed and critical-hit focus to work in the same build. It is a good place to keep investing in swords, with Ever Vigilant rewarding a critical kill with healing.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "guzran",
+          "basis": "player",
+          "reason": "His 50% Spd growth makes a fast sword build a natural fit. Several players recommend Shido for him; I would start here if you want damage without spending time on a new weapon line.",
+          "sourceIds": [
+            "growths",
+            "guzran-players"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "jester",
+          "basis": "theorycraft",
+          "reason": "His speed gives him a good starting point for follow-up attacks. Shido fits that strength, though his lower Str means weapon quality matters more than it does for Guzran.",
+          "sourceIds": [
+            "growths"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "peter",
+          "basis": "theorycraft",
+          "reason": "A sword build takes advantage of his Dex and Spd, but gives up the reason to keep him on bows: extra range on bow combat arts. Interesting if you want a different role for him, rather than an upgrade to his usual build.",
+          "sourceIds": [
+            "growths",
+            "abilities"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "warrior",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "tobias",
+          "basis": "theorycraft",
+          "reason": "His high Str and extra combat-art damage both point toward heavy physical hits. Warrior's combat-art accuracy helps those hits connect, so this is a straightforward way to build around what he already does well.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "mikaela",
+          "basis": "theorycraft",
+          "reason": "She benefits from fighting adjacent to the enemy, which suits a close-range physical class. Warrior lets her lean into that role without asking her to develop a second offensive stat.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "guzran",
+          "basis": "theorycraft",
+          "reason": "This keeps his physical damage and speed relevant while opening up an axe or gauntlet focus. I would choose it over Shido when the team needs those weapons more than another sword user.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "ultand",
+          "basis": "theorycraft",
+          "reason": "Her Str growth matches her Mag growth, so a physical build is more plausible than her starting class suggests. The cost is training new weapons and moving her away from a dedicated healing role.",
+          "sourceIds": [
+            "growths"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "sniper",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "basis": "theorycraft",
+          "reason": "His personal ability extends bow combat arts, while Sniper supports reliable bow attacks. That gives him a clear job: pick off targets from range, rather than try to survive on the front line.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "inyoni",
+          "basis": "theorycraft",
+          "reason": "Her bow-specific Str bonus gives this build a direct damage advantage. Sniper is the simpler choice if you want her to focus on shooting instead of investing in a mount.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "tobias",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 60% Str growth and combat-art damage bonus give a bow-art build a clear purpose. Sniper’s accuracy and extra art slots help him contribute without depending on fast follow-ups. Bow B is the detour.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "halvin",
+          "basis": "review",
+          "reason": "Siliconera calls him a dependable archer, and his accuracy improves as he fights. Sniper doubles down on consistency; it is useful when landing the shot matters more than extra movement.",
+          "sourceIds": [
+            "siliconera",
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "classId": "forest-knight",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "inyoni",
+          "basis": "theorycraft",
+          "reason": "She keeps her bow damage bonus and gains a mounted role. I would use this when reaching a target or repositioning matters more than the accuracy emphasis of Sniper.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "peter",
+          "basis": "theorycraft",
+          "reason": "Movement makes it easier to find a useful angle for his longer-range bow arts. Train Riding if you want him to keep pace with mounted allies instead of staying behind the front line.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "nydine",
+          "basis": "theorycraft",
+          "reason": "Her cavalry movement trait makes a mobile bow build worth trying. The investment is the bow training itself; this is a way to change her role, not evidence that she will outshoot the dedicated archers.",
+          "sourceIds": [
+            "abilities"
+          ],
+          "experimental": true,
+          "rank": "B"
+        },
+        {
+          "characterId": "ursula",
+          "basis": "review",
+          "reason": "Siliconera recommends her as an archer. A mounted bow role also makes sense for her supply utility, since she can move toward the part of the team that needs her.",
+          "sourceIds": [
+            "siliconera",
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "classId": "ranger",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "basis": "theorycraft",
+          "reason": "He keeps his bow-art range bonus in a class with an answer to some adjacent attacks. Countershot is only a chance to counter, though, so I would still position him as a ranged attacker.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "ursula",
+          "basis": "review",
+          "reason": "This keeps her in the bow role recommended by Siliconera, with swords as a second training target. Choose it when you want that flexibility more than a mount.",
+          "sourceIds": [
+            "siliconera",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "dietrich",
+          "basis": "theorycraft",
+          "reason": "His strong Dex and sword investment give the mixed weapon path some appeal. Bow training is the extra cost, and taking him away from Shido also means giving up a more focused critical-hit build.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "guardian",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "basis": "review",
+          "reason": "She is already a strong spear user in both reviewers' playthroughs. Guardian keeps that focus and rewards kills with protection, which suits a unit you want to leave near physical enemies.",
+          "sourceIds": [
+            "siliconera",
+            "james",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Guardian combines spear combat with a healing bonus, which suits her equal 40% Str and Mag growths. Patch Up adds value beside allies. Spear training is the investment, and her speed still needs watching.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "lysander",
+          "basis": "theorycraft",
+          "reason": "His speed makes him an interesting offensive spear choice. The protection after a kill is useful, but I would not treat it as a substitute for checking the enemies that can reach him.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "seteth",
+          "basis": "theorycraft",
+          "reason": "His chance to act first in the first enemy-phase combat gives him a reason to hold a contested position. Guardian supports that job, but the ability is not reliable enough to plan around every turn.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "classId": "cataphract",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "basis": "theorycraft",
+          "reason": "Her physical bulk makes the armored route a natural extension of her spear build. The mount helps her reach the fight; the extra armor and riding training are the main reasons to choose a simpler class first.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "theodora",
+          "basis": "theorycraft",
+          "reason": "She has the HP and physical stats for a durable mounted role. Her personal damage-reduction chance helps, but I would still judge a position by the damage she takes when it does not activate.",
+          "sourceIds": [
+            "growths",
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "jasmine",
+          "basis": "review",
+          "reason": "James describes her as a strong tank in his run. An armored mount keeps that role while giving her more reach, provided you are willing to invest in the extra certification skills.",
+          "sourceIds": [
+            "james",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "io",
+          "basis": "theorycraft",
+          "reason": "Her cavalry bonuses apply when she initiates combat, so this could be a more aggressive armored build. It asks for several skill lines, and does not mean she should absorb every enemy attack afterward.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "dreadnought",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "goliath",
+          "basis": "theorycraft",
+          "reason": "His high Str and Def favor an armored physical role, and he cannot use cavalry or flying classes. Dreadnought gives him a clear place to use those stats without relying on a mount.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "jasmine",
+          "basis": "theorycraft",
+          "reason": "Her enemy-initiated accuracy bonus fits a class built around counterattacks. I would use her to hold a physical lane, rather than send her ahead to chase targets.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "buccar",
+          "basis": "theorycraft",
+          "reason": "His personal damage reduction supports taking repeated hits. This is a sensible physical wall, but low speed still matters when an enemy can attack twice.",
+          "sourceIds": [
+            "abilities",
+            "growths"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "cai",
+          "basis": "theorycraft",
+          "reason": "Brio helps with the movement cost of a heavy build. It is a different way to use him, though you are trading away the mobility and flexibility that make his mounted options appealing.",
+          "sourceIds": [
+            "abilities"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "bardinger",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "basis": "player",
+          "reason": "One player recommends Bardinger for her combination of lance damage, movement, and Aegis. That fits her existing physical bulk: the mount helps her reach targets, while Aegis can occasionally soften a magic hit.",
+          "sourceIds": [
+            "esmeralda-players",
+            "growths",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "cai",
+          "basis": "theorycraft",
+          "reason": "Brio adds to the appeal of a mounted physical build. This gives him a useful way to cover ground while keeping a spear focus, rather than splitting his training between physical weapons and magic.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "io",
+          "basis": "theorycraft",
+          "reason": "Her personal ability rewards initiating combat from a cavalry class. Bardinger fits a unit you want to send forward for a specific attack, with the rest of the team covering the space afterward.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "guzran",
+          "basis": "theorycraft",
+          "reason": "His physical offense should still be useful on a mount. The appeal is reaching more fights; the cost is spear and riding training instead of continuing directly into Shido.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "dragoon",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "cai",
+          "basis": "theorycraft",
+          "reason": "Flight plus Brio gives him a strong mobility case. I would consider this when terrain is slowing down the team, provided your route has unlocked Dragoon and you can afford the flying training.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "esmeralda",
+          "basis": "player",
+          "reason": "This turns a strong spear attacker into a flying one. Players have suggested it for her, and it makes sense when access to targets is more valuable than the extra protection of an armored class.",
+          "sourceIds": [
+            "esmeralda-players",
+            "siliconera",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "ludia",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her initiating AS bonus suits an aggressive flying role, and flight helps her choose targets. It takes axe and flying training, but her speed gives this a stronger basis than a novelty reclass.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "basis": "theorycraft",
+          "reason": "His physical stats make a flying build plausible, even if swords are the easier path. Try it for movement across difficult terrain; expect a larger training investment than Shido.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "B"
+        },
+        {
+          "characterId": "alexandra",
+          "basis": "theorycraft",
+          "reason": "Her speed gives her an offensive reason to try flight. Her adjacent-ally bonuses also encourage keeping her near the team, rather than using that movement to send her off alone.",
+          "sourceIds": [
+            "growths",
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "classId": "caladrius",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "fabio",
+          "basis": "review",
+          "reason": "Siliconera highlights his offensive spell list. A mounted magic class helps him get those spells into range, and Overtake rewards a kill with more movement for later positioning.",
+          "sourceIds": [
+            "siliconera",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "olympia",
+          "basis": "theorycraft",
+          "reason": "Her magic critical bonus gives her an offensive reason to try this over a support-focused mount. I would use it when the team already has healing covered and wants more mobile magic damage.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "leda",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 65% Spd and 35% Mag growths make a fast mounted caster worth trying. Overtake rewards kills, but she needs enough actual Mag to finish enemies, plus black-magic and riding training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "basis": "theorycraft",
+          "reason": "His Mag growth makes a magic branch worth considering, and Brio still contributes movement. Black-magic and riding training are the cost; this is a hybrid project rather than the shortest route to damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "ovate",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "fabio",
+          "basis": "review",
+          "reason": "Both reviewers single out his offensive magic. Ovate keeps the build focused on that strength, so it is my first choice when you want him casting damage spells rather than spending training time on a mount.",
+          "sourceIds": [
+            "siliconera",
+            "james",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "fianna",
+          "basis": "theorycraft",
+          "reason": "Her high Mag growth gives her a good basis for an offensive magic role. She also has a healing-related personal ability, so the choice depends on whether the team needs damage or a dedicated healer more.",
+          "sourceIds": [
+            "growths",
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "tialla",
+          "basis": "theorycraft",
+          "reason": "She can contribute magic damage while keeping a support-oriented build in mind. I would choose this if another unit handles most healing; her personal ability extends supportive combat arts, not healing spells.",
+          "sourceIds": [
+            "abilities",
+            "growths"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "loretta",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "A 55% Spd growth gives her a different angle from slower mages. Her 35% Mag growth makes this depend on current stats and spell weight, so check whether the speed produces useful follow-ups.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mu",
+          "basis": "review",
+          "reason": "Siliconera had success building her as a mage. Her growth ability makes unusual training paths more plausible, but ther still takes investment and should not be treated as an immediately strong magic recruit.",
+          "sourceIds": [
+            "siliconera",
+            "growths"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "bishop",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "sofia",
+          "basis": "theorycraft",
+          "reason": "Her personal healing bonus stacks the role in her favor before considering class benefits. Bishop is a direct fit when the team's main need is restoring HP reliably.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "fianna",
+          "basis": "theorycraft",
+          "reason": "Her Mag growth and chance to avoid spending a healing use both support a sustained healing role. I would keep her here when conserving uses matters more than adding another offensive mage.",
+          "sourceIds": [
+            "growths",
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "A"
+        },
+        {
+          "characterId": "dante",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 45% Mag growth justifies a healing role. Bishop’s healing bonus and her nearby-ally utility both reward staying with the team, though you give up a damage-focused class.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tialla",
+          "basis": "review",
+          "reason": "Siliconera reports a useful healing spell list for her. Bishop is the simpler investment when you want that support without the riding and dual-magic requirements of Troubadour.",
+          "sourceIds": [
+            "siliconera",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "ultand",
+          "basis": "theorycraft",
+          "reason": "Her adjacent healing ability gives her another way to support the front line. Keep her close enough to help without assuming she needs to stand in the enemy's attack range.",
+          "sourceIds": [
+            "abilities"
+          ],
+          "experimental": false,
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "classId": "troubadour",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "olympia",
+          "basis": "review",
+          "reason": "Siliconera specifically recommends her for a mounted healing role. Troubadour fits that direction, letting her keep up with mobile allies and contribute its support ability when direct healing is not needed.",
+          "sourceIds": [
+            "siliconera",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "tialla",
+          "basis": "theorycraft",
+          "reason": "Movement helps a support unit keep pace with the characters she needs to reach. Her spell list makes that attractive, though this requires more training than staying in a single-magic class.",
+          "sourceIds": [
+            "siliconera",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "sirocco",
+          "basis": "review",
+          "reason": "James found him useful across swords and both kinds of magic. A mounted support build could use that flexibility, but it means spending less time on the sword side of his kit.",
+          "sourceIds": [
+            "james",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "B"
+        },
+        {
+          "characterId": "ultand",
+          "basis": "theorycraft",
+          "reason": "A mount makes it easier to position her beside allies who benefit from her personal healing. It is a support-first use of her flexibility, rather than trying to maximize her own damage.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        }
+      ]
+    },
+    {
+      "classId": "blacksmith",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "sirocco",
+          "basis": "theorycraft",
+          "reason": "His balanced physical and magic growths make the mixed training less awkward than it is for a pure attacker. I would try Blacksmith for a flexible art-focused build, rather than expect it to beat a specialist at one job.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "cai",
+          "basis": "theorycraft",
+          "reason": "He has enough growth in both offensive stats to justify exploring an axe-and-magic path. Makeshift may save a combat-art use, but its low chance is a bonus, not a reason to rely on it.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "B"
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "This can stay an axe-focused build: her high Str still does the work, while the class adds axe accuracy. Black Magic D is a small certification detour; her lower Mag makes casting secondary.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "basis": "theorycraft",
+          "reason": "She already has a reason to fight up close, so the physical side fits. The black-magic training is the detour; choose it for a different combat-art build rather than assume she becomes a strong caster.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "dancer",
+      "family": "support",
+      "note": "Leda-route unlock · one holder",
+      "picks": [
+        {
+          "characterId": "leda",
+          "basis": "theorycraft",
+          "reason": "Her route provides the class unlock, and she is the obvious first candidate for this role. Giving another ally an action can be more useful than taking her own attack; that is the main reason I would choose Dancer.",
+          "sourceIds": [
+            "classes"
+          ],
+          "experimental": false,
+          "rank": "S"
+        },
+        {
+          "characterId": "jester",
+          "basis": "theorycraft",
+          "reason": "His speed is attractive on a unit you want to keep alive near the action. The tradeoff is giving up his own attacks, so try this when your other damage dealers make better use of the extra action.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        },
+        {
+          "characterId": "dante",
+          "basis": "theorycraft",
+          "reason": "Her nearby-ally utility gives her a reason to stay with the group while supporting a stronger attacker. Ther is an alternative to her magic role, and it still uses the party's single Dancer slot.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": "C"
+        }
+      ]
+    },
+    {
+      "classId": "elephant-rider",
+      "family": "mounted",
+      "provisional": true,
+      "note": "Class kit not verified · ideas only",
+      "picks": [
+        {
+          "characterId": "theodora",
+          "basis": "theorycraft",
+          "reason": "Her physical bulk makes her a candidate if the elephant class supports a durable front-line role. I would wait for verified weapons and class bonuses before committing training to this build.",
+          "sourceIds": [
+            "growths",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": null
+        },
+        {
+          "characterId": "io",
+          "basis": "theorycraft",
+          "reason": "Her cavalry trait gives her a possible reason to use an unusual mount. This remains conditional on how the game classifies Elephant Rider and what its weapon access looks like.",
+          "sourceIds": [
+            "abilities",
+            "classes"
+          ],
+          "experimental": true,
+          "rank": null
+        }
+      ]
+    },
+    {
+      "classId": "war-monk",
+      "family": "support",
+      "picks": [
+        {
+          "characterId": "sirocco",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His balanced Str and Mag growths suit a physical unit that can heal. Three combat-art slots leave room for utility without abandoning melee.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Equal Str and Mag growths give her a credible gauntlet-and-healing build. Patch Up rewards staying beside the front line. Gauntlets B takes planning, and her modest speed limits the damage upside.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Brio helps him reach either an enemy or an ally who needs support. His mixed growths suit the idea, but gauntlets and white magic take training away from established weapons.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "gladiator",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "guzran",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "He starts in Gladiator with D swords, axes, and gauntlets. His physical growths suit all three, so the training stays useful whether you later choose Shido or Warrior.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her accuracy bonus against adjacent enemies fits close combat. This develops her physical weapons before choosing a more specialized melee class.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His balanced physical stats work here, and Brio helps him reach enemies on foot. Choose this early if swords or gauntlets are part of your longer-term plan.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 40% Str growth makes a physical branch reasonable. It can prepare her for War Monk, though leaving Diviner delays her magic training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "hunter",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Steady Aim adds range to bow combat arts, so Hunter develops a weapon he already uses well. His high Dex growth also supports the later Archer and Sniper path.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "diego",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His Dex and Spd growths favor accurate bow attacks with a chance to follow up. Hunter also keeps the sword route open if you later want Rogue.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "halvin",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Dex growth supports accurate bow attacks. This keeps training focused before Archer instead of asking him to learn several new weapons.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His physical offense and speed can make bows useful when approaching a melee enemy is unsafe. Bow training is the cost, but it gives him another way to contribute.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "soldier",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "goliath",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Str and Def growths suit physical tanking. Soldier also avoids the mounted paths his personal ability prevents him from using.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "theodora",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her HP growth and chance to halve incoming damage make physical bulk a natural direction. Soldier prepares her for Armored Knight without relying on that proc every combat.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jasmine",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Def growth supports taking physical hits. This gives her a clear front-line role when the team already has enough offensive units.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Brio offsets some of the movement cost of a heavy build. It is workable early, but his balanced growths also give him good reasons to stay mobile.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "ornius-rider",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "cai",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Brio makes an early mount especially useful for reaching fights. His physical growths support spear and axe training without forcing a defensive build.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "io",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her physical stats give her a sound basis for mounted combat. This also develops the riding ranks she needs for later cavalry classes.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her high Str growth and reduced equipment weight support a mobile physical attacker. A mount helps her put that damage where the team needs it.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "diviner",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "tialla",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "She already has Fire and Heal in the supplied save. Diviner develops both before you decide whether the party needs damage or healing more.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "She starts here with Fire, Heal, and Patch Up. Staying with magic gives her a clear support role without making her learn a physical weapon first.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her high Mag growth and healing-related personal ability both fit. It leaves Shaman and Priest open as the party takes shape.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His 40% Mag growth makes a magic branch plausible, and Brio helps him reach targets. This takes training away from physical weapons, so commit if you want that flexibility.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "myrmidon",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "dietrich",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His initiating crit bonus fits the class’s sword crit bonus. Ravaging Arts then rewards the critical hits this build already aims to produce.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His speed and existing sword training make this an efficient step toward Shido. It keeps his damage plan focused instead of spreading ranks across weapons.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jester",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Spd growth suits a fast sword role. Avoidance can help trigger his later damage bonus, though it is not something to depend on every combat.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "brigand",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her adjacent-enemy hit bonus helps an axe build land attacks. The sword requirement also keeps Warrior within reach.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tobias",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Str growth makes each landed hit valuable. Combat arts work with his personal damage bonus; his slower speed is the main concern.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "He already trains the physical weapons this class wants. Choose this over Myrmidon when the party needs axe damage more than another sword specialist.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "pugilist",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "mikaela",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Gauntlets keep her adjacent to enemies, where her personal bonuses apply. The extra combat-art slot gives her room to build around close-range attacks.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "He starts with gauntlet training and has the speed for physical offense. This develops part of his starting kit rather than requiring a complete rebuild.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her equal Str and Mag growths make gauntlets a viable project toward War Monk. Patch Up still helps adjacent allies, but you are delaying her dedicated healing path.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "archer",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Extra range on bow arts is useful immediately, and the additional art slot gives him more options. Crescendo also helps his accuracy as he earns kills.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "inyoni",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Str growth puts more damage behind each bow hit. Archer develops the ranks needed for either Sniper or mounted bow classes.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tobias",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His combat-art damage bonus applies to bow arts, letting him use his Str from a safer position. This is especially appealing if his speed is falling behind.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "rogue",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His bow utility still works while Locktouch adds a map role. Sword training is the cost, so choose this when that utility is worth delaying a pure bow path.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ursula",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her speed and storage access support a flexible utility unit. Rogue gives her another reason to move around the map instead of staying in one firing position.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dietrich",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His Dex and Spd growths suit a mixed sword-and-bow build. You give up Myrmidon’s direct crit focus for utility and safer ranged attacks.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "armored-knight",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "goliath",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His Def and Str growths fit physical tanking, and Great Counter rewards enemy-initiated combat. His low speed matters less when you deliberately build around taking hits.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jasmine",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Def growth supports the role without a large offensive investment. Keep her facing physical enemies, since armor does not solve poor magic matchups.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Brio makes an armored unit easier to position. The benefit is movement, not exceptional bulk, so check his actual Def before asking him to hold a lane.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "light-cavalry",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "cai",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A mount plus Brio gives him excellent reach for this stage. Spear and sword training also leads naturally into Bardinger.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "esmeralda",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her physical damage and weight reduction suit mobile spear combat. This helps her reach priority targets instead of waiting for enemies in armor.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His speed makes a mounted physical build worth trying. Spear and riding ranks are the cost compared with continuing directly into Shido.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "charioteer",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Mounted positioning and longer-range bow arts give him a clear job. Consider it when repositioning matters more than Archer’s simpler training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "inyoni",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her physical damage remains useful on a bow mount. This moves that damage between fronts without also requiring sword training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tobias",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His Str and combat-art bonus give a mounted bow project a purpose. Riding training is worthwhile if it helps him attack safely despite his lower speed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "armored-ornius-rider",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Str and Def growths support a durable mounted attacker. Weight reduction helps with heavy equipment, although it does not automatically solve her speed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "theodora",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her HP and defensive personal ability make a bulky mounted role attractive. The mount helps place her where those tools matter most.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "io",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her physical growths fit this cavalry role. It is reasonable if you want more protection while continuing riding and spear training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "wing-soldier",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "ludia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her initiating AS bonus and high Spd growth suit a mobile attacker. Flight helps her choose the engagement; check the forecast before leaving her exposed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "alexandra",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Spd growth supports a fast flier, and flight improves access to targets. Her damage may need more help than her movement.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "leda",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her very high Spd growth makes an offensive flying build credible. It asks for spear and flying training and gives up the chance to use her as your Dancer.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "shaman",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "fabio",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His Mag growth fits a dedicated offensive caster. Shaman builds directly toward Ovate while adding magic accuracy.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dante",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her 45% Mag growth supports offensive magic. Keeping her near the group also lets her nearby-ally ability contribute without making her the front-line unit.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her 55% Spd and 35% Mag growths suggest a faster, lighter-hitting caster. It is viable if her current Mag keeps up, but those growths alone do not guarantee follow-ups.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "priest",
+      "family": "support",
+      "picks": [
+        {
+          "characterId": "sofia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her personal healing bonus gives her a direct reason to use a healing class. Priest develops that role before Bishop.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her high Mag growth and chance to conserve healing uses fit sustained support. Choose this if another character handles offensive magic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Healing and Patch Up give her two ways to support nearby allies. Stay close enough to help without treating her as a dedicated physical tank.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dante",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her Mag growth makes healing a reasonable alternative to damage. Staying near allies also makes her support aura easier to position.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "swordmaster",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "dietrich",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His crit-focused abilities line up with Sword Crit +7. This directly continues Shido, keeping his training concentrated on swords.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His physical offense and speed remain a good match for swords. Moving from Shido to Sword A is more efficient than starting another weapon late.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jester",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high speed supports an evasive sword role. The class adds crit potential, but his lower Str can still limit damage against armor.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "high-savant",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "sirocco",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Equal Str and Mag growths suit switching between swords and magic. Mounted positioning and two art slots give that flexibility a practical use across different enemy defenses.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Brio adds reach to a mounted hybrid, and his Str and Mag growths are close enough to support both roles. It still takes sword, riding, and magic training, so check that his actual stats justify the switch.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her equal Str and Mag growths and higher Spd suggest a fast hybrid. Neither offensive stat is outstanding, so target the enemy’s weaker defense instead of expecting specialist damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "battlemaster",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "tobias",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Str and combat-art damage bonus suit three art slots. This focuses on strong individual attacks instead of trying to repair his slower speed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "mikaela",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Axe and gauntlet accuracy fit her close-combat role, and her adjacent-enemy bonuses stay relevant. Reaching A in three weapons is the substantial investment.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His starting weapon training points toward this class. It is the broad physical alternative to Swordmaster if you continued developing axes and gauntlets.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "bow-adept",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Steady Aim extends his bow arts, and three slots make the class a natural fit for that playstyle. Bow Hit +15 reinforces accuracy, although it does not fix a weak Str stat.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "inyoni",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Str growth puts more damage behind a pure bow build. Choose this when arts and accuracy matter more than Bow Knight’s movement.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tobias",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His combat-art bonus can make this a heavy-hitting ranged build. Bow A is the cost, but it gives his high Str a job that relies less on speed.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "halvin",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Dex supports consistent bow attacks. Damage is the main limitation, so compare his actual Str with your other bow users.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "bow-knight",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Mounted movement helps him position long-range bow arts across the map. You lose an art slot compared with Bow Adept, so choose based on how many arts you use.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "inyoni",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "This keeps her bow damage mobile. It is a direct continuation if you already trained riding for Forest Knight.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "nydine",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her physical offense and speed give a bow mount a reasonable basis. Use it for safer attacks, with Bow A as the main training commitment.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ursula",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Mounted positioning helps bring her storage access to the team. That utility can justify the slot even when a dedicated bow attacker deals more damage.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "shadow-seeker",
+      "family": "ranged",
+      "picks": [
+        {
+          "characterId": "peter",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His bow-art range remains useful while Locktouch and Master Search add map utility. Sword A costs considerably more training than the pure bow route.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ursula",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Storage access and map utility give her several jobs beyond attacking. Her speed suits mixed sword-and-bow combat, although two A ranks take planning.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dietrich",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His Dex and Spd suit a flexible physical build. This trades Swordmaster’s crit focus for ranged attacks and map utility.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "sentinel",
+      "family": "support",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Str and throwing-spear bonus make Spear A a useful investment. Three art slots support that main role; healing stays secondary with her lower Mag.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her mixed growths support spear combat and the healing bonus. Patch Up adds another reason to stay near allies, making this a front-line support project rather than a pure healer.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Spear combat is a natural continuation, and Brio helps reach allies as well as enemies. His Mag growth gives healing a better basis than on a purely physical unit.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "castle-knight",
+      "family": "melee",
+      "picks": [
+        {
+          "characterId": "goliath",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His high Str and Def favor heavy infantry, and this respects his restriction against mounts. Keep magic users away rather than expecting physical armor to solve every matchup.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "jasmine",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Def growth supports physical tanking. This gives her a focused role when the team already has enough mobile attackers.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Brio makes heavy infantry easier to position. It is viable if his Def has grown well, but you give up much of his mounted flexibility.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "orichaldia",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A mounted spear role uses her Str and throwing-spear bonus together. It is a strong Bardinger continuation if you developed riding, swords, and spears throughout the run.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Brio keeps his mounted reach useful, and three art slots leave room for physical utility. The A weapon ranks make this easiest when planned early.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His physical offense works on a mobile attacker. Spear and riding training cost substantially more than continuing into Swordmaster.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "great-knight",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Str and Def fit a durable mounted attacker. Weight reduction helps with heavy weapons, but her actual speed still determines how safely she takes repeated combats.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "theodora",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her high HP and defensive ability support bulky cavalry. Mobility improves positioning, but the damage-reduction proc is never guaranteed protection.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "io",
+          "rank": "B",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her physical growths suit an armored cavalry continuation. Two A weapon ranks make this easiest when those weapons were already part of her training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "celestial-trooper",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "ludia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her initiating AS bonus and high Spd fit an offensive flier. Flying Avo +7 helps, but check forecasts before leaving her in range of several enemies.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "alexandra",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her speed suits mobile flying combat. Weapon damage may need help, so prioritize favorable engagements over brute force.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "leda",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her very high Spd makes this a credible offensive alternative to Dancer. It requires swords, spears, and flying; the main cost is giving up that support role.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "bau-lord",
+      "family": "mounted",
+      "picks": [
+        {
+          "characterId": "esmeralda",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Flight brings her physical damage to targets ground units struggle to reach. Str and weight reduction suit heavy weapons, though flying still needs investment.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ludia",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her initiating AS bonus suits aggressive flying combat. Axes and spears at A are the training cost, so plan the Dragoon route early.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "guzran",
+          "rank": "A",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His physical growths give an axe-and-spear flier real offensive potential. It costs more training than Swordmaster, but terrain access can make the detour worthwhile.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "cai",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Brio adds to the value of flight for objectives and isolated enemies. Flying training is the obstacle, so plan this before the final certification.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "druid",
+      "family": "magic",
+      "picks": [
+        {
+          "characterId": "fabio",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "His Mag growth supports offensive casting, and his enemy crit-avoid reduction adds another tool. Druid continues that plan with Black Magic A and more magic accuracy.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her high Mag gives her a strong offensive option when the team has enough healing. The tradeoff is less emphasis on the healing role her abilities support.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dante",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Mag growth supports damage casting while her nearby-ally ability helps the team. Keep her close without exposing her low physical bulk.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "loretta",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her higher speed offers an alternative to raw-Mag specialists. It works if her actual Mag and attack speed produce useful follow-ups; growths alone do not guarantee that.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "wiseman",
+      "family": "support",
+      "picks": [
+        {
+          "characterId": "sofia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her personal healing bonus fits Magic Heal +15. This is the focused choice when restoring HP is her main job.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "fianna",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Mag and healing-related abilities favor sustained support. White Magic A directly continues the role she already performs well.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tialla",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Dedicated healing lets her contribute even when physical stats lag behind. Her personal range bonus applies to supportive combat arts, not healing spells.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "dante",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "Her Mag growth supports healing, and staying near the group supports her aura. Choose this when other units already cover offensive magic.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "valkyrium",
+      "family": "support",
+      "picks": [
+        {
+          "characterId": "olympia",
+          "rank": "S",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Her Mag suits mobile healing with both kinds of magic. This naturally continues Troubadour if you already invested in riding.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "tialla",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "Mounted positioning helps her reach allies across the map. Two A magic ranks are the cost, so choose this when flexibility outweighs a simpler healing certification.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "ultand",
+          "rank": "A",
+          "experimental": false,
+          "basis": "theorycraft",
+          "reason": "A mount helps place Patch Up beside the ally who needs it. Her mixed stats add flexibility, though this remains a large magic-training commitment.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        },
+        {
+          "characterId": "sirocco",
+          "rank": "B",
+          "experimental": true,
+          "basis": "theorycraft",
+          "reason": "His mixed growths give mounted support a reasonable basis. It emphasizes swords less than High Savant and requires considerably more magic training.",
+          "sourceIds": [
+            "growths",
+            "abilities",
+            "game8"
+          ]
+        }
+      ]
+    }
+  ]
+}

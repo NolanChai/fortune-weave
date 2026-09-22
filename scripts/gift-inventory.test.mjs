@@ -56,7 +56,22 @@ test('route availability follows recruitment restrictions, including conditional
     assert(!route.has('hong-hua') && !route.has('troy'));
     assert(route.has('eshmel'), 'unverified availability must not silently exclude a character');
   }
-  assert.equal(eligibleRecipients('', recruitment).size, data.characters.length);
+  assert.equal(eligibleRecipients('', recruitment, true).size, data.characters.length);
+});
+
+test('Gifts hides later recruits unless spoilers are explicitly enabled', () => {
+  const later = recruitment.characters.filter(({ partOneRoutes }) => partOneRoutes?.length === 0);
+  assert.ok(later.length > 0);
+  for (const route of ['', ...recruitment.routes.map(({ id }) => id)]) {
+    const defaultRoster = eligibleRecipients(route, recruitment);
+    const expandedRoster = eligibleRecipients(route, recruitment, true);
+    for (const { id } of later) {
+      assert.equal(defaultRoster.has(id), false, `${id} leaked into ${route || 'Any route'}`);
+      assert.equal(expandedRoster.has(id), true, `${id} missing after spoiler opt-in`);
+    }
+    assert.ok(defaultRoster.has('eshmel'));
+  }
+  assert.equal(eligibleRecipients('', recruitment).size, data.characters.length - later.length);
 });
 
 test('recipient URL state rejects invalid values and remains independent of character comparison', () => {

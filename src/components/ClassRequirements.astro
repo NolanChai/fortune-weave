@@ -1,0 +1,86 @@
+---
+import database from '../../data/classes.json';
+import ClassIcon from './ClassIcon.astro';
+import '../styles/classes.css';
+
+const skills: Record<string, string> = database.skills;
+const groups = database.tiers.map((tier) => ({
+  ...tier,
+  classes: database.classes.filter((entry) => entry.tier === tier.id)
+    .sort((a, b) => a.name.localeCompare(b.name)),
+}));
+---
+<ol class="tier-overview" aria-label="Certification tier access">
+    {groups.map((tier) => (
+      <li>
+        <a href={`#${tier.id}`}><span>{tier.name}</span><span class="tier-level">Lv. {tier.idealLevel}</span></a>
+        <span class="tier-condition">{tier.renown === null ? 'Part III' : `Renown ${tier.renown}`}<span aria-hidden="true"> · </span>{tier.license}</span>
+      </li>
+    ))}
+  </ol>
+  <p class="tier-note">Levels are recommended for exams. Certification lets you move between class lines.</p>
+
+  <div class="class-controls" id="class-controls" hidden>
+    <div class="tier-filters" role="group" aria-label="Filter by class tier">
+      <button type="button" data-tier="all" aria-pressed="true">All classes</button>
+      {groups.map((tier) => <button type="button" data-tier={tier.id} aria-pressed="false">{tier.name}</button>)}
+    </div>
+    <div class="class-search-controls">
+      <label class="route-filter"><span class="sr-only">Unlock conditions</span>
+        <select id="class-route" aria-label="Unlock conditions">
+          <option value="all">All unlock conditions</option>
+          <option value="standard">No route quest</option>
+          <option value="Cai">Cai</option>
+          <option value="Dietrich">Dietrich</option>
+          <option value="Leda">Leda</option>
+          <option value="Theodora">Theodora</option>
+        </select>
+      </label>
+      <label class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4.5 4.5" /></svg>
+        <input id="class-query" type="search" placeholder="Find a class or skill…" aria-label="Search classes, skills, or unlock conditions" autocomplete="off" />
+      </label>
+    </div>
+  </div>
+  <p id="class-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+
+  <div id="class-catalogue">
+    {groups.map((tier) => (
+      <section class="class-group" id={tier.id} data-tier-group={tier.id} aria-labelledby={`${tier.id}-title`}>
+        <div class="class-group-heading"><h2 id={`${tier.id}-title`}>{tier.name}</h2><span>Ideal Lv. {tier.idealLevel} / {tier.renown === null ? 'Part III' : `Renown ${tier.renown}`}</span></div>
+        <table class="class-table" aria-labelledby={`${tier.id}-title`}>
+          <colgroup><col class="name-column" /><col class="ranks-column" /><col class="mastery-column" /><col class="unlock-column" /></colgroup>
+          <thead><tr><th scope="col">Class</th><th scope="col">Skill ranks</th><th scope="col">Mastery</th><th scope="col">Unlock conditions</th></tr></thead>
+          <tbody>
+            {tier.classes.map((entry) => (
+              <tr id={entry.id} data-class data-routes={entry.unlockRoutes.map(({ route }) => route).join(',')} data-standard={entry.unlock === 'Available with this tier.' ? 'true' : 'false'} data-aliases={entry.aliases.join(' ')}>
+                <th scope="row"><span class="class-name-with-icon"><ClassIcon classId={entry.id} name={entry.name} size={34} /><span class="class-name">{entry.name}</span></span>{entry.restriction && <span class="class-restriction">{entry.restriction}</span>}</th>
+                <td data-label="Skill ranks">
+                  {entry.requirements ? <ul class="skill-ranks">{entry.requirements.map(({ skill, rank }) => <li><span>{skills[skill]}</span>{' '}<strong>{rank}</strong></li>)}</ul> : <span class="unverified">Not verified</span>}
+                  {entry.licenseOverride && <span class="license-override">{entry.licenseOverride}</span>}
+                </td>
+                <td data-label="Mastery">
+                  {entry.mastery ? <><span class="mastery-name">{entry.mastery.name}</span>{entry.mastery.effect && <span class="mastery-effect">{entry.mastery.effect}</span>}</> : <span class="unverified">Not verified</span>}
+                </td>
+                <td data-label="Unlock conditions">
+                  {entry.unlockRoutes.length > 0 ? <ul class="unlock-routes">{entry.unlockRoutes.map((unlock) => <li><strong>{unlock.route}{unlock.chapter && <span> · Ch. {unlock.chapter}</span>}</strong><span>{unlock.text}</span></li>)}</ul> : <span class={entry.unlock === 'Available with this tier.' ? 'standard-unlock' : ''}>{entry.unlock}</span>}
+                  {entry.notes.length > 0 && <details class="entry-notes"><summary>Source note</summary>{entry.notes.map((note) => <p>{note}</p>)}<p>{entry.sources.map((id, index) => { const source = database.sources.find((item) => item.id === id)!; return <>{index > 0 && ' / '}<span>{source.name.split(' — ')[0]}</span></>; })}</p></details>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    ))}
+  </div>
+  <p id="class-empty" class="empty" hidden>No classes match these filters. <button type="button" id="clear-class-filters">Clear filters</button></p>
+
+<footer class="requirements-footer">
+  <details>
+    <summary>Sources &amp; coverage</summary>
+    <p>{database.coverage} Commoner and Noble are starting classes and are not included in these tables.</p>
+    <p>Skill ranks are exam targets, not a list of usable weapons. Route labels identify where a class unlock is earned.</p>
+    <ul>{database.sources.map((source) => <li><span>{source.name}</span></li>)}</ul>
+  </details>
+</footer>
+<script>import '../scripts/classes';</script>
