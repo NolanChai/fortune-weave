@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import data from '../../data/gifts.json';
+import recruitment from '../../data/recruitment.json';
 import portraits from '../../assets/characters/index.json';
 import '../styles/gifts.css';
 
@@ -10,6 +11,7 @@ const portrait = (id: string) => portraitIds.has(id) ? `${base}/assets/character
 const giftById = new Map(data.gifts.map((gift) => [gift.id, gift]));
 const preferencesFor = (id: string) => data.preferences.filter((preference) => preference.characterId === id);
 const tiers = [{ id: 'loved', label: 'Loved' }, { id: 'really-liked', label: 'Really liked' }];
+const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneRoutes === null).map((c) => c.id));
 ---
 
 <SiteLayout title="Gifts" description="Find each character’s preferred gifts and match your inventory to recipients." page="gifts">
@@ -77,6 +79,7 @@ const tiers = [{ id: 'loved', label: 'Loved' }, { id: 'really-liked', label: 'Re
             <input type="checkbox" value={character.id} aria-label={character.name} />
             <span class="character-portrait-frame"><img src={portrait(character.id)} alt="" width="96" height="96" loading="lazy" /><span class="character-check" aria-hidden="true">✓</span></span>
             <span class="character-portrait-name">{character.name}</span>
+            {unverifiedRoutes.has(character.id) && <span class="character-route-unknown" hidden>Route unverified</span>}
           </label>)}
         </div>
         <p class="character-picker-empty" role="status" hidden>No characters match this search.</p>
@@ -89,6 +92,23 @@ const tiers = [{ id: 'loved', label: 'Loved' }, { id: 'really-liked', label: 'Re
     </dialog>
 
     <section id="gift-inventory" aria-label="Gifts in your inventory" hidden>
+      <div class="inventory-filters">
+        <fieldset class="gift-route-filter">
+          <legend>Part I route</legend>
+          <div class="gift-route-options">
+            <label><input type="radio" name="gift-route" value="" checked /><span>Any route</span></label>
+            {recruitment.routes.map((route) => <label>
+              <input type="radio" name="gift-route" value={route.id} />
+              <span><img src={portrait(route.id)} alt="" width="32" height="32" />{route.name}</span>
+            </label>)}
+          </div>
+        </fieldset>
+        <div class="inventory-recipient-controls">
+          <button type="button" class="character-picker-trigger" id="inventory-recipient-picker" aria-haspopup="dialog" aria-controls="gift-character-dialog">Choose recipients <span id="recipient-selection-count"></span></button>
+          <button type="button" class="reset-recipient-filters" id="reset-recipient-filters" hidden>Reset filters</button>
+        </div>
+      </div>
+      <p class="inventory-route-note" id="inventory-route-note" hidden>Includes characters you can recruit later on this route. Uncheck anyone you want to exclude.</p>
       <div class="inventory-layout">
         <section class="inventory-catalog gift-frame" aria-labelledby="inventory-title">
           <header class="inventory-heading"><h2 id="inventory-title">My gifts</h2><span class="inventory-save-note">Saved in this browser</span></header>
@@ -119,6 +139,7 @@ const tiers = [{ id: 'loved', label: 'Loved' }, { id: 'really-liked', label: 'Re
               <header>
                 <img src={portrait(character.id)} alt="" width="42" height="42" loading="lazy" />
                 <h3>{character.name}</h3>
+                <button type="button" class="exclude-recipient" data-exclude-recipient={character.id} aria-label={`Exclude ${character.name}`} title={`Exclude ${character.name}`}>×</button>
               </header>
               <ul>{preferencesFor(character.id).map((preference) => <li data-match-gift={preference.giftId} data-preference={preference.preference} hidden>
                 <span class:list={['gift-reaction', preference.preference]}>{preference.preference === 'loved' ? 'Loved' : 'Really liked'}</span>
@@ -138,7 +159,8 @@ const tiers = [{ id: 'loved', label: 'Loved' }, { id: 'really-liked', label: 'Re
         <p>Gift names and explicit preferences from {data.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked September 21, 2026.</p>
         <p>{data.gifts.length} gift names; {data.preferences.length} preferences for {data.characters.filter((c) => c.preferenceCoverage === 'partial').length} of the {data.characters.length} characters listed in the guide. “Loved” and “Really liked” preserve the source’s labels. No preferences are inferred from general likes or interests.</p>
         <p>“Candly Crystals” is listed as a probable spelling variant of “Candy Crystals.” Both names are searchable; the spelling still needs an in-game check.</p>
-        <div class="gift-downloads"><a href={`${base}/data/gifts.json`} download>JSON</a><a href={`${base}/data/gifts.csv`} download>Gifts CSV</a><a href={`${base}/data/gift-preferences.csv`} download>Preferences CSV</a></div>
+        <p>Part I route availability comes from {recruitment.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked September 21, 2026. Recruitment requirements still apply. “Any route” includes later-game characters. Eshmel’s route availability is not covered by these guides, so he remains selectable.</p>
+        <div class="gift-downloads"><a href={`${base}/data/gifts.json`} download>Gifts JSON</a><a href={`${base}/data/gifts.csv`} download>Gifts CSV</a><a href={`${base}/data/gift-preferences.csv`} download>Preferences CSV</a><a href={`${base}/data/recruitment.json`} download>Routes JSON</a></div>
       </details>
     </footer>
   </div>

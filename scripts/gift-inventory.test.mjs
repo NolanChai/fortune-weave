@@ -2,9 +2,11 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFile } from 'node:fs/promises';
 import { normalizeQuantity, parseInventory, serializeInventory } from '../src/data/gift-inventory.ts';
+import { applyRecipientSelection, eligibleRecipients, parseRecipientFilters, selectedRecipients } from '../src/data/gift-recipients.ts';
 
 const data = JSON.parse(await readFile(new URL('../data/gifts.json', import.meta.url), 'utf8'));
 const ids = new Set(data.gifts.map(({ id }) => id));
+const recruitment = JSON.parse(await readFile(new URL('../data/recruitment.json', import.meta.url), 'utf8'));
 
 test('inventory restores quantities without retaining removed gifts or invalid values', () => {
   assert.deepEqual(parseInventory(JSON.stringify({ version: 1, quantities: {
@@ -35,4 +37,47 @@ test('source tiers and missing preferences survive the data import', () => {
   assert.equal(reaction('tialla', 'home-recipe-book'), 'really-liked');
   assert.equal(reaction('cai', 'flexible-fishing-rod'), undefined);
   assert.equal(data.characters.find((c) => c.id === 'cai').preferenceCoverage, 'not-documented');
+});
+
+test('route availability follows recruitment restrictions, including conditional and later recruits', () => {
+  const cai = eligibleRecipients('cai', recruitment);
+  const dietrich = eligibleRecipients('dietrich', recruitment);
+  const theodora = eligibleRecipients('theodora', recruitment);
+  const leda = eligibleRecipients('leda', recruitment);
+  assert(cai.has('cai') && !cai.has('dietrich'));
+  assert(!cai.has('fabio') && !theodora.has('fabio') && dietrich.has('fabio') && leda.has('fabio'));
+  assert(cai.has('seteth') && !dietrich.has('seteth'));
+  assert(theodora.has('bonaventure') && !leda.has('bonaventure'));
+  assert(!cai.has('buccar') && leda.has('buccar'));
+  assert(!cai.has('sha-lan') && !theodora.has('sha-lan') && leda.has('sha-lan'));
+  assert(cai.has('peppe') && !leda.has('peppe') && !leda.has('ursula'));
+  for (const route of [cai, dietrich, theodora, leda]) {
+    assert(route.has('tialla') && route.has('peter') && route.has('ultand') && route.has('guzran'));
+    assert(!route.has('hong-hua') && !route.has('troy'));
+    assert(route.has('eshmel'), 'unverified availability must not silently exclude a character');
+  }
+  assert.equal(eligibleRecipients('', recruitment).size, data.characters.length);
+});
+
+test('recipient URL state rejects invalid values and remains independent of character comparison', () => {
+  const params = new URLSearchParams('route=cai&exclude=peter,tialla,peter,missing&characters=guzran,ultand');
+  const filters = parseRecipientFilters(params, recruitment);
+  assert.equal(filters.route, 'cai');
+  assert.deepEqual([...filters.excluded], ['peter', 'tialla']);
+  assert.deepEqual(parseRecipientFilters(new URLSearchParams('route=missing&exclude=missing'), recruitment), {
+    route: '', excluded: new Set(),
+  });
+});
+
+test('manual exclusions survive route changes and applying a selection on another route', () => {
+  const cai = eligibleRecipients('cai', recruitment);
+  const excluded = new Set(['fabio', 'peter']);
+  const selected = selectedRecipients(cai, excluded);
+  assert(!selected.has('peter') && !selected.has('fabio') && selected.has('tialla'));
+  const restoredCai = applyRecipientSelection(excluded, cai, cai);
+  assert.deepEqual([...restoredCai], ['fabio']);
+  const leda = selectedRecipients(eligibleRecipients('leda', recruitment), restoredCai);
+  assert(!leda.has('fabio') && leda.has('peter'));
+  const none = applyRecipientSelection(restoredCai, cai, new Set());
+  assert.equal(selectedRecipients(cai, none).size, 0, 'clearing recipients must not revert to all');
 });

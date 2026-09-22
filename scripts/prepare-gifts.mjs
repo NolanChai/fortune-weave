@@ -22,6 +22,28 @@ export async function prepareGifts(root, publicDirectory) {
   };
   const giftIds = ids(data.gifts, 'gift');
   const characterIds = ids(data.characters, 'gift character');
+  const recruitment = JSON.parse(await readFile(resolve(root, 'data/recruitment.json'), 'utf8'));
+  assert.equal(recruitment.schemaVersion, 1, 'Unsupported recruitment schema');
+  assert.equal(recruitment.scope, 'part-one', 'Unsupported recruitment scope');
+  assert.match(recruitment.checkedAt, /^\d{4}-\d{2}-\d{2}$/, 'Missing recruitment research date');
+  assert(recruitment.sources.length > 0, 'Missing recruitment sources');
+  ids(recruitment.sources, 'recruitment source');
+  for (const source of recruitment.sources) assert.equal(new URL(source.url).protocol, 'https:');
+  const routeIds = ids(recruitment.routes, 'route');
+  assert.deepEqual([...routeIds].sort(), ['cai', 'dietrich', 'leda', 'theodora'], 'Unexpected routes');
+  const recruitmentIds = new Set();
+  for (const character of recruitment.characters) {
+    assert(characterIds.has(character.id) && !recruitmentIds.has(character.id), `Unexpected recruitment character: ${character.id}`);
+    recruitmentIds.add(character.id);
+    const routes = character.partOneRoutes;
+    assert(routes === null || Array.isArray(routes), `Invalid route availability: ${character.id}`);
+    if (routes === null || routes.length === 0) assert(character.note?.trim(), `Missing availability note: ${character.id}`);
+    if (routes !== null) {
+      assert.equal(new Set(routes).size, routes.length, `Duplicate route: ${character.id}`);
+      for (const id of routes) assert(routeIds.has(id), `Unknown route: ${id}`);
+    }
+  }
+  assert.deepEqual(recruitmentIds, characterIds, 'Missing recruitment character');
   const portraits = JSON.parse(await readFile(resolve(root, 'assets/characters/index.json'), 'utf8'));
   const giftPortraits = JSON.parse(await readFile(resolve(root, 'assets/gifts/index.json'), 'utf8'));
   assert.equal(giftPortraits.schemaVersion, 1, 'Unsupported gift portrait schema');

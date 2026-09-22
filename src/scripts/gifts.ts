@@ -1,10 +1,14 @@
 import { INVENTORY_KEY, MAX_GIFT_QUANTITY, normalizeQuantity, parseInventory, serializeInventory } from '../data/gift-inventory';
+import { applyRecipientSelection, eligibleRecipients, parseRecipientFilters, selectedRecipients } from '../data/gift-recipients';
+import recruitment from '../../data/recruitment.json';
 
 const page = document.querySelector<HTMLElement>('.gift-page');
 if (page) {
   const get = <T extends HTMLElement>(selector: string) => page.querySelector<T>(selector)!;
   const characterDialog = get<HTMLDialogElement>('#gift-character-dialog');
-  const pickerTrigger = get<HTMLButtonElement>('.character-picker-trigger');
+  const pickerTrigger = get<HTMLButtonElement>('#gift-characters .character-picker-trigger');
+  const recipientPicker = get<HTMLButtonElement>('#inventory-recipient-picker');
+  const routeInputs = Array.from(page.querySelectorAll<HTMLInputElement>('input[name="gift-route"]'));
   const pickerSearch = get<HTMLInputElement>('#character-picker-search');
   const applyCharacters = get<HTMLButtonElement>('#apply-character-selection');
   const characterOptions = Array.from(page.querySelectorAll<HTMLElement>('[data-character-option]'));
@@ -16,10 +20,15 @@ if (page) {
   const characterIds = new Set(characterPanels.map((panel) => panel.dataset.character!));
   let selectedCharacters = new Set<string>();
   let draftCharacters = new Set<string>();
+  let pickerMode: 'characters' | 'inventory' = 'characters';
+  let pickerReturnFocus = pickerTrigger;
+  let route = '';
+  let excludedRecipients = new Set<string>();
+  let eligible = eligibleRecipients(route, recruitment);
+  let inventoryRecipients = new Set(eligible);
   const giftRows = Array.from(page.querySelectorAll<HTMLElement>('[data-inventory-gift]'));
   const recipients = Array.from(page.querySelectorAll<HTMLElement>('[data-recipient]'));
   const giftIds = new Set(giftRows.map((row) => row.dataset.inventoryGift!));
-  const preferenceGiftIds = new Set(Array.from(page.querySelectorAll<HTMLElement>('[data-match-gift]')).map((row) => row.dataset.matchGift!));
   const giftNames = new Map(giftRows.map((row) => [row.dataset.inventoryGift!, row.querySelector('label')!.textContent!]));
   let inventory = parseInventory(null, giftIds);
 
@@ -50,7 +59,10 @@ if (page) {
   function filterCharacterPicker() {
     let shown = 0;
     for (const option of characterOptions) {
-      option.hidden = !option.dataset.name!.includes(pickerSearch.value.trim().toLowerCase());
+      option.hidden = (pickerMode === 'inventory' && !eligible.has(option.dataset.characterOption!))
+        || !option.dataset.name!.includes(pickerSearch.value.trim().toLowerCase());
+      const unknown = option.querySelector<HTMLElement>('.character-route-unknown');
+      if (unknown) unknown.hidden = pickerMode !== 'inventory' || !route;
       if (!option.hidden) shown++;
     }
     get('.character-picker-empty').hidden = shown > 0;
@@ -59,22 +71,32 @@ if (page) {
 
   function updateDraftSelection() {
     for (const option of characterOptions) option.querySelector('input')!.checked = draftCharacters.has(option.dataset.characterOption!);
-    get('#character-draft-count').textContent = `${draftCharacters.size} selected`;
-    applyCharacters.disabled = draftCharacters.size === 0;
-    applyCharacters.textContent = draftCharacters.size > 0
+    get('#character-draft-count').textContent = `${draftCharacters.size} of ${pickerMode === 'inventory' ? eligible.size : characterIds.size} selected`;
+    applyCharacters.disabled = pickerMode === 'characters' && draftCharacters.size === 0;
+    applyCharacters.textContent = pickerMode === 'inventory' ? 'Apply selection' : draftCharacters.size > 0
       ? `Show ${draftCharacters.size} ${draftCharacters.size === 1 ? 'character' : 'characters'}` : 'Show characters';
   }
 
-  pickerTrigger.addEventListener('click', () => {
-    draftCharacters = new Set(selectedCharacters);
+  function openPicker(mode: 'characters' | 'inventory') {
+    pickerMode = mode;
+    pickerReturnFocus = mode === 'inventory' ? recipientPicker : pickerTrigger;
+    draftCharacters = new Set(mode === 'inventory' ? inventoryRecipients : selectedCharacters);
+    get('#character-dialog-title').textContent = mode === 'inventory' ? 'Choose recipients' : 'Choose characters';
+    const routeName = recruitment.routes.find(({ id }) => id === route)?.name;
+    get('#character-dialog-description').textContent = mode === 'characters' ? 'Select characters to compare their gifts.'
+      : routeName ? `${routeName}’s route · Part I. Uncheck characters to exclude them from your matches.`
+      : 'Uncheck characters to exclude them from your inventory matches.';
+    get('#select-all-characters').textContent = mode === 'inventory' && route ? 'All on this route' : 'All characters';
     pickerSearch.value = '';
     filterCharacterPicker();
     updateDraftSelection();
     characterDialog.showModal();
     pickerSearch.focus();
-  });
+  }
+  pickerTrigger.addEventListener('click', () => openPicker('characters'));
+  recipientPicker.addEventListener('click', () => openPicker('inventory'));
   get('[data-close-picker]').addEventListener('click', () => characterDialog.close());
-  characterDialog.addEventListener('close', () => pickerTrigger.focus());
+  characterDialog.addEventListener('close', () => pickerReturnFocus.focus());
   characterDialog.addEventListener('keydown', (event) => {
     // Search inputs consume Escape to clear text; the modal should close on the first press.
     if (event.key === 'Escape') {
@@ -111,7 +133,7 @@ if (page) {
     });
   }
   get('#select-all-characters').addEventListener('click', () => {
-    draftCharacters = new Set(characterIds);
+    draftCharacters = new Set(pickerMode === 'inventory' ? eligible : characterIds);
     updateDraftSelection();
   });
   get('#clear-character-selection').addEventListener('click', () => {
@@ -119,6 +141,12 @@ if (page) {
     updateDraftSelection();
   });
   applyCharacters.addEventListener('click', () => {
+    if (pickerMode === 'inventory') {
+      excludedRecipients = applyRecipientSelection(excludedRecipients, eligible, draftCharacters);
+      saveRecipientFilters();
+      characterDialog.close();
+      return;
+    }
     if (!draftCharacters.size) return;
     const url = new URL(location.href);
     url.searchParams.delete('character');
@@ -130,6 +158,36 @@ if (page) {
     applyLocation();
     characterDialog.close();
   });
+
+  function saveRecipientFilters() {
+    const url = new URL(location.href);
+    if (route) url.searchParams.set('route', route);
+    else url.searchParams.delete('route');
+    const excluded = [...characterIds].filter((id) => excludedRecipients.has(id));
+    if (excluded.length) url.searchParams.set('exclude', excluded.join(','));
+    else url.searchParams.delete('exclude');
+    history.pushState(null, '', url);
+    applyLocation();
+  }
+  for (const input of routeInputs) {
+    input.addEventListener('change', () => {
+      route = input.value;
+      saveRecipientFilters();
+    });
+  }
+  get('#reset-recipient-filters').addEventListener('click', () => {
+    route = '';
+    excludedRecipients.clear();
+    saveRecipientFilters();
+  });
+  for (const button of page.querySelectorAll<HTMLButtonElement>('[data-exclude-recipient]')) {
+    button.addEventListener('click', () => {
+      excludedRecipients.add(button.dataset.excludeRecipient!);
+      saveRecipientFilters();
+      // The excluded card is now hidden; keep keyboard focus on a visible control.
+      recipientPicker.focus();
+    });
+  }
 
   function filterInventory() {
     let shown = 0;
@@ -149,16 +207,19 @@ if (page) {
       row.querySelector<HTMLButtonElement>('[data-adjust="-1"]')!.disabled = quantity === 0;
       row.querySelector<HTMLButtonElement>('[data-adjust="1"]')!.disabled = quantity === MAX_GIFT_QUANTITY;
     }
+    const selectedGiftIds = new Set<string>();
     const ranked = recipients.map((recipient) => {
+      const included = inventoryRecipients.has(recipient.dataset.recipient!);
       let loved = 0;
       let liked = 0;
       for (const match of recipient.querySelectorAll<HTMLElement>('[data-match-gift]')) {
+        if (included) selectedGiftIds.add(match.dataset.matchGift!);
         const quantity = inventory[match.dataset.matchGift!] ?? 0;
         match.hidden = quantity === 0;
         match.querySelector('.owned-quantity')!.textContent = `×${quantity}`;
         if (quantity > 0) match.dataset.preference === 'loved' ? loved++ : liked++;
       }
-      recipient.hidden = loved + liked === 0;
+      recipient.hidden = !included || loved + liked === 0;
       return { recipient, loved, liked };
     });
     ranked.sort((a, b) => b.loved - a.loved || b.liked - a.liked
@@ -167,12 +228,13 @@ if (page) {
     const count = ranked.filter(({ recipient }) => !recipient.hidden).length;
     const owned = Object.keys(inventory);
     get('#gift-match-status').textContent = owned.length ? `${count} ${count === 1 ? 'character matches' : 'characters match'}` : '';
-    get('#inventory-empty').hidden = owned.length > 0;
-    get('#inventory-no-matches').hidden = owned.length === 0 || count > 0;
-    get('#inventory-no-matches').textContent = `No documented recipients yet for ${owned.map((id) => giftNames.get(id)).join(', ')}.`;
-    const unmatched = owned.filter((id) => !preferenceGiftIds.has(id));
+    get('#inventory-empty').hidden = owned.length > 0 || inventoryRecipients.size === 0;
+    get('#inventory-no-matches').hidden = inventoryRecipients.size > 0 && (owned.length === 0 || count > 0);
+    get('#inventory-no-matches').textContent = inventoryRecipients.size === 0 ? 'No recipients selected. Choose recipients to see matches.'
+      : 'None of the selected characters have documented preferences for these gifts. Try another route or change your selection.';
+    const unmatched = owned.filter((id) => !selectedGiftIds.has(id));
     get('#gifts-without-matches').hidden = unmatched.length === 0 || count === 0;
-    get('#gifts-without-matches').textContent = `No documented recipients yet: ${unmatched.map((id) => giftNames.get(id)).join(', ')}.`;
+    get('#gifts-without-matches').textContent = `No documented match among selected recipients: ${unmatched.map((id) => giftNames.get(id)).join(', ')}.`;
     filterInventory();
   }
 
@@ -198,6 +260,13 @@ if (page) {
   function applyLocation() {
     const params = new URLSearchParams(location.search);
     const inventoryView = params.get('view') === 'inventory';
+    ({ route, excluded: excludedRecipients } = parseRecipientFilters(params, recruitment));
+    eligible = eligibleRecipients(route, recruitment);
+    inventoryRecipients = selectedRecipients(eligible, excludedRecipients);
+    for (const input of routeInputs) input.checked = input.value === route;
+    get('#recipient-selection-count').textContent = `(${inventoryRecipients.size}/${eligible.size})`;
+    get('#reset-recipient-filters').hidden = !route && !excludedRecipients.size;
+    get('#inventory-route-note').hidden = !route;
     const requested = params.get('characters') ?? params.get('character') ?? '';
     selectedCharacters = new Set(requested.split(',').filter((id) => characterIds.has(id)));
     if (!selectedCharacters.size) selectedCharacters.add(characterPanels[0].dataset.character!);
@@ -210,6 +279,7 @@ if (page) {
     get('#gift-characters').hidden = inventoryView;
     for (const button of viewButtons) button.setAttribute('aria-pressed', String(button.dataset.view === (inventoryView ? 'inventory' : 'characters')));
     filterCharacter();
+    updateInventory();
   }
   for (const button of viewButtons) {
     button.addEventListener('click', () => {
@@ -223,7 +293,10 @@ if (page) {
   characterSearch.addEventListener('input', filterCharacter);
   inventorySearch.addEventListener('input', filterInventory);
   ownedOnly.addEventListener('change', filterInventory);
-  window.addEventListener('popstate', applyLocation);
+  window.addEventListener('popstate', () => {
+    if (characterDialog.open) characterDialog.close();
+    applyLocation();
+  });
   window.addEventListener('storage', (event) => {
     if (event.key === INVENTORY_KEY || event.key === null) {
       inventory = parseInventory(event.newValue, giftIds);
@@ -232,5 +305,4 @@ if (page) {
   });
   page.querySelectorAll<HTMLElement>('[data-gift-controls]').forEach((control) => control.hidden = false);
   applyLocation();
-  updateInventory();
 }
