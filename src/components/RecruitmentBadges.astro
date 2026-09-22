@@ -1,0 +1,37 @@
+---
+import recruitment from '../../data/recruitment.json';
+interface Props {
+  characterId: string;
+  characterName: string;
+}
+const { characterId, characterName } = Astro.props;
+const character = recruitment.characters.find(({ id }) => id === characterId);
+const rows = character?.requirements ?? [];
+const routeNames = new Map(recruitment.routes.map(({ id, name }) => [id, name]));
+---
+<div class="recruitment-badges" role="group" aria-label={`${characterName} recruitment requirements`}>
+  {rows.map((row) => {
+    const route = routeNames.get(row.routeId);
+    const status = row.status === 'automatic' ? 'Automatic' : 'Unavailable';
+    const label = `${route} route: ${row.status === 'recruit' ? `Support ${row.support ?? 'unverified'}, Renown ${row.renown ?? 'unverified'}` : status}`;
+    return <span class:list={['recruitment-badge', { unavailable: row.status === 'unavailable' }]} data-recruitment-route={row.routeId} role="img" aria-label={label}>
+        <span class="badge-route">{route}</span>
+        {row.status === 'recruit' ? <>
+          <span class="badge-stat" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 17 3 10C-2 4 6 0 10 6c4-6 12-2 7 4Z" /></svg>{row.support ?? '?'}</span>
+          <span class="badge-stat renown" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m10 2 2.4 5 5.6.8-4 4 .9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-4 5.6-.8Z" /></svg>{row.renown ?? '?'}</span>
+        </> : <span class="badge-status" aria-hidden="true">{row.status === 'automatic' ? '✓' : '—'}</span>}
+      </span>;
+  })}
+  {rows.length === 0 && <span class="recruitment-badge" role="img" aria-label={character?.note ?? 'Recruitment requirements are not documented yet.'}>
+      {character?.partOneRoutes?.length === 0 ? 'Later game' : 'Recruitment ?'}
+    </span>}
+</div>
+
+<style>
+  .recruitment-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 0; text-shadow: none; }
+  .recruitment-badge { display: inline-flex; align-items: center; gap: 8px; min-height: 30px; padding: 4px 8px; border: 1px solid #b7ae774a; border-radius: 3px; background: #17372f66; color: #c9c4a6; font: 12px/1.3 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; letter-spacing: 0; white-space: nowrap; }
+  .badge-stat { display: inline-flex; align-items: center; gap: 4px; color: #d9c7b3; font-variant-numeric: tabular-nums; }
+  .badge-stat svg { width: 13px; height: 13px; }
+  .badge-stat.renown, .badge-status { color: #f3d58d; }
+  .unavailable, .unavailable .badge-status { color: #a4a78d; }
+</style>

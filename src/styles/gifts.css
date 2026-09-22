@@ -1,8 +1,6 @@
 .gift-page { --gift-line: #b7ae7759; }
-.gift-route-filter.gift-page-route { margin-bottom: 14px; }
-.gift-recruitment-context { margin: 0 0 24px; color: var(--secondary); font-size: 12px; }
-.gift-character-panel > .recruitment { margin-bottom: 26px; max-width: 640px; }
-.gift-recipient > .recruitment { margin-top: 18px; }
+.gift-route-filter.gift-page-route { margin-bottom: 24px; }
+.gift-character-name { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; min-width: 0; }
 .gift-heading { margin-bottom: 30px; }
 .gift-heading h1 { display: flex; align-items: center; gap: 18px; }
 .gift-symbol { display: inline-block; flex: none; width: 28px; height: 28px; background-image: var(--gift-capture); background-size: 2027.5% 2285%; background-position: 10.64% 18.99%; }
@@ -61,7 +59,7 @@
 .gift-frame { border: 1px solid #a7a37983; outline: 1px solid #a7a37938; outline-offset: -6px; background: radial-gradient(ellipse at 0 0, #4160523b, transparent 65%), #0c2a27b8; }
 .gift-character-panel { padding: 30px 34px 34px; margin-bottom: 24px; }
 .gift-character-heading { display: flex; align-items: center; gap: 19px; margin-bottom: 30px; }
-.gift-character-heading img, .gift-recipient img { object-fit: cover; border: 1px solid var(--gift-line); }
+.gift-character-heading img, .gift-recipient img { flex: none; object-fit: cover; border: 1px solid var(--gift-line); }
 .gift-character-heading h2 { margin: 0; font-size: 32px; }
 .gift-tier + .gift-tier { margin-top: 28px; }
 .gift-rule { padding-bottom: 9px; border-bottom: 2px solid #b7ae7787; font: 20px/1.3 Georgia, serif; margin: 0; }

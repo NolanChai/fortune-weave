@@ -3,7 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import data from '../../data/gifts.json';
 import recruitment from '../../data/recruitment.json';
 import portraits from '../../assets/characters/index.json';
-import RecruitmentRequirements from '../components/RecruitmentRequirements.astro';
+import RecruitmentBadges from '../components/RecruitmentBadges.astro';
 import '../styles/gifts.css';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -35,7 +35,6 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
         </label>)}
       </div>
     </fieldset>
-    <p class="gift-recruitment-context">Support and Renown are recruitment requirements. Support is with your route’s lord.</p>
 
     <section id="gift-characters" aria-label="Gifts by character">
       <div class="gift-toolbar" hidden data-gift-controls>
@@ -57,9 +56,11 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
         return <article class="gift-character-panel gift-frame" id={`gifts-for-${character.id}`} data-character={character.id}>
           <header class="gift-character-heading">
             <img src={portrait(character.id)} alt="" width="72" height="72" loading="lazy" />
-            <h2>{character.name}</h2>
+            <div class="gift-character-name">
+              <h2>{character.name}</h2>
+              <RecruitmentBadges characterId={character.id} characterName={character.name} />
+            </div>
           </header>
-          <RecruitmentRequirements characterId={character.id} characterName={character.name} />
           {preferences.length > 0 ? <div class="gift-preference-columns">
             {tiers.filter((tier) => preferences.some((preference) => preference.preference === tier.id)).map((tier) => {
               const entries = preferences.filter((preference) => preference.preference === tier.id);
@@ -142,14 +143,16 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
             {data.characters.filter((character) => character.preferenceCoverage === 'partial').map((character) => <article class="gift-recipient" data-recipient={character.id} hidden>
               <header>
                 <img src={portrait(character.id)} alt="" width="42" height="42" loading="lazy" />
-                <h3>{character.name}</h3>
+                <div class="gift-character-name">
+                  <h3>{character.name}</h3>
+                  <RecruitmentBadges characterId={character.id} characterName={character.name} />
+                </div>
                 <button type="button" class="exclude-recipient" data-exclude-recipient={character.id} aria-label={`Exclude ${character.name}`} title={`Exclude ${character.name}`}>×</button>
               </header>
               <ul>{preferencesFor(character.id).map((preference) => <li data-match-gift={preference.giftId} data-preference={preference.preference} hidden>
                 <span class:list={['gift-reaction', preference.preference]}>{preference.preference === 'loved' ? 'Loved' : 'Really liked'}</span>
                 <span>{giftById.get(preference.giftId)!.name}</span><span class="owned-quantity"></span>
               </li>)}</ul>
-              <RecruitmentRequirements characterId={character.id} characterName={character.name} heading="h4" />
             </article>)}
           </div>
           <p id="gifts-without-matches" class="gift-unmatched" hidden></p>
