@@ -270,8 +270,14 @@ if (page) {
     ({ route, excluded: excludedRecipients } = parseRecipientFilters(params, recruitment));
     recipientSort = parseRecipientSort(params.get('sort'), route);
     for (const button of sortButtons) {
-      button.setAttribute('aria-pressed', String(button.dataset.recipientSort === recipientSort));
-      button.disabled = button.dataset.recipientSort !== 'matches' && !route;
+      const renownButton = button.dataset.recipientSort === 'renown';
+      button.setAttribute('aria-pressed', String(renownButton ? recipientSort !== 'matches' : recipientSort === 'matches'));
+      button.disabled = renownButton && !route;
+      if (renownButton) {
+        button.textContent = recipientSort === 'matches' ? 'Renown ↕' : recipientSort === 'renown-asc' ? 'Renown ↑' : 'Renown ↓';
+        button.setAttribute('aria-label', recipientSort === 'matches' ? 'Sort by Renown: lowest first'
+          : recipientSort === 'renown-asc' ? 'Renown: lowest first; switch to highest first' : 'Renown: highest first; switch to lowest first');
+      }
     }
     get('#renown-sort-hint').hidden = Boolean(route);
     eligible = eligibleRecipients(route, recruitment);
@@ -314,7 +320,10 @@ if (page) {
   for (const button of sortButtons) {
     button.addEventListener('click', () => {
       const url = new URL(location.href);
-      const sort = parseRecipientSort(button.dataset.recipientSort ?? null, route);
+      const requestedSort = button.dataset.recipientSort === 'renown'
+        ? recipientSort === 'renown-asc' ? 'renown-desc' : 'renown-asc'
+        : 'matches';
+      const sort = parseRecipientSort(requestedSort, route);
       if (sort === 'matches') url.searchParams.delete('sort');
       else url.searchParams.set('sort', sort);
       history.pushState(null, '', url);
