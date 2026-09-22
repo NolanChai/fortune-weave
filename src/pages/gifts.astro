@@ -176,7 +176,6 @@ const unverifiedRoutes = new Set(recruitment.characters.filter((c) => c.partOneR
         <summary>Sources & data</summary>
         <p>Gift names and explicit preferences from {data.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked September 21, 2026.</p>
         <p>{data.gifts.length} gift names; {data.preferences.length} preferences for {data.characters.filter((c) => c.preferenceCoverage === 'partial').length} of the {data.characters.length} characters listed in the guide. “Loved” and “Really liked” preserve the source’s labels. No preferences are inferred from general likes or interests.</p>
-        <p>“Candly Crystals” is listed as a probable spelling variant of “Candy Crystals.” Both names are searchable; the spelling still needs an in-game check.</p>
         <p>Part I recruitment requirements come from {recruitment.sources.map((source, index) => <>{index > 0 && ' and '}<a href={source.url}>{source.name}</a></>)}. Checked {recruitment.checkedAt}. Conflicting Renown values are marked unverified. “Any route” includes later-game characters. Eshmel’s availability is undocumented, so he remains selectable.</p>
         <div class="gift-downloads"><a href={`${base}/data/gifts.json`} download>Gifts JSON</a><a href={`${base}/data/gifts.csv`} download>Gifts CSV</a><a href={`${base}/data/gift-preferences.csv`} download>Preferences CSV</a><a href={`${base}/data/recruitment.json`} download>Recruitment JSON</a></div>
       </details>

@@ -17,8 +17,7 @@
   ],
   "coverageNotes": [
     "This is an incomplete guide snapshot, not an exhaustive list of every gift or reaction in the game. Missing relationships are unknown, not neutral or disliked.",
-    "Seven additional gift names appear in the preference guide but not the item catalog; their sourceIds point to that guide.",
-    "The item catalog lists both Candly Crystals and Candy Crystals. Candly Crystals is treated as a probable spelling variant of Candy Crystals and retained as an alias; the spelling has not been verified in-game."
+    "Seven additional gift names appear in the preference guide but not the item catalog; their sourceIds point to that guide."
   ],
   "gifts": [
     {
@@ -65,9 +64,7 @@
         "game8-items",
         "game8-gifts"
       ],
-      "aliases": [
-        "Candly Crystals"
-      ]
+      "aliases": []
     },
     {
       "id": "coffee-pastries",
