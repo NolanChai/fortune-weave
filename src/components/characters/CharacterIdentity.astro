@@ -7,7 +7,7 @@ const { character } = Astro.props;
 <div class="identity-card">
   <CharacterGraphic characterId={character.id} name="identityPortrait" label={character.name} class="identity-portrait" />
   <div class="identity-content">
-    <div class="identity-class"><CharacterGraphic characterId={character.id} name="commoner" /><span>{character.class}</span><CharacterGraphic characterId={character.id} name="foot" class="foot-mark" /></div>
+    <div class="identity-class"><CharacterGraphic characterId={character.id} name="currentClass" /><span>{character.class}</span><CharacterGraphic characterId={character.id} name="foot" class="foot-mark" /></div>
     <dl class="identity-stats">
       <div class="hp"><dt>HP</dt><dd>{character.hp}<span>/</span>{character.maxHp}</dd></div>
       <div class="level"><dt>Lv</dt><dd>{character.level}</dd></div>

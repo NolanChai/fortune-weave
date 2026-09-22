@@ -1,6 +1,7 @@
 import cai from '../../data/characters/cai.json';
 import peter from '../../data/characters/peter.json';
 import tialla from '../../data/characters/tialla.json';
+import guzran from '../../data/characters/guzran.json';
 
 export const HIGH_GROWTH_RATE = 45;
 
@@ -26,14 +27,14 @@ interface ReferenceSource {
 
 interface ReferenceStats {
   checkedAt: string;
-  level: number;
-  class: string;
-  movement: number;
+  level?: number;
+  class?: string;
+  movement?: number;
   movementBonus?: number;
   movementBonusAbility?: string;
-  build: number;
-  values: { name: string; base: number; growth: number }[];
-  baseSource: ReferenceSource;
+  build?: number;
+  values: { name: string; base?: number; growth: number }[];
+  baseSource?: ReferenceSource;
   growthSource: ReferenceSource;
   abilitySource: ReferenceSource;
 }
@@ -45,6 +46,7 @@ export interface Character {
   source: { type: string; note: string };
   class: string;
   classDescription: string;
+  classMasteryPoints?: number;
   hp: number;
   maxHp: number;
   level: number;
@@ -78,4 +80,4 @@ export interface Character {
   interests: string;
 }
 
-export const characters: Character[] = [cai, peter, tialla];
+export const characters: Character[] = [cai, peter, tialla, guzran];

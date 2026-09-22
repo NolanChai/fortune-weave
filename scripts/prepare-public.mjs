@@ -55,6 +55,10 @@ for (const file of profileFiles) {
     assert(Number.isInteger(profile[field]) && profile[field] >= 0, `Invalid ${field}: ${profile.id}`);
   }
   assert(profile.hp <= profile.maxHp, `HP exceeds maximum: ${profile.id}`);
+  if (profile.classMasteryPoints !== undefined) {
+    assert(Number.isInteger(profile.classMasteryPoints) && profile.classMasteryPoints >= 0,
+      `Invalid class mastery points: ${profile.id}`);
+  }
   assert.equal(profile.basicStats.length, 8, `Expected eight basic stats: ${profile.id}`);
   assert.deepEqual(new Set(profile.basicStats.map(({ name }) => name)),
     new Set(['Str', 'Mag', 'Spd', 'Dex', 'Def', 'Res', 'Lck', 'Cha']), `Invalid basic stat names: ${profile.id}`);
@@ -74,15 +78,26 @@ for (const file of profileFiles) {
     assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', `Invalid capture: ${profile.id}/${capture}`);
   }
   if (profile.referenceStats) {
+    const hasStartingStats = Boolean(profile.referenceStats.baseSource);
+    if (hasStartingStats) {
+      assert(typeof profile.referenceStats.class === 'string' && profile.referenceStats.class.trim(),
+        `Missing starting class: ${profile.id}`);
+    } else {
+      assert.equal(profile.referenceStats.class, undefined, `Starting stats need a source: ${profile.id} class`);
+    }
     for (const field of ['level', 'movement', 'build']) {
-      assert(Number.isInteger(profile.referenceStats[field]) && profile.referenceStats[field] >= 0,
-        `Invalid reference ${field}: ${profile.id}`);
+      if (hasStartingStats) {
+        assert(Number.isInteger(profile.referenceStats[field]) && profile.referenceStats[field] >= 0,
+          `Invalid reference ${field}: ${profile.id}`);
+      } else {
+        assert.equal(profile.referenceStats[field], undefined, `Starting stats need a source: ${profile.id} ${field}`);
+      }
     }
     if (profile.referenceStats.movementBonus !== undefined) {
-      assert(Number.isInteger(profile.referenceStats.movementBonus) && profile.referenceStats.movementBonus > 0
+      assert(hasStartingStats && Number.isInteger(profile.referenceStats.movementBonus) && profile.referenceStats.movementBonus > 0
         && profile.referenceStats.movementBonusAbility, `Invalid movement bonus: ${profile.id}`);
     }
-    for (const field of ['baseSource', 'growthSource', 'abilitySource']) {
+    for (const field of ['growthSource', 'abilitySource', ...(hasStartingStats ? ['baseSource'] : [])]) {
       assert(profile.referenceStats[field]?.name && profile.referenceStats[field]?.scope,
         `Missing reference source: ${profile.id} ${field}`);
       assert.equal(new URL(profile.referenceStats[field].url).protocol, 'https:', `Invalid source URL: ${profile.id}`);
@@ -92,7 +107,11 @@ for (const file of profileFiles) {
     assert.deepEqual(new Set(referenceStats.map(({ name }) => name)),
       new Set(['HP', 'Str', 'Mag', 'Spd', 'Dex', 'Def', 'Res', 'Lck', 'Cha']), `Invalid reference stat names: ${profile.id}`);
     for (const stat of referenceStats) {
-      assert(Number.isInteger(stat.base) && stat.base >= 0, `Invalid starting stat: ${profile.id} ${stat.name}`);
+      if (hasStartingStats) {
+        assert(Number.isInteger(stat.base) && stat.base >= 0, `Invalid starting stat: ${profile.id} ${stat.name}`);
+      } else {
+        assert.equal(stat.base, undefined, `Starting stats need a source: ${profile.id} ${stat.name}`);
+      }
       assert(Number.isInteger(stat.growth) && stat.growth >= 0 && stat.growth <= 100,
         `Invalid growth rate: ${profile.id} ${stat.name}`);
     }

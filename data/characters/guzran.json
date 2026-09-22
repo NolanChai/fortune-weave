@@ -1,0 +1,90 @@
+{
+  "id": "guzran",
+  "name": "Guzran",
+  "title": "The Unkillable",
+  "source": {
+    "type": "user-provided game captures",
+    "note": "A level 5 Gladiator save-state transcribed from the four supplied references. These values are not independently verified recruitment stats. Class icons and affiliation reflect the supplied captures. Personal growth rates are sourced separately; no starting-stat table was available in the sources checked."
+  },
+  "class": "Gladiator",
+  "classDescription": "Can deal devastating damage with weapons such as swords, axes, and gauntlets.",
+  "classMasteryPoints": 30,
+  "level": 5,
+  "hp": 29,
+  "maxHp": 29,
+  "movement": 4,
+  "build": 2,
+  "rating": 62,
+  "combatStats": [
+    { "name": "Phys", "value": 17, "icon": "sword" },
+    { "name": "Prt", "value": 7, "icon": "shield" },
+    { "name": "AS", "value": 10, "icon": "speed" },
+    { "name": "Rsl", "value": 3, "icon": "resistance" },
+    { "name": "Hit", "value": 98, "icon": "dexterity" },
+    { "name": "Avo", "value": 10, "icon": "luck" },
+    { "name": "Crit", "value": 9, "icon": "sword" },
+    { "name": "Ddg", "value": 10, "icon": "charm" },
+    { "name": "Rng", "value": 1, "icon": "spear" }
+  ],
+  "basicStats": [
+    { "name": "Str", "value": 13, "icon": "sword" },
+    { "name": "Def", "value": 7, "icon": "shield" },
+    { "name": "Mag", "value": 4, "icon": "book" },
+    { "name": "Res", "value": 3, "icon": "resistance" },
+    { "name": "Spd", "value": 11, "icon": "speed" },
+    { "name": "Lck", "value": 10, "icon": "luck" },
+    { "name": "Dex", "value": 8, "icon": "dexterity" },
+    { "name": "Cha", "value": 6, "icon": "charm" }
+  ],
+  "equipped": { "name": "Bronze Sword", "durability": "15/15", "graphic": "equipped" },
+  "items": [
+    { "name": "Bronze Sword", "durability": "15/15", "graphic": "equipped" },
+    { "name": "Vulnerary", "durability": "3/3", "graphic": "vulnerary" }
+  ],
+  "bloodmarks": [],
+  "personalAbility": "Hot-Headed",
+  "equippedAbility": "Close Quarters",
+  "combatArts": [{ "name": "Wrath Strike", "cost": 2, "graphic": "firstArt" }],
+  "attackMagic": [],
+  "assistMagic": [],
+  "flierSpecialties": 1,
+  "portraitDescription": "Guzran, with a red streak through his dark hair, facial scars, and gray armor.",
+  "skillRanksDescription": "Skill ranks shown in the supplied level 5 capture: Sword D, Spear E, Axe D, Bow E, Brawling D, Reason E, Faith E, Authority E, Infantry D, Riding E, Armor E, Flying E.",
+  "referenceStats": {
+    "checkedAt": "2026-09-21",
+    "values": [
+      { "name": "HP", "growth": 45 },
+      { "name": "Str", "growth": 45 },
+      { "name": "Mag", "growth": 20 },
+      { "name": "Spd", "growth": 50 },
+      { "name": "Dex", "growth": 45 },
+      { "name": "Def", "growth": 35 },
+      { "name": "Res", "growth": 20 },
+      { "name": "Lck", "growth": 45 },
+      { "name": "Cha", "growth": 30 }
+    ],
+    "growthSource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/growth-rates/",
+      "scope": "Community-reported personal growth rates, excluding class modifiers. The source is a work in progress. No recruitment stats are inferred from the supplied level 5 capture."
+    },
+    "abilitySource": {
+      "name": "Serenes Forest",
+      "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
+      "scope": "Hot-Headed gives one of Hit +10, Avoid +10, or Crit +10 during combat. The source does not give the odds of each result. Top Form upgrades are not assumed for this level 5 profile."
+    }
+  },
+  "history": [
+    { "year": 1412, "text": "Born as the second son of a tenant farmer in the borderlands." },
+    { "year": 1428, "text": "Settles in Dagsion, making a living as a mercenary." },
+    { "year": 1432, "text": "Grows stronger through countless chaotic battles." },
+    { "year": 1436, "text": "Becomes known among other mercenaries as the Unkillable Guzran." }
+  ],
+  "birthday": "9/17",
+  "age": 36,
+  "height": "188 cm",
+  "affiliation": "Children of Ribeira",
+  "likes": "Booze, women, interesting people, young greenhorns.",
+  "dislikes": "Those who manipulate others, humble living.",
+  "interests": "Boasting."
+}

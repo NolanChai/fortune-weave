@@ -19,13 +19,19 @@
       "id": "personal-abilities",
       "name": "Serenes Forest · abilities",
       "url": "https://serenesforest.net/fortunes-weave/characters/personal-abilities/",
-      "scope": "Work-in-progress personal abilities. Brio, Steady Aim, and Tactician's Wit are used; upgraded or later abilities are not assumed."
+      "scope": "Work-in-progress personal abilities. Brio, Steady Aim, Tactician's Wit, and Hot-Headed are used; upgraded or later abilities are not assumed."
     },
     {
       "id": "class-abilities",
       "name": "Pocket Tactics · classes",
       "url": "https://www.pockettactics.com/fire-emblem-fortunes-weave/classes",
       "scope": "September 18 class guide: class types, abilities, licenses, renown, and ideal exam levels."
+    },
+    {
+      "id": "guzran-player-builds",
+      "name": "Player discussion · Guzran",
+      "url": "https://www.reddit.com/r/FE_Fortunes_Weave/comments/1wltyex/guzran_class/",
+      "scope": "September 20 player discussion: three replies favor Shido. This is a small anecdotal sample, not a tested ranking. The unverified claim about a later sword art is not used."
     },
     {
       "id": "ovate-growths",
@@ -79,6 +85,44 @@
     }
   ],
   "characters": [
+    {
+      "characterId": "guzran",
+      "builds": [
+        {
+          "id": "critical-swordsman",
+          "kind": "recommended",
+          "role": "Critical swordsman",
+          "classPath": ["gladiator", "myrmidon", "shido"],
+          "keyStats": ["Str", "Spd", "Dex"],
+          "rationale": "Shido builds on Guzran's existing sword training and his 45% Strength and 50% Speed growths. Sword Crit +5 gives him a consistent critical-rate bonus, with another +10 when Hot-Headed rolls Crit. Mastering Myrmidon adds damage to critical hits, while Shido's Ever Vigilant mastery restores HP after a critical kill.",
+          "tradeoff": "Hot-Headed can give Hit or Avoid instead, so we shouldn't plan around the extra Crit. His 20% Resistance growth also makes magic a concern, even with healing from critical kills.",
+          "sourceIds": ["personal-abilities", "class-abilities", "guzran-player-builds"],
+          "classGrowthStats": []
+        },
+        {
+          "id": "axe-and-gauntlet-fighter",
+          "kind": "alternative",
+          "role": "Axes and gauntlets",
+          "classPath": ["gladiator", "pugilist", "warrior"],
+          "keyStats": ["Str", "Spd", "Dex"],
+          "rationale": "Warrior is worth considering if we'd rather use Guzran's axe and brawling training. Both are already D, and his 45% Strength growth supports a physical role. The class adds Hit +5 with either weapon type, while the Practiced Art mastery adds Hit +10 to combat-art attacks. Those bonuses improve accuracy even when Hot-Headed gives something else.",
+          "tradeoff": "Warrior asks for B in swords, axes, and gauntlets, so it spreads training more widely than Shido. Pugilist is useful along the way, but we'd keep training swords and axes alongside brawling.",
+          "sourceIds": ["personal-abilities", "class-abilities"],
+          "classGrowthStats": []
+        },
+        {
+          "id": "mounted-bow-experiment",
+          "kind": "theorycraft",
+          "role": "Mounted bow Guzran",
+          "classPath": ["hunter", "archer", "forest-knight"],
+          "keyStats": ["Str", "Spd", "Dex"],
+          "rationale": "We could try Forest Knight if the party already has enough melee fighters. Guzran's 45% Strength and Dexterity growths give him a reasonable basis for bow damage and accuracy, while 50% Speed makes Hunter's Eye worth considering: the mastery adds Attack +3 to bow follow-ups. Mounted movement would help him reach a firing position without committing to another close-range fight.",
+          "tradeoff": "Bow and Riding are both E in the capture, so this takes deliberate retraining. Follow-ups still depend on his actual Attack Speed and the enemy, and he won't get Peter's extra bow-art range.",
+          "sourceIds": ["personal-abilities", "class-abilities"],
+          "classGrowthStats": []
+        }
+      ]
+    },
     {
       "characterId": "cai",
       "builds": [

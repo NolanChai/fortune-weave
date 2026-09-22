@@ -21,11 +21,11 @@ const screens = [
   { id: 'history', label: 'Personal History' },
 ];
 const classLines = [
-  { name: 'Gladiators', beginner: 'gladiator', specialty: 'gladiators', count: 3 },
-  { name: 'Hunters', beginner: 'hunter', specialty: 'hunters', count: 2 },
-  { name: 'Soldiers', beginner: 'soldier', specialty: 'soldiers', count: 3 },
-  { name: 'Fliers', beginner: 'flier', specialty: 'fliers', count: character.flierSpecialties },
-  { name: 'Mages', beginner: 'mage', specialty: 'mages', count: 2 },
+  { name: 'Gladiators', beginner: 'gladiator', className: 'Gladiator', specialty: 'gladiators', count: 3 },
+  { name: 'Hunters', beginner: 'hunter', className: 'Hunter', specialty: 'hunters', count: 2 },
+  { name: 'Soldiers', beginner: 'soldier', className: 'Soldier', specialty: 'soldiers', count: 3 },
+  { name: 'Fliers', beginner: 'flier', className: 'Ornius Rider', specialty: 'fliers', count: character.flierSpecialties },
+  { name: 'Mages', beginner: 'mage', className: 'Diviner', specialty: 'mages', count: 2 },
 ] as const;
 const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋', resistance: '♧', dexterity: '☼', luck: '✦', charm: '♡', spear: '↗', book: '▱' };
 ---
@@ -43,7 +43,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
     <header class="character-title"><h1 id="character-name">{character.name} <span>{character.title}</span></h1></header>
     <nav class="all-section-nav" aria-label={`${character.name} sections`} hidden>
       {screens.map((screen) => <a href={`#${screen.id}`}>{screen.id === 'arts' ? 'Arts & Magic' : screen.label}</a>)}
-      {character.referenceStats && <a href="#starting-stats">Starting stats &amp; growth</a>}
+      {character.referenceStats && <a href="#starting-stats">{character.referenceStats.baseSource ? 'Starting stats & growth' : 'Growth rates'}</a>}
       {hasRecommendations && <a href="#class-recommendations">Class recommendations</a>}
     </nav>
 
@@ -89,7 +89,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
           <ul class="slot-list" aria-label="No class abilities equipped">{Array.from({ length: 3 }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}</ul>
           <p class="all-empty">None</p>
           <h2 class="panel-heading">Equipped Abilities</h2>
-          <ul class="slot-list"><li class="item-row"><CharacterGraphic characterId={character.id} name="combatBasics" /><span>{character.equippedAbility}</span></li>{Array.from({ length: 4 }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}</ul>
+          <ul class="slot-list"><li class="item-row"><CharacterGraphic characterId={character.id} name="equippedAbility" /><span>{character.equippedAbility}</span></li>{Array.from({ length: 4 }, () => <li class="item-row empty-slot" aria-hidden="true"><i></i></li>)}</ul>
           <h2 class="panel-heading">Mounted Ability</h2>
           <div class="item-row empty-slot" aria-label="No mounted ability equipped"><i aria-hidden="true"></i><span class="all-empty">None</span></div>
         </div>
@@ -116,7 +116,7 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
         <header class="screen-heading"><h2 id="section-class">Class</h2></header>
         <div class="class-top">
           <div class="panel-column"><CharacterIdentity character={character} /></div>
-          <div class="panel-column"><h2 class="panel-heading">Current Class Info</h2><p class="panel-copy">{character.classDescription}</p></div>
+          <div class="panel-column"><h2 class="panel-heading">Current Class Info</h2><p class="panel-copy">{character.classDescription}</p>{character.classMasteryPoints !== undefined && <p class="panel-copy">Points to Master: {character.classMasteryPoints}</p>}</div>
           <div class="panel-column decorative-column" aria-hidden="true"></div>
         </div>
         <h2 class="panel-heading class-list-heading">Class List</h2>
@@ -125,8 +125,8 @@ const marks: Record<string, string> = { sword: '⚔', shield: '⛨', speed: '≋
             <colgroup><col class="class-tier-column" /><col /><col /><col class="soldier-column" /><col class="flier-column" /><col /></colgroup>
             <thead class="sr-only"><tr><th scope="col">Tier</th>{classLines.map((line) => <th scope="col">{line.name}</th>)}</tr></thead>
             <tbody>
-              <tr class="base-class-row"><th scope="row">Base</th><td><CharacterGraphic characterId={character.id} name="baseClass" class="base-class-graphic" label="Commoner, equipped" /><span class="class-family">Gladiators</span></td>{classLines.slice(1).map((line) => <td><span class="class-family">{line.name}</span></td>)}</tr>
-              <tr><th scope="row">Beginner</th>{classLines.map((line) => <td><CharacterGraphic characterId={character.id} name={line.beginner} class="class-sprite" label={line.beginner.charAt(0).toUpperCase() + line.beginner.slice(1)} /></td>)}</tr>
+              <tr class="base-class-row"><th scope="row">Base</th><td><CharacterGraphic characterId={character.id} name="baseClass" class="base-class-graphic" label={`Commoner${character.class === 'Commoner' ? ', equipped' : ''}`} /><span class="class-family">Gladiators</span></td>{classLines.slice(1).map((line) => <td><span class="class-family">{line.name}</span></td>)}</tr>
+              <tr><th scope="row">Beginner</th>{classLines.map((line) => <td><CharacterGraphic characterId={character.id} name={line.beginner} class="class-sprite" label={`${line.className}${character.class === line.className ? ', equipped' : ''}`} /></td>)}</tr>
               <tr><th scope="row">Specialty</th>{classLines.map((line) => <td><CharacterGraphic characterId={character.id} name={line.specialty} class="class-sprite-group" label={`${line.count} ${line.name.toLowerCase()} specialty class icons`} /></td>)}</tr>
               {Array.from({ length: 3 }, () => <tr class="empty-class-row" aria-hidden="true"><th></th>{classLines.map(() => <td></td>)}</tr>)}
             </tbody>

@@ -10,13 +10,13 @@ const shared: Record<string, Region> = {
   basicChart: ['stats', 537, 811, 176, 194],
   crest: ['history', 518, 862, 176, 140],
   jewel: ['unique', 1356, 452, 493, 550],
-  commoner: ['stats', 212, 215, 52, 51],
+  currentClass: ['stats', 212, 215, 52, 51],
   equipped: ['stats', 787, 250, 37, 36],
   spear: ['stats', 787, 250, 37, 36],
   vulnerary: ['stats', 787, 401, 37, 38],
   bow: ['stats', 787, 454, 37, 36],
   personalAbility: ['stats', 1366, 248, 37, 37],
-  combatBasics: ['stats', 1366, 554, 38, 39],
+  equippedAbility: ['stats', 1366, 554, 38, 39],
   apostle: ['stats', 787, 862, 38, 37],
   duality: ['stats', 787, 915, 38, 35],
   skillRanks: ['stats', 786, 702, 493, 100],
@@ -40,6 +40,10 @@ const shared: Record<string, Region> = {
   assistMagic: ['arts', 788, 351, 38, 38],
 };
 const overrides: Record<string, Record<string, Region>> = {
+  guzran: {
+    foot: ['stats', 368, 225, 24, 25],
+    baseClass: ['class', 379, 525, 68, 60],
+  },
   peter: { identityPortrait: ['stats', 537, 202, 168, 237] },
   tialla: {
     identityPortrait: ['stats', 537, 202, 168, 237],
