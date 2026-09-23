@@ -14,6 +14,10 @@
   font-synthesis: none;
 }
 * { box-sizing: border-box; }
+
+/* Keep scroll behavior while hiding browser-provided scrollbars. */
+html, * { scrollbar-width: none; }
+::-webkit-scrollbar, *::-webkit-scrollbar { display: none; }
 body { margin: 0; min-height: 100svh; background: radial-gradient(ellipse at 0 0, #2c4940 0, transparent 48%), radial-gradient(ellipse at 100% 100%, #253f38 0, transparent 45%), #0a2323; background-attachment: fixed; }
 [hidden] { display: none !important; }
 a { color: var(--accent); text-underline-offset: 4px; }
